@@ -1,0 +1,134 @@
+//TODO: Rank Module? 
+
+class ModuleRank_F: Module_F
+		{
+			author = "Bohemia Interactive";
+			_generalMacro = "ModuleRank_F";
+			scope = 2;
+			displayName = "Set Rank";
+			category = "ObjectModifiers";
+			function = "BIS_fnc_moduleRank";
+			isGlobal = 1;
+			isTriggerActivated = 1;
+			class Attributes: AttributesBase
+			{
+				class Units: Units
+				{
+					property = "ModuleRank_F_Units";
+				};
+				class Value: Combo
+				{
+					property = "ModuleRank_F_Rank";
+					displayName = "Rank:";
+					tooltip = "";
+					defaultValue = "''";
+					class Values
+					{
+						class NoChange
+						{
+							name = "No change";
+							value = "";
+							default = 1;
+						};
+						class Private
+						{
+							name = "Private";
+							value = "PRIVATE";
+						};
+						class Corporal
+						{
+							name = "Corporal";
+							value = "CORPORAL";
+						};
+						class Sergeant
+						{
+							name = "Sergeant";
+							value = "SERGEANT";
+						};
+						class Lieutenant
+						{
+							name = "Lieutenant";
+							value = "LIEUTENANT";
+						};
+						class Captain
+						{
+							name = "Captain";
+							value = "CAPTAIN";
+						};
+						class Major
+						{
+							name = "Major";
+							value = "MAJOR";
+						};
+						class Colonel
+						{
+							name = "Colonel";
+							value = "COLONEL";
+						};
+					};
+				};
+				class ModuleDescription: ModuleDescription
+				{
+				};
+			};
+			class Arguments: ArgumentsBaseUnits
+			{
+				class Units: Units
+				{
+				};
+				class Rank
+				{
+					displayName = "Rank:";
+					description = "";
+					class values
+					{
+						class NoChange
+						{
+							name = "No change";
+							value = "";
+							default = 1;
+						};
+						class Private
+						{
+							name = "Private";
+							value = "PRIVATE";
+						};
+						class Corporal
+						{
+							name = "Corporal";
+							value = "CORPORAL";
+						};
+						class Sergeant
+						{
+							name = "Sergeant";
+							value = "SERGEANT";
+						};
+						class Lieutenant
+						{
+							name = "Lieutenant";
+							value = "LIEUTENANT";
+						};
+						class Captain
+						{
+							name = "Captain";
+							value = "CAPTAIN";
+						};
+						class Major
+						{
+							name = "Major";
+							value = "MAJOR";
+						};
+						class Colonel
+						{
+							name = "Colonel";
+							value = "COLONEL";
+						};
+					};
+				};
+			};
+			class ModuleDescription: ModuleDescription
+			{
+				description = "Set military rank of synced objects.";
+				sync[] = {"AnyBrain"};
+			};
+		};

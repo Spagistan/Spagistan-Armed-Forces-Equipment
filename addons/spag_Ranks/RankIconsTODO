@@ -1,0 +1,40 @@
+//TODO Rank Icon(s?) 
+
+class RscAttributeRank: RscControlsGroupNoScrollbars
+{
+	idc = 14769;
+	x = "7 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+	y = "10 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+	w = "26 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	class controls
+	{
+		class Title: RscText
+		{
+			idc = 13471;
+			text = "Rank:";
+			x = "0 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			colorBackground[] = {0, 0, 0, 0.5};
+		};
+		class Background: RscText
+		{
+			idc = 13469;
+			x = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			w = "16 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			colorBackground[] = {1, 1, 1, 0.1};
+		};
+		class Private: RscActivePicture
+		{
+			idc = 13669;
+			text = "\a3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
+			x = "11 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			y = "0.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			w = "1.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			tooltip = "Private";
+		};
