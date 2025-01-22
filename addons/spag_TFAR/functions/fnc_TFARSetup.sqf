@@ -11,7 +11,7 @@
  * Clientside: yes
  * Serverside: yes
  */
- #include "script_component.hpp";
+ #include "script_component.hpp"
 
 // GLOBALS
 TF_defaultEastRiflemanRadio = "TFAR_anprc148jem";

@@ -8,3 +8,10 @@ major = 0
 minor = 1
 patch = 0
 build = 0
+
+[hemtt.launch.default]
+workshop=[
+    '450814997'
+
+]
+mission= "test.VR"
