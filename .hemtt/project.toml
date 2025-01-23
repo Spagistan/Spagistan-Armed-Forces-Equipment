@@ -9,9 +9,14 @@ minor = 1
 patch = 0
 build = 0
 
-[hemtt.launch.default]
-workshop=[
-    '450814997'
-
+[files]
+include = [
+    "*.dll",
+    "*.so",
+    "mod.cpp",
+    "README*.md",  # Translated READMEs get moved to root in a hook (virtual file system)
+    "AUTHORS.txt",
+    "LICENSE",
+    "spagistan_logo_ca.paa",
+    "meta.cpp",
 ]
-mission= "test.VR"

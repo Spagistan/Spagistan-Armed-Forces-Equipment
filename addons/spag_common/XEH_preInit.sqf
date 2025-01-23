@@ -2,8 +2,8 @@
 
 ADDON = false;
 
-PREP_RECOMPILE_START;
+prep_recompile_start;
 #include "XEH_PREP.hpp"
-PREP_RECOMPILE_END;
+prep_recompile_end;
 
 ADDON = true;

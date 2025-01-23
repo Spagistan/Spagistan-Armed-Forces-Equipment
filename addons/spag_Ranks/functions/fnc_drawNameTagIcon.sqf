@@ -24,7 +24,7 @@
 //look at how TFAR does it, maybe.
 #include "script_component.hpp"
 
-TRACE_1("drawName:", _this);
+TRACE_1("drawName:",_this);
 
 params ["", "_target", "", "_heightOffset"];
 
@@ -41,7 +41,7 @@ _fnc_parameters = {
         if (_drawRank && {rank _target != ""}) then {
             _icon = GVAR(factionRanks) getVariable (_target getVariable [QGVAR(faction), faction _target]);
             if (!isNil "_icon") then {
-                _icon = _icon param [ALL_RANKS find rank _target, ""];
+                _icon = _icon param [all_ranks find rank _target, ""];
             } else {
                 _icon = format ["\A3\Ui_f\data\GUI\Cfg\Ranks\%1_gs.paa", rank _target];
             };
