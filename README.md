@@ -1,5 +1,5 @@
 Spagistan Armed Forces Equipement
 ========
 
-Mod for the [Spagistan](spagistan.army) Arma3 Unit
+Mod for the [Spagistan](https://spagistan.army) Arma3 Unit
 
