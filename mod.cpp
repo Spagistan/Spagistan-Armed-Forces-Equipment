@@ -10,6 +10,6 @@ logo = "spagistan_logo_ca.paa";  //TODO: replace with 2048x1024
 logoOver = "spagistan_logo_ca.paa";
 tooltip = "SPAG";
 tooltipOwned = "SPAG Owned";
-overview = "Spaghistan Armed Forces (Official) - Best collection of cigarette-weilding spaghet soldiers";
+overview = "Spagistan Armed Forces (Official) - Best collection of cigarette-weilding spaghet soldiers";
 author = "Spagistan Team";
 overviewPicture = "spagistan_logo_ca.paa";
