@@ -61,6 +61,6 @@ class CfgRanks
 		rank = "Kal";
 		displayName = "Kal";
 		displayNameShort = "KE";
-		texture = QPATHTOF(gui\Spag_Flag_ca.paa);
+		texture = QPATHTOF(\z\spag\addons\common\gui\Spag_Flag_ca.paa);
 	};
 };
