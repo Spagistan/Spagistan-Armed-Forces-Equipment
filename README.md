@@ -1,4 +1,5 @@
-spag_main
+Spagistan Armed Forces Equipement
 ========
 
-Required for SPAG mod
+Mod for the [Spagistan](spagistan.army) Arma3 Unit
+
