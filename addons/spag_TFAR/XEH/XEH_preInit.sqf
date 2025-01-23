@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "\z\spag\addons\tfar\script_component.hpp"
 
 ADDON = false;
 

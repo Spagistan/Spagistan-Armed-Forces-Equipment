@@ -1,4 +1,5 @@
-#include "script_component.hpp"
+#include "\z\spag\addons\tfar\script_component.hpp"
+
 
 [] spawn {
 	[ {time > 2 && !(isNull player) }, FUNC(TFARSetup) ] call CBA_fnc_waitUntilAndExecute;

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "\z\spag\addons\ranks\script_component.hpp"
 
 ADDON = false;
 
