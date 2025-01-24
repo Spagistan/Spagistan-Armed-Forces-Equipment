@@ -22,6 +22,7 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 	side = 2;
 	author = "RHS/Kalthramis";
 	editorCategory = "Spagistan_Catagory";
+	editorSubcategory = "EdSubcat_APCs";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";
@@ -34,6 +35,6 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 	HiddenSelectionsTextures[] = {QPATHTOF(data\bmp\bmp_1_spagpat.paa), QPATHTOF(data\bmp\bmp_2_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_3_spagpat.paa), QPATHTOF(data\bmp\bmp_4_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_5_spagpat.paa), QPATHTOF(data\bmp\bmp_6_spagpat.paa),
-		  ""};
+		  };
 	/* //rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa */
 };

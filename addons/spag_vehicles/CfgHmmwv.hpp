@@ -175,7 +175,7 @@ class hummv_d_SPAGPAT: rhsusf_m1025_d
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = { SPAG_F };
+			factions[] = { QUOTE(SPAGFACTION) };
 			textures[] = { HUMMVSUNIVERSAL };
 		};
 	};
@@ -195,7 +195,7 @@ class hummv_d_SPAGPAT_ar: rhsusf_m1025_d_m2 //ar
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = { HUMMVSUNIVERSALARMED };
 		};
 	};
@@ -217,7 +217,7 @@ class hummv_d_SPAGPAT_gl: rhsusf_m1025_d_mk19 //gl
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = { HUMMVSUNIVERSALARMED };
 		};
 	};
@@ -238,7 +238,7 @@ class hummv_d_SPAGPAT_troop: rhsusf_m998_d_2dr_fulltop //troop Transport
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = {  HUMMVSUNIVERSALSOFT(m998_2drcargo_d_co) };
 		};
 	};
@@ -289,7 +289,7 @@ class hummv_d_SPAGPAT_softF: rhsusf_m998_d_4dr_fulltop //softop full
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = { HUMMVSUNIVERSALSOFT(m998_4drcargo_d_co) };
 		};
 	};
@@ -310,7 +310,7 @@ class hummv_d_SPAGPAT_softH: rhsusf_m998_d_4dr_halftop //softop half
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = { HUMMVSUNIVERSALSOFT(m998_4drcargo_d_co) };
 		};
 	};
@@ -347,7 +347,7 @@ class hummv_d_SPAGPAT_open: rhsusf_m998_d_4dr //open
 		class Spagpat
 		{
 			displayName = "Spagpat";
-			factions[] = {SPAG_F};
+			factions[] = {QUOTE(SPAGFACTION)};
 			textures[] = {  HUMMVSUNIVERSALSOFT(m998_4drcargo_d_co) };
 		};
 	};

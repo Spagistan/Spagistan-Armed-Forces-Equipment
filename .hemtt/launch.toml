@@ -7,3 +7,11 @@ workshop = [
     "843632231", # RHS SAF  Workshop ID
     "894678801", # TFAR Workshop ID
 ]
+#mission = "test.VR"
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+    "-filePatching",
+]

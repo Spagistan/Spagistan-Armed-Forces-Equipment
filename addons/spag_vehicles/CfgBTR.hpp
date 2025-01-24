@@ -10,11 +10,12 @@ hiddenSelectionsTextures[] = {
 class rhsgref_cdf_btr60;
 class BTR_Spagpat: rhsgref_cdf_btr60
 {
-	displayName = "SPAG bmp";
+	displayName = "SPAG BTR";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
 	author = "RHS/Kalthramis";
+	editorSubcategory = "EdSubcat_APCs";
 	editorCategory = "Spagistan_Catagory";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;

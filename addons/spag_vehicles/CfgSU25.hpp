@@ -6,6 +6,7 @@ hiddenselectionstextures[] = {
 }; */
 
 class RHSGREF_cdf_su25;
+
 class SU25_Spagpat: RHSGREF_cdf_su25
 {
 
