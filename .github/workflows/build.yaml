@@ -11,15 +11,22 @@ on:
 
 jobs:
     build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Setup HEMTT
-              uses: arma-actions/hemtt@v1
-            - name: Run HEMTT build
-              run: hemtt release
-            - name: Upload Release
-              uses: actions/upload-artifact@v4
-              with:
-                  name: Spagistan-Armed-Forces-Equipment
-                  path: release/spag-latest.zip
+      windows:
+          runs-on: windows-latest
+          steps:
+          - name: Checkout the source code
+            uses: actions/checkout@v4
+          - name: Setup HEMTT
+            uses: arma-actions/hemtt@v1
+          - name: Checkout pull request
+            uses: actions/checkout@v4
+          - name: Run HEMTT build
+            run: hemtt build
+          - name: Rename build folder
+            run: mv .hemttout/build .hemttout/@ace
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: spag-${{ github.sha }}
+              path: .hemttout/@*
+              include-hidden-files: true # Because .hemttout is a hidden directory
