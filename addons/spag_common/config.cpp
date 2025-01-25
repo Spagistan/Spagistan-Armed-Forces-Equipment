@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#include "\z\spag\addons\common\script_component.hpp"
 
 class CfgPatches
 {
@@ -24,99 +25,12 @@ class CfgPatches
 		versionAr[] = {1,5,9,1};
 	};
 };
-class CfgFactionClasses
-{
-	class SPAG_F
-	{
-		displayName = "Spagistan";
-		priority = 5;
-		side = 2;
-		icon = "\z\spag\addons\common\gui\Spag_Flag_Square_ca.paa";
-		flag = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-	};
-};
-class CfgMarkers
-{
-	class flag_Spagistan
-	{
-		scope = 1;
-		scopeEditor = 2;
-		scopeCurator = 1;
-		name = "Spagistan";
-		icon = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-		texture = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-		size = 25;
-		shadow = 1;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";
-	};
-};
-class CfgEditorCategories
-{
-	class Spagistan_Catagory
-	{
-		displayName = "Spagistan";
-		faction = "SPAG_F";
-	};
-};
-class CfgUnitInsignia
-{
-	class Spagistan_Insignia
-	{
-		displayName = "Spagistan";
-		author = "Kalthramis";
-		texture = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-		textureVehicle = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-	};
-};
-class Extended_PreStart_EventHandlers
-{
-	class spag_common
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\common\XEH\XEH_preStart.sqf'";
-	};
-};
-class Extended_PreInit_EventHandlers
-{
-	class spag_common
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\common\XEH\XEH_preInit.sqf'";
-	};
-};
-class Extended_PostInit_EventHandlers
-{
-	class spag_common
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\common\XEH\XEH_postInit.sqf'";
-	};
-};
-class CfgVehicles
-{
-	class Logic;
-	class Module_F: Logic
-	{
-		class AttributesBase;
-		class ModuleDescription;
-	};
-	class Spag_ModuleEnding_F: Module_F
-	{
-		author = "Kalthramis";
-		scope = 2;
-		scopeCurator = 2;
-		category = "MissionFlow";
-		displayName = "End Mission (Spagistan)";
-		icon = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-		portrait = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
-		function = "spag_common_fnc_moduleEndMission";
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		curatorCanAttach = 1;
-		curatorCost = 0;
-		class Arguments{};
-		class ModuleDescription: ModuleDescription
-		{
-			description = "Ends the mission with extra details - disables simulation for all players.";
-			sync[] = {};
-		};
-	};
-};
+#include "CfgArsenal.hpp"
+#include "CfgEditorCategories.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgMarkers.hpp"
+#include "CfgModules.hpp"
+#include "CfgSettings.hpp"
+#include "CfgUnitInsignia.hpp"
+#include "CfgVehicles.hpp"
