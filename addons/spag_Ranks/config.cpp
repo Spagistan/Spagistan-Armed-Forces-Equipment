@@ -24,13 +24,4 @@ class CfgPatches
 		versionAr[] = {1,5,9,1};
 	};
 };
-class CfgRanks
-{
-	class 8
-	{
-		rank = "Kal";
-		displayName = "Kal";
-		displayNameShort = "KE";
-		texture = "\z\spag\addons\spag_common\gui\Spag_Flag_ca.paa";
-	};
-};
+
