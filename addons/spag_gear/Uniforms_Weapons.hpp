@@ -1,12 +1,10 @@
 //CfgWeapons entries for Uniforms
 
 class UniformItem;
-class rhssaf_uniform_m10_digital_summer;
-class rhssaf_uniform_m10_digital_desert;
-class U_I_OfficerUniform;
+class Uniform_Base;
 
 //U_S_UNIFORM_SPAGPAT MISSIONG ITEMINFO.CONTAINERCLASS
-
+class rhssaf_uniform_m10_digital_summer;
 class U_S_Uniform_SPAGPAT: rhssaf_uniform_m10_digital_summer
 {
 	scope = 2;
@@ -45,6 +43,7 @@ class U_S_Uniform_Telnyashka_SPAGPAT: rhssaf_uniform_m10_digital_summer
 	};
 };
 
+class rhssaf_uniform_m10_digital_desert;
 class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 {
 	scope = 2;
@@ -76,7 +75,7 @@ class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 		mass = 50;
 	};
 }; */
-
+class U_I_OfficerUniform;
 class Custom_Camo_TShirt: U_I_OfficerUniform
 {
 	scope = 1;
@@ -110,6 +109,24 @@ class U_OG_leader: Uniform_Base
 	};
 };
 */
+
+class rhs_vdv_gorka_r_g_gloves_rifleman;
+class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
+{
+    displayName="Gorka-R (Spagpat)";
+    picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
+    author="Muz";
+    scope=2;
+     hiddenSelections[] = {"camo1","Insignia"};
+     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
+     class ItemInfo: UniformItem
+    {
+            uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
+            uniformClass="U_S_Gorka_SPAGPAT";
+            containerClass="Supply60";
+            mass=40;
+    };
+};
 
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
