@@ -10,12 +10,11 @@ on:
 
 
 jobs:
-    build:
-      windows:
-          runs-on: windows-latest
-          steps:
-          - name: Checkout the source code
-            uses: actions/checkout@v4
+  build:
+    windows:
+        runs-on: windows-latest
+        steps:
+          - uses: actions/checkout@v4
           - name: Setup HEMTT
             uses: arma-actions/hemtt@v1
           - name: Checkout pull request
@@ -29,4 +28,4 @@ jobs:
             with:
               name: spag-${{ github.sha }}
               path: .hemttout/@*
-              include-hidden-files: true # Because .hemttout is a hidden directory
+              include-hidden-files: true # Because .hemttout is a hidden directory 
