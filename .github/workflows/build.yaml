@@ -11,21 +11,20 @@ on:
 
 jobs:
   build:
-    windows:
-        runs-on: windows-latest
-        steps:
-          - uses: actions/checkout@v4
-          - name: Setup HEMTT
-            uses: arma-actions/hemtt@v1
-          - name: Checkout pull request
-            uses: actions/checkout@v4
-          - name: Run HEMTT build
-            run: hemtt build
-          - name: Rename build folder
-            run: mv .hemttout/build .hemttout/@ace
-          - name: Upload Artifact
-            uses: actions/upload-artifact@v4
-            with:
-              name: spag-${{ github.sha }}
-              path: .hemttout/@*
-              include-hidden-files: true # Because .hemttout is a hidden directory 
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Setup HEMTT
+          uses: arma-actions/hemtt@v1
+        - name: Checkout pull request
+          uses: actions/checkout@v4
+        - name: Run HEMTT build
+          run: hemtt build
+        - name: Rename build folder
+          run: mv .hemttout/build .hemttout/@ace
+        - name: Upload Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: spag-${{ github.sha }}
+            path: .hemttout/@*
+            include-hidden-files: true # Because .hemttout is a hidden directory 
