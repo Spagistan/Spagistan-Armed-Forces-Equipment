@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#include "\z\spag\addons\tfar\script_component.hpp"
 
 class CfgPatches
 {
@@ -24,28 +25,5 @@ class CfgPatches
 		versionAr[] = {1,5,9,1};
 	};
 };
-class Extended_PreStart_EventHandlers
-{
-	class spag_TFAR
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\TFAR\XEH\XEH_preStart.sqf'";
-	};
-};
-class Extended_PreInit_EventHandlers
-{
-	class spag_TFAR
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\TFAR\XEH\XEH_preInit.sqf'";
-	};
-};
-class Extended_PostInit_EventHandlers
-{
-	class spag_TFAR
-	{
-		init = "call compile preProcessFileLineNumbers '\z\spag\addons\TFAR\XEH\XEH_postInit.sqf'";
-	};
-	class SetupTFARStuff
-	{
-		init = "call compile preprocessFileLineNumbers '\z\spag\addons\TFAR\functions\fnc_TFARSetup.sqf'";
-	};
-};
+
+#include "CfgEventHandlers.hpp"

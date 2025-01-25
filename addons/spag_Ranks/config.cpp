@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#include "\z\spag\addons\ranks\script_component.hpp"
 
 class CfgPatches
 {

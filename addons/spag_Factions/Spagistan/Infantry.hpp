@@ -65,9 +65,9 @@ class S_Soldier_Base: I_G_Soldier_base_F
 	backpack = "S_KitBag_SPAG";
 
 	weapons[] = {"Throw", "Put" };
-	items[] = { QUOTE(item_xx(ACE_elasticBandage, 20)), QUOTE(item_xx(ACE_quikclot, 20)), "ACE_EarPlugs", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_Epinephrine",	QUOTE(item_xx(ACE_morphine, 4)), QUOTE(item_xx(ACE_Tourniquet, 4)), "ACE_EntrenchingTool" };
+	//items[] = { QUOTE(item_xx(ACE_elasticBandage, 20)), QUOTE(item_xx(ACE_quikclot, 20)), "ACE_EarPlugs", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_Epinephrine",	QUOTE(item_xx(ACE_morphine, 4)), QUOTE(item_xx(ACE_Tourniquet, 4)), "ACE_EntrenchingTool" };
 	respawnItems[] = {};
-	magazines[] = { QUOTE(mag_xx(RHS_30Rnd_545x39_7N22_AK, 20)), QUOTE(mag_xx(RHS_mag_RGO, 4)), QUOTE(mag_xx(RHS_mag_rdg2_black, 10)) };
+	//magazines[] = { QUOTE(mag_xx(RHS_30Rnd_545x39_7N22_AK, 20)), QUOTE(mag_xx(RHS_mag_RGO, 4)), QUOTE(mag_xx(RHS_mag_rdg2_black, 10)) };
 	respawnMagazines[] = {};
 	linkedItems[] = { "S_Vest_SPAGPAT", "rhs_1PN138", "S_Helmet_SPAGPAT", "rhs_PDU4", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc148jem", "ItemGPS"};
 	respawnLinkedItems[] = { };
