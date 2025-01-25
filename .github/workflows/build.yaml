@@ -20,5 +20,5 @@ jobs:
             - name: Upload Release
               uses: actions/upload-artifact@v4
               with:
-                  name: my-mod-latest
+                  name: SpagistanArmedForcesEquipment
                   path: release/SpagistanArmedForcesEquipment.zip
