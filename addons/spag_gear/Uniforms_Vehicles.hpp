@@ -11,6 +11,8 @@ class rhssaf_soldier_m10_base: SoldierGB
 	hiddenSelectionsTextures = {"camo1","camo2","camo3","insignia"};
 }; */
 /* class Item_Base_F; */
+
+//rhssaf_soldier_m10_base
 class rhssaf_soldier_un_desert_base;
 class rhssaf_soldier_army_para_digital_base;
 class O_officer_F;
@@ -18,7 +20,9 @@ class I_Soldier_base_F; // for AAF uniform
 class I_officer_F;
 class B_soldier_F;
 class I_Story_Officer_01_F;
-//rhssaf_soldier_m10_base
+
+
+
 class U_S_SPAGPAT: rhssaf_soldier_army_para_digital_base
 {
   /* nakedUniform = "U_BasicBody"; */
@@ -40,7 +44,7 @@ class U_S_Neck_SPAGPAT: rhssaf_soldier_un_desert_base
   /* nakedUniform = "U_BasicBody"; */
   uniformClass = "U_S_Uniform_Neck_SPAGPAT";
   hiddenSelections[] = {"camo","Insignia"};
-  hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_scarf) };
+  hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_scarf)};
 };
 
 

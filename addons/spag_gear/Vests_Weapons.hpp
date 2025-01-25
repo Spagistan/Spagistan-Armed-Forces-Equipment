@@ -41,14 +41,8 @@ class S_Vest_SPAGPAT: rhssaf_vest_md12_digital
 {
   displayName = "Ballistic Vest (Spagpat)";
   author = "Taepodong";
-  hiddenSelections[]=
-  {
-    "camo"
-  };
-  hiddenSelectionsTextures[]=
-  {
-    QPATHTOF(data\vests\m12_SPAGPAT_ca.paa)
-  };
+  hiddenSelections[] = {"camo"};
+  hiddenSelectionsTextures[] = {QPATHTOF(data\vests\m12_SPAGPAT_ca)};
 };
 
 

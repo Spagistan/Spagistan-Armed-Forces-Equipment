@@ -4,7 +4,9 @@ class UniformItem;
 class rhssaf_uniform_m10_digital_summer;
 class rhssaf_uniform_m10_digital_desert;
 class U_I_OfficerUniform;
+
 //U_S_UNIFORM_SPAGPAT MISSIONG ITEMINFO.CONTAINERCLASS
+
 class U_S_Uniform_SPAGPAT: rhssaf_uniform_m10_digital_summer
 {
 	scope = 2;
@@ -12,12 +14,12 @@ class U_S_Uniform_SPAGPAT: rhssaf_uniform_m10_digital_summer
 	author = "Taepodong/Kalthramis";
 	displayName = "Combat Uniform (Spagpat)";
 	hiddenSelections[] = {"camo","Insignia"};
-    hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt) }; //this texture defines the texture when the object is on the ground
+    hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt)}; //this texture defines the texture when the object is on the ground
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
 		uniformClass = "U_S_SPAGPAT";
-		/* uniformClass = "rhssaf_soldier_army_digital_base"; */
+		//uniformClass = "rhssaf_soldier_army_digital_base";
 		containerClass = "Supply60";
 		mass = 40;
 	};
@@ -37,12 +39,11 @@ class U_S_Uniform_Telnyashka_SPAGPAT: rhssaf_uniform_m10_digital_summer
 	{
 		uniformModel = "-";
 		uniformClass = "U_S_TEL_SPAGPAT";
-		/* uniformClass = "rhssaf_soldier_army_digital_base"; */
+		//uniformClass = "rhssaf_soldier_army_digital_base"; 
 		containerClass = "Supply60";
 		mass = 40;
 	};
 };
-
 
 class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 {
@@ -51,7 +52,8 @@ class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	author = "Taepodong/Kalthramis";
 	displayName = "Combat Uniform (Spagpat/Neck)";
 	hiddenSelections[] = {"camo","Insignia"};
-    hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt) };
+    hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_shirt)};
+	
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -61,7 +63,8 @@ class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	};
 };
 
-/* class SpagUniformTest: U_OG_leader
+
+/* DEPRECATED class SpagUniformTest: U_OG_leader
 {
 	scope = 2;
 	scopeArsenal = 2;
@@ -88,7 +91,7 @@ class Custom_Camo_TShirt: U_I_OfficerUniform
 	};
 };
 
-/*
+/* DEPRECATED
 class U_OG_leader: Uniform_Base
 {
 	author = "Bohemia Interactive";
