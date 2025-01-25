@@ -18,12 +18,10 @@ jobs:
         - uses: actions/checkout@v4
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1
-        - name: Checkout pull request
-          uses: actions/checkout@v4
         - name: Run HEMTT build
-          run: hemtt build
+          run: hemtt release
         - name: Rename build folder
-          run: mv .hemttout/build .hemttout/@ace
+          run: mv .hemttout/release .hemttout/@spag
         - name: Upload Artifact
           uses: actions/upload-artifact@v4
           with:
