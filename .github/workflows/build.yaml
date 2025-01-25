@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - v*
+  pull_request:
+    branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup HEMTT
+              uses: arma-actions/hemtt@v1
+            - name: Run HEMTT build
+              run: hemtt release
+            - name: Upload Release
+              uses: actions/upload-artifact@v4
+              with:
+                  name: my-mod-latest
+                  path: release/SpagistanArmedForcesEquipment.zip
