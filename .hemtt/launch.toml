@@ -1,11 +1,19 @@
 [default]
 workshop = [
-    "450814997", # CBA_A3
+    
+    "450814997", # CBA_A3 Workshop ID
+    "463939057", # ACE3 Workshop ID
     "843425103", # RHS AFRF Workshop ID
     "843577117", # RHS USAF Workshop ID
     "843593391", # RHS GREF Workshop ID
     "843632231", # RHS SAF  Workshop ID
     "894678801", # TFAR Workshop ID
+    "583496184", # CUPS Terrains - Core Workshop ID
+    "2950257727", # Yulakia Workshop ID
+    "2890312862", # Uncon Actions Workshop ID
+    '753946944', # Immersion Cigs Workshop ID
+    "3125837686", # Bulat UAV Workshop ID
+    "3045129955", # FPV Drone Crocus Workshop ID
 ]
 #mission = "test.VR"
 parameters = [
