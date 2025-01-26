@@ -25,4 +25,4 @@ class CfgPatches
 		versionAr[] = {1,5,9,1};
 	};
 };
-#include "Spagistan/Infantry.hpp"
+#include "CfgVehicles.hpp"

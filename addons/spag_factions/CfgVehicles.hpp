@@ -9,7 +9,7 @@ class CfgVehicles
 	#include "Spagistan\Infantry.hpp"
 };
 
-#undef backpack_xx(a,b)
-#undef mag_xx(a,b)
-#undef weap_xx(a,b)
-#undef item_xx(a,b)
+#undef backpack_xx
+#undef mag_xx
+#undef weap_xx
+#undef item_xx
