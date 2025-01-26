@@ -110,7 +110,6 @@ class U_OG_leader: Uniform_Base
 };
 */
 
-class rhs_vdv_gorka_r_g_gloves_rifleman;
 class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
 {
     displayName="Gorka-R (Spagpat)";
