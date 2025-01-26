@@ -1,4 +1,4 @@
-#include "\z\spag\addons\common\script_component.hpp"
+#include "script_component.hpp"
 ADDON = false;
 
 prep_precompile_start;

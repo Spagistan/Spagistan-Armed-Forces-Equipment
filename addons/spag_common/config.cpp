@@ -25,12 +25,14 @@ class CfgPatches
 		versionAr[] = {1,5,9,1};
 	};
 };
-#include "CfgArsenal.hpp"
-#include "CfgEditorCategories.hpp"
-#include "CfgEventHandlers.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgMarkers.hpp"
-#include "CfgModules.hpp"
-#include "CfgSettings.hpp"
+#include "CfgEditorCategories.hpp"
 #include "CfgUnitInsignia.hpp"
+#include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
+
+//#include "CfgArsenal.hpp"
+//#include "CfgModules.hpp"
+//#include "CfgSettings.hpp"
+

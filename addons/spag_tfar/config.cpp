@@ -6,7 +6,7 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
-#include "\z\spag\addons\tfar\script_component.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {

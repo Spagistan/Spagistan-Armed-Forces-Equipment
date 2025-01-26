@@ -1,1 +1,1 @@
-#include "\z\spag\addons\TFAR\script_component.hpp"
+#include "..\script_component.hpp"
