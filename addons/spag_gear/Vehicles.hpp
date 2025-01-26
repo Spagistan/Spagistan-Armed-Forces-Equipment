@@ -22,4 +22,5 @@ class CfgVehicles
   #include "Hats_Vehicles.hpp"
   #include "Uniforms_Vehicles.hpp"
   #include "Vests_Vehicles.hpp"
+  
 };
