@@ -56,11 +56,4 @@ class CfgRanks
 		displayNameShort = "Gen";
 		texture = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
 	}; */
-	class 8
-	{
-		rank = "Kal";
-		displayName = "Kal";
-		displayNameShort = "KE";
-		texture = QPATHTOF(\z\spag\addons\common\gui\Spag_Flag_ca.paa);
-	};
 };
