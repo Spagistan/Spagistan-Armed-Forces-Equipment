@@ -111,62 +111,62 @@ class S_Soldier_PFC: S_Soldier_Survivor {
 	displayName = "Private First Class";
 };
 
-class S_Soldier_CPL: S_Soldier_Survivor {
-	rank = "Corporal";
-	displayName = "Corporal";
-};
+// class S_Soldier_CPL: S_Soldier_Survivor {
+// 	rank = "Corporal";
+// 	displayName = "Corporal";
+// };
 
-class S_Soldier_SGT: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Sergeant";
-};
+// class S_Soldier_SGT: S_Soldier_Survivor {
+// 	rank = "Sergeant";
+// 	displayName = "Sergeant";
+// };
 
-class S_Soldier_SSG: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Staff Sergeant";
-};
+// class S_Soldier_SSG: S_Soldier_Survivor {
+// 	rank = "Sergeant";
+// 	displayName = "Staff Sergeant";
+// };
 
-class S_Soldier_SFC: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Sergeant first Class";
-};
+// class S_Soldier_SFC: S_Soldier_Survivor {
+// 	rank = "Sergeant";
+// 	displayName = "Sergeant first Class";
+// };
 
-class S_Soldier_MSG: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Master Sergeant";
-};
+// class S_Soldier_MSG: S_Soldier_Survivor {
+// 	rank = "Sergeant";
+// 	displayName = "Master Sergeant";
+// };
 
-class S_Soldier_SGM: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Sergeant Major";
-};
+// class S_Soldier_SGM: S_Soldier_Survivor {
+// 	rank = "Sergeant";
+// 	displayName = "Sergeant Major";
+// };
 
-class S_Soldier_2LT: S_Soldier_Survivor {
-	rank = "Lieutenant";
-	displayName = "Second Lieutenant";
-};
+// class S_Soldier_2LT: S_Soldier_Survivor {
+// 	rank = "Lieutenant";
+// 	displayName = "Second Lieutenant";
+// };
 
-class S_Soldier_1LT: S_Soldier_Survivor {
-	rank = "Lieutenant";
-	displayName = "First Lieutenant";
-};
+// class S_Soldier_1LT: S_Soldier_Survivor {
+// 	rank = "Lieutenant";
+// 	displayName = "First Lieutenant";
+// };
 
-class S_Soldier_CPT: S_Soldier_Survivor {
-	rank = "Captain";
-	displayName = "Captain";
-};
+// class S_Soldier_CPT: S_Soldier_Survivor {
+// 	rank = "Captain";
+// 	displayName = "Captain";
+// };
 
-class S_Soldier_MAJ: S_Soldier_Survivor {
-	rank = "Major";
-	displayName = "Major";
-};
+// class S_Soldier_MAJ: S_Soldier_Survivor {
+// 	rank = "Major";
+// 	displayName = "Major";
+// };
 
-class S_Soldier_COL: S_Soldier_Survivor {
-	rank = "Colonel";
-	displayName = "Colonel";
-};
+// class S_Soldier_COL: S_Soldier_Survivor {
+// 	rank = "Colonel";
+// 	displayName = "Colonel";
+// };
 
-class S_Soldier_GEN: S_Soldier_Survivor {
-	rank = "Colonel";
-	displayName = "General";
-};
+// class S_Soldier_GEN: S_Soldier_Survivor {
+// 	rank = "Colonel";
+// 	displayName = "General";
+// };
