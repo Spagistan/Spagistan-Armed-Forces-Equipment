@@ -55,6 +55,14 @@ class CfgVehicles
 			}; */
 
 
+class CfgVehicles
+{
+	class Logic;
+	class Module_F: Logic
+	{
+		class AttributesBase;
+		class ModuleDescription;
+	};
 	class Spag_ModuleEnding_F: Module_F
 	{
 		author = "Kalthramis";
@@ -62,20 +70,21 @@ class CfgVehicles
 		scopeCurator = 2;
 		category = "MissionFlow";
 		displayName = "End Mission (Spagistan)";
-		icon = QPATHTOF(gui\Spag_Flag_ca.paa);
-		portrait = QPATHTOF(gui\Spag_Flag_ca.paa);
-		function = QFUNC(moduleEndMission);
+		icon = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
+		portrait = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
+		function = "spag_common_fnc_moduleEndMission";
 		isGlobal = 1;
 		isTriggerActivated = 0;
 		curatorCanAttach = 1;
 		curatorCost = 0;
-		class Arguments {};
+		class Arguments{};
 		class ModuleDescription: ModuleDescription
 		{
 			description = "Ends the mission with extra details - disables simulation for all players.";
 			sync[] = {};
 		};
 	};
+};
 	//Wiki example
 	/* class spag_ModuleTest: Module_F
 		{
