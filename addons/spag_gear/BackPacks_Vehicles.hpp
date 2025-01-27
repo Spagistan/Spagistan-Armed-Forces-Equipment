@@ -19,6 +19,7 @@ class B_Kitbag_rgr;
 class TFAR_SPAG_mr3000: TFAR_mr3000
 {
   scope = 2;
+  side = 2;
   scopeArsenal = 2;
   author = "Taepodong/Kalthramis";
   displayName = "MR3000 BWMOD [SPAGPAT]";
@@ -29,6 +30,7 @@ class TFAR_SPAG_mr3000: TFAR_mr3000
 class S_KitBag_Spag: B_Kitbag_rgr
 {
   scope = 2;
+  side = 2;
   scopeArsenal = 2;
   author = "Taepodong/Kalthramis";
   generalMacro = "S_KitBag_Spag";
@@ -42,4 +44,4 @@ class S_KitBag_Spag: B_Kitbag_rgr
 
 
 //  BACKWARDS COMPATIBILITY
-class spagbag: S_KitBag_Spag	{ displayName = "(DEPRECATED) Kitbag (Spagpat)"; scope = 1; scopeArsenal = 1; };
+class spagbag: S_KitBag_Spag	{ displayName = "(DEPRECATED) Kitbag (Spagpat)"; scope = 1; side = 2; scopeArsenal = 1; };

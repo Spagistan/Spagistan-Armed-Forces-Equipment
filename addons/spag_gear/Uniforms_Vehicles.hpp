@@ -23,6 +23,8 @@ class rhssaf_soldier_army_para_digital_base;
 class U_S_SPAGPAT: rhssaf_soldier_army_para_digital_base
 {
   /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;	
   uniformClass = "U_S_Uniform_SPAGPAT";
   hiddenSelections[] = {"camo","Insignia"};
   hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt) };
@@ -31,6 +33,8 @@ class U_S_SPAGPAT: rhssaf_soldier_army_para_digital_base
 class U_S_TEL_SPAGPAT: rhssaf_soldier_army_para_digital_base
 {
   /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;
   uniformClass = "U_S_Uniform_Telnyashka_SPAGPAT";
   hiddenSelections[] = {"camo","Insignia"};
   hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_telnyashka) };
@@ -40,6 +44,8 @@ class rhssaf_soldier_un_desert_base;
 class U_S_Neck_SPAGPAT: rhssaf_soldier_un_desert_base
 {
   /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;
   uniformClass = "U_S_Uniform_Neck_SPAGPAT";
   hiddenSelections[] = {"camo","Insignia"};
   hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_scarf)};
@@ -62,7 +68,8 @@ class U_S_Neck_SPAGPAT: rhssaf_soldier_un_desert_base
 class O_officer_F;
 class Custom_Uniform_TShirt: O_officer_F {
 	author = "Kal";
-	scope = 1;
+  	side = 2;
+  	scope = 2;
 	displayName = "Custom Combat Life Saver";
 	uniformClass = "Custom_Camo_TShirt";
 	hiddenSelections[] = {"camo", "insignia"};
@@ -88,11 +95,12 @@ class rhs_vdv_gorka_r_g_gloves_rifleman;
 class U_S_Gorka_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
 {
         author="Muz";
-        scope=2;
+		side = 2;
+		scope = 2;
         uniformClass="U_S_Uniform_Gorka_SPAGPAT";
         hiddenSelections[] = {"camo1","Insignia"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
 };
 
 //  BACKWARDS COMPATIBILITY
-class spag_turk: U_S_SPAGPAT { displayName = "(Depricated) Spagistan Combat Uniform";  scope = 1;	scopeArsenal = 1; };
+class spag_turk: U_S_SPAGPAT { displayName = "(Depricated) Spagistan Combat Uniform";  scope = 1; side = 1;	scopeArsenal = 1; };

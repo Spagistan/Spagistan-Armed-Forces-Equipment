@@ -30,8 +30,9 @@ class CfgPatches
 #include "CfgEditorCategories.hpp"
 #include "CfgUnitInsignia.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"
 #include "CfgModules.hpp"
+
+//#include "CfgVehicles.hpp"
 //#include "CfgArsenal.hpp"
 
 //#include "CfgSettings.hpp"

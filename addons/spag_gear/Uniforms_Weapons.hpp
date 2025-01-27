@@ -20,6 +20,7 @@ class U_S_Uniform_SPAGPAT: rhssaf_uniform_m10_digital_summer
 		//uniformClass = "rhssaf_soldier_army_digital_base";
 		containerClass = "Supply60";
 		mass = 40;
+		scope = 1;
 	};
 };
 
@@ -40,6 +41,7 @@ class U_S_Uniform_Telnyashka_SPAGPAT: rhssaf_uniform_m10_digital_summer
 		//uniformClass = "rhssaf_soldier_army_digital_base"; 
 		containerClass = "Supply60";
 		mass = 40;
+		scope = 1;
 	};
 };
 
@@ -59,6 +61,7 @@ class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 		uniformClass = "U_S_Neck_SPAGPAT";
 		containerClass = "Supply60";
 		mass = 40;
+		scope = 1;
 	};
 };
 
@@ -87,6 +90,7 @@ class Custom_Camo_TShirt: U_I_OfficerUniform
 		uniformClass = "Custom_Uniform_TShirt";
 		containerClass = "Supply30";
 		mass = 35;
+		scope = 1;
 	};
 };
 
@@ -116,18 +120,19 @@ class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author="Muz";
     scope=2;
-     hiddenSelections[] = {"camo1","Insignia"};
-     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
-     class ItemInfo: UniformItem
+	hiddenSelections[] = {"camo1","Insignia"};
+	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
+	class ItemInfo: UniformItem
     {
             uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
             uniformClass="U_S_Gorka_SPAGPAT";
             containerClass="Supply60";
-            mass=40;
+            mass = 40;
+			scope = 1;
     };
 };
 
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
 //  BACKWARDS COMPATIBILITY
-class spag_tsk: U_S_Uniform_SPAGPAT	{displayName = "(Depricated) Spagistan Combat Uniform"; scope = 1; scopeArsenal = 1; };
+class spag_tsk: U_S_Uniform_SPAGPAT	{displayName = "(Depricated) Spagistan Combat Uniform"; scope = 1; side = 1; scopeArsenal = 1; };
