@@ -55,24 +55,28 @@ class S_PatrolCap_SPAGPAT: rhsusf_patrolcap_ucp
 class S_beret_red_SPAGPAT: RHSSAF_beret_para
 {
 	displayName = "Beret (Red/Spagistan)";
+  scope = 2;
 	hiddenselectionsTextures[] = {QPATHTOF(data\hats\beret_red_spag)};
 };
 
 class S_beret_green_SPAGPAT: RHSSAF_beret_green
 {
 	displayName = "Beret (Green/Spagistan)";
+  scope = 2;
 	hiddenselectionsTextures[] = {QPATHTOF(data\hats\beret_green_spag)};
 };
 
 class S_beret_red_NONE: RHSSAF_beret_para
 {
 	displayName = "Beret (Red/Plain)";
+  scope = 2;
 	hiddenselectionsTextures[] = {QPATHTOF(data\hats\beret_red)};
 };
 
 class S_beret_green_NONE: RHSSAF_beret_green
 {
 	displayName = "Beret (Green/Plain)";
+  scope = 2;
 	hiddenselectionsTextures[] = {QPATHTOF(data\hats\beret_green)};
 };
 

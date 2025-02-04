@@ -1,18 +1,13 @@
 name: Build
 
 on:
-  push:
-    branches: [main]
-    tags:
-      - v*
   pull_request:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
-
-
 
 jobs:
   build:
+      name: Create Release
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
@@ -25,6 +20,6 @@ jobs:
         - name: Upload Artifact
           uses: actions/upload-artifact@v4
           with:
-            name: spag-${{ github.sha }}
+            name: safe-${{ github.sha }}
             path: .hemttout/@*
             include-hidden-files: true # Because .hemttout is a hidden directory 

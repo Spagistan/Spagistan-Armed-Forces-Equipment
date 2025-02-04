@@ -1,5 +1,5 @@
 #define _ARMA_
-#include "\z\spag\addons\vehicles\script_component.hpp"
+#include "script_component.hpp"
 class CfgPatches
 {
 	class spag_vehicles
