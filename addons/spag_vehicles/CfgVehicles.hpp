@@ -39,7 +39,7 @@
 		item_xx(ACE_EntrenchingTool,2);\
 	};
 
-class CfgVehicles
+class CfgVehicles 
 {
 	#include "CfgBMP.hpp"
 	#include "CfgBTR.hpp"
@@ -48,6 +48,9 @@ class CfgVehicles
 	#include "CfgMI8.hpp"
 	#include "CfgSU25.hpp"
 	#include "CfgUral.hpp"
+	#include "CfgSU25-2.hpp"
+
+
 };
 
 
