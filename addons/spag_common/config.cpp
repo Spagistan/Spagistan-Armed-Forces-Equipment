@@ -32,8 +32,7 @@ class CfgPatches
 #include "CfgEventHandlers.hpp"
 #include "CfgModules.hpp"
 
-//#include "CfgVehicles.hpp"
-//#include "CfgArsenal.hpp"
+//#include "CfgVehicles.hpp"//#include "CfgArsenal.hpp"
 
 //#include "CfgSettings.hpp"
 
