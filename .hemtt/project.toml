@@ -4,10 +4,7 @@ prefix = "spag"
 mainprefix = "z"
 
 [version]
-major = 0
-minor = 1
-patch = 0
-build = 0
+git_hash = 0
 
 [files]
 include = [
@@ -19,4 +16,7 @@ include = [
     "LICENSE",
     "spagistan_logo_ca.paa",
     "meta.cpp",
+]
+exclude = [
+    "base_textures/**"
 ]

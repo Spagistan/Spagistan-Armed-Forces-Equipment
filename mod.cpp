@@ -1,6 +1,3 @@
-//launch dev via -mod=@CBA_A3;s\spag
-//100rnd kord belt
-
 name = "Spagistan Armed Forces Equipment";
 picture = "spagistan_logo_ca.paa";
 actionName = "GitHub";
