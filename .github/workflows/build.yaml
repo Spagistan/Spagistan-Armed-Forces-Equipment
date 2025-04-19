@@ -1,5 +1,4 @@
-name: Build
-
+name: Build and Release Arma 3 Mod
 
 on:
   push:
@@ -8,29 +7,59 @@ on:
 
 jobs:
   build:
-    name: Create Release
+    name: Build and Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed to get all history for changelog
+
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
-      - name: Run HEMTT build
+
+      - name: Run HEMTT build (release mode)
         run: hemtt release
+
       - name: Rename build folder
-        run: mv .hemttout/release .hemttout/@spag
-      - name: Upload Artifact
+        run: mv .hemttout/release .hemttout/@safe # Change "yourmodname"
+
+      - name: Zip the mod
+        run: |
+          cd .hemttout
+          zip -r @safe.zip @safe
+
+      - name: Upload Mod Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: safe-${{ github.ref_name }}
-          path: .hemttout/@*
-          include-hidden-files: true
+          name: mod-artifact
+          path: .hemttout/@safe.zip # Upload the zip
+          if-no-files-found: error
+
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: safe-${{ github.ref_name }}
-          path: release-package # Create a directory to download into
+          name: mod-artifact
+          path: release-files
+
+      - name: Get Changelog
+        id: changelog
+        uses: juliangruber/conventional-changelog-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          version: ${{ github.ref_name }} # Use the tag as the version
+          skip-version-file: true
+          output-file: "CHANGELOG.md" #make sure you have a changelog
+      - name: Read Changelog
+        id: read_changelog
+        uses: actions/read-file@v9
+        with:
+          path: "CHANGELOG.md"
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
-          files: release-package/@spag # Adjust the path to the built mod within the downloaded artifact
+          files: release-files/@safe.zip # Path to the zip in downloaded artifact
+          name: ${{ github.ref_name }} # Use tag name as release name
+          body: ${{ steps.read_changelog.contents }}
