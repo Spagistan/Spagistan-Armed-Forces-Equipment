@@ -23,6 +23,7 @@ jobs:
             name: safe-${{ github.ref_name }}
             path: .hemttout/@*
             include-hidden-files: true # Because .hemttout is a hidden directory 
+            
         - name: Relase
           uses: softprops/action-gh-release@v2
           if: github.ref_type == 'tag'
