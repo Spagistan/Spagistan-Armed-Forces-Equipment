@@ -7,24 +7,29 @@ on:
 
 jobs:
   build:
-      name: Create Release
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - name: Setup HEMTT
-          uses: arma-actions/hemtt@v1
-        - name: Run HEMTT build
-          run: hemtt release
-        - name: Rename build folder
-          run: mv .hemttout/release .hemttout/@spag
-        - name: Upload Artifact
-          uses: actions/upload-artifact@v4
-          with:
-            name: safe-${{ github.ref_name }}
-            path: .hemttout/@*
-            include-hidden-files: true # Because .hemttout is a hidden directory 
-        - name: Relase
-          uses: softprops/action-gh-release@v2
-          if: github.ref_type == 'tag'
-          with:
-            files: safe-${{ github.ref_name }}
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT build
+        run: hemtt release
+      - name: Rename build folder
+        run: mv .hemttout/release .hemttout/@spag
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: safe-${{ github.ref_name }}
+          path: .hemttout/@*
+          include-hidden-files: true
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: safe-${{ github.ref_name }}
+          path: release-package # Create a directory to download into
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: release-package/@spag # Adjust the path to the built mod within the downloaded artifact
