@@ -34,6 +34,6 @@ class CfgMods
 		hideName = "true";
 		actionName = "Website";
 		action = "units.arma3.com/unit/spagistan";
-		description = "Issue Tracker: https://github.com/Kalthramis/Spagistan/issues";
+		description = "Issue Tracker: https://github.com/cparadis777/Spagistan-Armed-Forces-Equipment/issues";
 	};
 };
