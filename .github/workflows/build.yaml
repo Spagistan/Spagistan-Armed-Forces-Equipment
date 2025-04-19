@@ -44,7 +44,7 @@ jobs:
 
       - name: Get Changelog
         id: changelog
-        uses: juliangruber/conventional-changelog-action@v1
+        uses: TriPSs/conventional-changelog-action@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ github.ref_name }} # Use the tag as the version
