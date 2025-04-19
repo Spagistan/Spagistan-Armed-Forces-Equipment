@@ -52,7 +52,7 @@ jobs:
           output-file: "CHANGELOG.md" #make sure you have a changelog
       - name: Read Changelog
         id: read_changelog
-        uses: actions/read-file@v9
+        uses: juliangruber/read-file-action@v1
         with:
           path: "CHANGELOG.md"
 
