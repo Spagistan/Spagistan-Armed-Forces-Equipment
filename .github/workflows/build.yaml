@@ -42,20 +42,6 @@ jobs:
           name: mod-artifact
           path: release-files
 
-      - name: Get Changelog
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          version: ${{ github.ref_name }} # Use the tag as the version
-          skip-version-file: true
-          output-file: "CHANGELOG.md" #make sure you have a changelog
-      - name: Read Changelog
-        id: read_changelog
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: "CHANGELOG.md"
-
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
