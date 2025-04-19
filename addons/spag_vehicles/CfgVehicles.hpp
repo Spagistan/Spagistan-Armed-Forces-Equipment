@@ -48,6 +48,7 @@ class CfgVehicles
 	#include "CfgMI8.hpp"
 	#include "CfgSU25.hpp"
 	#include "CfgUral.hpp"
+	#include "CfgYak.hpp"
 };
 
 
