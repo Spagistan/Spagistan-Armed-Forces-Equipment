@@ -20,5 +20,6 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	VEHICLEINVENTORY
 	hiddenselectionstextures[] = {
 		QPATHTOF(data\Yak\cas02_ext01_SAF27),
+        QPATHTOF(data\Yak\cas02_ext02_SAF27),
 	};
 };
