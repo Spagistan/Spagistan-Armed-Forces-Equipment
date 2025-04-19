@@ -1,9 +1,12 @@
 name: Build and Release Arma 3 Mod
 
 on:
-  push:
-    tags:
-      - 'v*'
+  pull_request::
+    branches:
+      - master
+  tags:
+    - v*
+
 
 jobs:
   build:
@@ -31,6 +34,7 @@ jobs:
 
       - name: Upload Mod Artifact
         uses: actions/upload-artifact@v4
+        if: github.ref_type == 'tag'
         with:
           name: mod-artifact
           path: .hemttout/@safe.zip # Upload the zip
@@ -38,6 +42,7 @@ jobs:
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
+        if: github.ref_type == 'tag'
         with:
           name: mod-artifact
           path: release-files
