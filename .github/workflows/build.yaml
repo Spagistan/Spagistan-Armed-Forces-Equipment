@@ -1,8 +1,9 @@
 name: Build
 
 on:
-  pull_request:
-    branches: [master]
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
@@ -20,6 +21,6 @@ jobs:
         - name: Upload Artifact
           uses: actions/upload-artifact@v4
           with:
-            name: safe-${{ github.sha }}
+            name: safe-${{ github.ref_name }}
             path: .hemttout/@*
             include-hidden-files: true # Because .hemttout is a hidden directory 
