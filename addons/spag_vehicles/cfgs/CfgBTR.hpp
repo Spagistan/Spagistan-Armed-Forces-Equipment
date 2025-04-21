@@ -16,7 +16,7 @@ class BTR_Spagpat: rhsgref_cdf_btr60
 	side = 2;
 	author = "RHS/Kalthramis";
 	editorSubcategory = "EdSubcat_APCs";
-	editorCategory = "Spagistan_Catagory";
+	editorCategory = "Spagistan_Category";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";

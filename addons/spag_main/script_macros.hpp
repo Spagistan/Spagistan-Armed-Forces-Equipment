@@ -15,6 +15,23 @@
 #endif
 
 
+
+#ifndef VERSION
+    #define VERSION 0
+#endif
+
+#ifndef VERSION_STR
+    #define VERSION_STR VERSION
+#endif
+
+#ifndef VERSION_AR
+    #define VERSION_AR VERSION
+#endif
+
+#ifndef VERSION_CONFIG
+    #define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION_STR); versionAr[] = {VERSION_AR}
+#endif
+
 // Spagistan Specific
 #define SPAGCAMNAME Spagcam
 #define SPAGFACTION Spag_F

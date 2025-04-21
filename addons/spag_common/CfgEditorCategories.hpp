@@ -1,6 +1,6 @@
 class CfgEditorCategories
 {
-	class Spagistan_Catagory // Category class, you point to it in editorCategory property
+	class Spagistan_Category // Category class, you point to it in editorCategory property
 	{
 		displayName = "Spagistan"; // Name visible in the list
 		faction = "SPAG_F";

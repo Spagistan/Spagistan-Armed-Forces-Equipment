@@ -1,4 +1,3 @@
-#define _ARMA_
 #include "script_component.hpp"
 class CfgPatches
 {
@@ -29,9 +28,7 @@ class CfgPatches
 		author = "Spagistan Development Team";
 		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";
-		version = "1.5.9.1";
-		versionStr = "1.5.9.1";
-		versionAr[] = {1,5,9,1};
+		VERSION_CONFIG;
 	};
 };
 

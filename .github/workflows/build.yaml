@@ -55,4 +55,3 @@ jobs:
         with:
           files: release-files/@safe.zip # Path to the zip in downloaded artifact
           name: ${{ github.ref_name }} # Use tag name as release name
-          body: ${{ steps.read_changelog.contents }}

@@ -1,7 +1,7 @@
 //CfgWeapons -> vests
 
   //please remember to test LODs
-class ItemInfo;
+//class ItemInfo;
 class ItemCore;
 class VestItem;
 class rhssaf_vest_md12_digital;

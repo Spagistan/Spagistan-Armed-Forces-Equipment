@@ -1,3 +1,4 @@
+#include "loadout_macros.hpp"
 
 //SoldierGB
 class I_G_Soldier_base_F;
@@ -51,122 +52,137 @@ class I_G_Soldier_F;
 //[[],[],["rhs_weap_tt33","","","",["rhs_mag_762x25_8",8],[],""],["rhs_uniform_m88_patchless",[]],["rhs_vest_pistol_holster",[["HandGrenade",2,1]]],[],"rhssaf_beret_green","",[],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]]
 class S_Soldier_Base: I_G_Soldier_base_F
 {
-	author = "Kalthramis";
-	/* editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_G_Soldier_F.jpg"; */
-	_generalMacro = "Spagistan_Unit";
-	scope = 2;
-	scopeCurator = 2;
-	side = 2;
-	role = "Rifleman";
-	displayName = "Rifleman";
-	/* hiddenSelections[] = {"Camo", "Insignia"}; */
-	/* hiddenSelectionsTextures[] = {"\A3\Characters_F_Bootcamp\Guerrilla\Data\c_cloth1_kabeiroi_co.paa", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_co.paa"}; */
-	uniformClass = "U_S_Uniform_SPAGPAT";
-	backpack = "S_KitBag_SPAG";
-
-	weapons[] = {"Throw", "Put" };
-	//items[] = { QUOTE(item_xx(ACE_elasticBandage, 20)), QUOTE(item_xx(ACE_quikclot, 20)), "ACE_EarPlugs", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_Epinephrine",	QUOTE(item_xx(ACE_morphine, 4)), QUOTE(item_xx(ACE_Tourniquet, 4)), "ACE_EntrenchingTool" };
-	respawnItems[] = {};
-	//magazines[] = { QUOTE(mag_xx(RHS_30Rnd_545x39_7N22_AK, 20)), QUOTE(mag_xx(RHS_mag_RGO, 4)), QUOTE(mag_xx(RHS_mag_rdg2_black, 10)) };
-	respawnMagazines[] = {};
-	linkedItems[] = { "S_Vest_SPAGPAT", "rhs_1PN138", "S_Helmet_SPAGPAT", "rhs_PDU4", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc148jem", "ItemGPS"};
-	respawnLinkedItems[] = { };
+	BASE_SPAGISTAN_CONFIG
+	backpack = "S_KitBag_SPAG_Rifleman";
+	weapons[] = {
+		"S_weap_ak74m_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	respawnWeapons[] = {
+		"S_weap_ak74m_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	
+	items[] = {
+		"ACE_microDAGR", 
+		ITEM_2("ACE_CableTie"),
+		ITEM_2("ACE_EarPlugs"),
+	};
+	respawnItems[] = {
+		"ACE_microDAGR", 
+		ITEM_2("ACE_CableTie"),
+		ITEM_2("ACE_EarPlugs"),
+	};
+	magazines[] = {
+		ITEM_10("RHS_30Rnd_545x39_7N22_AK"),
+		"rhs_mag_9x18_8_57N181S",
+	};
+	respawnMagazines[] = {
+		ITEM_10("RHS_30Rnd_545x39_7N22_AK"),
+		"rhs_mag_9x18_8_57N181S",
+	};
+	linkedItems[] = {
+		"S_Vest_SPAGPAT", 
+		"rhs_1PN138", 
+		"S_Helmet_SPAGPAT", 
+		"rhs_PDU4", 
+		"ItemMap", 
+		"ItemCompass", 
+		"ItemWatch", 
+		"TFAR_anprc148jem", 
+	};
+	respawnLinkedItems[] = {
+		"S_Vest_SPAGPAT", 
+		"rhs_1PN138", 
+		"S_Helmet_SPAGPAT", 
+		"rhs_PDU4", 
+		"ItemMap", 
+		"ItemCompass", 
+		"ItemWatch", 
+		"TFAR_anprc148jem", 
+	};
 };
 
+/*
 class S_Soldier_Survivor: I_G_Soldier_F {
 	author = "Kalthramis";
-	/* editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_G_Soldier_F.jpg"; */
+	// editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_G_Soldier_F.jpg"; 
 	_generalMacro = "Spagistan_Survivor";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
 	faction = QUOTE(SPAGFACTION);
-	editorCategory = "Spagistan_Catagory";
+	editorCategory = "Spagistan_Category";
 	role = "Soldier";
 	displayName = "Spagistan Soldier";
-	/* nakedUniform = "U_BasicBody";
-	uniformClass = "U_Rangemaster"; */
+	// nakedUniform = "U_BasicBody";
+	//uniformClass = "U_Rangemaster"; 
 	modelSides[] = {0, 1, 2, 3};
 
 	backpack = "";
-/* [[],[],[],["U_BG_Guerilla1_1",[]],[],[],"","",[],["","","","","",""]] */
+// [[],[],[],["U_BG_Guerilla1_1",[]],[],[],"","",[],["","","","","",""]] 
 //[[],[],["rhs_weap_tt33","","","",["rhs_mag_762x25_8",8],[],""],["rhs_uniform_m88_patchless",[]],["rhs_vest_pistol_holster",[["HandGrenade",2,1]]],[],"RHSSAF_beret_green","",[],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]]
 	magazines[] = {};
 	respawnMagazines[] = {};
 	weapons[] = {"Throw", "Put"};
-	/* respawnWeapons[]  */
+	// respawnWeapons[]  
 	items[] = {"ACE_EarPlugs", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_Epinephrine" };
 	respawnItems[] = {};
 	linkedItems[] = {"rhs_PDU4", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc148jem", "ItemGPS"};
 };
+*/
 
-class S_Soldier_PVT: S_Soldier_Survivor {
+
+
+
+class S_Soldier_Rifleman: S_Soldier_Base {
 	rank = "Private";
-	/* add[] = {{"uniform", "rhs_uniform_m88_patchless"}}; */
-	displayName = "Private";
+	role = "Rifleman";
+	displayName = "Rifleman";
 };
 
-class S_Soldier_PFC: S_Soldier_Survivor {
+class S_Soldier_Grenadier: S_Soldier_Base {
 	rank = "Private";
-	displayName = "Private First Class";
+	displayName = "Grenadier";
 };
 
-class S_Soldier_CPL: S_Soldier_Survivor {
+class S_Soldier_CLS: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Combat Life Saver";
+};
+
+class S_Soldier_AR: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Automatic Rifleman";
+};
+
+class S_Soldier_TL: S_Soldier_Base {
 	rank = "Corporal";
-	displayName = "Corporal";
+	displayName = "Team Leader";
 };
 
-class S_Soldier_SGT: S_Soldier_Survivor {
+class S_Soldier_SL: S_Soldier_Base {
 	rank = "Sergeant";
-	displayName = "Sergeant";
+	displayName = "Squad Leader";
 };
 
-class S_Soldier_SSG: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Staff Sergeant";
-};
-
-class S_Soldier_SFC: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Sergeant first Class";
-};
-
-class S_Soldier_MSG: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Master Sergeant";
-};
-
-class S_Soldier_SGM: S_Soldier_Survivor {
-	rank = "Sergeant";
-	displayName = "Sergeant Major";
-};
-
-class S_Soldier_2LT: S_Soldier_Survivor {
+class S_Soldier_PL: S_Soldier_Base {
 	rank = "Lieutenant";
-	displayName = "Second Lieutenant";
+	displayName = "Platoon Leader";
 };
 
-class S_Soldier_1LT: S_Soldier_Survivor {
-	rank = "Lieutenant";
-	displayName = "First Lieutenant";
+class S_Soldier_PLM: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Platoon Medic";
 };
 
-class S_Soldier_CPT: S_Soldier_Survivor {
-	rank = "Captain";
-	displayName = "Captain";
+class S_Soldier_Armor: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Armor Crewman";
 };
 
-class S_Soldier_MAJ: S_Soldier_Survivor {
-	rank = "Major";
-	displayName = "Major";
+class S_Soldier_Pilot: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Air Crewman";
 };
 
-class S_Soldier_COL: S_Soldier_Survivor {
-	rank = "Colonel";
-	displayName = "Colonel";
-};
-
-class S_Soldier_GEN: S_Soldier_Survivor {
-	rank = "Colonel";
-	displayName = "General";
-};

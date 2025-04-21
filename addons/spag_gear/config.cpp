@@ -1,19 +1,15 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.98
-//https://mikero.bytex.digital/Downloads
-//'now' is Thu Jan 23 18:11:58 2025 : 'file' last modified on Wed Jan 22 17:40:24 2025
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-#include "\z\spag\addons\gear\script_component.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
 	class spag_gear
 	{
 		name = "gear";
-		units[] = {"TFAR_SPAG_mr3000","S_KitBag_Spag"};
+		units[] = {
+			"TFAR_SPAG_mr3000",
+			"S_KitBag_Spag",
+			"S_KitBag_Rifleman",
+			};
 		weapons[] = {
 			"S_Helmet_SPAGPAT",
 			"S_Helmet_SPAGPAT_black_ess",
@@ -29,11 +25,8 @@ class CfgPatches
 		author = "Spagistan Development Team";
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
-		version = "1.5.9.1";
-		versionStr = "1.5.9.1";
-		versionAr[] = {1,5,9,1};
+		VERSION_CONFIG;
 	};
 };
-
-#include "Vehicles.hpp"
-#include "Weapons.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"

@@ -41,16 +41,7 @@
 
 class CfgVehicles 
 {
-	#include "CfgBMP.hpp"
-	#include "CfgBTR.hpp"
-	#include "CfgHmmwv.hpp"
-	#include "CfgM113.hpp"
-	#include "CfgMI8.hpp"
-	#include "CfgSU25.hpp"
-	#include "CfgUral.hpp"
-	#include "CfgYak.hpp"
-	#include "CfgSU25-2.hpp"
-
+	#include "cfgs\CfgVehicles.hpp"
 
 };
 
