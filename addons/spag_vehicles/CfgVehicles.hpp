@@ -41,7 +41,7 @@
 
 class CfgVehicles 
 {
-	#include "cfgs/CfgVehicles.hpp"
+	#include "cfgs\CfgVehicles.hpp"
 
 };
 

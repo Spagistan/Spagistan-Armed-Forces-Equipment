@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.98
-//https://mikero.bytex.digital/Downloads
-//'now' is Thu Jan 23 18:12:29 2025 : 'file' last modified on Wed Jan 22 17:40:24 2025
-////////////////////////////////////////////////////////////////////
-#include "script_component.hpp"
-
-#define _ARMA_
 
 class CfgPatches {
 	class spag_main {
@@ -17,7 +8,6 @@ class CfgPatches {
 		requiredAddons[] = {};
 		author = "Spagistan Development Team";
 		url = "units.arma3.com/unit/spagistan";
-		VERSION_CONFIG;
 	};
 };
 
