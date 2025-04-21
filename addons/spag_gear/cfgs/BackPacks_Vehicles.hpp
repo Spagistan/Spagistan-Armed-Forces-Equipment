@@ -22,7 +22,7 @@ class TFAR_SPAG_mr3000: TFAR_mr3000
   side = 2;
   scopeArsenal = 2;
   author = "Taepodong/Kalthramis";
-  displayName = "MR3000 BWMOD [SPAGPAT]";
+  displayName = "MR3000 BWMOD (Spagpat)";
   descriptionShort = "Spagistan-camo LR Radio";
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAGPAT_ca) };
 };
