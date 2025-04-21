@@ -56,7 +56,6 @@ class S_KitBag_Spag_Rifleman: S_KitBag_Spag
   class TransportWeapons {
     weap_xx(ACE_MapTools,1);
     weap_xx(ACE_EntrenchingTool,1);
-    weap_xx(ACE_Fortify,1);
   };
 
   class TransportItems {
