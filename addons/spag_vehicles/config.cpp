@@ -1,4 +1,3 @@
-#define _ARMA_
 #include "script_component.hpp"
 class CfgPatches
 {

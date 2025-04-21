@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.98
-//https://mikero.bytex.digital/Downloads
-//'now' is Tue Jan 28 17:05:51 2025 : 'file' last modified on Mon Oct 21 04:01:46 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class APR_GLSMOKE_Deflection

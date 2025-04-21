@@ -1,11 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.98
-//https://mikero.bytex.digital/Downloads
-//'now' is Thu Jan 23 18:12:07 2025 : 'file' last modified on Wed Jan 22 17:40:24 2025
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
 #include "\z\spag\addons\factions\script_component.hpp"
 
 class CfgPatches

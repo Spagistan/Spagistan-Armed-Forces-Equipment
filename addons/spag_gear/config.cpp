@@ -24,7 +24,7 @@ class CfgPatches
 		author = "Spagistan Development Team";
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
-		//VERSION_CONFIG;
+		VERSION_CONFIG;
 	};
 };
 #include "CfgWeapons.hpp"

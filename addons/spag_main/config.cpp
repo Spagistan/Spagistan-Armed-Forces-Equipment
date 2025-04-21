@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 
 class CfgPatches {
 	class spag_main {
@@ -8,6 +9,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 		author = "Spagistan Development Team";
 		url = "units.arma3.com/unit/spagistan";
+		VERSION_CONFIG;
 	};
 };
 
