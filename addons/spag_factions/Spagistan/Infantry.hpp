@@ -139,50 +139,70 @@ class S_Soldier_Rifleman: S_Soldier_Base {
 	rank = "Private";
 	role = "Rifleman";
 	displayName = "Rifleman";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_Grenadier: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Grenadier";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_CLS: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Combat Life Saver";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_AR: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Automatic Rifleman";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_TL: S_Soldier_Base {
 	rank = "Corporal";
 	displayName = "Team Leader";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_SL: S_Soldier_Base {
 	rank = "Sergeant";
 	displayName = "Squad Leader";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_PL: S_Soldier_Base {
 	rank = "Lieutenant";
 	displayName = "Platoon Leader";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_PLM: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Platoon Medic";
+	scope = 2;
+    scopeCurator = 2;
 };
 
 class S_Soldier_Armor: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Armor Crewman";
+	scope = 2;	
+    scopeCurator = 2;
 };
 
 class S_Soldier_Pilot: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Air Crewman";
+	scope = 2;
+    scopeCurator = 2;
 };
 
