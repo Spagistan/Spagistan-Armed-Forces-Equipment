@@ -135,72 +135,54 @@ class S_Soldier_Survivor: I_G_Soldier_F {
 
 
 
-class S_Soldier_PVT: S_Soldier_Base {
+class S_Soldier_Rifleman: S_Soldier_Base {
+	rank = "Private";
 	role = "Rifleman";
 	displayName = "Rifleman";
 };
 
-class S_Soldier_PFC: S_Soldier_Base {
+class S_Soldier_Grenadier: S_Soldier_Base {
 	rank = "Private";
-	displayName = "Private First Class";
+	displayName = "Grenadier";
 };
 
-class S_Soldier_CPL: S_Soldier_Base {
+class S_Soldier_CLS: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Combat Life Saver";
+};
+
+class S_Soldier_AR: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Automatic Rifleman";
+};
+
+class S_Soldier_TL: S_Soldier_Base {
 	rank = "Corporal";
-	displayName = "Corporal";
+	displayName = "Team Leader";
 };
 
-class S_Soldier_SGT: S_Soldier_Base {
+class S_Soldier_SL: S_Soldier_Base {
 	rank = "Sergeant";
-	displayName = "Sergeant";
+	displayName = "Squad Leader";
 };
 
-class S_Soldier_SSG: S_Soldier_Base {
-	rank = "Sergeant";
-	displayName = "Staff Sergeant";
-};
-
-class S_Soldier_SFC: S_Soldier_Base {
-	rank = "Sergeant";
-	displayName = "Sergeant first Class";
-};
-
-class S_Soldier_MSG: S_Soldier_Base {
-	rank = "Sergeant";
-	displayName = "Master Sergeant";
-};
-
-class S_Soldier_SGM: S_Soldier_Base {
-	rank = "Sergeant";
-	displayName = "Sergeant Major";
-};
-
-class S_Soldier_2LT: S_Soldier_Base {
+class S_Soldier_PL: S_Soldier_Base {
 	rank = "Lieutenant";
-	displayName = "Second Lieutenant";
+	displayName = "Platoon Leader";
 };
 
-class S_Soldier_1LT: S_Soldier_Base {
-	rank = "Lieutenant";
-	displayName = "First Lieutenant";
+class S_Soldier_PLM: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Platoon Medic";
 };
 
-class S_Soldier_CPT: S_Soldier_Base {
-	rank = "Captain";
-	displayName = "Captain";
+class S_Soldier_Armor: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Armor Crewman";
 };
 
-class S_Soldier_MAJ: S_Soldier_Base {
-	rank = "Major";
-	displayName = "Major";
+class S_Soldier_Pilot: S_Soldier_Base {
+	rank = "Private";
+	displayName = "Air Crewman";
 };
 
-class S_Soldier_COL: S_Soldier_Base {
-	rank = "Colonel";
-	displayName = "Colonel";
-};
-
-class S_Soldier_GEN: S_Soldier_Base {
-	rank = "Colonel";
-	displayName = "General";
-};
