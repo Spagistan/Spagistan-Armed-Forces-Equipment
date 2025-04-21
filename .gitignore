@@ -3,4 +3,6 @@
 releases
 hemtt
 hemtt.exe
+keys/*.biprivatekey
 *.biprivatekey
+.vscode
