@@ -29,11 +29,9 @@ class CfgPatches
 		author = "Spagistan Development Team";
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
-		version = "1.5.9.1";
-		versionStr = "1.5.9.1";
-		versionAr[] = {1,5,9,1};
+		VERSION_CONFIG;
 	};
 };
 
-#include "Vehicles.hpp"
-#include "Weapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

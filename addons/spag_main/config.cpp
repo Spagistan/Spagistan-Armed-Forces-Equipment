@@ -6,11 +6,10 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#include "script_component.hpp"
 
-class CfgPatches
-{
-	class spag_main
-	{
+class CfgPatches {
+	class spag_main {
 		name = "main";
 		units[] = {};
 		weapons[] = {};
@@ -18,15 +17,12 @@ class CfgPatches
 		requiredAddons[] = {};
 		author = "Spagistan Development Team";
 		url = "units.arma3.com/unit/spagistan";
-		version = "1.5.9.1";
-		versionStr = "1.5.9.1";
-		versionAr[] = {1,5,9,1};
+		VERSION_CONFIG;
 	};
 };
-class CfgMods
-{
-	class spag
-	{
+
+class CfgMods {
+	class spag {
 		dir = "@spag";
 		name = "Spagistan Offical Modpack";
 		picture = "";

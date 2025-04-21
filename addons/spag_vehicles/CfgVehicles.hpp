@@ -49,7 +49,7 @@ class CfgVehicles
 	#include "CfgSU25.hpp"
 	#include "CfgUral.hpp"
 	#include "CfgYak.hpp"
-	#include "CfgSU25-2.hpp"
+	//#include "CfgSU25-2.hpp"
 
 
 };
