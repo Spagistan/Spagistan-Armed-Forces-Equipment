@@ -7,7 +7,8 @@ class CfgPatches
 		name = "gear";
 		units[] = {
 			"TFAR_SPAG_mr3000",
-			"S_KitBag_Spag"
+			"S_KitBag_Spag",
+			"S_KitBag_Rifleman",
 			};
 		weapons[] = {
 			"S_Helmet_SPAGPAT",

@@ -1,3 +1,4 @@
+#include "loadout_macros.hpp"
 
 //SoldierGB
 class I_G_Soldier_base_F;
@@ -51,28 +52,55 @@ class I_G_Soldier_F;
 //[[],[],["rhs_weap_tt33","","","",["rhs_mag_762x25_8",8],[],""],["rhs_uniform_m88_patchless",[]],["rhs_vest_pistol_holster",[["HandGrenade",2,1]]],[],"rhssaf_beret_green","",[],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]]
 class S_Soldier_Base: I_G_Soldier_base_F
 {
-	author = "Kalthramis, CParadis";
-	/* editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_G_Soldier_F.jpg"; */
-	_generalMacro = "Spagistan_Unit";
-	scope = 2;
-	scopeCurator = 2;
-	faction = QUOTE(SPAGFACTION);
-	editorCategory = "Spagistan_Category";
-	side = 2;
-	role = "Rifleman";
-	displayName = "Rifleman";
-	/* hiddenSelections[] = {"Camo", "Insignia"}; */
-	/* hiddenSelectionsTextures[] = {"\A3\Characters_F_Bootcamp\Guerrilla\Data\c_cloth1_kabeiroi_co.paa", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_co.paa"}; */
-	uniformClass = "U_S_Uniform_SPAGPAT";
-	backpack = "S_KitBag_SPAG";
-
-	weapons[] = {"Throw", "Put" };
-	items[] = { QUOTE(item_xx(ACE_elasticBandage, 20)), QUOTE(item_xx(ACE_quikclot, 20)), "ACE_EarPlugs", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_Epinephrine",	QUOTE(item_xx(ACE_morphine, 4)), QUOTE(item_xx(ACE_Tourniquet, 4)), "ACE_EntrenchingTool" };
-	respawnItems[] = {};
-	magazines[] = { QUOTE(mag_xx(RHS_30Rnd_545x39_7N22_AK, 20)), QUOTE(mag_xx(RHS_mag_RGO, 4)), QUOTE(mag_xx(RHS_mag_rdg2_black, 10)) };
-	respawnMagazines[] = {};
-	linkedItems[] = { "S_Vest_SPAGPAT", "rhs_1PN138", "S_Helmet_SPAGPAT", "rhs_PDU4", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc148jem", "ItemGPS"};
-	respawnLinkedItems[] = { };
+	BASE_SPAGISTAN_CONFIG
+	backpack = "S_KitBag_SPAG_Rifleman";
+	weapons[] = {
+		"S_weap_ak74m_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	respawnWeapons[] = {
+		"S_weap_ak74m_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	
+	items[] = {
+		"ACE_microDAGR", 
+		ITEM_2("ACE_CableTie"),
+		ITEM_2("ACE_EarPlugs"),
+	};
+	respawnItems[] = {
+		"ACE_microDAGR", 
+		ITEM_2("ACE_CableTie"),
+		ITEM_2("ACE_EarPlugs"),
+	};
+	magazines[] = {
+		ITEM_10("RHS_30Rnd_545x39_7N22_AK"),
+		"rhs_mag_9x18_8_57N181S",
+	};
+	respawnMagazines[] = {
+		ITEM_10("RHS_30Rnd_545x39_7N22_AK"),
+		"rhs_mag_9x18_8_57N181S",
+	};
+	linkedItems[] = {
+		"S_Vest_SPAGPAT", 
+		"rhs_1PN138", 
+		"S_Helmet_SPAGPAT", 
+		"rhs_PDU4", 
+		"ItemMap", 
+		"ItemCompass", 
+		"ItemWatch", 
+		"TFAR_anprc148jem", 
+	};
+	respawnLinkedItems[] = {
+		"S_Vest_SPAGPAT", 
+		"rhs_1PN138", 
+		"S_Helmet_SPAGPAT", 
+		"rhs_PDU4", 
+		"ItemMap", 
+		"ItemCompass", 
+		"ItemWatch", 
+		"TFAR_anprc148jem", 
+	};
 };
 
 /*
@@ -104,9 +132,12 @@ class S_Soldier_Survivor: I_G_Soldier_F {
 };
 */
 
+
+
+
 class S_Soldier_PVT: S_Soldier_Base {
-	rank = "Private";
-	displayName = "Private";
+	role = "Rifleman";
+	displayName = "Rifleman";
 };
 
 class S_Soldier_PFC: S_Soldier_Base {
