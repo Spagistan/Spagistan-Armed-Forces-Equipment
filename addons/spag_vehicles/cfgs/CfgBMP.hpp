@@ -21,7 +21,7 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 	scopeCurator = 2;
 	side = 2;
 	author = "RHS/Kalthramis";
-	editorCategory = "Spagistan_Catagory";
+	editorCategory = "Spagistan_Category";
 	editorSubcategory = "EdSubcat_APCs";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;

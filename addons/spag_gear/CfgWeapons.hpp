@@ -1,6 +1,6 @@
 //Config Bases
 class CfgWeapons {
-	#include "Hats_Weapons.hpp"
-	#include "Vests_Weapons.hpp"
-	#include "Uniforms_Weapons.hpp"
+	#include "hats/Hats_Weapons.hpp"
+	#include "vests/Vests_Weapons.hpp"
+	#include "uniforms/Uniforms_Weapons.hpp"
 };

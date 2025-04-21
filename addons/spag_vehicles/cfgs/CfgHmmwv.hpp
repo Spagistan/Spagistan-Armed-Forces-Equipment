@@ -8,7 +8,7 @@
 scopeCurator = 2;\
 side = 2;\
 author = "RHS/Kalthramis";\
-editorCategory = "Spagistan_Catagory";\
+editorCategory = "Spagistan_Category";\
 faction = QUOTE(SPAGFACTION);\
 tf_hasLRradio = 1;\
 tf_RadioType = "TFAR_anprc155_coyote";\

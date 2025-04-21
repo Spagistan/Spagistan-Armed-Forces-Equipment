@@ -8,7 +8,7 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	scopeCurator = 2;
 	side = 2;
 	author = "RHS/Aidan";
-	editorCategory = "Spagistan_Catagory";
+	editorCategory = "Spagistan_Category";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";

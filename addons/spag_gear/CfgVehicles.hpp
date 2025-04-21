@@ -18,9 +18,9 @@ class CfgVehicles
   //  BACKWARDS COMPATIBILITY
   class spagbag: S_KitBag_Spag	{ scope = 1; scopeArsenal = 1; }; */
 
-  #include "BackPacks_Vehicles.hpp"
-  #include "Hats_Vehicles.hpp"
-  #include "Uniforms_Vehicles.hpp"
-  #include "Vests_Vehicles.hpp"
+  #include "backpacks/BackPacks_Vehicles.hpp"
+  #include "hats/Hats_Vehicles.hpp"
+  #include "uniforms/Uniforms_Vehicles.hpp"
+  #include "vests/Vests_Vehicles.hpp"
   
 };
