@@ -1,19 +1,5 @@
-//CfgVehicles -> Backpacks
 class TFAR_mr3000;
 class B_Kitbag_rgr;
-
-//HiddenSelectionsTextures[] =
-//c1 setObjectTexture [0, "#(rgb,8,8,3)color(0,0,1,1)"]
-//0{"rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa",   YES
-//1"rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa",  //inside
-//2"rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_D_co.paa", //wheels
-//3"rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa",
-//4"rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa",
-//5"rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa",
-//6"rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa",
-//7"rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", //outside
-//8"rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa",
-//9"rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"};
 
 class TFAR_SPAG_mr3000: TFAR_mr3000
 {
@@ -40,7 +26,6 @@ class S_KitBag_Spag: B_Kitbag_rgr
   /* maximumLoad = 280;
   mass = 50; */
 };
-
 
 class S_KitBag_Spag_Rifleman: S_KitBag_Spag
 {
