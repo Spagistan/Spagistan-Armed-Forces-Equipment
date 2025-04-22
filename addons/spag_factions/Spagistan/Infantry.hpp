@@ -155,6 +155,7 @@ class S_Soldier_CLS: S_Soldier_Base {
 	displayName = "Combat Life Saver";
 	scope = 2;
     scopeCurator = 2;
+	attendant = 1;
 };
 
 class S_Soldier_AR: S_Soldier_Base {
@@ -176,6 +177,7 @@ class S_Soldier_SL: S_Soldier_Base {
 	displayName = "Squad Leader";
 	scope = 2;
     scopeCurator = 2;
+	backpack = "TFAR_SPAG_mr3000_SL";
 };
 
 class S_Soldier_PL: S_Soldier_Base {
@@ -183,6 +185,8 @@ class S_Soldier_PL: S_Soldier_Base {
 	displayName = "Platoon Leader";
 	scope = 2;
     scopeCurator = 2;
+	backpack = "TFAR_SPAG_mr3000_SL";
+
 };
 
 class S_Soldier_PLM: S_Soldier_Base {
@@ -190,13 +194,16 @@ class S_Soldier_PLM: S_Soldier_Base {
 	displayName = "Platoon Medic";
 	scope = 2;
     scopeCurator = 2;
+	attendant = 1;
 };
 
 class S_Soldier_Armor: S_Soldier_Base {
 	rank = "Private";
 	displayName = "Armor Crewman";
-	scope = 2;	
+	scope = 2;
     scopeCurator = 2;
+	engineer = 1;	
+
 };
 
 class S_Soldier_Pilot: S_Soldier_Base {
@@ -204,5 +211,7 @@ class S_Soldier_Pilot: S_Soldier_Base {
 	displayName = "Air Crewman";
 	scope = 2;
     scopeCurator = 2;
+	engineer = 1;
+
 };
 
