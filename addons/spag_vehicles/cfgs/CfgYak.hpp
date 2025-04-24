@@ -7,7 +7,7 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
-	author = "RHS/Aidan";
+	author = "A. Dan";
 	editorCategory = "Spagistan_Category";
 	faction = QUOTE(SPAGFACTION);
 	tf_hasLRradio = 1;
@@ -21,5 +21,16 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	hiddenselectionstextures[] = {
 		QPATHTOF(data\Yak\cas02_ext01_SAF27),
         QPATHTOF(data\Yak\cas02_ext02_SAF27),
+	};
+	class textureSources {
+		class clown {
+			displayName = "Clown";
+			author = "A. Dan";
+			textures[] = {
+				QPATHTOF(data\Yak\cas02_ext01_clown),
+				QPATHTOF(data\Yak\cas02_ext02_clown), 
+			};
+			factions[] = {QUOTE(SPAGFACTION)};
+		};
 	};
 };

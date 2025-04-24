@@ -1,8 +1,8 @@
 #define BASE_SPAGISTAN_CONFIG\
     author = "CParadis";\
     _generalMacro = "Spagistan_Unit";\
-    scope = 2;\
-    scopeCurator = 2;\
+    scope = 1;\
+    scopeCurator = 1;\
     faction = QUOTE(SPAGFACTION);\
     editorCategory = "Spagistan_Category";\
     side = 2;\
