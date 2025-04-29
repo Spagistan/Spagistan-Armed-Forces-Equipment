@@ -27,7 +27,9 @@ class CfgPatches
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
 		VERSION_CONFIG;
+		
 	};
 };
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+
