@@ -12,6 +12,17 @@ class TFAR_SPAG_mr3000: TFAR_mr3000
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAGPAT_ca) };
 };
 
+class TFAR_SPAG_Air_mr3000: TFAR_mr3000
+{
+  scope = 2;
+  side = 2;
+  scopeArsenal = 2;
+  author = "Taepodong/Kalthramis";
+  displayName = "MR3000 BWMOD (Spagpat - Air)";
+  descriptionShort = "Spagistan air camo LR Radio";
+  hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAIRPAT_ca) };
+};
+
 class S_KitBag_Spag: B_Kitbag_rgr
 {
   scope = 2;
