@@ -7,6 +7,7 @@ class CfgPatches
 		name = "gear";
 		units[] = {
 			"TFAR_SPAG_mr3000",
+			"TFAR_SPAG_Air_mr3000",
 			"S_KitBag_Spag",
 			"S_KitBag_Rifleman",
 			"TFAR_SPAG_mr3000_SL",
