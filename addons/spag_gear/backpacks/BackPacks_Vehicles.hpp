@@ -1,5 +1,6 @@
 class TFAR_mr3000;
 class B_Kitbag_rgr;
+class rhssaf_kitbag_digital;
 
 class TFAR_SPAG_mr3000: TFAR_mr3000
 {
@@ -96,5 +97,38 @@ class TFAR_SPAG_mr3000_SL : TFAR_SPAG_mr3000 {
       item_xx(murshun_cigs_lighter,1);
     };
 };
+
+
+// National Guard Backpacks
+
+class NG_KitBag_Rifleman : rhssaf_kitbag_digital {
+  author = "CParadis/Aidan";
+  scope = 1;
+  scopeArsenal = 1;
+  generalMacro = "NG_KitBag_Rifleman";
+
+    class TransportMagazines {
+      mag_xx(rhssaf_mag_br_m75,5);
+      mag_xx(rhssaf_mag_brd_m83_white,5);
+    };
+    class TransportWeapons {
+      weap_xx(ACE_MapTools,1);
+      weap_xx(ACE_EntrenchingTool,1);
+    };
+
+    class TransportItems {
+      item_xx(ACE_elasticBandage,30);
+      item_xx(ACE_morphine,4);
+      item_xx(ACE_epinephrine,4);
+      item_xx(ACE_splint,4);
+      item_xx(ACE_tourniquet,4);
+      item_xx(ACE_Flashlight_XL50,1);
+      item_xx(acex_intelitems_notepad,1);
+      item_xx(murshun_cigs_cigpack,1);
+      item_xx(murshun_cigs_lighter,1);
+    };
+};
+
+
 //  BACKWARDS COMPATIBILITY
 class spagbag: S_KitBag_Spag	{ displayName = "(DEPRECATED) Kitbag (Spagpat)"; scope = 1; side = 2; scopeArsenal = 1; };
