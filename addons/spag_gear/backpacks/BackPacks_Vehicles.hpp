@@ -96,5 +96,9 @@ class TFAR_SPAG_mr3000_SL : TFAR_SPAG_mr3000 {
       item_xx(murshun_cigs_lighter,1);
     };
 };
+
+
+
+
 //  BACKWARDS COMPATIBILITY
 class spagbag: S_KitBag_Spag	{ displayName = "(DEPRECATED) Kitbag (Spagpat)"; scope = 1; side = 2; scopeArsenal = 1; };
