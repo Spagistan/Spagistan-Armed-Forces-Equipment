@@ -72,6 +72,14 @@ class S_Soldier_Grenadier: S_Soldier_Base {
 	displayName = "Grenadier";
 	scope = 2;
     scopeCurator = 2;
+	weapons[] = {
+		"S_weap_ak74m_gp25_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	respawnWeapons[] = {
+		"S_weap_ak74m_gp25_ip78",
+		"rhs_weap_makarov_pm"
+	};
 };
 
 class S_Soldier_CLS: S_Soldier_Base {
@@ -87,6 +95,15 @@ class S_Soldier_AR: S_Soldier_Base {
 	displayName = "Automatic Rifleman";
 	scope = 2;
     scopeCurator = 2;
+
+	weapons[] = {
+		"S_weap_rpk_ip78",
+		"rhs_weap_makarov_pm"
+	};
+	respawnWeapons[] = {
+		"S_weap_rpk_ip78",
+		"rhs_weap_makarov_pm"
+	};
 };
 
 class S_Soldier_TL: S_Soldier_Base {
