@@ -5,7 +5,7 @@ class NG_Soldier_Base: I_G_Soldier_base_F
     author = "CParadis/Aidan";
     _generalMacro = "Spagistan_Unit";
     faction = QUOTE(NGFACTION);
-    editorCategory = "Spagistan_Category";
+    editorCategory = "Spagistan_NG_Category";
     side = 2;
     uniformClass = "U_S_Uniform_SPAGPAT";
     rank = "Private";
@@ -64,7 +64,7 @@ class NG_Soldier_Rifleman: NG_Soldier_Base {
     rank = "Private";
     role = "Rifleman";
     displayName = "Rifleman";
-    backpack = "NG_KitBag_Rifleman";
+    backpack = "NG_KitBag_RF";
     weapons[] = {
         "S_weap_ak74m_ip78",
         "rhs_weap_makarov_pm",
@@ -83,19 +83,19 @@ class NG_Soldier_Grenadier: NG_Soldier_Base {
     scope = 2;
     scopeCurator = 2;
     rank = "Private";
-    role = "Rifleman";
-    displayName = "Rifleman";
-    backpack = "NG_KitBag_Rifleman";
-    // Add GP25 AK74
+    role = "Grenadier";
+    displayName = "Grenadier";
+    backpack = "NG_KitBag_GR";
     weapons[] = {
-        "S_weap_ak74m_ip78",
+        "S_weap_ak74m_gp25_ip78",
         "rhs_weap_makarov_pm",
     };
 
     respawnWeapons[] = {
-        "S_weap_ak74m_ip78",
+        "SS_weap_ak74m_gp25_ip78",
         "rhs_weap_makarov_pm",
     };
+
 
 };
 
@@ -105,16 +105,25 @@ class NG_Soldier_AR: NG_Soldier_Base {
     rank = "Private";
     role = "Automatic Rifleman";
     displayName = "Automatic Rifleman";
-    backpack = "NG_KitBag_Rifleman";
+    backpack = "NG_KitBag_AR";
     // Add RPK74m
     weapons[] = {
-        "S_weap_ak74m_ip78",
+        "S_weap_rpk_ip78",
         "rhs_weap_makarov_pm",
     };
 
     respawnWeapons[] = {
-        "S_weap_ak74m_ip78",
+        "S_weap_rpk_ip78",
         "rhs_weap_makarov_pm",
+    };
+
+    magazines[] = {
+        ITEM_10("rhs_60Rnd_545X39_7N10_AK"),
+        "rhs_mag_9x18_8_57N181S",
+    };
+    respawnMagazines[] = {
+        ITEM_10("rhs_60Rnd_545X39_7N10_AK"),
+        "rhs_mag_9x18_8_57N181S",
     };
 
 };
@@ -125,7 +134,10 @@ class NG_Soldier_TeamLeader: NG_Soldier_Base {
     rank = "Corporal";
     role = "Team Leader";
     displayName = "Team Leader";
-    backpack = "NG_KitBag_Rifleman";
+    backpack = "NG_KitBag_TL";
+	attendant = 1;
+
+
 
     linkedItems[] = {
         "rhssaf_vest_md12_digital",
