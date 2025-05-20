@@ -36,3 +36,4 @@
 #define SPAGCAMNAME Spagcam
 #define SPAGFACTION Spag_F
 #define NGFACTION Spag_NG
+#define GCFACTION Spag_GC

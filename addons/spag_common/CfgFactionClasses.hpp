@@ -17,6 +17,17 @@ class CfgFactionClasses
 		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
 		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
 	 };
+	
+	class SPAG_GC
+	 {
+		displayName = "Spagistan Garmsar Cadets";
+		priority = 7;
+		side = 2;
+		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
+		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
+	 };
+
+	 
 };
 
 

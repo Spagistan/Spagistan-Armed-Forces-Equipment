@@ -1,3 +1,7 @@
 class cfgGroups {
-    #include "NationalGuard/groups.hpp"
+    class Indep  {
+        #include "NationalGuard/groups.hpp"
+        #include "Spagistan/groups.hpp"
+        #include "GarmsarCadet/groups.hpp"
+    };
 };
