@@ -9,37 +9,11 @@ class S_Soldier_Armor_OCimport_01 : S_Soldier_Armor { scope = 0; class EventHand
 class S_Soldier_Armor_OCimport_02 : S_Soldier_Armor_OCimport_01 { class EventHandlers; };
 
 class ua_chvk_afr_ural_ammo;
-class ua_chvk_afr_ural_ammo_OCimport_01 : ua_chvk_afr_ural_ammo { scope = 0; class EventHandlers; };
-class ua_chvk_afr_ural_ammo_OCimport_02 : ua_chvk_afr_ural_ammo_OCimport_01 { scope = 0; class EventHandlers; };
-
 class ua_chvk_afr_ural_fuel;
-class ua_chvk_afr_ural_fuel_OCimport_01 : ua_chvk_afr_ural_fuel { scope = 0; class EventHandlers; };
-class ua_chvk_afr_ural_fuel_OCimport_02 : ua_chvk_afr_ural_fuel_OCimport_01 { scope = 0; class EventHandlers; };
-
 class ua_chvk_afr_ural_repair;
-class ua_chvk_afr_ural_repair_OCimport_01 : ua_chvk_afr_ural_repair { scope = 0; class EventHandlers; };
-class ua_chvk_afr_ural_repair_OCimport_02 : ua_chvk_afr_ural_repair_OCimport_01 { scope = 0; class EventHandlers; };
-
 class ua_chvk_afr_ural_open;
-class ua_chvk_afr_ural_open_OCimport_01 : ua_chvk_afr_ural_open { scope = 0; class EventHandlers; class Turrets; };
-class ua_chvk_afr_ural_open_OCimport_02 : ua_chvk_afr_ural_open_OCimport_01 { 
-    class EventHandlers; 
-    class Turrets : Turrets {
-        class CargoTurret_01;
-        class CargoTurret_02;
-        class CargoTurret_03;
-        class CargoTurret_04;
-    };
-};
 
 class ua_chvk_afr_2b14;
-class ua_chvk_afr_2b14_OCimport_01 : ua_chvk_afr_2b14 { scope = 0; class EventHandlers; class Turrets; };
-class ua_chvk_afr_2b14_OCimport_02 : ua_chvk_afr_2b14_OCimport_01 { 
-    class EventHandlers; 
-    class Turrets : Turrets {
-        class MainTurret;
-    };
-};
 
 class I_SPAGF_Garmsar_Sergeant_01 : S_Soldier_SL_OCimport_02 {
     author = "Canadian";
@@ -202,7 +176,7 @@ class I_SPAGF_Garmsar_Gunner_Boy_01 : I_SPAGF_Garmsar_Driving_Boy_01 {
 
 };
 
-class I_SPAGF_Garmsar_Ammo_Truck_01 : ua_chvk_afr_ural_ammo_OCimport_02 {
+class I_SPAGF_Garmsar_Ammo_Truck_01 : ua_chvk_afr_ural_ammo {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -227,7 +201,7 @@ class I_SPAGF_Garmsar_Ammo_Truck_01 : ua_chvk_afr_ural_ammo_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Fuel_Truck_01 : ua_chvk_afr_ural_fuel_OCimport_02 {
+class I_SPAGF_Garmsar_Fuel_Truck_01 : ua_chvk_afr_ural_fuel {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -252,7 +226,7 @@ class I_SPAGF_Garmsar_Fuel_Truck_01 : ua_chvk_afr_ural_fuel_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Repair_Truck_01 : ua_chvk_afr_ural_repair_OCimport_02 {
+class I_SPAGF_Garmsar_Repair_Truck_01 : ua_chvk_afr_ural_repair {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -277,7 +251,7 @@ class I_SPAGF_Garmsar_Repair_Truck_01 : ua_chvk_afr_ural_repair_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Boys_Truck_01 : ua_chvk_afr_ural_open_OCimport_02 {
+class I_SPAGF_Garmsar_Boys_Truck_01 : ua_chvk_afr_ural_open {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -286,14 +260,6 @@ class I_SPAGF_Garmsar_Boys_Truck_01 : ua_chvk_afr_ural_open_OCimport_02 {
     faction = QUOTE(GCFACTION);
     crew = "I_SPAGF_Garmsar_Driving_Boy_01";
     editorCategory = "Spagistan_GC_Category";
-    class Turrets : Turrets {
-        class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
-        class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-        class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
-        class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
-    };
-
-
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
