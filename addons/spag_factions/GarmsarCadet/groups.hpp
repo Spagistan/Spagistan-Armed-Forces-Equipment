@@ -15,7 +15,7 @@
                 position[] = {0,0,0};
                 rank = "SERGEANT";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Sergeant_01";
+                vehicle = "I_SPAGF_Garmsar_Sergeant";
             };
             class Unit1 {
                 position[] = {5,-5,0};

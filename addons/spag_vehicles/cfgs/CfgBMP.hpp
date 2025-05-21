@@ -32,6 +32,7 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
+	crew = "S_Soldier_Armor";
 	HiddenSelectionsTextures[] = {QPATHTOF(data\bmp\bmp_1_spagpat.paa), QPATHTOF(data\bmp\bmp_2_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_3_spagpat.paa), QPATHTOF(data\bmp\bmp_4_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_5_spagpat.paa), QPATHTOF(data\bmp\bmp_6_spagpat.paa),

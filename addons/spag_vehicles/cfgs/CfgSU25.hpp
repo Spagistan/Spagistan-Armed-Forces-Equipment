@@ -17,6 +17,7 @@ class SU25_Spagpat: RHSGREF_cdf_su25
 	author = "RHS/Kalthramis";
 	editorCategory = "Spagistan_Category";
 	faction = QUOTE(SPAGFACTION);
+	crew = "S_Soldier_Pilot";
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";
 	tf_isolatedAmount = 1;

@@ -8,6 +8,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 	author = "RHS/Kalthramis";
 	editorCategory = "Spagistan_Category";
 	faction = QUOTE(SPAGFACTION);
+	crew = "S_Soldier_Pilot";
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";
 	tf_isolatedAmount = 1;

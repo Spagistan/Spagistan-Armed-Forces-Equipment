@@ -26,5 +26,6 @@ class BTR_Spagpat: rhsgref_cdf_btr60
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
+	crew = "S_Soldier_Armor";
 	hiddenSelectionsTextures[] = {QPATHTOF(data\btr\btr_spag), QPATHTOF(data\btr\btr60_details_co)};
 };
