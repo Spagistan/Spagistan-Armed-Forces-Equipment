@@ -2,7 +2,7 @@ class CfgFactionClasses
 {
 	class SPAG_F
 	 {
-		displayName = "Spagistan";
+		displayName = "Spagistan Armed Forces";
 		priority = 5;
 		side = 2;
 		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
