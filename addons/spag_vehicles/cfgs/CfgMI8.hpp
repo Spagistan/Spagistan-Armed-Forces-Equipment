@@ -7,6 +7,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 	side = 2;
 	author = "RHS/Kalthramis";
 	editorCategory = "Spagistan_Category";
+	editorSubcategory = "EdSubcat_Helicopters";
 	faction = QUOTE(SPAGFACTION);
 	crew = "S_Soldier_Pilot";
 	tf_hasLRradio = 1;
