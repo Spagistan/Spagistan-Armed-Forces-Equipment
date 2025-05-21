@@ -33,3 +33,8 @@ class CfgPatches
 };
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
+
+
+class CfgWorlds {
+	#include "identities.hpp"
+};
