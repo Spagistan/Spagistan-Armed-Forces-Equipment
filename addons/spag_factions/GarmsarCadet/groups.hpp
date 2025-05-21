@@ -21,49 +21,49 @@
                 position[] = {5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit2 {
                 position[] = {-5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit3 {
                 position[] = {10,-10,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit4 {
                 position[] = {-10,-10,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit5 {
                 position[] = {15,-15,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit6 {
                 position[] = {-15,-15,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit7 {
                 position[] = {20,-20,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit8 {
                 position[] = {-20,-20,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
         };
 
@@ -78,25 +78,25 @@
                 position[] = {0,0,0};
                 rank = "SERGEANT";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Sergeant_01";
+                vehicle = "I_SPAGF_Garmsar_Sergeant";
             };
             class Unit1 {
                 position[] = {5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit2 {
                 position[] = {-5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit3 {
                 position[] = {10,-10,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
         };
 
@@ -121,31 +121,31 @@
                 position[] = {0,0,0};
                 rank = "SERGEANT";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Boys_Truck_01";
+                vehicle = "I_SPAGF_Garmsar_Boys_Truck";
             };
             class Unit1 {
                 position[] = {5,-5,0};
                 rank = "SERGEANT";
                 side = 2;
-                vehicle = "I_SPAGF_Garsmar_Sergeant_01";
+                vehicle = "I_SPAGF_Garmsar_Sergeant";
             };
             class Unit2 {
                 position[] = {-5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit3 {
                 position[] = {10,-10,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
             class Unit4 {
                 position[] = {-10,-10,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Cadet_01";
+                vehicle = "I_SPAGF_Garmsar_Cadet";
             };
         };
 
@@ -185,13 +185,13 @@
                 position[] = {0,0,0};
                 rank = "SERGEANT";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Boys_Mortar_01";
+                vehicle = "I_SPAGF_Garmsar_Boys_Mortar";
             };
             class Unit1 {
                 position[] = {5,-5,0};
                 rank = "PRIVATE";
                 side = 2;
-                vehicle = "I_SPAGF_Garmsar_Boys_Mortar_01";
+                vehicle = "I_SPAGF_Garmsar_Boys_Mortar";
             };
         };
 

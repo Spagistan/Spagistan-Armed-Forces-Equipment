@@ -1,12 +1,4 @@
 
-class S_Soldier_SL_OCimport_01 : S_Soldier_SL { scope = 0; class EventHandlers; };
-class S_Soldier_SL_OCimport_02 : S_Soldier_SL_OCimport_01 { class EventHandlers; };
-
-class S_Soldier_Rifleman_OCimport_01 : S_Soldier_Rifleman { scope = 0; class EventHandlers; };
-class S_Soldier_Rifleman_OCimport_02 : S_Soldier_Rifleman_OCimport_01 { class EventHandlers; };
-
-class S_Soldier_Armor_OCimport_01 : S_Soldier_Armor { scope = 0; class EventHandlers; };
-class S_Soldier_Armor_OCimport_02 : S_Soldier_Armor_OCimport_01 { class EventHandlers; };
 
 class ua_chvk_afr_ural_ammo;
 class ua_chvk_afr_ural_fuel;
@@ -15,7 +7,7 @@ class ua_chvk_afr_ural_open;
 
 class ua_chvk_afr_2b14;
 
-class I_SPAGF_Garmsar_Sergeant_01 : S_Soldier_SL_OCimport_02 {
+class I_SPAGF_Garmsar_Sergeant : S_Soldier_SL {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -55,7 +47,7 @@ class I_SPAGF_Garmsar_Sergeant_01 : S_Soldier_SL_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Cadet_01 : S_Soldier_Rifleman_OCimport_02 {
+class I_SPAGF_Garmsar_Cadet : S_Soldier_Rifleman {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -94,7 +86,7 @@ class I_SPAGF_Garmsar_Cadet_01 : S_Soldier_Rifleman_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Driving_Boy_01 : S_Soldier_Armor_OCimport_02 {
+class I_SPAGF_Garmsar_Driving_Boy : S_Soldier_Armor {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -135,7 +127,7 @@ class I_SPAGF_Garmsar_Driving_Boy_01 : S_Soldier_Armor_OCimport_02 {
 
 };
 
-class I_SPAGF_Garmsar_Gunner_Boy_01 : I_SPAGF_Garmsar_Driving_Boy_01 {
+class I_SPAGF_Garmsar_Gunner_Boy : I_SPAGF_Garmsar_Driving_Boy {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
@@ -176,14 +168,14 @@ class I_SPAGF_Garmsar_Gunner_Boy_01 : I_SPAGF_Garmsar_Driving_Boy_01 {
 
 };
 
-class I_SPAGF_Garmsar_Ammo_Truck_01 : ua_chvk_afr_ural_ammo {
+class I_SPAGF_Garmsar_Ammo_Truck : ua_chvk_afr_ural_ammo {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
     displayName = "Garmsar Ammo Truck";
     side = 2;
     faction = QUOTE(GCFACTION);
-    crew = "I_SPAGF_Garmsar_Driving_Boy_01";
+    crew = "I_SPAGF_Garmsar_Driving_Boy";
     editorCategory = "Spagistan_GC_Category";
 
     class EventHandlers : EventHandlers {
@@ -201,14 +193,14 @@ class I_SPAGF_Garmsar_Ammo_Truck_01 : ua_chvk_afr_ural_ammo {
 
 };
 
-class I_SPAGF_Garmsar_Fuel_Truck_01 : ua_chvk_afr_ural_fuel {
+class I_SPAGF_Garmsar_Fuel_Truck : ua_chvk_afr_ural_fuel {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
     displayName = "Garmsar Fuel Truck";
     side = 2;
     faction = QUOTE(GCFACTION);
-    crew = "I_SPAGF_Garmsar_Driving_Boy_01";
+    crew = "I_SPAGF_Garmsar_Driving_Boy";
     editorCategory = "Spagistan_GC_Category";
 
     class EventHandlers : EventHandlers {
@@ -226,14 +218,14 @@ class I_SPAGF_Garmsar_Fuel_Truck_01 : ua_chvk_afr_ural_fuel {
 
 };
 
-class I_SPAGF_Garmsar_Repair_Truck_01 : ua_chvk_afr_ural_repair {
+class I_SPAGF_Garmsar_Repair_Truck : ua_chvk_afr_ural_repair {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
     displayName = "Garmsar Repair Truck";
     side = 2;
     faction = QUOTE(GCFACTION);
-    crew = "I_SPAGF_Garmsar_Driving_Boy_01";
+    crew = "I_SPAGF_Garmsar_Driving_Boy";
     editorCategory = "Spagistan_GC_Category";
 
     class EventHandlers : EventHandlers {
@@ -251,14 +243,14 @@ class I_SPAGF_Garmsar_Repair_Truck_01 : ua_chvk_afr_ural_repair {
 
 };
 
-class I_SPAGF_Garmsar_Boys_Truck_01 : ua_chvk_afr_ural_open {
+class I_SPAGF_Garmsar_Boys_Truck : ua_chvk_afr_ural_open {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
     displayName = "Garmsar Boys Truck";
     side = 2;
     faction = QUOTE(GCFACTION);
-    crew = "I_SPAGF_Garmsar_Driving_Boy_01";
+    crew = "I_SPAGF_Garmsar_Driving_Boy";
     editorCategory = "Spagistan_GC_Category";
 
     class EventHandlers : EventHandlers {
@@ -276,14 +268,14 @@ class I_SPAGF_Garmsar_Boys_Truck_01 : ua_chvk_afr_ural_open {
 
 };
 
-class I_SPAGF_Garmsar_Boys_Mortar_01 : ua_chvk_afr_2b14 {
+class I_SPAGF_Garmsar_Boys_Mortar : ua_chvk_afr_2b14 {
     author = "Canadian";
     scope = 2;
     scopeCurator = 2;
     displayName = "Garmsar Boys Mortar";    
     side = 2;
     faction = QUOTE(GCFACTION);
-    crew = "I_SPAGF_Garmsar_Gunner_Boy_01";
+    crew = "I_SPAGF_Garmsar_Gunner_Boy";
     editorCategory = "Spagistan_GC_Category";
 
 
