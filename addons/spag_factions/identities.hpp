@@ -32,6 +32,9 @@ class GenericNames
             zokhid="Zokhid";
             sigaretta="Sigaretta";
             saddam="Saddam";
+            billy="Billy";
+            van="Van";
+            john="John";
         };
         class LastNames
         {
@@ -59,6 +62,9 @@ class GenericNames
             mustafoev="Mustafoev";
             islomov="Islomov";
             toshmatov="Toshmatov";
+            herrington="Herrington";
+            darkholme="Darkholme";
+            spagistani="Spagistani";
         };
     };
 };
