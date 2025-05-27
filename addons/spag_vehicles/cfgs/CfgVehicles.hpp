@@ -4,6 +4,6 @@
 	#include "CfgM113.hpp"
 	#include "CfgMI8.hpp"
 	#include "CfgSU25.hpp"
-	#include "CfgUral.hpp"
+	#include "CfgUrals.hpp"
 	#include "CfgYak.hpp"
 	//#include "CfgSU25-2.hpp"

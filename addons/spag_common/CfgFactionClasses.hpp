@@ -2,12 +2,39 @@ class CfgFactionClasses
 {
 	class SPAG_F
 	 {
-		displayName = "Spagistan";
+		displayName = "Spagistan Armed Forces";
 		priority = 5;
 		side = 2;
 		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
 		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
 	 };
+	 
+	class SPAG_NG
+	 {
+		displayName = "Spagistan National Guard";
+		priority = 6;
+		side = 2;
+		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
+		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
+	 };
+	
+	class SPAG_GC
+	 {
+		displayName = "Spagistan Garmsar Cadets";
+		priority = 7;
+		side = 2;
+		icon = QPATHTOF(gui\Spag_Flag_Square_ca.paa);
+		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
+	 };
+
+	class UZAF {
+		displayName = "Armed Forces of the Republic of Uzbekistan";
+		priority = 8;
+		side = 2;
+		icon = "";
+		flag = "";
+	};
+
 };
 
 

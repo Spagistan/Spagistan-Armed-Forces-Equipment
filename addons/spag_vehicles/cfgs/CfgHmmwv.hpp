@@ -10,6 +10,7 @@ side = 2;\
 author = "RHS/Kalthramis";\
 editorCategory = "Spagistan_Category";\
 faction = QUOTE(SPAGFACTION);\
+crew = "S_Soldier_Rifleman";\
 tf_hasLRradio = 1;\
 tf_RadioType = "TFAR_anprc155_coyote";\
 tf_isolatedAmount = 0.5;\

@@ -1,12 +1,3 @@
-#define BASE_SPAGISTAN_CONFIG\
-    author = "CParadis";\
-    _generalMacro = "Spagistan_Unit";\
-    faction = QUOTE(SPAGFACTION);\
-    editorCategory = "Spagistan_Category";\
-    side = 2;\
-    uniformClass = "U_S_Uniform_SPAGPAT";\
-
-
 #define ITEM_2(a) a, a
 #define ITEM_3(a) a, a, a
 #define ITEM_4(a) a, a, a, a
@@ -18,4 +9,3 @@
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
 #define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
-

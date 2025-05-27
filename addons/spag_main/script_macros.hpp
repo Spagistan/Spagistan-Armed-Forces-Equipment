@@ -24,6 +24,7 @@
     #define VERSION_STR VERSION
 #endif
 
+
 #ifndef VERSION_AR
     #define VERSION_AR VERSION
 #endif
@@ -35,3 +36,5 @@
 // Spagistan Specific
 #define SPAGCAMNAME Spagcam
 #define SPAGFACTION Spag_F
+#define NGFACTION Spag_NG
+#define GCFACTION Spag_GC

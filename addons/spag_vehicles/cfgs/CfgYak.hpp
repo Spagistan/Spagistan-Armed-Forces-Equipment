@@ -17,6 +17,7 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	tf_encryptionCode = "_independent";
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
+	crew = "S_Soldier_Pilot";
 	VEHICLEINVENTORY
 	hiddenselectionstextures[] = {
 		QPATHTOF(data\Yak\cas02_ext01_SAF27),

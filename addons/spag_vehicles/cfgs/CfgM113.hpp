@@ -24,7 +24,7 @@ class m113_spagpat: rhsusf_m113d_usarmy_unarmed {
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
-
+	crew = "S_Soldier_Armor";
 	hiddenSelectionsTextures[] = {
 		QPATHTOF(data\M113 APC\m113_1_spagpat),
 		QPATHTOF(data\M113 APC\m113a3_02_d_co),
