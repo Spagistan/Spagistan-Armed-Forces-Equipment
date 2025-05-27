@@ -4,4 +4,7 @@ class cfgGroups {
         #include "Spagistan/groups.hpp"
         #include "GarmsarCadet/groups.hpp"
     };
+    class East {
+        #include "UzbekArmedForces/groups.hpp"
+    };
 };

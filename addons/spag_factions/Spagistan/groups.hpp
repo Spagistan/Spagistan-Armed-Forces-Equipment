@@ -1,4 +1,3 @@
-
 class SpagistanAF {
     name = "Spagistan Armed Forces";
     

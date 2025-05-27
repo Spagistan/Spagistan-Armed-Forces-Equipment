@@ -26,7 +26,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"spag_main","spag_common","spag_vehicles","spag_gear"};
 		author = "Spagistan Development Team";
-		authors[] = {"Taepodong","Kalthramis"};
+		authors[] = {"Spagistan Development Team"};
 		url = "SPAGLINK";
 		VERSION_CONFIG;
 	};
