@@ -80,6 +80,7 @@ class CfgGroups {
                     name = "NG Team";
                     side = 2;
                     faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -112,7 +113,9 @@ class CfgGroups {
                 class i_spagistan_ng_infantry_ng_patrol {
                     name = "NG Patrol";
                     side = 2;
+
                     faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -144,6 +147,7 @@ class CfgGroups {
                     name = "Motorized Squad (BTR-70)";
                     side = 2;
                     faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
                     rarityGroup = 0.5;
 
