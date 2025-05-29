@@ -17,10 +17,6 @@ class CfgVehicles {
     class S_Soldier_Armor_OCimport_01 : S_Soldier_Armor { scope = 0; class EventHandlers; };
     class S_Soldier_Armor_OCimport_02 : S_Soldier_Armor_OCimport_01 { class EventHandlers; };
 
-    class I_SPAGF_Garmsar_Driving_Boy {scope = 0;};
-    class I_SPAGF_Garmsar_Driving_Boy_OCimport_01 : I_SPAGF_Garmsar_Driving_Boy { scope = 0; class EventHandlers; };
-    class I_SPAGF_Garmsar_Driving_Boy_OCimport_02 : I_SPAGF_Garmsar_Driving_Boy_OCimport_01 { class EventHandlers; };
-
     class ua_chvk_afr_ural_fuel;
     class ua_chvk_afr_ural_fuel_OCimport_01 : ua_chvk_afr_ural_fuel { scope = 0; class EventHandlers; };
     class ua_chvk_afr_ural_fuel_OCimport_02 : ua_chvk_afr_ural_fuel_OCimport_01 { scope = 0; class EventHandlers; };
@@ -141,7 +137,7 @@ class CfgVehicles {
 
     };
 
-    class I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01 : I_SPAGF_Garmsar_Driving_Boy_OCimport_02 {
+    class I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01 : I_Spagistan_Garmsar_Garmsar_Driving_Boy_01 {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
@@ -190,7 +186,7 @@ class CfgVehicles {
         displayName = "Garmsar Fuel Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-        crew = "I_SPAGF_Garmsar_Driving_Boy";
+        crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
 
@@ -216,7 +212,7 @@ class CfgVehicles {
         displayName = "Garmsar Ammo Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-        crew = "I_SPAGF_Garmsar_Driving_Boy";
+        crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
 
@@ -242,7 +238,7 @@ class CfgVehicles {
         displayName = "Garmsar Boys Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-        crew = "I_SPAGF_Garmsar_Driving_Boy";
+        crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
         class Turrets : Turrets {
@@ -276,7 +272,7 @@ class CfgVehicles {
         displayName = "Garmsar Repair Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-        crew = "I_SPAGF_Garmsar_Driving_Boy";
+        crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
 
@@ -342,11 +338,11 @@ class CfgVehicles {
         displayName = "Garmsar Boys Mortar";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-        crew = "I_SPAGF_Garmsar_Gunner_Boy";
+        crew = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "I_SPAGF_Garmsar_Gunner_Boy"; };
+            class MainTurret : MainTurret { gunnerType = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01"; };
         };
 
 

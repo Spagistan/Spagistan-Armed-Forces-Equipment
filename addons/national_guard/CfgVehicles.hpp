@@ -9,7 +9,8 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
-    class NG_Soldier_Base;
+    class S_Soldier_Rifleman;
+    class NG_Soldier_Base : S_Soldier_Rifleman {scope = 0; } ;
     class NG_Soldier_Base_OCimport_01 : NG_Soldier_Base { scope = 0; class EventHandlers; };
     class NG_Soldier_Base_OCimport_02 : NG_Soldier_Base_OCimport_01 { class EventHandlers; };
 
