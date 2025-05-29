@@ -3,4 +3,4 @@
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
-
+#include "CfgEditorCategories.hpp"
