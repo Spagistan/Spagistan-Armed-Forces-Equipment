@@ -75,6 +75,8 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 2;
         faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";
+
 
         identityTypes[] = {"Head_Asian","LanguageGRE_F","G_GUERIL_default"};
 
@@ -116,6 +118,7 @@ class CfgVehicles {
         displayName = "Grenadier";
         side = 2;
         faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -157,6 +160,7 @@ class CfgVehicles {
         displayName = "Automatic Rifleman";
         side = 2;
         faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -198,6 +202,7 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 2;
         faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";   
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -239,6 +244,7 @@ class CfgVehicles {
         displayName = "Squad Lead";
         side = 2;
         faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -281,6 +287,7 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         crew = "I_Spagistan_NG_Crewman_01";
+        editorCategory = "Spagistan_NG_Category";
 
         class Turrets : Turrets {
             class MainTurret_In : MainTurret_In { gunnerType = ""; };
@@ -311,7 +318,8 @@ class CfgVehicles {
         displayName = "Crewman";
         side = 2;
         faction = "i_spagistan_ng";
-
+        editorCategory = "Spagistan_NG_Category";
+        
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
@@ -353,6 +361,7 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         crew = "I_Spagistan_NG_Crewman_01";
+        editorCategory = "Spagistan_NG_Category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "I_Spagistan_NG_Crewman_01"; };
@@ -393,7 +402,8 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         crew = "I_Spagistan_NG_Crewman_01";
-
+        editorCategory = "Spagistan_NG_Category";
+    
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "I_Spagistan_NG_Crewman_01"; };
             class Com_BMP1 : Com_BMP1 { gunnerType = "I_Spagistan_NG_Crewman_01"; };

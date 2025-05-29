@@ -702,6 +702,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "ua_prm_Fighter_AKS74_Alt";
+        editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -731,6 +732,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "ua_prm_Fighter_AK105_Alt";
+        editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -760,7 +762,8 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "O_uzbek_Helicopter_Pilot_01";
-
+        editorCategory = "o_uzbek_category";
+    
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "O_uzbek_Helicopter_Pilot_01"; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -793,6 +796,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "ua_prm_Fighter_AK74M";
+        editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -822,6 +826,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "ua_prm_Fighter_AK74_Alt";
+        editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -851,6 +856,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_Uzbekistan";
         crew = "ua_prm_Crewman";
+        editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -889,6 +895,7 @@ class CfgVehicles {
         displayName = "Helicopter Pilot";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F"};
 
@@ -927,6 +934,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74M)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Euro","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -965,6 +973,7 @@ class CfgVehicles {
         displayName = "Commander";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses"};
 
@@ -1003,6 +1012,7 @@ class CfgVehicles {
         displayName = "Commander (Field)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses"};
 
@@ -1041,6 +1051,7 @@ class CfgVehicles {
         displayName = "Squad Leader";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1079,7 +1090,8 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 0;
         faction = "O_Uzbekistan";
-
+        editorCategory = "o_uzbek_category";
+    
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
         uniformClass = "ua_6sh122_speca";
@@ -1117,6 +1129,7 @@ class CfgVehicles {
         displayName = "Autorifleman";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1155,6 +1168,7 @@ class CfgVehicles {
         displayName = "Machinegunner";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1195,6 +1209,7 @@ class CfgVehicles {
         displayName = "Marksman";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses"};
 
@@ -1233,6 +1248,7 @@ class CfgVehicles {
         displayName = "Marksman (Night)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1271,6 +1287,7 @@ class CfgVehicles {
         displayName = "Anti-tank (RPG-7)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1311,6 +1328,7 @@ class CfgVehicles {
         displayName = "Anti-tank Assistant";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1351,6 +1369,7 @@ class CfgVehicles {
         displayName = "Anti-air (9K38)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1391,6 +1410,7 @@ class CfgVehicles {
         displayName = "Engineer";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1431,6 +1451,7 @@ class CfgVehicles {
         displayName = "Medic";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Euro","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1471,6 +1492,7 @@ class CfgVehicles {
         displayName = "Fighter (GP-25)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1509,6 +1531,7 @@ class CfgVehicles {
         displayName = "Fighter (RPG-18)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1547,6 +1570,7 @@ class CfgVehicles {
         displayName = "Fighter (RPG-26)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1585,6 +1609,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-105)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1623,6 +1648,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74MR)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1661,6 +1687,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1699,6 +1726,7 @@ class CfgVehicles {
         displayName = "Fighter (AKM)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1737,6 +1765,7 @@ class CfgVehicles {
         displayName = "Fighter (AKS-74)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1775,6 +1804,7 @@ class CfgVehicles {
         displayName = "Fighter (M38)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1813,6 +1843,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74M, Night)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Euro","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1851,6 +1882,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74M, Alt)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1889,6 +1921,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-105, Alt)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1927,6 +1960,7 @@ class CfgVehicles {
         displayName = "Fighter (AKS-74, Alt)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -1967,6 +2001,7 @@ class CfgVehicles {
         displayName = "Fighter (AK-74, Alt)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2005,7 +2040,8 @@ class CfgVehicles {
         displayName = "Crewman";
         side = 0;
         faction = "O_Uzbekistan";
-
+        editorCategory = "o_uzbek_category";
+    
         identityTypes[] = {"Head_Asian","LanguageRUS_F"};
 
         uniformClass = "ua_vkbo_speca";
@@ -2043,6 +2079,7 @@ class CfgVehicles {
         displayName = "Scout (AK-74M)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2082,6 +2119,7 @@ class CfgVehicles {
         displayName = "Commander";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Euro","LanguageRUS_F","rhsusf_glasses"};
 
@@ -2121,6 +2159,7 @@ class CfgVehicles {
         displayName = "Squad Leader";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2160,6 +2199,7 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2199,6 +2239,7 @@ class CfgVehicles {
         displayName = "Autorifleman";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2238,6 +2279,7 @@ class CfgVehicles {
         displayName = "Machinegunner";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2279,6 +2321,7 @@ class CfgVehicles {
         displayName = "Marksman";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2318,6 +2361,7 @@ class CfgVehicles {
         displayName = "Marksman (Night)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2357,6 +2401,7 @@ class CfgVehicles {
         displayName = "Anti-tank (RPG-7)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2398,6 +2443,7 @@ class CfgVehicles {
         displayName = "Anti-tank Assistant";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2439,6 +2485,7 @@ class CfgVehicles {
         displayName = "Anti-air (9K38)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2480,6 +2527,7 @@ class CfgVehicles {
         displayName = "Sapper";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2521,6 +2569,7 @@ class CfgVehicles {
         displayName = "Medic";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2562,6 +2611,7 @@ class CfgVehicles {
         displayName = "Scout (GP-25)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2601,6 +2651,7 @@ class CfgVehicles {
         displayName = "Scout (RPG-26)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2640,6 +2691,7 @@ class CfgVehicles {
         displayName = "Scout (RShG-2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2679,6 +2731,7 @@ class CfgVehicles {
         displayName = "Scout (AK-103)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2718,6 +2771,7 @@ class CfgVehicles {
         displayName = "Scout (AK-74MR)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 
@@ -2757,6 +2811,7 @@ class CfgVehicles {
         displayName = "COUGAR (M2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Fighter_AKM_01";
 
         class Turrets : Turrets {
@@ -2787,6 +2842,7 @@ class CfgVehicles {
         displayName = "BMD-1";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Crewman_01";
 
         class Turrets : Turrets {
@@ -2828,6 +2884,7 @@ class CfgVehicles {
         displayName = "PRV-13";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Commander";
 
         class Turrets : Turrets {
@@ -2857,6 +2914,7 @@ class CfgVehicles {
         displayName = "BMP-2 (obr. 1986g.)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -2896,6 +2954,7 @@ class CfgVehicles {
         displayName = "NSV (6T7)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK74M";
 
         class Turrets : Turrets {
@@ -2925,6 +2984,7 @@ class CfgVehicles {
         displayName = "DShKM";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AKS74";
 
         class Turrets : Turrets {
@@ -2954,6 +3014,7 @@ class CfgVehicles {
         displayName = "Ural-4320 (Open)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK74_Alt";
 
         class Turrets : Turrets {
@@ -2986,6 +3047,7 @@ class CfgVehicles {
         displayName = "Ural-4320";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AKS74";
 
         class Turrets : Turrets {
@@ -3016,6 +3078,7 @@ class CfgVehicles {
         displayName = "Ural-4320 (Fuel)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK74M";
 
 
@@ -3040,6 +3103,7 @@ class CfgVehicles {
         displayName = "Ural-4320 (Ammo)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK74MR";
 
 
@@ -3064,6 +3128,7 @@ class CfgVehicles {
         displayName = "Ural-4320 (Repair)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Engineer";
 
 
@@ -3088,6 +3153,7 @@ class CfgVehicles {
         displayName = "Ural-4320 (ZU-23-2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_M38";
 
         class Turrets : Turrets {
@@ -3118,6 +3184,7 @@ class CfgVehicles {
         displayName = "DSHkM Minitripod";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK105_Alt";
 
         class Turrets : Turrets {
@@ -3147,6 +3214,7 @@ class CfgVehicles {
         displayName = "BM-21";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK74M";
 
         class Turrets : Turrets {
@@ -3176,6 +3244,7 @@ class CfgVehicles {
         displayName = "2S3M1 (Direct Fire)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3205,6 +3274,7 @@ class CfgVehicles {
         displayName = "2S3M1";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3234,6 +3304,7 @@ class CfgVehicles {
         displayName = "2S1 (Direct Fire)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3263,6 +3334,7 @@ class CfgVehicles {
         displayName = "2S1";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3292,6 +3364,7 @@ class CfgVehicles {
         displayName = "BMP-1";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3332,6 +3405,7 @@ class CfgVehicles {
         displayName = "T-80BV";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3361,6 +3435,7 @@ class CfgVehicles {
         displayName = "BMP-1P";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3401,6 +3476,7 @@ class CfgVehicles {
         displayName = "BTR-80A";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3441,6 +3517,7 @@ class CfgVehicles {
         displayName = "GAZ-233011";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Fighter_AK105_Alt";
 
         class Turrets : Turrets {
@@ -3471,6 +3548,7 @@ class CfgVehicles {
         displayName = "T-72B (obr. 1985g.)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3500,6 +3578,7 @@ class CfgVehicles {
         displayName = "T-72B (obr. 1984g.)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3529,6 +3608,7 @@ class CfgVehicles {
         displayName = "BRDM-2UM";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3564,6 +3644,7 @@ class CfgVehicles {
         displayName = "BRDM-2UM (Armed)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3599,6 +3680,7 @@ class CfgVehicles {
         displayName = "BRDM-2";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3635,6 +3717,7 @@ class CfgVehicles {
         displayName = "BRDM-2 (9P148)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3669,6 +3752,7 @@ class CfgVehicles {
         displayName = "BTR-60PB";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3708,6 +3792,7 @@ class CfgVehicles {
         displayName = "BTR-80";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
@@ -3748,6 +3833,7 @@ class CfgVehicles {
         displayName = "SU-25";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Jet_Pilot_01";
 
 
@@ -3773,6 +3859,7 @@ class CfgVehicles {
         displayName = "Jet Pilot";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F"};
 
@@ -3811,6 +3898,7 @@ class CfgVehicles {
         displayName = "MiG-29";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Jet_Pilot_01";
 
 
@@ -3836,6 +3924,7 @@ class CfgVehicles {
         displayName = "M-ATV (CROWS M2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Fighter_AK_74_Alt_01";
 
         class Turrets : Turrets {
@@ -3867,6 +3956,7 @@ class CfgVehicles {
         displayName = "M-ATV (M2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Fighter_AKS_74_01";
 
         class Turrets : Turrets {
@@ -3897,6 +3987,7 @@ class CfgVehicles {
         displayName = "MAXXPRO (CROWS M2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Fighter_AK_74_01";
 
         class Turrets : Turrets {
@@ -3926,6 +4017,7 @@ class CfgVehicles {
         displayName = "MAXXPRO (M2)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
         crew = "O_uzbek_Fighter_GP_25_01";
 
         class Turrets : Turrets {
@@ -3955,6 +4047,7 @@ class CfgVehicles {
         displayName = "Scout (M4)";
         side = 0;
         faction = "O_Uzbekistan";
+        editorCategory = "o_uzbek_category";
 
         identityTypes[] = {"Head_Asian","LanguageRUS_F","ua_bala_blk","ua_bala_khk","ua_bala_od","rhsusf_glasses","rhsusf_oakley"};
 

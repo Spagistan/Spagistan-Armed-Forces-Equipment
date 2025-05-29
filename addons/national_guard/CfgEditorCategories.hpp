@@ -1,9 +1,9 @@
 class CfgEditorCategories {
 
 
-	class Spagistan_GC_Category // Category class, you point to it in editorCategory property
-	{
-		displayName = "Spagistan Garmsar Cadets"; // Name visible in the list
-		faction = "SPAG_GC";
-	};
+    class Spagistan_NG_Category // Category class, you point to it in editorCategory property
+        {
+            displayName = "Spagistan National Guard"; // Name visible in the list
+            faction = "i_spagistan_ng";
+        };
 };

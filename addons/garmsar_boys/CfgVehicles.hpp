@@ -66,6 +66,7 @@ class CfgVehicles {
         displayName = "Garmsar Cadet";
         side = 2;
         faction = "I_Spagistan_Garmsar";
+        editorCategory = "Spagistan_GC_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -105,6 +106,7 @@ class CfgVehicles {
         displayName = "Garmsar Driving Boy";
         side = 2;
         faction = "I_Spagistan_Garmsar";
+        editorCategory = "Spagistan_GC_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -146,6 +148,7 @@ class CfgVehicles {
         displayName = "Garmsar Gunner Boy";
         side = 2;
         faction = "I_Spagistan_Garmsar";
+        editorCategory = "Spagistan_GC_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -188,6 +191,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_SPAGF_Garmsar_Driving_Boy";
+        editorCategory = "Spagistan_GC_Category";
 
 
         class EventHandlers : EventHandlers {
@@ -213,6 +217,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_SPAGF_Garmsar_Driving_Boy";
+        editorCategory = "Spagistan_GC_Category";
 
 
         class EventHandlers : EventHandlers {
@@ -238,6 +243,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_SPAGF_Garmsar_Driving_Boy";
+        editorCategory = "Spagistan_GC_Category";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -271,6 +277,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_SPAGF_Garmsar_Driving_Boy";
+        editorCategory = "Spagistan_GC_Category";
 
 
         class EventHandlers : EventHandlers {
@@ -295,7 +302,8 @@ class CfgVehicles {
         displayName = "Garmsar Sergeant";
         side = 2;
         faction = "I_Spagistan_Garmsar";
-
+        editorCategory = "Spagistan_GC_Category";
+    
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
@@ -335,6 +343,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_SPAGF_Garmsar_Gunner_Boy";
+        editorCategory = "Spagistan_GC_Category";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "I_SPAGF_Garmsar_Gunner_Boy"; };
