@@ -27,7 +27,7 @@ class CfgFactionClasses
 		flag = QPATHTOF(gui\Spag_Flag_ca.paa);
 	 };
 
-	class UZAF {
+	class O_UZAF {
 		displayName = "Armed Forces of the Republic of Uzbekistan";
 		priority = 8;
 		side = 2;

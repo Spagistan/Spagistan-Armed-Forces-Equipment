@@ -5,21 +5,9 @@ class CfgEditorCategories
 		displayName = "Spagistan"; // Name visible in the list
 		faction = "SPAG_F";
 	};
-	class Spagistan_NG_Category // Category class, you point to it in editorCategory property
-	{
-		displayName = "Spagistan National Guard"; // Name visible in the list
-		faction = "SPAG_NG";
-	};
-	class Spagistan_GC_Category // Category class, you point to it in editorCategory property
-	{
-		displayName = "Spagistan Garmsar Cadets"; // Name visible in the list
-		faction = "SPAG_GC";
-	};
-	class UZAF_Category // Category class, you point to it in editorCategory property
-	{
-		displayName = "Uzbek Armed Forces"; // Name visible in the list
-		faction = "UZAF";
-	};
+
+
+
 };
 
 
