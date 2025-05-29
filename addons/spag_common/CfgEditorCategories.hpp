@@ -15,10 +15,10 @@ class CfgEditorCategories
 		displayName = "Spagistan Garmsar Cadets"; // Name visible in the list
 		faction = "SPAG_GC";
 	};
-	class UZAF_Category // Category class, you point to it in editorCategory property
+	class O_UZAF_Category // Category class, you point to it in editorCategory property
 	{
 		displayName = "Uzbek Armed Forces"; // Name visible in the list
-		faction = "UZAF";
+		faction = "O_UZAF";
 	};
 };
 
