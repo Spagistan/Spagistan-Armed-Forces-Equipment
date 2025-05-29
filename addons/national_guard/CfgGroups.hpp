@@ -16,7 +16,7 @@ class CfgGroups {
                 class i_spagistan_ng_infantry_ng_squad {
                     name = "NG Squad";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -79,7 +79,8 @@ class CfgGroups {
                 class i_spagistan_ng_infantry_ng_team {
                     name = "NG Team";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -112,7 +113,9 @@ class CfgGroups {
                 class i_spagistan_ng_infantry_ng_patrol {
                     name = "NG Patrol";
                     side = 2;
-                    faction = "i_spagistan_ng";
+
+                    faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -143,7 +146,8 @@ class CfgGroups {
                 class i_spagistan_ng_motorized_motorized_squad_btr_70 {
                     name = "Motorized Squad (BTR-70)";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
+
                     icon = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
                     rarityGroup = 0.5;
 
@@ -227,7 +231,7 @@ class CfgGroups {
                 class i_spagistan_ng_mechanized_mechanized_squad_m113 {
                     name = "Mechanized Squad (M113)";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -296,7 +300,7 @@ class CfgGroups {
                 class i_spagistan_ng_mechanized_mechanized_squad_bmp {
                     name = "Mechanized Squad (BMP-1)";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -370,7 +374,7 @@ class CfgGroups {
                 class i_spagistan_ng_armored_bmp_1section {
                     name = "BMP-1 Section";
                     side = 2;
-                    faction = "i_spagistan_ng";
+                    faction = "I_Spagistan_NG";
                     icon = "\A3\ui_f\data\map\markers\nato\n_armor.paa";
                     rarityGroup = 0.5;
 
