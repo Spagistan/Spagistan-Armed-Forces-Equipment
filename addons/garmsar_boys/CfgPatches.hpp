@@ -28,7 +28,6 @@ class CfgPatches {
             "ace_movement",
             "ace_medical_feedback",
             "A3_Data_F",
-            "ibr_yulakia_c",
             "A3_Data_F_Curator",
             "A3_Air_F_Heli",
             "ace_thermals",
