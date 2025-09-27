@@ -1,8 +1,5 @@
 /*
 [
-	"murshun_cigs_cigpackItem",
-	"murshun_cigs_lighterItem",
-	"murshun_cigs_matchesItem",
 	"rhs_acc_1p29",
 	"rhs_acc_1p63",
 	"rhs_acc_rakursPM",
@@ -178,9 +175,8 @@
 	"rhs_googles_yellow",
 	"rhs_ess_black",
 	"G_Bandanna_blk",
-	"murshun_cigs_cig0",
+
 	"G_Combat",
-	"immersion_pops_pop0",
 	"G_Lowprofile",
 	"G_Spectacles",
 	"G_Sport_Red",
@@ -208,7 +204,7 @@
 	"rhsusf_acc_wmx_bk",
 	"rhs_tr8_periscope",
 	"rhssaf_zrak_rd7j",
-	"immersion_cigs_cigar0",
+
 	"rhs_acc_ekp8_02",
 	"rhs_acc_ekp8_18",
 	"rhsgref_acc_zendl",

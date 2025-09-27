@@ -27,8 +27,7 @@ class NG_KitBag_RF : rhssaf_kitbag_digital {
         item_xx(ACE_tourniquet,4);
         item_xx(ACE_Flashlight_XL50,1);
         item_xx(acex_intelitems_notepad,1);
-        item_xx(murshun_cigs_cigpack,1);
-        item_xx(murshun_cigs_lighter,1);
+
     };
 };
 
@@ -61,8 +60,7 @@ class NG_KitBag_GR : rhssaf_kitbag_digital {
         item_xx(ACE_tourniquet,4);
         item_xx(ACE_Flashlight_XL50,1);
         item_xx(acex_intelitems_notepad,1);
-        item_xx(murshun_cigs_cigpack,1);
-        item_xx(murshun_cigs_lighter,1);
+
     };
 };
 
@@ -91,8 +89,7 @@ class NG_KitBag_AR : rhssaf_kitbag_digital {
         item_xx(ACE_tourniquet,4);
         item_xx(ACE_Flashlight_XL50,1);
         item_xx(acex_intelitems_notepad,1);
-        item_xx(murshun_cigs_cigpack,1);
-        item_xx(murshun_cigs_lighter,1);
+
     };
 };
 
@@ -126,7 +123,6 @@ class NG_KitBag_TL : rhssaf_kitbag_digital {
         item_xx(ACE_Sandbag_empty,3);
         item_xx(ACE_Flashlight_XL50,1);
         item_xx(acex_intelitems_notepad,1);
-        item_xx(murshun_cigs_cigpack,1);
-        item_xx(murshun_cigs_lighter,1);
+
     };
 };
