@@ -16,4 +16,13 @@ workshop = [
     "2447965207", # Crows Zeus Addition Workshop ID
     "2826534435", # Enhanced MI-24
     "3435291098", # Gym Bench
+    "3058335345", # TBD Mortars
+    "3356373534", # TBD D20
+    "3183189354", # TBD 2B9
+    "3251627825", # TBD MT12
+    "3382728502", # TBD Type 63
 ]
+
+[arty]
+extends = "default"
+mission = "test.VR"

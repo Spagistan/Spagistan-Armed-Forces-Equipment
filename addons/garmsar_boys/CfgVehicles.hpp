@@ -342,7 +342,7 @@ class CfgVehicles {
         editorCategory = "Spagistan_GC_Category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01"; };
+            class MainTurret : MainTurret { gunnerType = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01"; primaryGunner = 1;};
         };
 
 
