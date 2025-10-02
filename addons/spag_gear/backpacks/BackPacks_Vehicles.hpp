@@ -62,8 +62,7 @@ class S_KitBag_Spag_Rifleman: S_KitBag_Spag
     item_xx(ACE_tourniquet,4);
     item_xx(ACE_Flashlight_XL50,1);
     item_xx(acex_intelitems_notepad,1);
-    item_xx(murshun_cigs_cigpack,1);
-    item_xx(murshun_cigs_lighter,1);
+
   };
 
 };
@@ -92,8 +91,7 @@ class TFAR_SPAG_mr3000_SL : TFAR_SPAG_mr3000 {
       item_xx(ACE_tourniquet,4);
       item_xx(ACE_Flashlight_XL50,1);
       item_xx(acex_intelitems_notepad,1);
-      item_xx(murshun_cigs_cigpack,1);
-      item_xx(murshun_cigs_lighter,1);
+
     };
 };
 

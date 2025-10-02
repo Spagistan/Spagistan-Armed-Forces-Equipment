@@ -28,8 +28,6 @@
 		mag_xx(rhs_GDM40,40);\
 		mag_xx(rhs_mag_rdg2_white,30);\
 		mag_xx(rhs_mag_rgo,15);\
-		mag_xx(murshun_cigs_cigpack,4);\
-		mag_xx(murshun_cigs_lighter,4);\
 	};\
 	class TransportItems\
 	{\

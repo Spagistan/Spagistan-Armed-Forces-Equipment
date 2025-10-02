@@ -1468,7 +1468,7 @@ class CfgVehicles {
 
         backpack = "rhs_medic_bag";
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_ak105","rhs_acc_pgs64","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{},{"ua_6sh122_speca",{{"ACE_fieldDressing",4},{"ACE_tourniquet",1},{"rhs_mag_rgd5",1,1},{"rhs_mag_rdg2_white",1,1},{"rhs_30Rnd_545x39_7N6M_AK",1,30}}},{"ua_6sh117_rifleman_od",{{"rhs_30Rnd_545x39_7N6M_AK",5,30}}},{"rhs_medic_bag",{{"ACE_surgicalKit",1},{"ACE_suture",3},{"ACE_plasmaIV_500",3},{"ACE_splint",5},{"ACE_tourniquet",3},{"ACE_epinephrine",1},{"ACE_morphine",10},{"ACE_fieldDressing",30},{"ACE_salineIV",2}}},"ua_6b7_1m_speca","murshun_cigs_cig0",{},{"","","ItemRadio","","ItemWatch","rhs_1PN138"}};
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_ak105","rhs_acc_pgs64","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{},{"ua_6sh122_speca",{{"ACE_fieldDressing",4},{"ACE_tourniquet",1},{"rhs_mag_rgd5",1,1},{"rhs_mag_rdg2_white",1,1},{"rhs_30Rnd_545x39_7N6M_AK",1,30}}},{"ua_6sh117_rifleman_od",{{"rhs_30Rnd_545x39_7N6M_AK",5,30}}},{"rhs_medic_bag",{{"ACE_surgicalKit",1},{"ACE_suture",3},{"ACE_plasmaIV_500",3},{"ACE_splint",5},{"ACE_tourniquet",3},{"ACE_epinephrine",1},{"ACE_morphine",10},{"ACE_fieldDressing",30},{"ACE_salineIV",2}}},"ua_6b7_1m_speca",{},{"","","ItemRadio","","ItemWatch","rhs_1PN138"}};
 
 
         class EventHandlers : EventHandlers {
