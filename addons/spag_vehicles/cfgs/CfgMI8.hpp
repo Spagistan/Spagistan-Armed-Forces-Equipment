@@ -22,7 +22,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 		QPATHTOF(data\MI8\mi8_body_spag),
 		QPATHTOF(data\MI8\mi8_det_o_co),
 		QPATHTOF(data\MI8\empty),
-		QPATHTOF(data\MI8\\empty),
+		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\vvs_ca)
