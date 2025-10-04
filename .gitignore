@@ -6,4 +6,4 @@ hemtt.exe
 keys/*.biprivatekey
 *.biprivatekey
 .vscode
-.hemtt/~*
+.hemtt/missions/~test.vr/
