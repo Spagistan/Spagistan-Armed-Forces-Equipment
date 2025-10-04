@@ -6,4 +6,6 @@
 	#include "CfgSU25.hpp"
 	#include "CfgUrals.hpp"
 	#include "CfgYak.hpp"
+	#include "CfgUAZ.hpp"
+	#include "CfgKraz.hpp"
 	//#include "CfgSU25-2.hpp"

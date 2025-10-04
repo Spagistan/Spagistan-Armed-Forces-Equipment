@@ -12,10 +12,10 @@ class CfgEditorCategories
 
 
 
-/* class CfgEditorSubcategories
-{
-	class Spag_Subcatagory // Category class, you point to it in editorSubcategory property
-	{
-		editorSubcategory = "EdSubcat_Cars";
-	};
-}; */
+// class CfgEditorSubcategories
+// {
+// 	class Spag_Subcatagory // Category class, you point to it in editorSubcategory property
+// 	{
+// 		editorSubcategory = "EdSubcat_Cars";
+// 	};
+// }; 

@@ -20,11 +20,27 @@ class CfgPatches
 			"SU25_Spagpat",
 			"RHS_Su25SM_vvs_DonkeyPunched",
 			"YAK130_Spagpat",
+			"spag_ural_closed",
+			"spag_ural_open",
+			"spag_ural_flat",
+			"spag_ural_fuel",
+			"spag_ural_ammo",
+			"spag_ural_zu23",
+			"spag_ural_bm21",
+			"spag_kraz_open",
+			"spag_kraz_flatbed",
+			"spag_kraz_fuel",
+			"spag_kraz_pmp",
+			"spag_kraz_bmkt",
+			"spag_uaz",
+			"spag_uaz_open",
+			"spag_uaz_dshkm",
+			"spag_uaz_ags30"
 			};
 			
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"spag_main","spag_common"};
+		requiredAddons[] = {"spag_main","spag_common","rhs_main", "rhs_c_a2port_car"};
 		author = "Spagistan Development Team";
 		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";

@@ -4,8 +4,8 @@
 //			init = "if (!(is3Den)) then {_crate = createSimpleObject ['O_CargoNet_01_ammo_F', position (_this select 0)]; _crate disableCollisionWith (_this select 0); _crate attachTo [(_this select 0), [0,0-.745,-0.1]]; };";
 
 
-#define HUMMVSETTINGS scope = 2;\
-scopeCurator = 2;\
+#define HUMMVSETTINGS scope = 1;\
+scopeCurator = 1;\
 side = 2;\
 author = "RHS/Kalthramis";\
 editorCategory = "Spagistan_Category";\
@@ -118,42 +118,43 @@ tf_isolatedAmount_api = 0.3;
 /* class AnimationSources;
 	class EventHandlers; */
 class rhsusf_hmmwe_base;
-	class rhsusf_m1025_d: rhsusf_hmmwe_base
+class rhsusf_m1025_d: rhsusf_hmmwe_base
+{
+	class AnimationSources;
+};
+class rhsusf_m1025_d_m2: rhsusf_hmmwe_base {
+	class AnimationSources;
+};
+class rhsusf_m1025_d_mk19: rhsusf_hmmwe_base {
+	class AnimationSources;
+};
+class rhsusf_m998_d_2dr_fulltop: rhsusf_hmmwe_base {
+	class AnimationSources;
+};
+class rhsusf_m998_d_4dr_fulltop: rhsusf_hmmwe_base {
+	class AnimationSources
 	{
-		class AnimationSources;
-	};
-	class rhsusf_m1025_d_m2: rhsusf_hmmwe_base {
-		class AnimationSources;
-	};
-	class rhsusf_m1025_d_mk19: rhsusf_hmmwe_base {
-		class AnimationSources;
-	};
-	class rhsusf_m998_d_2dr_fulltop: rhsusf_hmmwe_base {
-		class AnimationSources;
-	};
-	class rhsusf_m998_d_4dr_fulltop: rhsusf_hmmwe_base {
-		class AnimationSources
-		{
-			class longlights_hide	{
-					source = "user";
-					animPeriod = 0.000001;
-					initPhase = 1;
-				};
-				class shortlights_hide: longlights_hide { initPhase = 0; };
-				class lights_hide: longlights_hide { initPhase = 0; };
-				class light_bo {
-					source = "user";
-					animPeriod = 0.4;
-					initPhase = 1;
-				};
+		class longlights_hide	{
+			source = "user";
+			animPeriod = 0.000001;
+			initPhase = 1;
+		};
+
+		class shortlights_hide: longlights_hide { initPhase = 0; };
+		class lights_hide: longlights_hide { initPhase = 0; };
+		class light_bo {
+			source = "user";
+			animPeriod = 0.4;
+			initPhase = 1;
 		};
 	};
-	class rhsusf_m998_d_4dr_halftop: rhsusf_hmmwe_base {
-		class AnimationSources;
-	};
-	class rhsusf_m998_d_4dr: rhsusf_hmmwe_base {
-		class AnimationSources;
-	};
+};
+class rhsusf_m998_d_4dr_halftop: rhsusf_hmmwe_base {
+	class AnimationSources;
+};
+class rhsusf_m998_d_4dr: rhsusf_hmmwe_base {
+	class AnimationSources;
+};
 
 
 class hummv_d_SPAGPAT: rhsusf_m1025_d
