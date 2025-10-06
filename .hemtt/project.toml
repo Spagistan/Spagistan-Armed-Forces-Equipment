@@ -4,7 +4,7 @@ prefix = "spag"
 mainprefix = "z"
 
 [version]
-path = "addons/spag_main/script_version.hpp"
+path = "addons/main/script_version.hpp"
 git_hash = 0
 
 
