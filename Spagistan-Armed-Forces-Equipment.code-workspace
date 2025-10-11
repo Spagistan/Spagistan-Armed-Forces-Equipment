@@ -28,8 +28,6 @@
 			"**/.hg": true,
 			"**/.DS_Store": true,
 			"**/Thumbs.db": true,
-			"**/.hemttout": true,
-			"releases/": true,
 		}
 	},
 	"tasks": {
@@ -40,6 +38,7 @@
 				"type": "shell",
 				"command": "hemtt launch",
 				"options": {
+					"cwd": "${workspaceFolder:root}",
 					"statusbar": {
 						"label": "$(run) Launch",
 					}
@@ -50,6 +49,7 @@
 				"type": "shell",
 				"command": "hemtt check",
 				"options": {
+					"cwd": "${workspaceFolder:root}",
 					"statusbar": {
 						"label": "$(check) Check",
 					}
@@ -67,6 +67,7 @@
 					"panel": "dedicated"
 				},
 				"options": {
+					"cwd": "${workspaceFolder:root}",
 					"statusbar": {
 						"label": "$(bug) RPT Log", // Use an Octicon for a nice visual touch
 						"tooltip": "Open the last RPT Log file using the HEMTT extension command"

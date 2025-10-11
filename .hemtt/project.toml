@@ -13,12 +13,10 @@ include = [
     "*.dll",
     "*.so",
     "mod.cpp",
-    "README*.md",  # Translated READMEs get moved to root in a hook (virtual file system)
+    "README*.md",            # Translated READMEs get moved to root in a hook (virtual file system)
     "AUTHORS.txt",
     "LICENSE",
     "spagistan_logo_ca.paa",
     "meta.cpp",
 ]
-exclude = [
-    "base_textures/**"
-]
+exclude = ["base_textures/**", "addons/.hemttout/**"]
