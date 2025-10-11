@@ -12,7 +12,8 @@ class CfgPatches
 			"spag_82mm_box_he",
 			"spag_82mm_box_smoke",
 			"spag_82mm_box_illum",
-			"spag_82mm_box_cumul"
+			"spag_82mm_box_cumul",
+			"spag_107mm_box_he"
 			};
 		weapons[] = {};
 		requiredVersion = 0.1;
