@@ -155,16 +155,3 @@ class S_Soldier_Pilot: S_Soldier_Base {
 	engineer = 1;
 
 };
-
-class S_Soldier_Pilot_Super: S_Soldier_Base {
-	rank = "Colonel";
-	displayName = "Air Crewman Colonel";
-	scope = 2;
-    scopeCurator = 2;
-	engineer = 1;
-	weapons[] = {
-		"S_weap_rpk_ip78",
-		"rhs_weap_makarov_pm"
-	};
-};
-
