@@ -17,14 +17,14 @@ class S_Soldier_Base: I_G_Soldier_base_F
 		"S_weap_ak74m_ip78",
 		"rhs_weap_makarov_pm"
 	};
-	
+
 	items[] = {
-		"ACE_microDAGR", 
+		"ACE_microDAGR",
 		ITEM_2("ACE_CableTie"),
 		ITEM_2("ACE_EarPlugs"),
 	};
 	respawnItems[] = {
-		"ACE_microDAGR", 
+		"ACE_microDAGR",
 		ITEM_2("ACE_CableTie"),
 		ITEM_2("ACE_EarPlugs"),
 	};
@@ -37,24 +37,24 @@ class S_Soldier_Base: I_G_Soldier_base_F
 		"rhs_mag_9x18_8_57N181S",
 	};
 	linkedItems[] = {
-		"S_Vest_SPAGPAT", 
-		"rhs_1PN138", 
-		"S_Helmet_SPAGPAT", 
-		"rhs_PDU4", 
-		"ItemMap", 
-		"ItemCompass", 
-		"ItemWatch", 
-		"TFAR_anprc148jem", 
+		"S_Vest_SPAGPAT",
+		"rhs_1PN138",
+		"S_Helmet_SPAGPAT",
+		"rhs_PDU4",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"TFAR_anprc148jem",
 	};
 	respawnLinkedItems[] = {
-		"S_Vest_SPAGPAT", 
-		"rhs_1PN138", 
-		"S_Helmet_SPAGPAT", 
-		"rhs_PDU4", 
-		"ItemMap", 
-		"ItemCompass", 
-		"ItemWatch", 
-		"TFAR_anprc148jem", 
+		"S_Vest_SPAGPAT",
+		"rhs_1PN138",
+		"S_Helmet_SPAGPAT",
+		"rhs_PDU4",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"TFAR_anprc148jem",
 	};
 };
 
@@ -143,7 +143,7 @@ class S_Soldier_Armor: S_Soldier_Base {
 	displayName = "Armor Crewman";
 	scope = 2;
     scopeCurator = 2;
-	engineer = 1;	
+	engineer = 1;
 
 };
 
@@ -154,5 +154,17 @@ class S_Soldier_Pilot: S_Soldier_Base {
     scopeCurator = 2;
 	engineer = 1;
 
+};
+
+class S_Soldier_Pilot_Super: S_Soldier_Base {
+	rank = "Colonel";
+	displayName = "Air Crewman Colonel";
+	scope = 2;
+    scopeCurator = 2;
+	engineer = 1;
+	weapons[] = {
+		"S_weap_rpk_ip78",
+		"rhs_weap_makarov_pm"
+	};
 };
 
