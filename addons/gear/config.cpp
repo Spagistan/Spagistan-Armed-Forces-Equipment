@@ -9,7 +9,11 @@ class CfgPatches
 			"TFAR_SPAG_mr3000",
 			"TFAR_SPAG_Air_mr3000",
 			"S_KitBag_Spag",
+			"S_Tubitak_Spag",
 			"S_KitBag_Rifleman",
+			"S_KitBag_Spag_Grenadier",
+			"S_KitBag_Spag_CLS",
+			"S_KitBag_Spag_PLM",
 			"TFAR_SPAG_mr3000_SL",
 			"NG_KitBag_Rifleman",
 			};
@@ -19,7 +23,7 @@ class CfgPatches
 			"S_Helmet_SPAGPAT_black_ess_bare",
 			"S_PatrolCap_SPAGPAT",
 			"U_S_Uniform_SPAGPAT",
-			"U_S_Uniform_Neck_SPAGPAT", 
+			"U_S_Uniform_Neck_SPAGPAT",
 			"U_S_Uniform_Telnyashka_SPAGPAT",
 			"U_S_Uniform_Gorka_SPAGPAT",
 			};
@@ -29,7 +33,7 @@ class CfgPatches
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
 		VERSION_CONFIG;
-		
+
 	};
 };
 #include "CfgWeapons.hpp"
