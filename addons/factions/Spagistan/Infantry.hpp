@@ -35,14 +35,14 @@ class S_Soldier_Base: I_G_Soldier_base_F
 		"ACE_Fortify"
 	};
 	magazines[] = {
-		ITEM_5("RHS_60Rnd_545x39_7N22_AK"),
+		ITEM_5("grcb_60Rnd_545x39_7N24"),
 		"rhs_mag_9x18_8_57N181S",
 		"cigs_morley_cigpack",
 		"cigs_lighter"
 
 	};
 	respawnMagazines[] = {
-		ITEM_5("RHS_60Rnd_545x39_7N22_AK"),
+		ITEM_5("grcb_60Rnd_545x39_7N24"),
 		"rhs_mag_9x18_8_57N181S",
 		"murshun_cigs_cigpack",
 		"murshun_cigs_lighter"
