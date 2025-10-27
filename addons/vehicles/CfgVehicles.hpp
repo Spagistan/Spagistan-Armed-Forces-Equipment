@@ -20,7 +20,7 @@
 	};\
 	class TransportMagazines\
 	{\
-		mag_xx(rhs_30Rnd_545x39_7N22_AK,20);\
+		mag_xx(grcb_60Rnd_545x39_7N24,20);\
 		mag_xx(rhs_200rnd_556x45_m_saw,12);\
 		mag_xx(rhs_VG40TB,10);\
 		mag_xx(rhs_VOG25p,10);\
@@ -28,6 +28,7 @@
 		mag_xx(rhs_GDM40,40);\
 		mag_xx(rhs_mag_rdg2_white,30);\
 		mag_xx(rhs_mag_rgo,15);\
+		mag_xx(rhs_mag_9k38_rocket,3):\
 	};\
 	class TransportItems\
 	{\
@@ -37,7 +38,7 @@
 		item_xx(ACE_EntrenchingTool,2);\
 	};
 
-class CfgVehicles 
+class CfgVehicles
 {
 	#include "cfgs\CfgVehicles.hpp"
 
