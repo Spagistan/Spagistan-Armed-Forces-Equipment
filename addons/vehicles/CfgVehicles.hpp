@@ -28,7 +28,7 @@
 		mag_xx(rhs_GDM40,40);\
 		mag_xx(rhs_mag_rdg2_white,30);\
 		mag_xx(rhs_mag_rgo,15);\
-		mag_xx(rhs_mag_9k38_rocket,3):\
+		mag_xx(rhs_mag_9k38_rocket,3);\
 	};\
 	class TransportItems\
 	{\

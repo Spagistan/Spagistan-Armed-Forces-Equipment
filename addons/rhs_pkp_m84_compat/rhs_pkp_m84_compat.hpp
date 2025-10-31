@@ -1,6 +1,3 @@
-
-
-
 class CfgMagazineWells {
 	class PK_762x54R {
 		RHS_Magazines[] += {
