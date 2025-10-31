@@ -705,7 +705,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
         };
 
 
@@ -735,7 +735,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -765,7 +765,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
     
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_uzbek_Helicopter_Pilot_01"; };
+            class MainTurret : MainTurret { gunnerType = "O_uzbek_Helicopter_Pilot_01"; primaryGunner = 1; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
             class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
@@ -799,7 +799,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
         };
 
 
@@ -829,7 +829,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
         };
 
 
@@ -859,7 +859,7 @@ class CfgVehicles {
         editorCategory = "o_uzbek_category";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CommanderOptics : CommanderOptics { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -1468,7 +1468,7 @@ class CfgVehicles {
 
         backpack = "rhs_medic_bag";
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_ak105","rhs_acc_pgs64","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{},{"ua_6sh122_speca",{{"ACE_fieldDressing",4},{"ACE_tourniquet",1},{"rhs_mag_rgd5",1,1},{"rhs_mag_rdg2_white",1,1},{"rhs_30Rnd_545x39_7N6M_AK",1,30}}},{"ua_6sh117_rifleman_od",{{"rhs_30Rnd_545x39_7N6M_AK",5,30}}},{"rhs_medic_bag",{{"ACE_surgicalKit",1},{"ACE_suture",3},{"ACE_plasmaIV_500",3},{"ACE_splint",5},{"ACE_tourniquet",3},{"ACE_epinephrine",1},{"ACE_morphine",10},{"ACE_fieldDressing",30},{"ACE_salineIV",2}}},"ua_6b7_1m_speca","murshun_cigs_cig0",{},{"","","ItemRadio","","ItemWatch","rhs_1PN138"}};
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_ak105","rhs_acc_pgs64","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{},{"ua_6sh122_speca",{{"ACE_fieldDressing",4},{"ACE_tourniquet",1},{"rhs_mag_rgd5",1,1},{"rhs_mag_rdg2_white",1,1},{"rhs_30Rnd_545x39_7N6M_AK",1,30}}},{"ua_6sh117_rifleman_od",{{"rhs_30Rnd_545x39_7N6M_AK",5,30}}},{"rhs_medic_bag",{{"ACE_surgicalKit",1},{"ACE_suture",3},{"ACE_plasmaIV_500",3},{"ACE_splint",5},{"ACE_tourniquet",3},{"ACE_epinephrine",1},{"ACE_morphine",10},{"ACE_fieldDressing",30},{"ACE_salineIV",2}}},"ua_6b7_1m_speca",{},{"","","ItemRadio","","ItemWatch","rhs_1PN138"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2888,7 +2888,7 @@ class CfgVehicles {
         crew = "ua_prm_Commander";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -2918,7 +2918,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
             class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
@@ -2958,7 +2958,7 @@ class CfgVehicles {
         crew = "ua_prm_Fighter_AK74M";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
         };
 
 
@@ -2988,7 +2988,7 @@ class CfgVehicles {
         crew = "ua_prm_Fighter_AKS74";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
         };
 
 
@@ -3157,7 +3157,7 @@ class CfgVehicles {
         crew = "ua_prm_Fighter_M38";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_uzbek_Fighter_AK_105_Alt_01"; };
+            class MainTurret : MainTurret { gunnerType = "O_uzbek_Fighter_AK_105_Alt_01"; primaryGunner = 1;};
             class CargoTurret_01 : CargoTurret_01 { gunnerType = "O_uzbek_Fighter_AK_74M_01"; };
         };
 
@@ -3188,7 +3188,7 @@ class CfgVehicles {
         crew = "ua_prm_Fighter_AK105_Alt";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3218,7 +3218,7 @@ class CfgVehicles {
         crew = "ua_prm_Fighter_AK74M";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3248,7 +3248,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3278,7 +3278,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3308,7 +3308,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3338,7 +3338,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3368,7 +3368,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
             class Com_BMP1 : Com_BMP1 { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -3409,7 +3409,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3439,7 +3439,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class Com_BMP1 : Com_BMP1 { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -3480,7 +3480,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CommanderOptics : CommanderOptics { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -3552,7 +3552,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = "";primaryGunner = 1; };
         };
 
 
@@ -3582,7 +3582,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1; };
         };
 
 
@@ -3648,7 +3648,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = "";primaryGunner = 1; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
             class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
@@ -3685,7 +3685,7 @@ class CfgVehicles {
 
         class Turrets : Turrets {
             class CommanderOptics : CommanderOptics { gunnerType = ""; };
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
             class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
@@ -3721,7 +3721,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
             class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
@@ -3756,7 +3756,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = "";primaryGunner = 1; };
             class CommanderOptics : CommanderOptics { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -3796,7 +3796,7 @@ class CfgVehicles {
         crew = "ua_prm_Crewman";
 
         class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = ""; primaryGunner = 1;};
             class CommanderOptics : CommanderOptics { gunnerType = ""; };
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
