@@ -22,7 +22,6 @@ class CfgPatches {
             "rhssaf_c_troops",
             "A3_Sounds_F",
             "A3_Sounds_F_Exp",
-            "immersion_pops",
             "tfar_core",
             "ace_gforces",
             "ace_movement",

@@ -1,0 +1,89 @@
+{
+	"folders": [
+		{
+			"name": "Addons",
+			"path": "./addons"
+		},
+		{
+			"name": "HEMTT",
+			"path": "./.hemtt"
+		},
+		{
+			"name": "root",
+			"path": "."
+		},
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"editor.formatOnSave": true,
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"files.associations": {
+			"*.hpp": "arma-config",
+			"$PBOPREFIX$": "addon-prefix"
+		},
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Launch",
+				"type": "shell",
+				"command": "hemtt launch",
+				"options": {
+					"cwd": "${workspaceFolder:root}",
+					"statusbar": {
+						"label": "$(run) Launch",
+					}
+				}
+			},
+			{
+				"label": "Check",
+				"type": "shell",
+				"command": "hemtt check",
+				"options": {
+					"cwd": "${workspaceFolder:root}",
+					"statusbar": {
+						"label": "$(check) Check",
+					}
+				}
+			},
+			{
+				"label": "Open Last RPT",
+				"type": "shell",
+				"command": "echo",
+				"args": [
+					"${command:hemtt.openLastRPT}"
+				],
+				"presentation": {
+					"reveal": "never",
+					"panel": "dedicated"
+				},
+				"options": {
+					"cwd": "${workspaceFolder:root}",
+					"statusbar": {
+						"label": "$(bug) RPT Log", // Use an Octicon for a nice visual touch
+						"tooltip": "Open the last RPT Log file using the HEMTT extension command"
+					}
+				}
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"tamasfe.even-better-toml",
+			"brettmayson.hemtt",
+			"actboy168.tasks",
+			"mhutchie.git-graph",
+			"github.vscode-pull-request-github",
+			"llvm-vs-code-extensions.vscode-clangd"
+		]
+	},
+}

@@ -1,1 +1,0 @@
-#include "\z\spag\addons\factions\script_component.hpp"
