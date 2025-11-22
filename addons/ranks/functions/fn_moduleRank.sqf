@@ -5,7 +5,7 @@ private _activated 	= _this param [2,true,[true]];
 if (_activated) then
 {
 	//--- Extract the user defined module arguments
-	_rank = _logic getVariable ["Value",""];
+	private _rank = _logic getVariable ["Value",""];
 
 	if (_rank != "") then
 	{
