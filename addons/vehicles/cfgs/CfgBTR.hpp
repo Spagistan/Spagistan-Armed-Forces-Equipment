@@ -10,7 +10,7 @@ hiddenSelectionsTextures[] = {
 class rhsgref_cdf_btr60;
 class BTR_Spagpat: rhsgref_cdf_btr60
 {
-	displayName = "SPAG BTR";
+	displayName = "Spag BTR-3";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;

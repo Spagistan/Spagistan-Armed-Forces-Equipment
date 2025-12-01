@@ -11,4 +11,4 @@ class CfgPatches {
 	};
 };
 
-#include "spag_rhs_pkp_m84_compat.hpp"
+#include "rhs_pkp_m84_compat.hpp"
