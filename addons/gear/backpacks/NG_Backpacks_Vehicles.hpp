@@ -3,7 +3,7 @@ class rhssaf_kitbag_digital;
 // National Guard Backpacks
 
 class NG_KitBag_RF : rhssaf_kitbag_digital {
-  author = "CParadis/Aidan";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "NG_KitBag_RF";
@@ -33,7 +33,7 @@ class NG_KitBag_RF : rhssaf_kitbag_digital {
 
 
 class NG_KitBag_GR : rhssaf_kitbag_digital {
-  author = "CParadis/Aidan";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "NG_KitBag_GR";
@@ -65,7 +65,7 @@ class NG_KitBag_GR : rhssaf_kitbag_digital {
 };
 
 class NG_KitBag_AR : rhssaf_kitbag_digital {
-  author = "CParadis/Aidan";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "NG_KitBag_AR";
@@ -94,7 +94,7 @@ class NG_KitBag_AR : rhssaf_kitbag_digital {
 };
 
 class NG_KitBag_TL : rhssaf_kitbag_digital {
-  author = "CParadis/Aidan";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "NG_KitBag_TL";
