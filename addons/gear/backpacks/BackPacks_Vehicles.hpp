@@ -79,7 +79,6 @@ class S_KitBag_Spag_Rifleman: S_KitBag_Spag
 
 class S_KitBag_Spag_Grenadier: S_KitBag_Spag
 {
-
   author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
