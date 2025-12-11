@@ -131,14 +131,24 @@ class U_S_Gorka_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
 };
 
-class U_S_Gorka_Winter_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
+class U_S_Gorka_Winter_Mix_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
 {
         author="Dan";
 		side = 2;
 		scope = 2;
-        uniformClass="U_S_Uniform_Gorka_Winter_SPAGPAT";
+        uniformClass="U_S_Uniform_Gorka_Winter_Mix_SPAGPAT";
         hiddenSelections[] = {"camo1","Insignia"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_mix)};
+};
+
+class U_S_Gorka_Winter_Full_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Winter_Full_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_full)};
 };
 
 class U_S_Gorka_Full_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman

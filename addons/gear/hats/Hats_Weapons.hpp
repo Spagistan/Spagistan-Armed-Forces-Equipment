@@ -2,6 +2,7 @@
 class rhssaf_helmet_m97_woodland;
 class rhssaf_helmet_m97_black_nocamo_black_ess;
 class rhssaf_helmet_m97_black_nocamo_black_ess_bare;
+class rhssaf_helmet_m97_olive_nocamo;
 class rhssaf_helmet_m97_olive_nocamo_black_ess;
 class rhssaf_helmet_m97_olive_nocamo_black_ess_bare;
 class rhssaf_helmet_m97_woodland_black_ess;
@@ -73,6 +74,17 @@ class S_Helmet_Olive_tan_ess: rhssaf_helmet_m97_olive_nocamo_black_ess
   allowedSlots[] = {701,801,901};
   displayName = "Combat Helm (Olive/Tan ESS)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_nocamo_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
+};
+
+
+class S_Helmet_Winter: rhssaf_helmet_m97_olive_nocamo
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Red Hammer Studios";
+  allowedSlots[] = {701,801,901};
+  displayName = "Combat Helm (Winter)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_winter_co)};
 };
 
 // HATS
