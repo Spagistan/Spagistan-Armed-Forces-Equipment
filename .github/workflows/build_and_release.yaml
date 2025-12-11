@@ -54,13 +54,12 @@ jobs:
           files: release-files/@safe.zip # Path to the zip in downloaded artifact
           name: ${{ github.ref_name }} # Use tag name as release name
 
-
-      # - name: Upload to Workshop
-      #   uses: m00nl1ght-dev/steam-workshop-deploy@v4
-      #   if: github.ref_type == 'tag'
-      #   with:
-      #     username: ${{ secrets.STEAM_USERNAME }}
-      #     configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
-      #     path: .hemttout/@safe
-      #     appId: 3615632492
-      #     publishedFileId: 3615632492
+      - name: Upload to Workshop
+        uses: m00nl1ght-dev/steam-workshop-deploy@v4
+        if: github.ref_type == 'tag'
+        with:
+          username: ${{ secrets.STEAM_USERNAME }}
+          configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
+          path: .hemttout/@safe
+          appId: 3615632492
+          publishedFileId: 3615632492
