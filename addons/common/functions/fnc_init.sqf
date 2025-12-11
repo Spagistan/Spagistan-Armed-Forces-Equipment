@@ -1,2 +1,2 @@
-_time = time + 1;
+private _time = time + 1;
 waitUntil {!([] call bis_fnc_isLoading) && time > _time};

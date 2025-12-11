@@ -41,7 +41,7 @@ class S_Vest_SPAGPAT: rhssaf_vest_md12_digital
 {
   displayName = "Ballistic Vest (Spagpat)";
   scope = 2;
-  author = "Taepodong";
+  author = "Spagistan Mod Team";
   hiddenSelections[] = {"camo"};
   hiddenSelectionsTextures[] = {QPATHTOF(data\vests\m12_SPAGPAT_ca)};
 };
@@ -50,7 +50,7 @@ class S_Vest_SPAGPAT_AIR: rhssaf_vest_md12_digital
 {
   displayName = "Ballistic Vest (Spagpat - Air)";
   scope = 2;
-  author = "Taepodong";
+  author = "Spagistan Mod Team";
   hiddenSelections[] = {"camo"};
   hiddenSelectionsTextures[] = {QPATHTOF(data\vests\m12_SPAGPAT_AIR_ca)};
 };
