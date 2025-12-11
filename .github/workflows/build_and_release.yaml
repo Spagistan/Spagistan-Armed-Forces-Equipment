@@ -3,11 +3,10 @@ name: Build and Release
 on:
   pull_request:
     branches:
-      - 'master'
+      - "master"
   push:
     tags:
       - v*
-
 
 jobs:
   build:
@@ -48,10 +47,19 @@ jobs:
           name: mod-artifact
           path: release-files
 
-
       - name: Create Release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
           files: release-files/@safe.zip # Path to the zip in downloaded artifact
           name: ${{ github.ref_name }} # Use tag name as release name
+
+      - name: Upload to Workshop
+        uses: m00nl1ght-dev/steam-workshop-deploy@v4
+        if: github.ref_type == 'tag'
+        with:
+          username: ${{ secrets.STEAM_USERNAME }}
+          configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
+          path: .hemttout/@safe
+          appId: 3615632492
+          publishedFileId: 3615632492

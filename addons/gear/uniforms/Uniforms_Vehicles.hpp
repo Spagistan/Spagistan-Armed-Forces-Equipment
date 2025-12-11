@@ -51,6 +51,35 @@ class U_S_Neck_SPAGPAT: rhssaf_soldier_un_desert_base
   hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_scarf)};
 };
 
+class U_S_Winter_SPAGPAT: rhssaf_soldier_un_desert_base
+{
+  /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;
+  uniformClass = "U_S_Uniform_Winter_SPAGPAT";
+  hiddenSelections[] = {"camo","Insignia"};
+  hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_winter)};
+};
+
+class U_S_Winter_Mix1_SPAGPAT: rhssaf_soldier_un_desert_base
+{
+  /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;
+  uniformClass = "U_S_Uniform_Winter_Mix1_SPAGPAT";
+  hiddenSelections[] = {"camo","Insignia"};
+  hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_winter_mix1)};
+};
+
+class U_S_Winter_Mix2_SPAGPAT: rhssaf_soldier_un_desert_base
+{
+  /* nakedUniform = "U_BasicBody"; */
+  side = 2;
+  scope = 2;
+  uniformClass = "U_S_Uniform_Winter_Mix2_SPAGPAT";
+  hiddenSelections[] = {"camo","Insignia"};
+  hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_winter_mix2)};
+};
 
 /* class U_S_OfficerGeur: O_G_Soldier_TL_F
 {
@@ -100,6 +129,36 @@ class U_S_Gorka_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
         uniformClass="U_S_Uniform_Gorka_SPAGPAT";
         hiddenSelections[] = {"camo1","Insignia"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
+};
+
+class U_S_Gorka_Winter_Mix_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Winter_Mix_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_mix)};
+};
+
+class U_S_Gorka_Winter_Full_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Winter_Full_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_full)};
+};
+
+class U_S_Gorka_Full_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Full_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_full)};
 };
 
 //  BACKWARDS COMPATIBILITY

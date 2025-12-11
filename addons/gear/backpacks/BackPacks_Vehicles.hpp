@@ -7,7 +7,7 @@ class TFAR_SPAG_mr3000: TFAR_mr3000
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "Taepodong/Kalthramis";
+  author = "Spagistan Mod Team";
   displayName = "MR3000 BWMOD (Spagpat)";
   descriptionShort = "Spagistan-camo LR Radio";
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAGPAT_ca) };
@@ -18,7 +18,7 @@ class TFAR_SPAG_Air_mr3000: TFAR_mr3000
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "Taepodong/Kalthramis";
+  author = "Spagistan Mod Team";
   displayName = "MR3000 BWMOD (Spagpat - Air)";
   descriptionShort = "Spagistan air camo LR Radio";
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAIRPAT_ca) };
@@ -29,7 +29,7 @@ class S_KitBag_Spag: B_Kitbag_rgr
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "Taepodong/Kalthramis";
+  author = "Spagistan Mod Team";
   generalMacro = "S_KitBag_Spag";
   displayName = "Kitbag (Spagpat)";
   /* picture = "\A3\weapons_f\ammoboxes\bags\ui\icon_B_C_Compact_dgtl_ca.paa"; */
@@ -44,7 +44,7 @@ class S_Tubitak_Spag: ua_carryall_tubitak
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "TEagle";
+  author = "Spagistan Mod Team";
   generalMacro = "S_Tubitak_Spag";
   displayName = "Carryall Backpack (TUBITAK)";
 };
@@ -52,7 +52,7 @@ class S_Tubitak_Spag: ua_carryall_tubitak
 class S_KitBag_Spag_Rifleman: S_KitBag_Spag
 {
 
-  author = "Taepodong/Kalthramis";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "S_KitBag_Spag_Rifleman";
@@ -79,8 +79,7 @@ class S_KitBag_Spag_Rifleman: S_KitBag_Spag
 
 class S_KitBag_Spag_Grenadier: S_KitBag_Spag
 {
-
-  author = "TEagle";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "S_KitBag_Spag_Grenadier";
@@ -110,7 +109,7 @@ class S_KitBag_Spag_Grenadier: S_KitBag_Spag
 
 class S_KitBag_Spag_CLS: S_KitBag_Spag
 {
-  author = "TEagle";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "S_KitBag_Spag_CLS";
@@ -139,7 +138,7 @@ class S_KitBag_Spag_CLS: S_KitBag_Spag
 
 class S_Kitbag_PLM: S_Tubitak_Spag
 {
-  author = "TEagle";
+  author = "Spagistan Mod Team";
   scope = 1;
   scopeArsenal = 1;
   generalMacro = "S_KitBag_Spag_PLM";
@@ -164,7 +163,7 @@ class S_Kitbag_PLM: S_Tubitak_Spag
 
 class TFAR_SPAG_mr3000_SL : TFAR_SPAG_mr3000 {
 
-    author = "Taepodong/Kalthramis";
+    author = "Spagistan Mod Team";
     scope = 1;
     scopeArsenal = 1;
     generalMacro = "TFAR_SPAG_mr3000_SL";
