@@ -10,8 +10,10 @@ on:
 
 jobs:
   build:
-    name: Build and Release
+    name: Build
     runs-on: ubuntu-latest
+    outputs:
+      VERSION: ${{ github.ref_name }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,41 +27,50 @@ jobs:
         run: hemtt release
 
       - name: Rename build folder
-        run: mv .hemttout/release .hemttout/@safe # Change "yourmodname"
+        run: mv .hemttout/release .hemttout/@safe # Change "yourmodname" if necessary
 
       - name: Zip the mod
         run: |
           cd .hemttout
           zip -r @safe.zip @safe
 
+  release:
+    name: Release
+    needs: build
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    steps:
       - name: Upload Mod Artifact
         uses: actions/upload-artifact@v4
-        if: github.ref_type == 'tag'
         with:
           name: mod-artifact
-          path: .hemttout/@safe.zip # Upload the zip
+          path: .hemttout/@safe.zip
           if-no-files-found: error
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
-        if: github.ref_type == 'tag'
         with:
           name: mod-artifact
           path: release-files
 
+      - name: Unzip Mod
+        run: |
+          unzip release-files/@safe.zip -d .
+          ls -la @safe
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
-        if: github.ref_type == 'tag'
         with:
-          files: release-files/@safe.zip # Path to the zip in downloaded artifact
-          name: ${{ github.ref_name }} # Use tag name as release name
+          files: release-files/@safe.zip
+          name: ${{ needs.build.outputs.VERSION }}
 
-      - name: Upload to Workshop
-        uses: m00nl1ght-dev/steam-workshop-deploy@v4
-        if: github.ref_type == 'tag'
+      - name: Upload to Steam Workshop
+        uses: arma-actions/workshop-upload@v1
         with:
-          username: ${{ secrets.STEAM_USERNAME }}
-          configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
-          path: .hemttout/@safe
-          appId: 3615632492
-          publishedFileId: 3615632492
+          appId: "107410"
+          itemId: "3615632492" # Dev Builds (change if needed)
+          contentPath: "@safe"
+          changelog: "Version ${{ needs.build.outputs.VERSION }}"
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
