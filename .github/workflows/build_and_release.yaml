@@ -27,12 +27,14 @@ jobs:
         run: hemtt release
 
       - name: Rename build folder
-        run: mv .hemttout/release .hemttout/@safe # Change "yourmodname" if necessary
+        run: mv .hemttout/release .hemttout/@safe
 
-      - name: Zip the mod
-        run: |
-          cd .hemttout
-          zip -r @safe.zip @safe
+      - name: Upload Mod Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: safe
+          path: .hemttout/@safe
+          if-no-files-found: error
 
   release:
     name: Release
@@ -40,28 +42,22 @@ jobs:
     if: github.ref_type == 'tag'
     runs-on: ubuntu-latest
     steps:
-      - name: Upload Mod Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: mod-artifact
-          path: .hemttout/@safe.zip
-          if-no-files-found: error
-
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: mod-artifact
-          path: release-files
+          name: safe
+          path: artifacts/safe
 
-      - name: Unzip Mod
+      - name: Zip mod
         run: |
-          unzip release-files/@safe.zip -d .
-          ls -la @safe
+          ls
+          mv artifacts/safe artifacts/@safe
+          zip -r artifacts/@safe.zip artifacts/@safe
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: release-files/@safe.zip
+          files: artifacts/@safe.zip
           name: ${{ needs.build.outputs.VERSION }}
 
       - name: Upload to Steam Workshop
@@ -69,7 +65,7 @@ jobs:
         with:
           appId: "107410"
           itemId: "3615632492" # Dev Builds (change if needed)
-          contentPath: "@safe"
+          contentPath: "artifacts/@safe"
           changelog: "Version ${{ needs.build.outputs.VERSION }}"
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
