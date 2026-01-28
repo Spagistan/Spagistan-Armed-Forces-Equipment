@@ -38,7 +38,7 @@ class CfgPatches
 			"U_S_Uniform_Gorka_SPAGPAT",
 			};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"spag_main","spag_common"};
+		requiredAddons[] = {"spag_main","spag_common", "rhs_weapons", "rhs_c_weapons"};
 		author = "Spagistan Development Team";
 		authors[] = {"Taepodong","Kalthramis"};
 		url = "SPAGLINK";
