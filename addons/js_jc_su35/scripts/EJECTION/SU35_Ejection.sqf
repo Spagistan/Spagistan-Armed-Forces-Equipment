@@ -1,4 +1,4 @@
-_SU35 = _this select 0;	
+_SU35 = _this select 0;
 _Pilot = driver _SU35;
 
 if ((!isengineon _SU35)) ExitWith {};
@@ -62,12 +62,12 @@ _Ejection_Seat setvelocity [(_eject_velocity select 0) + (_velocity_SU35_new sel
 
 sleep 1.0;
 
-while {(alive _Pilot)} do 
+while {(alive _Pilot)} do
 {
 	_Pos_Ejection_Seat = getPos _Ejection_Seat;
 	If ((_Pos_Ejection_Seat select 2) < 300) exitWith {};
 	sleep 0.5;
-			
+
 };
 
 _Ejection_Seat lock 0;
@@ -100,4 +100,3 @@ deletevehicle _Ejection_Seat;
 
 
 Exit;
-	

@@ -1,711 +1,550 @@
-class CfgPatches
-{
-	class JS_JC_SU35
-	{
-		units[]=
-		{
-			"JS_JC_SU35",
-			"JS_JC_OPFOR_Pilot",
-			"JS_JC_SU35_canopy",
-			"JS_JC_SU35ejection_seat"
-		};
-		weapons[]=
-		{
-			"js_w_su35_gsh30",
-			"JS_JC_Su35_PilotCoveralls"
-		};
-		requiredVersion=0.5;
-		requiredAddons[]=
-		{
-			"A3_Air_F"
-		};
-		magazines[]=
-		{
-			"js_m_su35_gsh",
-			"PylonRack_Rocket_S8_JS_SU35_x20",
-			"PylonRack_Wing_Tank_JS_SU35_x1",
-			"PylonRack_Buddy_Pod_JS_SU35_x1",
-			"js_m_su35_empty",
-			"js_m_su35_fake_empty"
-		};
-		ammo[]=
-		{
-			"js_a_su35_rocket_80mm_HE",
-			"js_a_su35_S8_rocketpod_x1",
-			"js_a_su35_S8_rocketpod_x2",
-			"js_a_su35_wing_tank",
-			"js_a_su35_buddy_pod",
-			"js_a_su35_empty"
-		};
-	};
+class CfgPatches {
+    class JS_JC_SU35 {
+        units[] = {
+            "JS_JC_SU35",
+            "JS_JC_OPFOR_Pilot",
+            "JS_JC_SU35_canopy",
+            "JS_JC_SU35ejection_seat"
+        };
+        weapons[] = {"js_w_su35_gsh30", "JS_JC_Su35_PilotCoveralls"};
+        requiredVersion = 1.0;
+        requiredAddons[] = {"A3_Air_F"};
+        magazines[] = {
+            "js_m_su35_gsh",
+            "PylonRack_Rocket_S8_JS_SU35_x20",
+            "PylonRack_Wing_Tank_JS_SU35_x1",
+            "PylonRack_Buddy_Pod_JS_SU35_x1",
+            "js_m_su35_empty",
+            "js_m_su35_fake_empty"
+        };
+        ammo[] = {
+            "js_a_su35_rocket_80mm_HE",
+            "js_a_su35_S8_rocketpod_x1",
+            "js_a_su35_S8_rocketpod_x2",
+            "js_a_su35_wing_tank",
+            "js_a_su35_buddy_pod",
+            "js_a_su35_empty"
+        };
+    };
 };
-class CfgMagazines
-{
-	class VehicleMagazine;
-	class js_m_su35_gsh: VehicleMagazine
-	{
-		scope=2;
-		displayName="Gsh 30mm";
-		ammo="B_35mm_AA";
-		count=150;
-		initSpeed=1036;
-		tracersEvery=2;
-		nameSound="cannon";
-	};
-	class PylonRack_20Rnd_Rocket_03_HE_F;
-	class PylonRack_Rocket_S8_JS_SU35_x20: PylonRack_20Rnd_Rocket_03_HE_F
-	{
-		scope=2;
-		displayName="S8 HE x20";
-		count=20;
-		ammo="js_a_su35_rocket_80mm_HE";
-		initSpeed=0;
-		sound[]={};
-		reloadSound[]={};
-		nameSound="";
-		hardpoints[]=
-		{
-			"JS_JC_SU35_Pylon"
-		};
-		pylonWeapon="js_w_su35_s8Laucher";
-		mass=300;
-	};
-	class PylonRack_Wing_Tank_JS_SU35_x1: VehicleMagazine
-	{
-		scope=2;
-		displayName="SU35 Wing Tank";
-		count=1;
-		ammo="js_a_su35_wing_tank";
-		model="\js_jc_su35\stores\m_wing_tank";
-		initSpeed=0;
-		sound[]={};
-		reloadSound[]={};
-		nameSound="";
-		hardpoints[]=
-		{
-			"JS_JC_SU35_Pylon"
-		};
-		pylonWeapon="js_w_su35_fueltank_holder";
-		mass=500;
-	};
-	class PylonRack_Buddy_Pod_JS_SU35_x1: VehicleMagazine
-	{
-		scope=2;
-		displayName="SU35 Buddy Pod";
-		count=1;
-		ammo="js_a_su35_buddy_pod";
-		model="\js_jc_su35\stores\m_buddy_pod";
-		initSpeed=0;
-		sound[]={};
-		reloadSound[]={};
-		nameSound="";
-		hardpoints[]=
-		{
-			"JS_JC_SU35_Pylon"
-		};
-		pylonWeapon="js_w_su35_fueltank_holder";
-		mass=500;
-	};
-	class js_m_su35_empty: VehicleMagazine
-	{
-		scope=2;
-		displayName="SU35 Empty";
-		count=1;
-		ammo="js_a_su35_empty";
-		initSpeed=0;
-		sound[]={};
-		reloadSound[]={};
-		nameSound="";
-		hardpoints[]=
-		{
-			"JS_JC_SU35_Pylon"
-		};
-		pylonWeapon="js_w_su35_master_arms_safe";
-		mass=0;
-	};
-	class js_m_su35_fake_empty: VehicleMagazine
-	{
-		scope=2;
-		displayName="";
-		count=1;
-		ammo="js_a_su35_empty";
-		initSpeed=0;
-		sound[]={};
-		reloadSound[]={};
-		nameSound="";
-		hardpoints[]=
-		{
-			"JS_JC_SU35_Pylon"
-		};
-		pylonWeapon="js_w_su35_master_arms_safe";
-		mass=0;
-	};
+class CfgMagazines {
+    class VehicleMagazine;
+    class js_m_su35_gsh: VehicleMagazine {
+        scope = 2;
+        displayName = "Gsh 30mm";
+        ammo = "B_35mm_AA";
+        count = 150;
+        initSpeed = 1036;
+        tracersEvery = 2;
+        nameSound = "cannon";
+    };
+    class PylonRack_20Rnd_Rocket_03_HE_F;
+    class PylonRack_Rocket_S8_JS_SU35_x20: PylonRack_20Rnd_Rocket_03_HE_F {
+        scope = 2;
+        displayName = "S8 HE x20";
+        count = 20;
+        ammo = "js_a_su35_rocket_80mm_HE";
+        initSpeed = 0;
+        sound[] = {};
+        reloadSound[] = {};
+        nameSound = "";
+        hardpoints[] = {"JS_JC_SU35_Pylon"};
+        pylonWeapon = "js_w_su35_s8Laucher";
+        mass = 300;
+    };
+    class PylonRack_Wing_Tank_JS_SU35_x1: VehicleMagazine {
+        scope = 2;
+        displayName = "SU35 Wing Tank";
+        count = 1;
+        ammo = "js_a_su35_wing_tank";
+        model = "\js_jc_su35\stores\m_wing_tank";
+        initSpeed = 0;
+        sound[] = {};
+        reloadSound[] = {};
+        nameSound = "";
+        hardpoints[] = {"JS_JC_SU35_Pylon"};
+        pylonWeapon = "js_w_su35_fueltank_holder";
+        mass = 500;
+    };
+    class PylonRack_Buddy_Pod_JS_SU35_x1: VehicleMagazine {
+        scope = 2;
+        displayName = "SU35 Buddy Pod";
+        count = 1;
+        ammo = "js_a_su35_buddy_pod";
+        model = "\js_jc_su35\stores\m_buddy_pod";
+        initSpeed = 0;
+        sound[] = {};
+        reloadSound[] = {};
+        nameSound = "";
+        hardpoints[] = {"JS_JC_SU35_Pylon"};
+        pylonWeapon = "js_w_su35_fueltank_holder";
+        mass = 500;
+    };
+    class js_m_su35_empty: VehicleMagazine {
+        scope = 2;
+        displayName = "SU35 Empty";
+        count = 1;
+        ammo = "js_a_su35_empty";
+        initSpeed = 0;
+        sound[] = {};
+        reloadSound[] = {};
+        nameSound = "";
+        hardpoints[] = {"JS_JC_SU35_Pylon"};
+        pylonWeapon = "js_w_su35_master_arms_safe";
+        mass = 0;
+    };
+    class js_m_su35_fake_empty: VehicleMagazine {
+        scope = 2;
+        displayName = "";
+        count = 1;
+        ammo = "js_a_su35_empty";
+        initSpeed = 0;
+        sound[] = {};
+        reloadSound[] = {};
+        nameSound = "";
+        hardpoints[] = {"JS_JC_SU35_Pylon"};
+        pylonWeapon = "js_w_su35_master_arms_safe";
+        mass = 0;
+    };
 };
-class CfgAmmo
-{
-	class MissileBase;
-	class RocketBase;
-	class LaserBombCore;
-	class BombCore;
-	class js_a_su35_rocket_80mm_HE: MissileBase
-	{
-		model="\A3\Weapons_F\Ammo\Rocket_02_fly_F";
-		proxyShape="\js_jc_su35\stores\m_empty";
-		hit=210;
-		indirectHit=55;
-		indirectHitRange=15;
-		cost=500;
-		maxSpeed=590;
-		initTime=0.0020000001;
-		thrustTime=0.69;
-		thrust=1060;
-		airFriction=0.090000004;
-		sideAirFriction=0.0049999999;
-		fuseDistance=50;
-		whistleDist=30;
-		timeToLive=60;
-		maneuvrability=0;
-		effectsMissileInit="PylonBackEffectsFFAR";
-		CraterEffects="HERocketCrater";
-		explosionEffects="HERocketExplosion";
-		effectsMissile="missile1";
-		soundHit[]=
-		{
-			"A3\Sounds_F\weapons\Rockets\explosion_missile_02",
-			2.5118899,
-			1,
-			1800
-		};
-		explosionSoundEffect="DefaultExplosion";
-		soundFly[]=
-		{
-			"",
-			1,
-			1,
-			400
-		};
-		soundEngine[]=
-		{
-			"",
-			1,
-			1,
-			20
-		};
-		supersonicCrackNear[]=
-		{
-			"",
-			1,
-			1,
-			50
-		};
-		supersonicCrackFar[]=
-		{
-			"",
-			1,
-			1,
-			150
-		};
-		airLock=0;
-		irLock=0;
-		laserLock=0;
-	};
-	class js_a_su35_S8_rocketpod_x1: MissileBase
-	{
-		hit=0;
-		indirectHit=0;
-		indirectHitRange=0;
-		thrustTime=0;
-		thrust=0;
-		maxspeed=0;
-		timetolive=0;
-		maneuvrability=0;
-		model="\js_jc_su35\stores\m_s8_launcher_x1";
-		proxyShape="\js_jc_su35\stores\m_s8_launcher_x1";
-		airlock=0;
-		laserLock=0;
-		irLock=0;
-		initTime=0;
-		minRange=0;
-		minRangeProbab=0;
-		midRange=0;
-		midRangeProbab=0;
-		maxRange=0;
-		maxRangeProbab=0;
-		sideAirFriction=0;
-	};
-	class js_a_su35_S8_rocketpod_x2: MissileBase
-	{
-		hit=0;
-		indirectHit=0;
-		indirectHitRange=0;
-		thrustTime=0;
-		thrust=0;
-		maxspeed=0;
-		timetolive=0;
-		maneuvrability=0;
-		model="\js_jc_su35\stores\m_s8_launcher_x2";
-		proxyShape="\js_jc_su35\stores\m_s8_launcher_x2";
-		airlock=0;
-		laserLock=0;
-		irLock=0;
-		initTime=0;
-		minRange=0;
-		minRangeProbab=0;
-		midRange=0;
-		midRangeProbab=0;
-		maxRange=0;
-		maxRangeProbab=0;
-		sideAirFriction=0;
-	};
-	class js_a_su35_wing_tank: LaserBombCore
-	{
-		hit=5;
-		indirectHit=5;
-		indirectHitRange=1;
-		cost=40000000000;
-		model="\js_jc_su35\stores\m_wing_tank";
-		proxyShape="\js_jc_su35\stores\m_wing_tank";
-		soundHit1[]=
-		{
-			"A3\Sounds_F\weapons\Explosion\gr_explosion_1",
-			"db10",
-			1,
-			1400
-		};
-		supersonicCrackNear[]=
-		{
-			"A3\Sounds_F\weapons\Explosion\supersonic_crack_close",
-			0.316228,
-			1,
-			50
-		};
-		supersonicCrackFar[]=
-		{
-			"A3\Sounds_F\weapons\Explosion\supersonic_crack_50meters",
-			0.22387201,
-			1,
-			75
-		};
-		airlock=0;
-		laserLock=0;
-		irLock=0;
-		initTime=1000;
-		minRange=0;
-		minRangeProbab=0;
-		midRange=0;
-		midRangeProbab=0;
-		maxRange=0;
-		maxRangeProbab=0;
-		sideAirFriction=0;
-		CraterEffects="GrenadeCrater";
-		explosionEffects="GrenadeExplosion";
-		class HitEffects
-		{
-		};
-	};
-	class js_a_su35_buddy_pod: js_a_su35_wing_tank
-	{
-		model="\js_jc_su35\stores\m_buddy_pod";
-		proxyShape="\js_jc_su35\stores\m_buddy_pod";
-	};
-	class js_a_su35_empty: MissileBase
-	{
-		hit=0;
-		indirectHit=0;
-		indirectHitRange=0;
-		thrustTime=0;
-		thrust=0;
-		maxspeed=0;
-		timetolive=0;
-		maneuvrability=0;
-		model="\js_jc_su35\stores\m_empty";
-		proxyShape="\js_jc_su35\stores\m_empty";
-		airlock=0;
-		laserLock=0;
-		irLock=0;
-		initTime=0;
-		minRange=0;
-		minRangeProbab=0;
-		midRange=0;
-		midRangeProbab=0;
-		maxRange=0;
-		maxRangeProbab=0;
-		sideAirFriction=0;
-	};
+class CfgAmmo {
+    class MissileBase;
+    class RocketBase;
+    class LaserBombCore;
+    class BombCore;
+    class js_a_su35_rocket_80mm_HE: MissileBase {
+        model = "\A3\Weapons_F\Ammo\Rocket_02_fly_F";
+        proxyShape = "\js_jc_su35\stores\m_empty";
+        hit = 210;
+        indirectHit = 55;
+        indirectHitRange = 15;
+        cost = 500;
+        maxSpeed = 590;
+        initTime = 0.002;
+        thrustTime = 0.69;
+        thrust = 1060;
+        airFriction = 0.09;
+        sideAirFriction = 0.005;
+        fuseDistance = 50;
+        whistleDist = 30;
+        timeToLive = 60;
+        maneuvrability = 0;
+        effectsMissileInit = "PylonBackEffectsFFAR";
+        CraterEffects = "HERocketCrater";
+        explosionEffects = "HERocketExplosion";
+        effectsMissile = "missile1";
+        soundHit[] = {
+            "A3\Sounds_F\weapons\Rockets\explosion_missile_02",
+            2.51189,
+            1,
+            1800
+        };
+        explosionSoundEffect = "DefaultExplosion";
+        soundFly[] = {"", 1, 1, 400};
+        soundEngine[] = {"", 1, 1, 20};
+        supersonicCrackNear[] = {"", 1, 1, 50};
+        supersonicCrackFar[] = {"", 1, 1, 150};
+        airLock = 0;
+        irLock = 0;
+        laserLock = 0;
+    };
+    class js_a_su35_S8_rocketpod_x1: MissileBase {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        thrustTime = 0;
+        thrust = 0;
+        maxspeed = 0;
+        timetolive = 0;
+        maneuvrability = 0;
+        model = "\js_jc_su35\stores\m_s8_launcher_x1";
+        proxyShape = "\js_jc_su35\stores\m_s8_launcher_x1";
+        airlock = 0;
+        laserLock = 0;
+        irLock = 0;
+        initTime = 0;
+        minRange = 0;
+        minRangeProbab = 0;
+        midRange = 0;
+        midRangeProbab = 0;
+        maxRange = 0;
+        maxRangeProbab = 0;
+        sideAirFriction = 0;
+    };
+    class js_a_su35_S8_rocketpod_x2: MissileBase {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        thrustTime = 0;
+        thrust = 0;
+        maxspeed = 0;
+        timetolive = 0;
+        maneuvrability = 0;
+        model = "\js_jc_su35\stores\m_s8_launcher_x2";
+        proxyShape = "\js_jc_su35\stores\m_s8_launcher_x2";
+        airlock = 0;
+        laserLock = 0;
+        irLock = 0;
+        initTime = 0;
+        minRange = 0;
+        minRangeProbab = 0;
+        midRange = 0;
+        midRangeProbab = 0;
+        maxRange = 0;
+        maxRangeProbab = 0;
+        sideAirFriction = 0;
+    };
+    class js_a_su35_wing_tank: LaserBombCore {
+        hit = 5;
+        indirectHit = 5;
+        indirectHitRange = 1;
+        cost = 40000000000;
+        model = "\js_jc_su35\stores\m_wing_tank";
+        proxyShape = "\js_jc_su35\stores\m_wing_tank";
+        soundHit1[] = {
+            "A3\Sounds_F\weapons\Explosion\gr_explosion_1",
+            "db10",
+            1,
+            1400
+        };
+        supersonicCrackNear[] = {
+            "A3\Sounds_F\weapons\Explosion\supersonic_crack_close",
+            0.316228,
+            1,
+            50
+        };
+        supersonicCrackFar[] = {
+            "A3\Sounds_F\weapons\Explosion\supersonic_crack_50meters",
+            0.223872,
+            1,
+            75
+        };
+        airlock = 0;
+        laserLock = 0;
+        irLock = 0;
+        initTime = 1000;
+        minRange = 0;
+        minRangeProbab = 0;
+        midRange = 0;
+        midRangeProbab = 0;
+        maxRange = 0;
+        maxRangeProbab = 0;
+        sideAirFriction = 0;
+        CraterEffects = "GrenadeCrater";
+        explosionEffects = "GrenadeExplosion";
+        class HitEffects {};
+    };
+    class js_a_su35_buddy_pod: js_a_su35_wing_tank {
+        model = "\js_jc_su35\stores\m_buddy_pod";
+        proxyShape = "\js_jc_su35\stores\m_buddy_pod";
+    };
+    class js_a_su35_empty: MissileBase {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        thrustTime = 0;
+        thrust = 0;
+        maxspeed = 0;
+        timetolive = 0;
+        maneuvrability = 0;
+        model = "\js_jc_su35\stores\m_empty";
+        proxyShape = "\js_jc_su35\stores\m_empty";
+        airlock = 0;
+        laserLock = 0;
+        irLock = 0;
+        initTime = 0;
+        minRange = 0;
+        minRangeProbab = 0;
+        midRange = 0;
+        midRangeProbab = 0;
+        maxRange = 0;
+        maxRangeProbab = 0;
+        sideAirFriction = 0;
+    };
 };
-class CfgWeapons
-{
-	class CannonCore;
-	class MissileLauncher;
-	class RocketPods;
-	class H_PilotHelmetFighter_O;
-	class U_O_PilotCoveralls;
-	class HeadgearItem;
-	class UniformItem;
-	class js_w_su35_gsh30: CannonCore
-	{
-		scope=2;
-		displayName="Gsh-301 30mm";
-		displayNameMagazine="Gsh-301 30mm";
-		shortNameMagazine="Gsh-301 30mm";
-		nameSound="cannon";
-		cursor="EmptyCursor";
-		cursorAim="mg";
-		magazines[]=
-		{
-			"js_m_su35_gsh"
-		};
-		canLock=2;
-		ballisticsComputer=8;
-		modes[]=
-		{
-			"manual",
-			"close",
-			"short",
-			"medium",
-			"far"
-		};
-		class GunParticles
-		{
-			class Effect
-			{
-				effectName="MachineGun1";
-				positionName="nosegun";
-				directionName="nosegun_dir";
-			};
-		};
-		class manual: CannonCore
-		{
-			displayName="Gsh-301 30mm";
-			autoFire=1;
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\weapons\30mm\30mm_st_02",
-					1.99526,
-					1,
-					1500
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-				weaponSoundEffect="DefaultRifle";
-			};
-			reloadTime=0.039999999;
-			dispersion=0.0024999999;
-			soundContinuous=0;
-			showToPlayer=1;
-			burst=1;
-			aiRateOfFire=0.5;
-			aiRateOfFireDistance=50;
-			minRange=1;
-			minRangeProbab=0.0099999998;
-			midRange=2;
-			midRangeProbab=0.0099999998;
-			maxRange=3;
-			maxRangeProbab=0.0099999998;
-			textureType="fullAuto";
-		};
-		class close: manual
-		{
-			showToPlayer=0;
-			burst=15;
-			aiRateOfFire=0.25;
-			aiRateOfFireDistance=400;
-			minRange=0;
-			minRangeProbab=0.050000001;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.2;
-		};
-		class short: close
-		{
-			burst=10;
-			aiRateOfFire=0.5;
-			aiRateOfFireDistance=500;
-			minRange=300;
-			minRangeProbab=0.2;
-			midRange=400;
-			midRangeProbab=0.69999999;
-			maxRange=500;
-			maxRangeProbab=0.2;
-		};
-		class medium: close
-		{
-			burst=7;
-			aiRateOfFire=1;
-			aiRateOfFireDistance=900;
-			minRange=400;
-			minRangeProbab=0.2;
-			midRange=700;
-			midRangeProbab=0.69999999;
-			maxRange=900;
-			maxRangeProbab=0.2;
-		};
-		class far: close
-		{
-			burst=4;
-			aiRateOfFire=1.5;
-			aiRateOfFireDistance=1500;
-			minRange=800;
-			minRangeProbab=0.2;
-			midRange=1000;
-			midRangeProbab=0.40000001;
-			maxRange=1500;
-			maxRangeProbab=0.0099999998;
-		};
-	};
-	class js_w_su35_s8Laucher: RocketPods
-	{
-		displayName="S8 80mm Rockets";
-		magazines[]=
-		{
-			"js_m_su35_S8_rocket_x1",
-			"PylonRack_Rocket_S8_JS_SU35_x20"
-		};
-		modes[]=
-		{
-			"Far_AI",
-			"Medium_AI",
-			"Close_AI",
-			"Burst"
-		};
-		canLock=0;
-		reloadTime=0.1;
-		magazineReloadTime=0.30000001;
-		weaponLockDelay=0;
-		class Far_AI: RocketPods
-		{
-			canLock=2;
-			weaponLockDelay=0;
-			showToPlayer=0;
-			minRange=800;
-			minRangeProbab=0.31;
-			midRange=2500;
-			midRangeProbab=0.70999998;
-			maxRange=3200;
-			maxRangeProbab=0.1;
-			displayName="S8 80mm Rockets";
-			class StandardSound
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\weapons\Rockets\missile_2",
-					1.12202,
-					1,
-					1100
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-				weaponSoundEffect="DefaultRifle";
-			};
-			soundFly[]=
-			{
-				"A3\Sounds_F\weapons\Rockets\rocket_fly_1",
-				"db0",
-				1.1,
-				700
-			};
-			burst=1;
-			reloadTime=2;
-			autoFire=0;
-			aiRateOfFire=5;
-			aiRateOfFireDistance=500;
-		};
-		class Medium_AI: Far_AI
-		{
-			minRange=300;
-			minRangeProbab=0.20999999;
-			midRange=1500;
-			midRangeProbab=0.81;
-			maxRange=2000;
-			maxRangeProbab=0.31;
-			reloadTime=0.69999999;
-			burst=2;
-		};
-		class Close_AI: Far_AI
-		{
-			minRange=300;
-			minRangeProbab=0.20999999;
-			midRange=800;
-			midRangeProbab=0.91000003;
-			maxRange=1500;
-			maxRangeProbab=0.31;
-			reloadTime=0.69999999;
-			burst=2;
-		};
-		class Burst: RocketPods
-		{
-			displayName="S8 80mm Rockets Burst";
-			burst=2;
-			reloadTime=0.1;
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\weapons\Rockets\missile_1",
-					1.12202,
-					1,
-					1100
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-				weaponSoundEffect="DefaultRifle";
-			};
-			soundFly[]=
-			{
-				"A3\Sounds_F\weapons\Rockets\rocket_fly_1",
-				"db0",
-				1.9,
-				700
-			};
-			autoFire=1;
-			soundContinuous=0;
-			minRange=300;
-			minRangeProbab=0.25;
-			midRange=400;
-			midRangeProbab=0.69999999;
-			maxRange=1300;
-			maxRangeProbab=0.1;
-			textureType="fullAuto";
-			aiRateOfFire=5;
-			aiRateOfFireDistance=500;
-		};
-	};
-	class js_w_su35_fueltank_holder: RocketPods
-	{
-		CanLock=0;
-		displayName="500 gal. fuel tanks";
-		displayNameMagazine="500 gal. JP-8 fuel";
-		shortNameMagazine="500 gal.";
-		nameSound="";
-		cursor="EmptyCursor";
-		cursorAim="EmptyCursor";
-		magazines[]=
-		{
-			"PylonRack_Wing_Tank_JS_SU35_x1",
-			"PylonRack_Buddy_Pod_JS_SU35_x1"
-		};
-		burst=0;
-		reloadTime=0.1;
-		magazineReloadTime=0.80000001;
-	};
-	class js_w_su35_master_arms_safe: RocketPods
-	{
-		CanLock=0;
-		displayName="MASTER ARM - SAFE";
-		displayNameMagazine="MASTER ARM - SAFE";
-		shortNameMagazine="MASTER ARM - SAFE";
-		nameSound="";
-		cursor="EmptyCursor";
-		cursorAim="EmptyCursor";
-		magazines[]={};
-		burst=0;
-		reloadTime=0.0099999998;
-		magazineReloadTime=0.1;
-	};
-	class JS_JC_Su35_PilotHelmet: H_PilotHelmetFighter_O
-	{
-		displayName="$STR_A3_H_PilotHelmetFighter_OI0";
-		picture="\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=60;
-			uniformModel="A3\Characters_F\Common\headgear_helmet_pilot";
-			modelSides[]={3,1};
-			armor="3*0.4";
-			passThrough=0.60000002;
-		};
-	};
-	class JS_JC_Su35_PilotCoveralls: U_O_PilotCoveralls
-	{
-		scope=2;
-		displayName="$STR_A3_Pilot_coveralls_Iran";
-		picture="\A3\characters_f\data\ui\icon_U_OI_PilotCoveralls_ca.paa";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="JS_JC_OPFOR_Pilot";
-			containerClass="JS_JC_OPFOR_Pilot_Uniform_container";
-			mass=80;
-		};
-	};
+class CfgWeapons {
+    class CannonCore;
+    class MissileLauncher;
+    class RocketPods;
+    class H_PilotHelmetFighter_O;
+    class U_O_PilotCoveralls;
+    class HeadgearItem;
+    class UniformItem;
+    class js_w_su35_gsh30: CannonCore {
+        scope = 2;
+        displayName = "Gsh-301 30mm";
+        displayNameMagazine = "Gsh-301 30mm";
+        shortNameMagazine = "Gsh-301 30mm";
+        nameSound = "cannon";
+        cursor = "EmptyCursor";
+        cursorAim = "mg";
+        magazines[] = {"js_m_su35_gsh"};
+        canLock = 2;
+        ballisticsComputer = 8;
+        modes[] = {"manual", "close", "short", "medium", "far"};
+        class GunParticles {
+            class Effect {
+                effectName = "MachineGun1";
+                positionName = "nosegun";
+                directionName = "nosegun_dir";
+            };
+        };
+        class manual: CannonCore {
+            displayName = "Gsh-301 30mm";
+            autoFire = 1;
+            sounds[] = {"StandardSound"};
+            class StandardSound {
+                begin1[] = {
+                    "A3\Sounds_F\weapons\30mm\30mm_st_02",
+                    1.99526,
+                    1,
+                    1500
+                };
+                soundBegin[] = {"begin1", 1};
+                weaponSoundEffect = "DefaultRifle";
+            };
+            reloadTime = 0.04;
+            dispersion = 0.0025;
+            soundContinuous = 0;
+            showToPlayer = 1;
+            burst = 1;
+            aiRateOfFire = 0.5;
+            aiRateOfFireDistance = 50;
+            minRange = 1;
+            minRangeProbab = 0.01;
+            midRange = 2;
+            midRangeProbab = 0.01;
+            maxRange = 3;
+            maxRangeProbab = 0.01;
+            textureType = "fullAuto";
+        };
+        class close: manual {
+            showToPlayer = 0;
+            burst = 15;
+            aiRateOfFire = 0.25;
+            aiRateOfFireDistance = 400;
+            minRange = 0;
+            minRangeProbab = 0.05;
+            midRange = 200;
+            midRangeProbab = 0.7;
+            maxRange = 400;
+            maxRangeProbab = 0.2;
+        };
+        class short: close {
+            burst = 10;
+            aiRateOfFire = 0.5;
+            aiRateOfFireDistance = 500;
+            minRange = 300;
+            minRangeProbab = 0.2;
+            midRange = 400;
+            midRangeProbab = 0.7;
+            maxRange = 500;
+            maxRangeProbab = 0.2;
+        };
+        class medium: close {
+            burst = 7;
+            aiRateOfFire = 1;
+            aiRateOfFireDistance = 900;
+            minRange = 400;
+            minRangeProbab = 0.2;
+            midRange = 700;
+            midRangeProbab = 0.7;
+            maxRange = 900;
+            maxRangeProbab = 0.2;
+        };
+        class far: close {
+            burst = 4;
+            aiRateOfFire = 1.5;
+            aiRateOfFireDistance = 1500;
+            minRange = 800;
+            minRangeProbab = 0.2;
+            midRange = 1000;
+            midRangeProbab = 0.4;
+            maxRange = 1500;
+            maxRangeProbab = 0.01;
+        };
+    };
+    class js_w_su35_s8Laucher: RocketPods {
+        displayName = "S8 80mm Rockets";
+        magazines[] = {"js_m_su35_S8_rocket_x1", "PylonRack_Rocket_S8_JS_SU35_x20"};
+        modes[] = {"Far_AI", "Medium_AI", "Close_AI", "Burst"};
+        canLock = 0;
+        reloadTime = 0.1;
+        magazineReloadTime = 0.3;
+        weaponLockDelay = 0;
+        class Far_AI: RocketPods {
+            canLock = 2;
+            weaponLockDelay = 0;
+            showToPlayer = 0;
+            minRange = 800;
+            minRangeProbab = 0.31;
+            midRange = 2500;
+            midRangeProbab = 0.71;
+            maxRange = 3200;
+            maxRangeProbab = 0.1;
+            displayName = "S8 80mm Rockets";
+            class StandardSound {
+                begin1[] = {
+                    "A3\Sounds_F\weapons\Rockets\missile_2",
+                    1.12202,
+                    1,
+                    1100
+                };
+                soundBegin[] = {"begin1", 1};
+                weaponSoundEffect = "DefaultRifle";
+            };
+            soundFly[] = {
+                "A3\Sounds_F\weapons\Rockets\rocket_fly_1",
+                "db0",
+                1.1,
+                700
+            };
+            burst = 1;
+            reloadTime = 2;
+            autoFire = 0;
+            aiRateOfFire = 5;
+            aiRateOfFireDistance = 500;
+        };
+        class Medium_AI: Far_AI {
+            minRange = 300;
+            minRangeProbab = 0.21;
+            midRange = 1500;
+            midRangeProbab = 0.81;
+            maxRange = 2000;
+            maxRangeProbab = 0.31;
+            reloadTime = 0.7;
+            burst = 2;
+        };
+        class Close_AI: Far_AI {
+            minRange = 300;
+            minRangeProbab = 0.21;
+            midRange = 800;
+            midRangeProbab = 0.91;
+            maxRange = 1500;
+            maxRangeProbab = 0.31;
+            reloadTime = 0.7;
+            burst = 2;
+        };
+        class Burst: RocketPods {
+            displayName = "S8 80mm Rockets Burst";
+            burst = 2;
+            reloadTime = 0.1;
+            sounds[] = {"StandardSound"};
+            class StandardSound {
+                begin1[] = {
+                    "A3\Sounds_F\weapons\Rockets\missile_1",
+                    1.12202,
+                    1,
+                    1100
+                };
+                soundBegin[] = {"begin1", 1};
+                weaponSoundEffect = "DefaultRifle";
+            };
+            soundFly[] = {
+                "A3\Sounds_F\weapons\Rockets\rocket_fly_1",
+                "db0",
+                1.9,
+                700
+            };
+            autoFire = 1;
+            soundContinuous = 0;
+            minRange = 300;
+            minRangeProbab = 0.25;
+            midRange = 400;
+            midRangeProbab = 0.7;
+            maxRange = 1300;
+            maxRangeProbab = 0.1;
+            textureType = "fullAuto";
+            aiRateOfFire = 5;
+            aiRateOfFireDistance = 500;
+        };
+    };
+    class js_w_su35_fueltank_holder: RocketPods {
+        CanLock = 0;
+        displayName = "500 gal. fuel tanks";
+        displayNameMagazine = "500 gal. JP-8 fuel";
+        shortNameMagazine = "500 gal.";
+        nameSound = "";
+        cursor = "EmptyCursor";
+        cursorAim = "EmptyCursor";
+        magazines[] = {"PylonRack_Wing_Tank_JS_SU35_x1", "PylonRack_Buddy_Pod_JS_SU35_x1"};
+        burst = 0;
+        reloadTime = 0.1;
+        magazineReloadTime = 0.8;
+    };
+    class js_w_su35_master_arms_safe: RocketPods {
+        CanLock = 0;
+        displayName = "MASTER ARM - SAFE";
+        displayNameMagazine = "MASTER ARM - SAFE";
+        shortNameMagazine = "MASTER ARM - SAFE";
+        nameSound = "";
+        cursor = "EmptyCursor";
+        cursorAim = "EmptyCursor";
+        magazines[] = {};
+        burst = 0;
+        reloadTime = 0.01;
+        magazineReloadTime = 0.1;
+    };
+    class JS_JC_Su35_PilotHelmet: H_PilotHelmetFighter_O {
+        displayName = "$STR_A3_H_PilotHelmetFighter_OI0";
+        picture = "\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
+        hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"};
+        class ItemInfo: HeadgearItem {
+            mass = 60;
+            uniformModel = "A3\Characters_F\Common\headgear_helmet_pilot";
+            modelSides[] = {3, 1};
+            armor = "3*0.4";
+            passThrough = 0.6;
+        };
+    };
+    class JS_JC_Su35_PilotCoveralls: U_O_PilotCoveralls {
+        scope = 2;
+        displayName = "$STR_A3_Pilot_coveralls_Iran";
+        picture = "\A3\characters_f\data\ui\icon_U_OI_PilotCoveralls_ca.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = "JS_JC_OPFOR_Pilot";
+            containerClass = "JS_JC_OPFOR_Pilot_Uniform_container";
+            mass = 80;
+        };
+    };
 };
-class CfgMovesBasic
-{
-	class DefaultDie;
-	class ManActions
-	{
-		SU35_pilot="SU35_pilot";
-	};
+class CfgMovesBasic {
+    class DefaultDie;
+    class ManActions {
+        SU35_pilot = "SU35_pilot";
+    };
 };
-class CfgMovesMaleSdr: CfgMovesBasic
-{
-	class States
-	{
-		class Crew;
-		class SU35_pilot_dead: DefaultDie
-		{
-			actions="DeadActions";
-			speed=0.5;
-			looped="false";
-			terminal=1;
-			file="\js_jc_su35\anim\su35_pilot_dead.rtm";
-			connectTo[]=
-			{
-				"DeadState",
-				0.1
-			};
-		};
-		class SU35_pilot: Crew
-		{
-			file="\js_jc_su35\anim\SU35_pilot.rtm";
-			interpolateTo[]=
-			{
-				"SU35_pilot_dead",
-				1
-			};
-		};
-	};
+class CfgMovesMaleSdr: CfgMovesBasic {
+    class States {
+        class Crew;
+        class SU35_pilot_dead: DefaultDie {
+            actions = "DeadActions";
+            speed = 0.5;
+            looped = "false";
+            terminal = 1;
+            file = "\js_jc_su35\anim\su35_pilot_dead.rtm";
+            connectTo[] = {"DeadState", 0.1};
+        };
+        class SU35_pilot: Crew {
+            file = "\js_jc_su35\anim\SU35_pilot.rtm";
+            interpolateTo[] = {"SU35_pilot_dead", 1};
+        };
+    };
 };
-class CfgSounds
-{
-	class SU35_ejection_sound
-	{
-		sound[]=
-		{
-			"A3\sounds_f\weapons\launcher\nlaw_final_2",
-			"db10",
-			1,
-			1400
-		};
-		name="SU35_ejection_sound";
-		titles[]={};
-		duration=3;
-	};
+class CfgSounds {
+    class SU35_ejection_sound {
+        sound[] = {
+            "A3\sounds_f\weapons\launcher\nlaw_final_2",
+            "db10",
+            1,
+            1400
+        };
+        name = "SU35_ejection_sound";
+        titles[] = {};
+        duration = 3;
+    };
 };
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
@@ -723,1909 +562,1661 @@ class RscButtonMenu;
 class RscMapControl;
 class RscObject;
 class RscHTML;
-class RscInGameUI
-{
-	class RscUnitInfo;
-	class RscUnitInfoAirPlane;
-	class Rsc_SU35_UnitInfo: RscUnitInfoAirPlane
-	{
-		onLoad="uiNamespace setVariable ['HUD', _this select 0]; [""onLoad"",_this,""RscUnitInfo"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
-		onUnload="uiNamespace setVariable ['HUD', nil]; [""onUnload"",_this,""RscUnitInfo"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
-		idd=300;
-		controls[]=
-		{
-			"WeaponInfoControlsGroupRight",
-			"CA_BackgroundVehicle",
-			"CA_BackgroundVehicleTitle",
-			"CA_BackgroundVehicleTitleDark",
-			"CA_BackgroundFuel",
-			"CA_Vehicle",
-			"CA_VehicleRole",
-			"CA_HitZones",
-			"CA_VehicleTogglesBackground",
-			"CA_VehicleToggles",
-			"CA_SpeedBackground",
-			"CA_SpeedUnits",
-			"CA_Speed",
-			"CA_ValueFuel",
-			"CA_AltBackground",
-			"CA_AltUnits",
-			"CA_Alt",
-			"CA_Radar",
-			"SU35_External_fuel_Progress",
-			"SU35_Afterburner_Status",
-			"CA_Throttle"
-		};
-		class CA_ValueFuel: RscProgress
-		{
-			idc=113;
-			texture="#(argb,8,8,3)color(1,1,1,1)";
-			text="#(argb,8,8,3)color(1,1,1,1)";
-			x="0 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
-			y="1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
-			w="5 * (((safezoneW / safezoneH) min 1.2) / 40)";
-			h="0.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		};
-		class SU35_External_fuel_Progress: CA_ValueFuel
-		{
-			idc=9910;
-			x="5 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
-			y="1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
-			w="5 * (((safezoneW / safezoneH) min 1.2) / 40)";
-			h="0.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		};
-		class SU35_Afterburner_Status: RscPicture
-		{
-			colorText[]=
-			{
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"
-			};
-			idc=9908;
-			text="js_jc_su35\ui\SU35_Toggles_clear_ca.paa";
-			x="8.9 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
-			y="3.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
-			w="0.8 * (((safezoneW / safezoneH) min 1.2) / 40)";
-			h="0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		};
-	};
+class RscInGameUI {
+    class RscUnitInfo;
+    class RscUnitInfoAirPlane;
+    class Rsc_SU35_UnitInfo: RscUnitInfoAirPlane {
+        onLoad = "uiNamespace setVariable ['HUD', _this select 0]; [""onLoad"",_this,""RscUnitInfo"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
+        onUnload = "uiNamespace setVariable ['HUD', nil]; [""onUnload"",_this,""RscUnitInfo"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
+        idd = 300;
+        controls[] = {
+            "WeaponInfoControlsGroupRight",
+            "CA_BackgroundVehicle",
+            "CA_BackgroundVehicleTitle",
+            "CA_BackgroundVehicleTitleDark",
+            "CA_BackgroundFuel",
+            "CA_Vehicle",
+            "CA_VehicleRole",
+            "CA_HitZones",
+            "CA_VehicleTogglesBackground",
+            "CA_VehicleToggles",
+            "CA_SpeedBackground",
+            "CA_SpeedUnits",
+            "CA_Speed",
+            "CA_ValueFuel",
+            "CA_AltBackground",
+            "CA_AltUnits",
+            "CA_Alt",
+            "CA_Radar",
+            "SU35_External_fuel_Progress",
+            "SU35_Afterburner_Status",
+            "CA_Throttle"
+        };
+        class CA_ValueFuel: RscProgress {
+            idc = 113;
+            texture = "#(argb,8,8,3)color(1,1,1,1)";
+            text = "#(argb,8,8,3)color(1,1,1,1)";
+            x = "0 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
+            y = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+            w = "5 * (((safezoneW / safezoneH) min 1.2) / 40)";
+            h = "0.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+        };
+        class SU35_External_fuel_Progress: CA_ValueFuel {
+            idc = 9910;
+            x = "5 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
+            y = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+            w = "5 * (((safezoneW / safezoneH) min 1.2) / 40)";
+            h = "0.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+        };
+        class SU35_Afterburner_Status: RscPicture {
+            colorText[] = {
+                "(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])",
+                "(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])",
+                "(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])",
+                "(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"
+            };
+            idc = 9908;
+            text = "js_jc_su35\ui\SU35_Toggles_clear_ca.paa";
+            x = "8.9 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_X"", (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
+            y = "3.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable [""IGUI_GRID_VEHICLE_Y"", (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+            w = "0.8 * (((safezoneW / safezoneH) min 1.2) / 40)";
+            h = "0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+        };
+    };
 };
-class SU35_RscButtonMenu: RscButtonMenu
-{
-	animTextureNormal="\js_jc_su35\UI\SU35_GUI_main_button_normal_ca.paa";
-	animTextureDisabled="\js_jc_su35\UI\SU35_GUI_main_button_disabled_ca.paa";
-	animTextureOver="\js_jc_su35\UI\SU35_GUI_main_button_over_ca.paa";
-	animTextureFocused="\js_jc_su35\UI\SU35_GUI_main_button_focus_ca.paa";
-	animTexturePressed="\js_jc_su35\UI\SU35_GUI_main_button_down_ca.paa";
-	animTextureDefault="\js_jc_su35\UI\SU35_GUI_main_button_default_ca.paa";
-	colorBackground[]={0,0,0,0.80000001};
-	colorBackground2[]={1,1,1,0.5};
-	color[]={1,1,1,1};
-	color2[]={1,1,1,1};
-	colorText[]={1,1,1,1};
-	colorDisabled[]={1,1,1,0.25};
+class SU35_RscButtonMenu: RscButtonMenu {
+    animTextureNormal = "\js_jc_su35\UI\SU35_GUI_main_button_normal_ca.paa";
+    animTextureDisabled = "\js_jc_su35\UI\SU35_GUI_main_button_disabled_ca.paa";
+    animTextureOver = "\js_jc_su35\UI\SU35_GUI_main_button_over_ca.paa";
+    animTextureFocused = "\js_jc_su35\UI\SU35_GUI_main_button_focus_ca.paa";
+    animTexturePressed = "\js_jc_su35\UI\SU35_GUI_main_button_down_ca.paa";
+    animTextureDefault = "\js_jc_su35\UI\SU35_GUI_main_button_default_ca.paa";
+    colorBackground[] = {0, 0, 0, 0.8};
+    colorBackground2[] = {1, 1, 1, 0.5};
+    color[] = {1, 1, 1, 1};
+    color2[] = {1, 1, 1, 1};
+    colorText[] = {1, 1, 1, 1};
+    colorDisabled[] = {1, 1, 1, 0.25};
 };
-class SU35_MAIN_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_main_menu.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_LOADOUTS_BUTTON_1610: SU35_RscButtonMenu
-		{
-			idc=1610;
-			x="0.456693 * safezoneW + safezoneX";
-			y="0.23114 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.13723 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Loadout selection menu";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_UI";
-		};
-		class SU35_SKINS_BUTTON_1611: SU35_RscButtonMenu
-		{
-			idc=1611;
-			x="0.312332 * safezoneW + safezoneX";
-			y="0.418782 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.13723 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Paint schemes library menu";
-			action="[]Spawn JS_JC_fnc_SU35_SKINS_UI";
-		};
-		class SU35_OPTIONS_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.59974 * safezoneW + safezoneX";
-			y="0.418782 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.13723 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Options";
-			action="[]Spawn JS_JC_fnc_SU35_SETTINGS_UI";
-		};
-		class SU35_MANUAL_BUTTON_1613: SU35_RscButtonMenu
-		{
-			idc=1613;
-			x="0.455379 * safezoneW + safezoneX";
-			y="0.634429 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.13723 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Pilots manual";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_UI";
-		};
-		class SU35_CREDITS_EULA_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Credits & EULA";
-			action="[]Spawn JS_JC_fnc_SU35_CREDITS_EULA_UI";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MAIN_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_main_menu.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_LOADOUTS_BUTTON_1610: SU35_RscButtonMenu {
+            idc = 1610;
+            x = "0.456693 * safezoneW + safezoneX";
+            y = "0.23114 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.13723 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Loadout selection menu";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_UI";
+        };
+        class SU35_SKINS_BUTTON_1611: SU35_RscButtonMenu {
+            idc = 1611;
+            x = "0.312332 * safezoneW + safezoneX";
+            y = "0.418782 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.13723 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Paint schemes library menu";
+            action = "[]Spawn JS_JC_fnc_SU35_SKINS_UI";
+        };
+        class SU35_OPTIONS_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.59974 * safezoneW + safezoneX";
+            y = "0.418782 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.13723 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Options";
+            action = "[]Spawn JS_JC_fnc_SU35_SETTINGS_UI";
+        };
+        class SU35_MANUAL_BUTTON_1613: SU35_RscButtonMenu {
+            idc = 1613;
+            x = "0.455379 * safezoneW + safezoneX";
+            y = "0.634429 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.13723 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Pilots manual";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_UI";
+        };
+        class SU35_CREDITS_EULA_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Credits & EULA";
+            action = "[]Spawn JS_JC_fnc_SU35_CREDITS_EULA_UI";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MAIN_RESTRICTED_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_main_menu_restricted.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_MANUAL_BUTTON_1613: SU35_RscButtonMenu
-		{
-			idc=1613;
-			x="0.455379 * safezoneW + safezoneX";
-			y="0.634429 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.13723 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Pilots manual";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_UI";
-		};
-		class SU35_CREDITS_EULA_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Credits & EULA";
-			action="[]Spawn JS_JC_fnc_SU35_CREDITS_EULA_UI";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MAIN_RESTRICTED_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_main_menu_restricted.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_MANUAL_BUTTON_1613: SU35_RscButtonMenu {
+            idc = 1613;
+            x = "0.455379 * safezoneW + safezoneX";
+            y = "0.634429 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.13723 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Pilots manual";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_UI";
+        };
+        class SU35_CREDITS_EULA_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Credits & EULA";
+            action = "[]Spawn JS_JC_fnc_SU35_CREDITS_EULA_UI";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_LOADOUTS_UI
-{
-	idd=3010;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1205;
-			text="\js_jc_SU35\UI\SU35_GUI_arming_menu.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1204;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_LOAD_CUSTOM_BUTTON_1600: SU35_RscButtonMenu
-		{
-			idc=1600;
-			x="0.422572 * safezoneW + safezoneX";
-			y="0.634429 * safezoneH + safezoneY";
-			w="0.1490 * safezoneW";
-			h="0.0898 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Apply custom loadout";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_APPLY";
-		};
-		class SU35_STATION_1_COMBO_3101: RscCombo
-		{
-			idc=3101;
-			x="0.111537 * safezoneW + safezoneX";
-			y="0.317959 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 1";
-		};
-		class SU35_STATION_2_COMBO_3102: RscCombo
-		{
-			idc=3102;
-			x="0.786097 * safezoneW + safezoneX";
-			y="0.317959 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 2";
-		};
-		class SU35_STATION_3_COMBO_3103: RscCombo
-		{
-			idc=3103;
-			x="0.200779 * safezoneW + safezoneX";
-			y="0.359969 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 3";
-		};
-		class SU35_STATION_4_COMBO_3104: RscCombo
-		{
-			idc=3104;
-			x="0.695545 * safezoneW + safezoneX";
-			y="0.359969 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 4";
-		};
-		class SU35_STATION_5_COMBO_3105: RscCombo
-		{
-			idc=3105;
-			x="0.244088 * safezoneW + safezoneX";
-			y="0.401978 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 5";
-		};
-		class SU35_STATION_6_COMBO_3106: RscCombo
-		{
-			idc=3106;
-			x="0.652235 * safezoneW + safezoneX";
-			y="0.401978 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 6";
-		};
-		class SU35_STATION_7_COMBO_3107: RscCombo
-		{
-			idc=3107;
-			x="0.290021 * safezoneW + safezoneX";
-			y="0.443988 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 7";
-		};
-		class SU35_STATION_8_COMBO_3108: RscCombo
-		{
-			idc=3108;
-			x="0.606302 * safezoneW + safezoneX";
-			y="0.443988 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 8";
-		};
-		class SU35_STATION_9_COMBO_3109: RscCombo
-		{
-			idc=3109;
-			x="0.384511 * safezoneW + safezoneX";
-			y="0.443988 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 9";
-		};
-		class SU35_STATION_10_COMBO_3110: RscCombo
-		{
-			idc=3110;
-			x="0.513124 * safezoneW + safezoneX";
-			y="0.443988 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 10";
-		};
-		class SU35_STATION_11_COMBO_3111: RscCombo
-		{
-			idc=3111;
-			x="0.454067 * safezoneW + safezoneX";
-			y="0.485997 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 11";
-		};
-		class SU35_STATION_12_COMBO_3112: RscCombo
-		{
-			idc=3112;
-			x="0.454067 * safezoneW + safezoneX";
-			y="0.528006 * safezoneH + safezoneY";
-			w="0.0879288 * safezoneW";
-			h="0.0280062 * safezoneH";
-			tooltip="Weapon station 12";
-		};
-		class SU35_REARM_BUTTON_1601: SU35_RscButtonMenu
-		{
-			idc=1601;
-			x="0.160096 * safezoneW + safezoneX";
-			y="0.743653 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Rearm aircraft";
-			action="[]Spawn JS_JC_fnc_SU35_REARM";
-		};
-		class SU35_REPAIR_BUTTON_1602: SU35_RscButtonMenu
-		{
-			idc=1602;
-			x="0.257212 * safezoneW + safezoneX";
-			y="0.743653 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Repair aircraft";
-			action="[]Spawn JS_JC_fnc_SU35_REPAIR";
-		};
-		class SU35_REFUEL_BUTTON_1603: SU35_RscButtonMenu
-		{
-			idc=1603;
-			x="0.356953 * safezoneW + safezoneX";
-			y="0.743653 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Refuel aircraft";
-			action="[]Spawn JS_JC_fnc_SU35_REFUEL";
-		};
-		class SU35_MR_LOADOUT_BUTTON_1604: SU35_RscButtonMenu
-		{
-			idc=1604;
-			x="0.552495 * safezoneW + safezoneX";
-			y="0.743659 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Multirole loadout";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_MULTIROLE";
-		};
-		class SU35_CAP_LOADOUT_BUTTON_1605: SU35_RscButtonMenu
-		{
-			idc=1605;
-			x="0.649609 * safezoneW + safezoneX";
-			y="0.743655 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Combat Air Patrol loadout";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_CAP";
-		};
-		class SU35_CAS_LOADOUT_BUTTON_1606: SU35_RscButtonMenu
-		{
-			idc=1606;
-			x="0.455379 * safezoneW + safezoneX";
-			y="0.743653 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Combat Air Support loadout";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_CAS";
-		};
-		class SU35_EMPTY_LOADOUT_BUTTON_1607: SU35_RscButtonMenu
-		{
-			idc=1607;
-			x="0.748036 * safezoneW + safezoneX";
-			y="0.743653 * safezoneH + safezoneY";
-			w="0.0813676 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Empty loadout, no weapons";
-			action="[]Spawn JS_JC_fnc_SU35_LOADOUT_EMPTY";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1608: SU35_RscButtonMenu
-		{
-			idc=1608;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Return to main menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1609: SU35_RscButtonMenu
-		{
-			idc=1609;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_LOADOUTS_UI {
+    idd = 3010;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1205;
+            text = "\js_jc_SU35\UI\SU35_GUI_arming_menu.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1204;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_LOAD_CUSTOM_BUTTON_1600: SU35_RscButtonMenu {
+            idc = 1600;
+            x = "0.422572 * safezoneW + safezoneX";
+            y = "0.634429 * safezoneH + safezoneY";
+            w = "0.1490 * safezoneW";
+            h = "0.0898 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Apply custom loadout";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_APPLY";
+        };
+        class SU35_STATION_1_COMBO_3101: RscCombo {
+            idc = 3101;
+            x = "0.111537 * safezoneW + safezoneX";
+            y = "0.317959 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 1";
+        };
+        class SU35_STATION_2_COMBO_3102: RscCombo {
+            idc = 3102;
+            x = "0.786097 * safezoneW + safezoneX";
+            y = "0.317959 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 2";
+        };
+        class SU35_STATION_3_COMBO_3103: RscCombo {
+            idc = 3103;
+            x = "0.200779 * safezoneW + safezoneX";
+            y = "0.359969 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 3";
+        };
+        class SU35_STATION_4_COMBO_3104: RscCombo {
+            idc = 3104;
+            x = "0.695545 * safezoneW + safezoneX";
+            y = "0.359969 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 4";
+        };
+        class SU35_STATION_5_COMBO_3105: RscCombo {
+            idc = 3105;
+            x = "0.244088 * safezoneW + safezoneX";
+            y = "0.401978 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 5";
+        };
+        class SU35_STATION_6_COMBO_3106: RscCombo {
+            idc = 3106;
+            x = "0.652235 * safezoneW + safezoneX";
+            y = "0.401978 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 6";
+        };
+        class SU35_STATION_7_COMBO_3107: RscCombo {
+            idc = 3107;
+            x = "0.290021 * safezoneW + safezoneX";
+            y = "0.443988 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 7";
+        };
+        class SU35_STATION_8_COMBO_3108: RscCombo {
+            idc = 3108;
+            x = "0.606302 * safezoneW + safezoneX";
+            y = "0.443988 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 8";
+        };
+        class SU35_STATION_9_COMBO_3109: RscCombo {
+            idc = 3109;
+            x = "0.384511 * safezoneW + safezoneX";
+            y = "0.443988 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 9";
+        };
+        class SU35_STATION_10_COMBO_3110: RscCombo {
+            idc = 3110;
+            x = "0.513124 * safezoneW + safezoneX";
+            y = "0.443988 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 10";
+        };
+        class SU35_STATION_11_COMBO_3111: RscCombo {
+            idc = 3111;
+            x = "0.454067 * safezoneW + safezoneX";
+            y = "0.485997 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 11";
+        };
+        class SU35_STATION_12_COMBO_3112: RscCombo {
+            idc = 3112;
+            x = "0.454067 * safezoneW + safezoneX";
+            y = "0.528006 * safezoneH + safezoneY";
+            w = "0.0879288 * safezoneW";
+            h = "0.0280062 * safezoneH";
+            tooltip = "Weapon station 12";
+        };
+        class SU35_REARM_BUTTON_1601: SU35_RscButtonMenu {
+            idc = 1601;
+            x = "0.160096 * safezoneW + safezoneX";
+            y = "0.743653 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Rearm aircraft";
+            action = "[]Spawn JS_JC_fnc_SU35_REARM";
+        };
+        class SU35_REPAIR_BUTTON_1602: SU35_RscButtonMenu {
+            idc = 1602;
+            x = "0.257212 * safezoneW + safezoneX";
+            y = "0.743653 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Repair aircraft";
+            action = "[]Spawn JS_JC_fnc_SU35_REPAIR";
+        };
+        class SU35_REFUEL_BUTTON_1603: SU35_RscButtonMenu {
+            idc = 1603;
+            x = "0.356953 * safezoneW + safezoneX";
+            y = "0.743653 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Refuel aircraft";
+            action = "[]Spawn JS_JC_fnc_SU35_REFUEL";
+        };
+        class SU35_MR_LOADOUT_BUTTON_1604: SU35_RscButtonMenu {
+            idc = 1604;
+            x = "0.552495 * safezoneW + safezoneX";
+            y = "0.743659 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Multirole loadout";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_MULTIROLE";
+        };
+        class SU35_CAP_LOADOUT_BUTTON_1605: SU35_RscButtonMenu {
+            idc = 1605;
+            x = "0.649609 * safezoneW + safezoneX";
+            y = "0.743655 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Combat Air Patrol loadout";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_CAP";
+        };
+        class SU35_CAS_LOADOUT_BUTTON_1606: SU35_RscButtonMenu {
+            idc = 1606;
+            x = "0.455379 * safezoneW + safezoneX";
+            y = "0.743653 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Combat Air Support loadout";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_CAS";
+        };
+        class SU35_EMPTY_LOADOUT_BUTTON_1607: SU35_RscButtonMenu {
+            idc = 1607;
+            x = "0.748036 * safezoneW + safezoneX";
+            y = "0.743653 * safezoneH + safezoneY";
+            w = "0.0813676 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Empty loadout, no weapons";
+            action = "[]Spawn JS_JC_fnc_SU35_LOADOUT_EMPTY";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1608: SU35_RscButtonMenu {
+            idc = 1608;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Return to main menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1609: SU35_RscButtonMenu {
+            idc = 1609;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_main_manual.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_MANUAL_0_BUTTON_1610: SU35_RscButtonMenu
-		{
-			idc=1610;
-			x="0.456691 * safezoneW + safezoneX";
-			y="0.166726 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="About Su-35S Flanker E";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_1_UI";
-		};
-		class SU35_MANUAL_1_BUTTON_1611: SU35_RscButtonMenu
-		{
-			idc=1611;
-			x="0.33333 * safezoneW + safezoneX";
-			y="0.233939 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Controls";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_2_UI";
-		};
-		class SU35_MANUAL_2_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.292647 * safezoneW + safezoneX";
-			y="0.41878 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Pre-flight setup";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_3_UI";
-		};
-		class SU35_MANUAL_3_BUTTON_1613: SU35_RscButtonMenu
-		{
-			idc=1613;
-			x="0.333332 * safezoneW + safezoneX";
-			y="0.595223 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Take off and landing";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_4_UI";
-		};
-		class SU35_MANUAL_4_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.456695 * safezoneW + safezoneX";
-			y="0.687643 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="In-flight procedures";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_5_UI";
-		};
-		class SU35_MANUAL_5_BUTTON_1615: SU35_RscButtonMenu
-		{
-			idc=1615;
-			x="0.58268 * safezoneW + safezoneX";
-			y="0.595221 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Weapon systems";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_6_UI";
-		};
-		class SU35_MANUAL_6_BUTTON_1616: SU35_RscButtonMenu
-		{
-			idc=1616;
-			x="0.624675 * safezoneW + safezoneX";
-			y="0.418782 * safezoneH + safezoneY";
-			w="0.0826794 * safezoneW";
-			h="0.137232 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Navigation";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_7_UI";
-		};
-		class SU35_MANUAL_7_BUTTON_1617: SU35_RscButtonMenu
-		{
-			idc=1617;
-			x="0.58268 * safezoneW + safezoneX";
-			y="0.23674 * safezoneH + safezoneY";
-			w="0.08268 * safezoneW";
-			h="0.137235 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Editor";
-			action="[]Spawn JS_JC_fnc_SU35_MANUAL_8_UI";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1618: SU35_RscButtonMenu
-		{
-			idc=1618;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Return to main menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1619: SU35_RscButtonMenu
-		{
-			idc=1619;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_main_manual.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_MANUAL_0_BUTTON_1610: SU35_RscButtonMenu {
+            idc = 1610;
+            x = "0.456691 * safezoneW + safezoneX";
+            y = "0.166726 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "About Su-35S Flanker E";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_1_UI";
+        };
+        class SU35_MANUAL_1_BUTTON_1611: SU35_RscButtonMenu {
+            idc = 1611;
+            x = "0.33333 * safezoneW + safezoneX";
+            y = "0.233939 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Controls";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_2_UI";
+        };
+        class SU35_MANUAL_2_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.292647 * safezoneW + safezoneX";
+            y = "0.41878 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Pre-flight setup";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_3_UI";
+        };
+        class SU35_MANUAL_3_BUTTON_1613: SU35_RscButtonMenu {
+            idc = 1613;
+            x = "0.333332 * safezoneW + safezoneX";
+            y = "0.595223 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Take off and landing";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_4_UI";
+        };
+        class SU35_MANUAL_4_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.456695 * safezoneW + safezoneX";
+            y = "0.687643 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "In-flight procedures";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_5_UI";
+        };
+        class SU35_MANUAL_5_BUTTON_1615: SU35_RscButtonMenu {
+            idc = 1615;
+            x = "0.58268 * safezoneW + safezoneX";
+            y = "0.595221 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Weapon systems";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_6_UI";
+        };
+        class SU35_MANUAL_6_BUTTON_1616: SU35_RscButtonMenu {
+            idc = 1616;
+            x = "0.624675 * safezoneW + safezoneX";
+            y = "0.418782 * safezoneH + safezoneY";
+            w = "0.0826794 * safezoneW";
+            h = "0.137232 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Navigation";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_7_UI";
+        };
+        class SU35_MANUAL_7_BUTTON_1617: SU35_RscButtonMenu {
+            idc = 1617;
+            x = "0.58268 * safezoneW + safezoneX";
+            y = "0.23674 * safezoneH + safezoneY";
+            w = "0.08268 * safezoneW";
+            h = "0.137235 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Editor";
+            action = "[]Spawn JS_JC_fnc_SU35_MANUAL_8_UI";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1618: SU35_RscButtonMenu {
+            idc = 1618;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Return to main menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1619: SU35_RscButtonMenu {
+            idc = 1619;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_1_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_1.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_BIFORUMS_BUTTON_1613: RscHTML
-		{
-			idc=1613;
-			x="0.59974 * safezoneW + safezoneX";
-			y="0.766059 * safezoneH + safezoneY";
-			w="0.122046 * safezoneW";
-			h="0.106424 * safezoneH";
-			filename="";
-			text="";
-			size=0.023;
-			tooltip="BI Forums page to leave feedback";
-			action="";
-		};
-		class SU35_SUPPORTUS_BUTTON_1614: RscHTML
-		{
-			idc=1614;
-			x="0.748038 * safezoneW + safezoneX";
-			y="0.766059 * safezoneH + safezoneY";
-			w="0.123358 * safezoneW";
-			h="0.106424 * safezoneH";
-			filename="";
-			text="";
-			size=0.023;
-			tooltip="Support develpment of this mod";
-			action="";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1615: SU35_RscButtonMenu
-		{
-			idc=1615;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_1_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_1.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_BIFORUMS_BUTTON_1613: RscHTML {
+            idc = 1613;
+            x = "0.59974 * safezoneW + safezoneX";
+            y = "0.766059 * safezoneH + safezoneY";
+            w = "0.122046 * safezoneW";
+            h = "0.106424 * safezoneH";
+            filename = "";
+            text = "";
+            size = 0.023;
+            tooltip = "BI Forums page to leave feedback";
+            action = "";
+        };
+        class SU35_SUPPORTUS_BUTTON_1614: RscHTML {
+            idc = 1614;
+            x = "0.748038 * safezoneW + safezoneX";
+            y = "0.766059 * safezoneH + safezoneY";
+            w = "0.123358 * safezoneW";
+            h = "0.106424 * safezoneH";
+            filename = "";
+            text = "";
+            size = 0.023;
+            tooltip = "Support develpment of this mod";
+            action = "";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1615: SU35_RscButtonMenu {
+            idc = 1615;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_2_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_2.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_2_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_2.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_3_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_3.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_3_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_3.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_4_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_4.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_4_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_4.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_5_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_5.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_5_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_5.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_6_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_6.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_6_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_6.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_7_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_7.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_7_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_7.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_MANUAL_8_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_manual_8.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Back to previous menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_MANUAL_8_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_manual_8.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Back to previous menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MANUAL_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_SETTINGS_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_main_options.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Return to main menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_SETTINGS_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_main_options.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Return to main menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_SKINS_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['SU35_skins_Display', (_this select 0)]";
-	class Controls
-	{
-		class FA18_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_su35\ui\SU35_GUI_background.paa";
-		};
-		class FA18_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_su35\ui\SU35_GUI_main_skins.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class FA18_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_SKIN_CSAT_DES_1601: SU35_RscButtonMenu
-		{
-			idc=1601;
-			x="0.199467 * safezoneW + safezoneX";
-			y="0.194725 * safezoneH + safezoneY";
-			w="0.279486 * safezoneW";
-			h="0.232469 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="CSAT - DESERT HEX";
-			action="[]Spawn JS_JC_fnc_SU35_PAINT_CSAT_D";
-		};
-		class SU35_SKIN_CSAT_GREY_1602: SU35_RscButtonMenu
-		{
-			idc=1602;
-			x="0.199469 * safezoneW + safezoneX";
-			y="0.514003 * safezoneH + safezoneY";
-			w="0.279486 * safezoneW";
-			h="0.232469 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="CSAT - GREY HEX";
-			action="[]Spawn JS_JC_fnc_SU35_PAINT_CSAT_S";
-		};
-		class SU35_SKIN_RU_SKY_1603: SU35_RscButtonMenu
-		{
-			idc=1603;
-			x="0.517062 * safezoneW + safezoneX";
-			y="0.191931 * safezoneH + safezoneY";
-			w="0.279486 * safezoneW";
-			h="0.232469 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="RUSSIAN - BLUE DIGITAL";
-			action="[]Spawn JS_JC_fnc_SU35_PAINT_RU_SKY_DIGITAL";
-		};
-		class SU35_SKIN_RU_GREY_1604: SU35_RscButtonMenu
-		{
-			idc=1604;
-			x="0.517062 * safezoneW + safezoneX";
-			y="0.514005 * safezoneH + safezoneY";
-			w="0.279486 * safezoneW";
-			h="0.232469 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="RUSSIAN - GREY DIGITAL";
-			action="[]Spawn JS_JC_fnc_SU35_PAINT_RU_GREY_DIGITAL";
-		};
-		class SU35_RscTextCheckbox_2501: RscPicture
-		{
-			idc=2501;
-			text="\js_jc_su35\ui\SU35_GUI_button_tickbox_on.paa";
-			x="0.198159 * safezoneW + safezoneX";
-			y="0.191929 * safezoneH + safezoneY";
-			w="0.0393711 * safezoneW";
-			h="0.067215 * safezoneH";
-		};
-		class SU35_RscTextCheckbox_2502: RscPicture
-		{
-			idc=2502;
-			text="\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
-			x="0.198155 * safezoneW + safezoneX";
-			y="0.514005 * safezoneH + safezoneY";
-			w="0.0393711 * safezoneW";
-			h="0.067215 * safezoneH";
-		};
-		class SU35_RscTextCheckbox_2503: RscPicture
-		{
-			idc=2503;
-			text="\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
-			x="0.515748 * safezoneW + safezoneX";
-			y="0.191931 * safezoneH + safezoneY";
-			w="0.0393711 * safezoneW";
-			h="0.067215 * safezoneH";
-		};
-		class SU35_RscTextCheckbox_2504: RscPicture
-		{
-			idc=2504;
-			text="\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
-			x="0.515748 * safezoneW + safezoneX";
-			y="0.514003 * safezoneH + safezoneY";
-			w="0.0393711 * safezoneW";
-			h="0.067215 * safezoneH";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Return to main menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1613: SU35_RscButtonMenu
-		{
-			idc=1613;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_SKINS_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['SU35_skins_Display', (_this select 0)]";
+    class Controls {
+        class FA18_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_su35\ui\SU35_GUI_background.paa";
+        };
+        class FA18_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_su35\ui\SU35_GUI_main_skins.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class FA18_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_SKIN_CSAT_DES_1601: SU35_RscButtonMenu {
+            idc = 1601;
+            x = "0.199467 * safezoneW + safezoneX";
+            y = "0.194725 * safezoneH + safezoneY";
+            w = "0.279486 * safezoneW";
+            h = "0.232469 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "CSAT - DESERT HEX";
+            action = "[]Spawn JS_JC_fnc_SU35_PAINT_CSAT_D";
+        };
+        class SU35_SKIN_CSAT_GREY_1602: SU35_RscButtonMenu {
+            idc = 1602;
+            x = "0.199469 * safezoneW + safezoneX";
+            y = "0.514003 * safezoneH + safezoneY";
+            w = "0.279486 * safezoneW";
+            h = "0.232469 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "CSAT - GREY HEX";
+            action = "[]Spawn JS_JC_fnc_SU35_PAINT_CSAT_S";
+        };
+        class SU35_SKIN_RU_SKY_1603: SU35_RscButtonMenu {
+            idc = 1603;
+            x = "0.517062 * safezoneW + safezoneX";
+            y = "0.191931 * safezoneH + safezoneY";
+            w = "0.279486 * safezoneW";
+            h = "0.232469 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "RUSSIAN - BLUE DIGITAL";
+            action = "[]Spawn JS_JC_fnc_SU35_PAINT_RU_SKY_DIGITAL";
+        };
+        class SU35_SKIN_RU_GREY_1604: SU35_RscButtonMenu {
+            idc = 1604;
+            x = "0.517062 * safezoneW + safezoneX";
+            y = "0.514005 * safezoneH + safezoneY";
+            w = "0.279486 * safezoneW";
+            h = "0.232469 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "RUSSIAN - GREY DIGITAL";
+            action = "[]Spawn JS_JC_fnc_SU35_PAINT_RU_GREY_DIGITAL";
+        };
+        class SU35_RscTextCheckbox_2501: RscPicture {
+            idc = 2501;
+            text = "\js_jc_su35\ui\SU35_GUI_button_tickbox_on.paa";
+            x = "0.198159 * safezoneW + safezoneX";
+            y = "0.191929 * safezoneH + safezoneY";
+            w = "0.0393711 * safezoneW";
+            h = "0.067215 * safezoneH";
+        };
+        class SU35_RscTextCheckbox_2502: RscPicture {
+            idc = 2502;
+            text = "\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
+            x = "0.198155 * safezoneW + safezoneX";
+            y = "0.514005 * safezoneH + safezoneY";
+            w = "0.0393711 * safezoneW";
+            h = "0.067215 * safezoneH";
+        };
+        class SU35_RscTextCheckbox_2503: RscPicture {
+            idc = 2503;
+            text = "\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
+            x = "0.515748 * safezoneW + safezoneX";
+            y = "0.191931 * safezoneH + safezoneY";
+            w = "0.0393711 * safezoneW";
+            h = "0.067215 * safezoneH";
+        };
+        class SU35_RscTextCheckbox_2504: RscPicture {
+            idc = 2504;
+            text = "\js_jc_su35\ui\SU35_GUI_button_tickbox_off.paa";
+            x = "0.515748 * safezoneW + safezoneX";
+            y = "0.514003 * safezoneH + safezoneY";
+            w = "0.0393711 * safezoneW";
+            h = "0.067215 * safezoneH";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Return to main menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1613: SU35_RscButtonMenu {
+            idc = 1613;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class SU35_CREDITS_EULA_UI
-{
-	idd=3000;
-	movingenable="false";
-	onLoad="uiNamespace setVariable ['myDisplay', (_this select 0)]";
-	class Controls
-	{
-		class SU35_MAIN_BOX_1200: RscPicture
-		{
-			idc=1200;
-			x="safezoneX";
-			y="safezoneY";
-			w="0.1 + safezoneW";
-			h="0.1 + safezoneH";
-			text="\js_jc_SU35\UI\SU35_GUI_background.paa";
-		};
-		class SU35_MAIN_PIC_LOADOUTS: RscPicture
-		{
-			idc=1204;
-			text="\js_jc_SU35\UI\SU35_GUI_main_credits_eula.paa";
-			x="0 * safezoneW + safezoneX";
-			y="0.052 * safezoneH + safezoneY";
-			w="1 * safezoneW";
-			h="0.84 * safezoneH";
-		};
-		class SU35_MAIN_FRAME: RscFrame
-		{
-			idc=1205;
-			x="0.005 * safezoneW + safezoneX";
-			y="0.005 * safezoneH + safezoneY";
-			w="0.99 * safezoneW";
-			h="0.99 * safezoneH";
-		};
-		class SU35_SUPPORTUS_BUTTON_1611: RscHTML
-		{
-			idc=1611;
-			x="0.510498 * safezoneW + safezoneX";
-			y="0.687643 * safezoneH + safezoneY";
-			w="0.127294 * safezoneW";
-			h="0.109225 * safezoneH";
-			filename="";
-			text="";
-			size=0.023;
-			tooltip="Support develpment of this mod";
-			action="";
-		};
-		class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu
-		{
-			idc=1612;
-			x="0.787409 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.0918668 * safezoneW";
-			h="0.0280066 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Return to main menu";
-			action="[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
-		};
-		class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu
-		{
-			idc=1614;
-			x="0.877963 * safezoneW + safezoneX";
-			y="0.110712 * safezoneH + safezoneY";
-			w="0.094491 * safezoneW";
-			h="0.0255 * safezoneH";
-			text="";
-			size=0.023;
-			tooltip="Close this menu";
-			action="closeDialog 0";
-		};
-	};
+class SU35_CREDITS_EULA_UI {
+    idd = 3000;
+    movingenable = "false";
+    onLoad = "uiNamespace setVariable ['myDisplay', (_this select 0)]";
+    class Controls {
+        class SU35_MAIN_BOX_1200: RscPicture {
+            idc = 1200;
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "0.1 + safezoneW";
+            h = "0.1 + safezoneH";
+            text = "\js_jc_SU35\UI\SU35_GUI_background.paa";
+        };
+        class SU35_MAIN_PIC_LOADOUTS: RscPicture {
+            idc = 1204;
+            text = "\js_jc_SU35\UI\SU35_GUI_main_credits_eula.paa";
+            x = "0 * safezoneW + safezoneX";
+            y = "0.052 * safezoneH + safezoneY";
+            w = "1 * safezoneW";
+            h = "0.84 * safezoneH";
+        };
+        class SU35_MAIN_FRAME: RscFrame {
+            idc = 1205;
+            x = "0.005 * safezoneW + safezoneX";
+            y = "0.005 * safezoneH + safezoneY";
+            w = "0.99 * safezoneW";
+            h = "0.99 * safezoneH";
+        };
+        class SU35_SUPPORTUS_BUTTON_1611: RscHTML {
+            idc = 1611;
+            x = "0.510498 * safezoneW + safezoneX";
+            y = "0.687643 * safezoneH + safezoneY";
+            w = "0.127294 * safezoneW";
+            h = "0.109225 * safezoneH";
+            filename = "";
+            text = "";
+            size = 0.023;
+            tooltip = "Support develpment of this mod";
+            action = "";
+        };
+        class SU35_RETURN_TO_MAIN_BUTTON_1612: SU35_RscButtonMenu {
+            idc = 1612;
+            x = "0.787409 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.0918668 * safezoneW";
+            h = "0.0280066 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Return to main menu";
+            action = "[]Spawn JS_JC_fnc_SU35_RETURN_MAIN";
+        };
+        class SU35_CLOSE_DIALOG_BUTTON_1614: SU35_RscButtonMenu {
+            idc = 1614;
+            x = "0.877963 * safezoneW + safezoneX";
+            y = "0.110712 * safezoneH + safezoneY";
+            w = "0.094491 * safezoneW";
+            h = "0.0255 * safezoneH";
+            text = "";
+            size = 0.023;
+            tooltip = "Close this menu";
+            action = "closeDialog 0";
+        };
+    };
 };
-class CfgFunctions
-{
-	class JS_JC
-	{
-		class SU35_SERVICE_MENU
-		{
-			class SU35_CREDITS_EULA_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_CREDITS_EULA_UI.sqf";
-			};
-			class SU35_LOADOUT_APPLY
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_APPLY.sqf";
-			};
-			class SU35_LOADOUT_RESTRICTIONS_3112
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_RESTRICTIONS_3112.sqf";
-			};
-			class SU35_LOADOUT_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_UI.sqf";
-			};
-			class SU35_LOADOUT_CAP
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_CAP.sqf";
-			};
-			class SU35_LOADOUT_CAS
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_CAS.sqf";
-			};
-			class SU35_LOADOUT_EMPTY
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_EMPTY.sqf";
-			};
-			class SU35_LOADOUT_MULTIROLE
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_MULTIROLE.sqf";
-			};
-			class SU35_MAIN_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MAIN_UI.sqf";
-			};
-			class SU35_MANUAL_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_UI.sqf";
-			};
-			class SU35_MANUAL_1_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_1_UI.sqf";
-			};
-			class SU35_MANUAL_2_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_2_UI.sqf";
-			};
-			class SU35_MANUAL_3_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_3_UI.sqf";
-			};
-			class SU35_MANUAL_4_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_4_UI.sqf";
-			};
-			class SU35_MANUAL_5_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_5_UI.sqf";
-			};
-			class SU35_MANUAL_6_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_6_UI.sqf";
-			};
-			class SU35_MANUAL_7_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_7_UI.sqf";
-			};
-			class SU35_MANUAL_8_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_8_UI.sqf";
-			};
-			class SU35_RETURN_MAIN
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_RETURN_MAIN.sqf";
-			};
-			class SU35_RETURN_MANUAL_MAIN
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_RETURN_MANUAL_MAIN.sqf";
-			};
-			class SU35_SETTINGS_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_SETTINGS_UI.sqf";
-			};
-			class SU35_SKINS_UI
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_SKINS_UI.sqf";
-			};
-			class SU35_REARM
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REARM.sqf";
-			};
-			class SU35_REFUEL
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REFUEL.sqf";
-			};
-			class SU35_REPAIR
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REPAIR.sqf";
-			};
-			class SU35_PAINT_CSAT_D
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_CSAT_D.sqf";
-			};
-			class SU35_PAINT_CSAT_S
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_CSAT_S.sqf";
-			};
-			class SU35_PAINT_RU_SKY_DIGITAL
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_RU_SKY_DIGITAL.sqf";
-			};
-			class SU35_PAINT_RU_GREY_DIGITAL
-			{
-				file="\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_RU_GREY_DIGITAL.sqf";
-			};
-		};
-		class SU35_Ejection
-		{
-			class SU35_Ejection
-			{
-				file="\js_jc_su35\scripts\EJECTION\SU35_Ejection.sqf";
-			};
-		};
-		class SU35_FX
-		{
-			class SU35_FX_Afterburner
-			{
-				file="\js_jc_su35\scripts\FX\SU35_FX_Afterburner.sqf";
-			};
-			class SU35_FX_Afterburner_anim_end
-			{
-				file="\js_jc_su35\scripts\FX\SU35_FX_Afterburner_anim_end.sqf";
-			};
-			class SU35_FX_Afterburner_anim_start
-			{
-				file="\js_jc_su35\scripts\FX\SU35_FX_Afterburner_anim_start.sqf";
-			};
-			class SU35_FX_ejection
-			{
-				file="\js_jc_su35\scripts\FX\SU35_FX_ejection.sqf";
-			};
-		};
-		class SU35_Interaction
-		{
-			class SU35_MFD_control
-			{
-				file="\js_jc_su35\scripts\INTERACTION\SU35_MFD_control.sqf";
-			};
-		};
-		class SU35_INIT_MODULE
-		{
-			class SU35_Init_module
-			{
-				file="\js_jc_su35\scripts\MODULES\SU35_Init_module.sqf";
-			};
-			class SU35_Exec_module
-			{
-				file="\js_jc_su35\scripts\MODULES\SU35_Exec_module.sqf";
-			};
-		};
-		class SU35_EDEN
-		{
-			class SU35_EDEN_attributeLoadCombo
-			{
-				file="\js_jc_su35\scripts\EDEN\fn_attributeLoadCombo.sqf";
-			};
-			class SU35_EDEN_attributeSaveCombo
-			{
-				file="\js_jc_su35\scripts\EDEN\fn_attributeSaveCombo.sqf";
-			};
-			class SU35_paintscheme
-			{
-				file="\js_jc_su35\scripts\EDEN\fn_paintscheme.sqf";
-			};
-		};
-		class SU35_HELPER
-		{
-			class SU35_instantLoadouts
-			{
-				file="\js_jc_su35\scripts\LOADOUTS\SU35_instant_loadouts.sqf";
-			};
-			class SU35_roles
-			{
-				file="\js_jc_su35\scripts\LOADOUTS\SU35_roles.sqf";
-			};
-		};
-	};
+class CfgFunctions {
+    class JS_JC {
+        class SU35_SERVICE_MENU {
+            class SU35_CREDITS_EULA_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_CREDITS_EULA_UI.sqf";
+            };
+            class SU35_LOADOUT_APPLY {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_APPLY.sqf";
+            };
+            class SU35_LOADOUT_RESTRICTIONS_3112 {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_RESTRICTIONS_3112.sqf";
+            };
+            class SU35_LOADOUT_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_UI.sqf";
+            };
+            class SU35_LOADOUT_CAP {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_CAP.sqf";
+            };
+            class SU35_LOADOUT_CAS {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_CAS.sqf";
+            };
+            class SU35_LOADOUT_EMPTY {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_EMPTY.sqf";
+            };
+            class SU35_LOADOUT_MULTIROLE {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_LOADOUT_MULTIROLE.sqf";
+            };
+            class SU35_MAIN_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MAIN_UI.sqf";
+            };
+            class SU35_MANUAL_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_UI.sqf";
+            };
+            class SU35_MANUAL_1_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_1_UI.sqf";
+            };
+            class SU35_MANUAL_2_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_2_UI.sqf";
+            };
+            class SU35_MANUAL_3_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_3_UI.sqf";
+            };
+            class SU35_MANUAL_4_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_4_UI.sqf";
+            };
+            class SU35_MANUAL_5_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_5_UI.sqf";
+            };
+            class SU35_MANUAL_6_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_6_UI.sqf";
+            };
+            class SU35_MANUAL_7_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_7_UI.sqf";
+            };
+            class SU35_MANUAL_8_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_MANUAL_8_UI.sqf";
+            };
+            class SU35_RETURN_MAIN {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_RETURN_MAIN.sqf";
+            };
+            class SU35_RETURN_MANUAL_MAIN {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_RETURN_MANUAL_MAIN.sqf";
+            };
+            class SU35_SETTINGS_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_SETTINGS_UI.sqf";
+            };
+            class SU35_SKINS_UI {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_SKINS_UI.sqf";
+            };
+            class SU35_REARM {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REARM.sqf";
+            };
+            class SU35_REFUEL {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REFUEL.sqf";
+            };
+            class SU35_REPAIR {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_REPAIR.sqf";
+            };
+            class SU35_PAINT_CSAT_D {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_CSAT_D.sqf";
+            };
+            class SU35_PAINT_CSAT_S {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_CSAT_S.sqf";
+            };
+            class SU35_PAINT_RU_SKY_DIGITAL {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_RU_SKY_DIGITAL.sqf";
+            };
+            class SU35_PAINT_RU_GREY_DIGITAL {
+                file = "\js_jc_su35\scripts\SERVICE_MENU\functions\SU35_PAINT_RU_GREY_DIGITAL.sqf";
+            };
+        };
+        class SU35_Ejection {
+            class SU35_Ejection {
+                file = "\js_jc_su35\scripts\EJECTION\SU35_Ejection.sqf";
+            };
+        };
+        class SU35_FX {
+            class SU35_FX_Afterburner {
+                file = "\js_jc_su35\scripts\FX\SU35_FX_Afterburner.sqf";
+            };
+            class SU35_FX_Afterburner_anim_end {
+                file = "\js_jc_su35\scripts\FX\SU35_FX_Afterburner_anim_end.sqf";
+            };
+            class SU35_FX_Afterburner_anim_start {
+                file = "\js_jc_su35\scripts\FX\SU35_FX_Afterburner_anim_start.sqf";
+            };
+            class SU35_FX_ejection {
+                file = "\js_jc_su35\scripts\FX\SU35_FX_ejection.sqf";
+            };
+        };
+        class SU35_Interaction {
+            class SU35_MFD_control {
+                file = "\js_jc_su35\scripts\INTERACTION\SU35_MFD_control.sqf";
+            };
+        };
+        class SU35_INIT_MODULE {
+            class SU35_Init_module {
+                file = "\js_jc_su35\scripts\MODULES\SU35_Init_module.sqf";
+            };
+            class SU35_Exec_module {
+                file = "\js_jc_su35\scripts\MODULES\SU35_Exec_module.sqf";
+            };
+        };
+        class SU35_EDEN {
+            class SU35_EDEN_attributeLoadCombo {
+                file = "\js_jc_su35\scripts\EDEN\fn_attributeLoadCombo.sqf";
+            };
+            class SU35_EDEN_attributeSaveCombo {
+                file = "\js_jc_su35\scripts\EDEN\fn_attributeSaveCombo.sqf";
+            };
+            class SU35_paintscheme {
+                file = "\js_jc_su35\scripts\EDEN\fn_paintscheme.sqf";
+            };
+        };
+        class SU35_HELPER {
+            class SU35_instantLoadouts {
+                file = "\js_jc_su35\scripts\LOADOUTS\SU35_instant_loadouts.sqf";
+            };
+            class SU35_roles {
+                file = "\js_jc_su35\scripts\LOADOUTS\SU35_roles.sqf";
+            };
+        };
+    };
 };
-class CfgCloudlets
-{
-	class Default;
-	class FX_SU35_BodyTrail: Default
-	{
-		interval=9.9999997e-005;
-		circleRadius=0;
-		circleVelocity[]={0,0,0};
-		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
-		particleFSNtieth=16;
-		particleFSIndex=12;
-		particleFSFrameCount=13;
-		particleFSLoop=0;
-		angleVar=360;
-		ignoreWind=1;
-		animationName="";
-		particleType="Billboard";
-		timerPeriod=1;
-		lifeTime=9.9999997e-005;
-		moveVelocity[]=
-		{
-			"speedX",
-			"speedY",
-			"speedZ"
-		};
-		rotationVelocity=1;
-		weight=1.274;
-		volume=1;
-		rubbing=0.18000001;
-		size[]={1.2};
-		sizeCoef=1;
-		color[]=
-		{
-			{1,1,1,0.1},
-			{1,1,1,0.2},
-			{1,1,1,0.1},
-			{1,1,1,0}
-		};
-		colorCoef[]=
-		{
-			1,
-			1,
-			1,
-			"(accelY interpolate [88,250,0,1]) * ((altitude*altitude) interpolate [400,40000,2,0.5])"
-		};
-		animationSpeed[]={1000};
-		animationSpeedCoef=0.0099999998;
-		randomDirectionPeriod=0;
-		randomDirectionIntensity=0;
-		onTimerScript="";
-		beforeDestroyScript="";
-		lifeTimeVar=9.9999997e-005;
-		position[]=
-		{
-			"positionX",
-			"positionY",
-			"positionZ"
-		};
-		positionVar[]={0,0,0};
-		MoveVelocityVar[]={0,0,0};
-		rotationVelocityVar=0;
-		sizeVar=0.5;
-		colorVar[]={0,0,0,0};
-		randomDirectionPeriodVar=0;
-		randomDirectionIntensityVar=0;
-	};
-	class FX_SU35_WingTrail: Default
-	{
-		interval=0.00030000001;
-		circleRadius=0;
-		circleVelocity[]={0,0,0};
-		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
-		particleFSNtieth=16;
-		particleFSIndex=12;
-		particleFSFrameCount=16;
-		particleFSLoop=0;
-		angleVar=360;
-		ignoreWind=1;
-		animationName="";
-		particleType="Billboard";
-		timerPeriod=1;
-		lifeTime=0.25;
-		moveVelocity[]={0,0,0};
-		rotationVelocity=1;
-		weight=1.274;
-		volume=1;
-		rubbing=0.18000001;
-		size[]={0.18000001};
-		sizeCoef=1;
-		color[]=
-		{
-			{1,1,1,0.1},
-			{1,1,1,0.2},
-			{1,1,1,0.1},
-			{1,1,1,0}
-		};
-		colorCoef[]=
-		{
-			1,
-			1,
-			1,
-			"(accelY interpolate [38,85,0,1]) * ((altitude*altitude) interpolate [400,40000,1.2,0.5])"
-		};
-		animationSpeed[]={1000};
-		animationSpeedCoef=0.0099999998;
-		randomDirectionPeriod=0;
-		randomDirectionIntensity=0;
-		onTimerScript="";
-		beforeDestroyScript="";
-		lifeTimeVar=0.2;
-		position[]=
-		{
-			"positionX",
-			"positionY",
-			"positionZ"
-		};
-		positionVar[]={0,0,0};
-		MoveVelocityVar[]={0,0,0};
-		rotationVelocityVar=0;
-		sizeVar=0;
-		colorVar[]={0,0,0,0};
-		randomDirectionPeriodVar=0;
-		randomDirectionIntensityVar=0;
-	};
+class CfgCloudlets {
+    class Default;
+    class FX_SU35_BodyTrail: Default {
+        interval = 0.0001;
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        particleFSNtieth = 16;
+        particleFSIndex = 12;
+        particleFSFrameCount = 13;
+        particleFSLoop = 0;
+        angleVar = 360;
+        ignoreWind = 1;
+        animationName = "";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 0.0001;
+        moveVelocity[] = {"speedX", "speedY", "speedZ"};
+        rotationVelocity = 1;
+        weight = 1.274;
+        volume = 1;
+        rubbing = 0.18;
+        size[] = {1.2};
+        sizeCoef = 1;
+        color[] = {
+            {1, 1, 1, 0.1},
+            {1, 1, 1, 0.2},
+            {1, 1, 1, 0.1},
+            {1, 1, 1, 0}
+        };
+        colorCoef[] = {
+            1,
+            1,
+            1,
+            "(accelY interpolate [88,250,0,1]) * ((altitude*altitude) interpolate [400,40000,2,0.5])"
+        };
+        animationSpeed[] = {1000};
+        animationSpeedCoef = 0.01;
+        randomDirectionPeriod = 0;
+        randomDirectionIntensity = 0;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 0.0001;
+        position[] = {"positionX", "positionY", "positionZ"};
+        positionVar[] = {0, 0, 0};
+        MoveVelocityVar[] = {0, 0, 0};
+        rotationVelocityVar = 0;
+        sizeVar = 0.5;
+        colorVar[] = {0, 0, 0, 0};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+    };
+    class FX_SU35_WingTrail: Default {
+        interval = 0.0003;
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        particleFSNtieth = 16;
+        particleFSIndex = 12;
+        particleFSFrameCount = 16;
+        particleFSLoop = 0;
+        angleVar = 360;
+        ignoreWind = 1;
+        animationName = "";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 0.25;
+        moveVelocity[] = {0, 0, 0};
+        rotationVelocity = 1;
+        weight = 1.274;
+        volume = 1;
+        rubbing = 0.18;
+        size[] = {0.18};
+        sizeCoef = 1;
+        color[] = {
+            {1, 1, 1, 0.1},
+            {1, 1, 1, 0.2},
+            {1, 1, 1, 0.1},
+            {1, 1, 1, 0}
+        };
+        colorCoef[] = {
+            1,
+            1,
+            1,
+            "(accelY interpolate [38,85,0,1]) * ((altitude*altitude) interpolate [400,40000,1.2,0.5])"
+        };
+        animationSpeed[] = {1000};
+        animationSpeedCoef = 0.01;
+        randomDirectionPeriod = 0;
+        randomDirectionIntensity = 0;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 0.2;
+        position[] = {"positionX", "positionY", "positionZ"};
+        positionVar[] = {0, 0, 0};
+        MoveVelocityVar[] = {0, 0, 0};
+        rotationVelocityVar = 0;
+        sizeVar = 0;
+        colorVar[] = {0, 0, 0, 0};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+    };
 };
-class FX_SU35_Fuselagevapour
-{
-	class FX_SU35_BodyTrail_LOW
-	{
-		simulation="particles";
-		type="FX_SU35_BodyTrail";
-		qualityLevel=0;
-		enabled="accelY interpolate [89.9999999,90,-1,1]";
-	};
-	class FX_SU35_BodyTrail_MD
-	{
-		simulation="particles";
-		type="FX_SU35_BodyTrail";
-		qualityLevel=1;
-		enabled="accelY interpolate [89.9999999,90,-1,1]";
-	};
-	class FX_SU35_BodyTrail_HD
-	{
-		simulation="particles";
-		type="FX_SU35_BodyTrail";
-		qualityLevel=2;
-		enabled="accelY interpolate [89.9999999,90,-1,1]";
-	};
+class FX_SU35_Fuselagevapour {
+    class FX_SU35_BodyTrail_LOW {
+        simulation = "particles";
+        type = "FX_SU35_BodyTrail";
+        qualityLevel = 0;
+        enabled = "accelY interpolate [89.9999999,90,-1,1]";
+    };
+    class FX_SU35_BodyTrail_MD {
+        simulation = "particles";
+        type = "FX_SU35_BodyTrail";
+        qualityLevel = 1;
+        enabled = "accelY interpolate [89.9999999,90,-1,1]";
+    };
+    class FX_SU35_BodyTrail_HD {
+        simulation = "particles";
+        type = "FX_SU35_BodyTrail";
+        qualityLevel = 2;
+        enabled = "accelY interpolate [89.9999999,90,-1,1]";
+    };
 };
-class FX_SU35_WingVortices
-{
-	class FX_SU35_WingTrail_LOW
-	{
-		simulation="particles";
-		type="FX_SU35_WingTrail";
-		qualityLevel=0;
-		enabled="accelY interpolate [39.9999999,40,-1,1]";
-	};
-	class FX_SU35_WingTrail_MD
-	{
-		simulation="particles";
-		type="FX_SU35_WingTrail";
-		qualityLevel=1;
-		enabled="accelY interpolate [39.9999999,40,-1,1]";
-	};
-	class FX_SU35_WingTrail_HD
-	{
-		simulation="particles";
-		type="FX_SU35_WingTrail";
-		qualityLevel=2;
-		enabled="accelY interpolate [39.9999999,40,-1,1]";
-	};
+class FX_SU35_WingVortices {
+    class FX_SU35_WingTrail_LOW {
+        simulation = "particles";
+        type = "FX_SU35_WingTrail";
+        qualityLevel = 0;
+        enabled = "accelY interpolate [39.9999999,40,-1,1]";
+    };
+    class FX_SU35_WingTrail_MD {
+        simulation = "particles";
+        type = "FX_SU35_WingTrail";
+        qualityLevel = 1;
+        enabled = "accelY interpolate [39.9999999,40,-1,1]";
+    };
+    class FX_SU35_WingTrail_HD {
+        simulation = "particles";
+        type = "FX_SU35_WingTrail";
+        qualityLevel = 2;
+        enabled = "accelY interpolate [39.9999999,40,-1,1]";
+    };
 };
-class FX_SU35_Missile_AA
-{
-	class Light1
-	{
-		simulation="light";
-		type="RocketLight";
-		position[]={0,0,0};
-		intensity=0.0099999998;
-		interval=1;
-		lifeTime=1;
-	};
-	class FX_SU35_Missile_AA_HD
-	{
-		simulation="particles";
-		type="Missile3";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=2;
-	};
-	class FX_SU35_Missile_AA_MD
-	{
-		simulation="particles";
-		type="Missile3";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=1;
-	};
-	class FX_SU35_Missile_AA_LOW
-	{
-		simulation="particles";
-		type="Missile3";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=0;
-	};
+class FX_SU35_Missile_AA {
+    class Light1 {
+        simulation = "light";
+        type = "RocketLight";
+        position[] = {0, 0, 0};
+        intensity = 0.01;
+        interval = 1;
+        lifeTime = 1;
+    };
+    class FX_SU35_Missile_AA_HD {
+        simulation = "particles";
+        type = "Missile3";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 2;
+    };
+    class FX_SU35_Missile_AA_MD {
+        simulation = "particles";
+        type = "Missile3";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 1;
+    };
+    class FX_SU35_Missile_AA_LOW {
+        simulation = "particles";
+        type = "Missile3";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 0;
+    };
 };
-class FX_SU35_Missile_AG
-{
-	class Light1
-	{
-		simulation="light";
-		type="RocketLight";
-		position[]={0,0,0};
-		intensity=0.0099999998;
-		interval=1;
-		lifeTime=1;
-	};
-	class FX_SU35_Missile_AG_HD
-	{
-		simulation="particles";
-		type="Missile4";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=2;
-	};
-	class FX_SU35_Missile_AG_MD
-	{
-		simulation="particles";
-		type="Missile4";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=1;
-	};
-	class FX_SU35_Missile_AG_LOW
-	{
-		simulation="particles";
-		type="Missile4";
-		position[]={0,0,0};
-		intensity=1;
-		interval=1;
-		lifeTime=1;
-		qualityLevel=0;
-	};
+class FX_SU35_Missile_AG {
+    class Light1 {
+        simulation = "light";
+        type = "RocketLight";
+        position[] = {0, 0, 0};
+        intensity = 0.01;
+        interval = 1;
+        lifeTime = 1;
+    };
+    class FX_SU35_Missile_AG_HD {
+        simulation = "particles";
+        type = "Missile4";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 2;
+    };
+    class FX_SU35_Missile_AG_MD {
+        simulation = "particles";
+        type = "Missile4";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 1;
+    };
+    class FX_SU35_Missile_AG_LOW {
+        simulation = "particles";
+        type = "Missile4";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 1;
+        qualityLevel = 0;
+    };
 };
 class SensorTemplatePassiveRadar;
 class SensorTemplateActiveRadar;
@@ -2634,6339 +2225,3140 @@ class SensorTemplateVisual;
 class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
-class DefaultVehicleSystemsDisplayManagerLeftSensors
-{
-	class Components;
+class DefaultVehicleSystemsDisplayManagerLeftSensors {
+    class components;
 };
-class DefaultVehicleSystemsDisplayManagerRightSensors
-{
-	class Components;
+class DefaultVehicleSystemsDisplayManagerRightSensors {
+    class components;
 };
-class VehicleSystemsTemplateLeftSensorsCommander: DefaultVehicleSystemsDisplayManagerLeftSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateLeftSensorsCommander: DefaultVehicleSystemsDisplayManagerLeftSensors {
+    class components: components {};
 };
-class VehicleSystemsTemplateRightSensorsCommander: DefaultVehicleSystemsDisplayManagerRightSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateRightSensorsCommander: DefaultVehicleSystemsDisplayManagerRightSensors {
+    class components: components {};
 };
-class VehicleSystemsTemplateLeftSensorsGunner: DefaultVehicleSystemsDisplayManagerLeftSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateLeftSensorsGunner: DefaultVehicleSystemsDisplayManagerLeftSensors {
+    class components: components {};
 };
-class VehicleSystemsTemplateRightSensorsGunner: DefaultVehicleSystemsDisplayManagerRightSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateRightSensorsGunner: DefaultVehicleSystemsDisplayManagerRightSensors {
+    class components: components {};
 };
-class VehicleSystemsTemplateLeftSensorsPilot: DefaultVehicleSystemsDisplayManagerLeftSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateLeftSensorsPilot: DefaultVehicleSystemsDisplayManagerLeftSensors {
+    class components: components {};
 };
-class VehicleSystemsTemplateRightSensorsPilot: DefaultVehicleSystemsDisplayManagerRightSensors
-{
-	class Components: Components
-	{
-	};
+class VehicleSystemsTemplateRightSensorsPilot: DefaultVehicleSystemsDisplayManagerRightSensors {
+    class components: components {};
 };
 class Eventhandlers;
 class itc_air_default_jet;
-class CfgFactionClasses
-{
-	class OPFOR_RUSSIA
-	{
-		displayName="RUSSIA";
-		priority=99;
-		side=0;
-		icon="\js_jc_su35\ui\cfgfactionclasses_russia_ca.paa";
-		flag="\js_jc_su35\ui\flag_russia_co.paa";
-	};
+class CfgFactionClasses {
+    class OPFOR_RUSSIA {
+        displayName = "RUSSIA";
+        priority = 99;
+        side = 0;
+        icon = "\js_jc_su35\ui\cfgfactionclasses_russia_ca.paa";
+        flag = "\js_jc_su35\ui\flag_russia_co.paa";
+    };
 };
-class CfgVehicles
-{
-	class Air;
-	class Plane: Air
-	{
-		class HitPoints;
-	};
-	class PlaneWreck;
-	class thingX;
-	class Motorcycle;
-	class Paraglide;
-	class Plane_Base_F: Plane
-	{
-		class Components;
-		class HitPoints: HitPoints
-		{
-			class HitHull;
-		};
-	};
-	class WeaponHolder;
-	class O_Pilot_F;
-	class JS_JC_OPFOR_Pilot: O_Pilot_F
-	{
-		class SpeechVariants
-		{
-			class Default
-			{
-				speechSingular[]=
-				{
-					"veh_infantry_pilot_s"
-				};
-				speechPlural[]=
-				{
-					"veh_infantry_pilot_p"
-				};
-			};
-		};
-		textSingular="$STR_A3_nameSound_veh_infantry_pilot_s";
-		textPlural="$STR_A3_nameSound_veh_infantry_pilot_p";
-		nameSound="veh_infantry_pilot_s";
-		author="$STR_A3_Bohemia_Interactive";
-		_generalMacro="O_Pilot_F";
-		displayName="Fighter Pilot";
-		model="\A3\characters_F\Common\pilot_f.p3d";
-		modelSides[]={3,1};
-		uniformClass="JS_JC_SU35_PilotCoveralls";
-		weapons[]=
-		{
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"Throw",
-			"Put"
-		};
-		magazines[]={};
-		respawnMagazines[]={};
-		backpack="";
-		linkedItems[]=
-		{
-			"JS_JC_SU35_PilotHelmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		respawnLinkedItems[]=
-		{
-			"JS_JC_SU35_PilotHelmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\A3\Characters_F\Common\Data\pilot_suit_iran_co.paa"
-		};
-		cost=165000;
-	};
-	class JS_JC_OPFOR_Pilot_Uniform_container: WeaponHolder
-	{
-		scope=1;
-		model="\A3\Weapons_f\dummyweapon.p3d";
-		accuracy=0.2;
-		forceSupply=1;
-		showWeaponCargo=1;
-		transportMaxMagazines=10;
-		transportMaxWeapons=1;
-		displayName="$STR_cfgVehicles_WeaponHolder0";
-		destrType="DestructNo";
-		transportMaxBackpacks=0;
-		isGround=1;
-		maximumLoad=60;
-		class TransportMagazines
-		{
-			class _xx_16Rnd_9x21_Mag
-			{
-				magazine="16Rnd_9x21_Mag";
-				count=4;
-			};
-			class _xx_SmokeShellOrange
-			{
-				magazine="SmokeShellOrange";
-				count=1;
-			};
-			class _xx_Chemlight_green
-			{
-				magazine="Chemlight_green";
-				count=2;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_hgun_Rook40_F
-			{
-				weapon="hgun_Rook40_F";
-				count=1;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_FirstAidKit
-			{
-				name="FirstAidKit";
-				count=1;
-			};
-			class _xx_h_watchcap_camo
-			{
-				name="h_watchcap_camo";
-				count=1;
-			};
-			class _xx_NVGoggles
-			{
-				name="NVGoggles";
-				count=1;
-			};
-		};
-	};
-	class JS_JC_SU35: Plane_Base_F
-	{
-		class itc_air: itc_air_default_jet
-		{
-			class rover
-			{
-				capable=1;
-				frequency_default=5784;
-			};
-			targeting_user="pilot";
-			tgp=1;
-			wso=0;
-			mfdApps[]=
-			{
-				"DSMS",
-				"TGP",
-				"STAT",
-				"TAD",
-				"STPT",
-				"OPT",
-				"MAV",
-				"FCR",
-				"WPN"
-			};
-			systems[]=
-			{
-				"UFC",
-				"SOI",
-				"TAXI",
-				"DSMS",
-				"MAVERICK",
-				"FCR",
-				"MFD",
-				"MFD_L",
-				"MFD_R",
-				"HMD",
-				"AUTOPILOT",
-				"AP-MAN",
-				"ROVER",
-				"FCS",
-				"ACMI",
-				"SADL",
-				"GCAS",
-				"TGP",
-				"WPT",
-				"TAD",
-				"HUD"
-			};
-			mfdType="classic";
-			class mfd_left
-			{
-			};
-			class mfd_right
-			{
-			};
-		};
-		LESH_canBeTowed=1;
-		LESH_towFromFront=1;
-		LESH_AxisOffsetTarget[]={0,11,-1.4};
-		LESH_WheelOffset[]={0,-3.2};
-		scope=2;
-		vehicleClass="Air";
-		side=0;
-		faction="OPF_F";
-		displayName="Su-35 Flanker E";
-		author="John_Spartan & Saul";
-		crew="JS_JC_OPFOR_Pilot";
-		driverAction="SU35_pilot";
-		driverCanEject=0;
-		precisegetinout=0;
-		editorPreview="\js_jc_su35\previews\JS_JC_SU35.jpg";
-		picture="\js_jc_su35\UI\su35_picture.paa";
-		icon="\js_jc_su35\UI\su35_icon.paa";
-		mapSize=15.5;
-		unitInfoType="Rsc_SU35_UnitInfo";
-		simulation="airplaneX";
-		_generalMacro="Plane";
-		destrType="DestructWreck";
-		damageEffect="AirDestructionEffects";
-		model="\js_jc_su35\JS_JC_Su35.p3d";
-		animated=1;
-		extCameraPosition[]={0,3,-23};
-		availableForSupportTypes[]=
-		{
-			"CAS_Bombing"
-		};
-		hiddenSelections[]=
-		{
-			"camo_hull",
-			"camo_misc",
-			"camo_cockpit_1",
-			"camo_cockpit_2",
-			"camo_glass",
-			"camo_ladder",
-			"Number_L1",
-			"Number_L2",
-			"Number_L3",
-			"Number_R1",
-			"Number_R2",
-			"Number_R3",
-			"MFD_r_scr_2_map",
-			"MFD_r_scr_2_miniplane",
-			"burner_fire_1_left",
-			"burner_fire_1_right",
-			"afterburner_left",
-			"afterburner_right",
-			"mfcd"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\js_jc_su35\data\Su35_hull_CSAT_D_co.paa",
-			"\js_jc_su35\data\Su35_misc_CSAT_D_co.paa",
-			"\js_jc_su35\data\Su35_cockpit1_co.paa",
-			"\js_jc_su35\data\su35_cockpit2_co.paa",
-			"\js_jc_su35\data\Su35_glass_ca.paa",
-			"\js_jc_su35\data\Su35_ladder_co.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"\js_jc_su35\data\su35_clear_ca.paa",
-			"",
-			"",
-			"\js_jc_su35\data\su35_engine_fire_ca.paa",
-			"\js_jc_su35\data\su35_engine_fire_ca.paa",
-			"\js_jc_su35\data\su35_afterburner_ca.paa",
-			"\js_jc_su35\data\su35_afterburner_ca.paa",
-			""
-		};
-		weapons[]=
-		{
-			"js_w_su35_master_arms_safe",
-			"js_w_su35_gsh30",
-			"CMFlareLauncher",
-			"LaserDesignator_pilotCamera"
-		};
-		magazines[]=
-		{
-			"js_m_su35_gsh",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"LaserBatteries"
-		};
-		canFloat=0;
-		driveOnComponent[]=
-		{
-			"n_wheels",
-			"l_wheel",
-			"r_wheel"
-		};
-		cabinOpening=1;
-		gearRetracting=1;
-		geardowntime=3;
-		gearuptime=4.5;
-		armor=80;
-		fuelCapacity=2540;
-		LockDetectionSystem="2 + 4 + 8";
-		incomingMissileDetectionSystem=16;
-		radarType=4;
-		laserScanner=1;
-		irTarget=1;
-		irScanRangeMin=100;
-		irScanRangeMax=10500;
-		irScanToEyeFactor=4;
-		irScanGround=1;
-		namesound="Plane";
-		envelope[]={0,0.40000001,1.9,4.8000002,6.8000002,8.5,8.5,8.5,7.1999998,5.8000002,4,1.8,0.5,0};
-		brakeDistance=65;
-		aileronSensitivity=1.2;
-		elevatorSensitivity=1.6;
-		wheelSteeringSensitivity=1.5;
-		flapsFrictionCoef=0.5;
-		landingSpeed=190;
-		landingAoa="rad 10";
-		acceleration=100;
-		maxSpeed=1300;
-		airFriction0[]={100,50,12};
-		airFriction1[]={100,50,12};
-		airFriction2[]={100,50,12};
-		noseDownCoef=0;
-		gunAimDown=0;
-		altFullForce=12000;
-		altNoForce=15000;
-		draconicForceXCoef=8.5;
-		draconicForceYCoef=2;
-		draconicForceZCoef=1;
-		draconicTorqueXCoef=0.15000001;
-		draconicTorqueYCoef=1;
-		angleOfIndicence=0.050000001;
-		selectionFireAnim="zasleh";
-		driverLeftHandAnimName="throttle_pilot";
-		driverRightHandAnimName="stick_pilot";
-		memoryPointsGetInDriver="GetIn_driver_pos";
-		memoryPointsGetInDriverDir="GetIn_driver_dir";
-		memoryPointLDust="levy prach";
-		memoryPointRDust="pravy prach";
-		memoryPointGun="nosegun";
-		memoryPointLRocket="l_rocket_point";
-		memoryPointRRocket="r_rocket_point";
-		memoryPointCM[]=
-		{
-			"flare_launcher",
-			"flare_launcher",
-			"flare_launcher",
-			"flare_launcher"
-		};
-		memoryPointCMDir[]=
-		{
-			"flare_launcher1_dir",
-			"flare_launcher2_dir",
-			"flare_launcher3_dir",
-			"flare_launcher4_dir"
-		};
-		class TransportItems
-		{
-		};
-		attenuationEffectType="HeliAttenuation";
-		soundGetIn[]=
-		{
-			"js_jc_su35\sounds\ext-jetair-cabine-close1",
-			0.56234097,
-			1
-		};
-		soundGetOut[]=
-		{
-			"js_jc_su35\sounds\ext-jetair-cabine-open1",
-			0.56234097,
-			1,
-			20
-		};
-		soundDammage[]=
-		{
-			"",
-			0.56234097,
-			1
-		};
-		soundEngineOnInt[]=
-		{
-			"js_jc_su35\sounds\int-av8b-start-1",
-			1,
-			1
-		};
-		soundEngineOnExt[]=
-		{
-			"js_jc_su35\sounds\ext-jetair-start1",
-			1.77828,
-			1,
-			900
-		};
-		soundEngineOffInt[]=
-		{
-			"js_jc_su35\sounds\int-av8b-stop-1",
-			1,
-			1
-		};
-		soundEngineOffExt[]=
-		{
-			"js_jc_su35\sounds\ext-jetair-stop1",
-			1.77828,
-			1,
-			900
-		};
-		soundLocked[]=
-		{
-			"\A3\Sounds_F\weapons\Rockets\locked_1",
-			1,
-			1
-		};
-		soundIncommingMissile[]=
-		{
-			"\A3\Sounds_F\weapons\Rockets\locked_3",
-			1,
-			1.5
-		};
-		soundSetSonicBoom[]=
-		{
-			"Plane_Fighter_SonicBoom_SoundSet"
-		};
-		soundGearUp[]=
-		{
-			"A3\Sounds_F_EPC\CAS_02\gear_up",
-			0.79432797,
-			1,
-			150
-		};
-		soundGearDown[]=
-		{
-			"A3\Sounds_F_EPC\CAS_02\gear_down",
-			0.79432797,
-			1,
-			150
-		};
-		soundFlapsUp[]=
-		{
-			"A3\Sounds_F_EPC\CAS_02\Flaps_Up",
-			0.63095701,
-			1,
-			100
-		};
-		soundFlapsDown[]=
-		{
-			"A3\Sounds_F_EPC\CAS_02\Flaps_Down",
-			0.63095701,
-			1,
-			100
-		};
-		class Sounds
-		{
-			class EngineLowOut
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\ext-jetair-engine-low1",
-					2.5118899,
-					1,
-					1600
-				};
-				frequency="1.0 min (rpm + 0.5)";
-				volume="camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
-			};
-			class EngineHighOut
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\ext-jetair-engine-high3",
-					2.5118899,
-					1.2,
-					1800
-				};
-				frequency="1";
-				volume="camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
-			};
-			class ForsageOut
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\ext-jetair-forsage1",
-					"db5",
-					0.99000001,
-					2000
-				};
-				frequency="1";
-				volume="engineOn*camPos*(thrust factor[0.6, 1.0])";
-				cone[]={3.1400001,3.9200001,2,0.5};
-			};
-			class WindNoiseOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\air\Plane_Fighter_03\noise",
-					0.56234097,
-					1,
-					150
-				};
-				frequency="(0.1+(1.2*(speed factor[1, 150])))";
-				volume="camPos*(speed factor[1, 150])";
-			};
-			class EngineLowIn
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\int-av8b-engine-low",
-					"db-5",
-					1
-				};
-				frequency="1.0 min (rpm + 0.5)";
-				volume="(1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]))";
-			};
-			class EngineHighIn
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\int-av8b-engine",
-					"db-5",
-					1.2
-				};
-				frequency="1";
-				volume="(1-camPos)*(rpm factor[0.85, 1.0])";
-			};
-			class ForsageIn
-			{
-				sound[]=
-				{
-					"js_jc_su35\sounds\int-av8b-forsage-1",
-					"db-5",
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";
-			};
-			class WindNoiseIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\air\Plane_Fighter_03\noise",
-					"db-10",
-					1
-				};
-				frequency="(0.1+(1.2*(speed factor[1, 150])))";
-				volume="(1-camPos)*(speed factor[1, 150])";
-			};
-		};
-		class MFD
-		{
-			class SU35_static_HUD
-			{
-				topLeft="hud_lh";
-				topRight="hud_ph";
-				bottomLeft="hud_ld";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={0,1,0,1};
-				enableParallax=0;
-				class Bones
-				{
-					class PlaneOrientation
-					{
-						type="fixed";
-						pos[]={0.5,0.52999997};
-					};
-					class WeaponAim
-					{
-						type="vector";
-						source="weapon";
-						pos0[]={0.5,0.55500001};
-						pos10[]={1.5,1.5549999};
-					};
-					class Velocity
-					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-						angle=-2.3;
-					};
-					class Level0
-					{
-						type="horizon";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-						angle=-2.3;
-					};
-				};
-				class Draw
-				{
-					color[]={0,1,0,1};
-					alpha=0.5;
-					condition="on";
-					class Horizont
-					{
-						clipTL[]={0.25,0.25};
-						clipBR[]={0.75,0.75};
-						class Dimmed
-						{
-							class Level00
-							{
-								type="line";
-								width=4;
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.045 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.005 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"0.005 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"0.045 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"0.125 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"0.200 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									}
-								};
-							};
-							class Level2M5: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									}
-								};
-							};
-							class VALM2_1_5
-							{
-								type="text";
-								source="static";
-								text=5;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 5"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 5"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 - 1.0 / 10 * 5"
-									},
-									1
-								};
-							};
-							class Level2P5: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									}
-								};
-							};
-							class VALP2_1_5
-							{
-								type="text";
-								source="static";
-								text=-5;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 5"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 5"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 + 1.0 / 10 * 5"
-									},
-									1
-								};
-							};
-							class Level2M10: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									}
-								};
-							};
-							class VALM2_1_10
-							{
-								type="text";
-								source="static";
-								text=10;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 10"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 10"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 - 1.0 / 10 * 10"
-									},
-									1
-								};
-							};
-							class Level2P10: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									}
-								};
-							};
-							class VALP2_1_10
-							{
-								type="text";
-								source="static";
-								text=-10;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 10"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 10"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 + 1.0 / 10 * 10"
-									},
-									1
-								};
-							};
-							class Level2M15: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									}
-								};
-							};
-							class VALM2_1_15
-							{
-								type="text";
-								source="static";
-								text=15;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 15"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 - 1.0 / 10 * 15"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 - 1.0 / 10 * 15"
-									},
-									1
-								};
-							};
-							class Level2P15: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									}
-								};
-							};
-							class VALP2_1_15
-							{
-								type="text";
-								source="static";
-								text=-15;
-								align="center";
-								scale=1;
-								sourceScale=1;
-								pos[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 15"
-									},
-									1
-								};
-								right[]=
-								{
-									"Level0",
-									
-									{
-										"0.050 * 1.4",
-										"-0.020 * 1.4 + 1.0 / 10 * 15"
-									},
-									1
-								};
-								down[]=
-								{
-									"Level0",
-									
-									{
-										"0.000 * 1.4",
-										"+0.020 * 1.4 + 1.0 / 10 * 15"
-									},
-									1
-								};
-							};
-						};
-					};
-					class PlaneOrientation_MiniPlane
-					{
-						width=4;
-						type="line";
-						points[]=
-						{
-							
-							{
-								"PlaneOrientation",
-								{0.20999999,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								1,
-								{0.07,0},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								1,
-								{-0.20999999,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.07,0},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0,-0.14},
-								1
-							}
-						};
-					};
-					class PlaneOrientationLines
-					{
-						clipTL[]={0,0.1};
-						clipBR[]={1,0};
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								"PlaneOrientation",
-								{-0.20999999,7.2250699e-009},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.28,9.6334301e-009},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.20999999,-1.97107e-009},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.28,-2.62809e-009},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{-0.105,0.14314599},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.14,0.190861},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.105,0.14314599},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.14,0.190861},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{-0.18186501,0.0826452},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.242487,0.110194},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.18186501,0.0826452},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.242487,0.110194},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{-0.20284399,0.042780299},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.270459,0.057040401},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.20284399,0.042780299},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.270459,0.057040401},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{-0.20920099,0.014406},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.244068,0.016806999},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{-0.20681,0.028702401},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.24127799,0.033486102},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.20681,0.028702401},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.24127799,0.033486102},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0.20920099,0.014406},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0.244068,0.016806999},
-								1
-							},
-							{}
-						};
-					};
-					class WeaponName
-					{
-						type="text";
-						source="weapon";
-						sourceScale=1;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.029999999,0.94},
-							1
-						};
-						right[]=
-						{
-							{0.079999998,0.94},
-							1
-						};
-						down[]=
-						{
-							{0.029999999,0.98000002},
-							1
-						};
-					};
-					class AmmoCount
-					{
-						type="text";
-						source="ammo";
-						sourceScale=1;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.029999999,0.88999999},
-							1
-						};
-						right[]=
-						{
-							{0.079999998,0.88999999},
-							1
-						};
-						down[]=
-						{
-							{0.029999999,0.93000001},
-							1
-						};
-					};
-					class FlapsGroup
-					{
-						type="group";
-						condition="flaps";
-						class FlapsText
-						{
-							type="text";
-							source="static";
-							text="FLAPS";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 - 0.045"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.079999998,
-									"0.53 - 0.045"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 - 0.005"
-								},
-								1
-							};
-						};
-					};
-					class GearGroup
-					{
-						type="group";
-						condition="ils";
-						class GearText
-						{
-							type="text";
-							source="static";
-							text="GEAR";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.005"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.079999998,
-									"0.53 + 0.005"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.045"
-								},
-								1
-							};
-						};
-					};
-					class StallGroup
-					{
-						type="group";
-						condition="stall";
-						color[]={1,0,0};
-						class StallText
-						{
-							type="text";
-							source="static";
-							text="STALL";
-							align="center";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.5,
-									"0.53 - 0.25"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.55000001,
-									"0.53 - 0.25"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.5,
-									"0.53 - 0.17"
-								},
-								1
-							};
-						};
-					};
-					class LightsGroup
-					{
-						type="group";
-						condition="lights";
-						class LightsText
-						{
-							type="text";
-							source="static";
-							text="LIGHTS";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.055"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.079999998,
-									"0.53 + 0.055"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.095"
-								},
-								1
-							};
-						};
-					};
-					class CollisionLightsGroup
-					{
-						type="group";
-						condition="collisionlights";
-						class CollisionLightsText
-						{
-							type="text";
-							source="static";
-							text="A-COL";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.105"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.079999998,
-									"0.53 + 0.105"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.145"
-								},
-								1
-							};
-						};
-					};
-					class PitchNumber
-					{
-						type="text";
-						source="horizonDive";
-						sourceScale=57.295799;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.50999999,0.88999999},
-							1
-						};
-						right[]=
-						{
-							{0.56,0.88999999},
-							1
-						};
-						down[]=
-						{
-							{0.50999999,0.93000001},
-							1
-						};
-					};
-					class PitchText
-					{
-						type="text";
-						source="static";
-						text="PITCH";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.49000001,0.88999999},
-							1
-						};
-						right[]=
-						{
-							{0.54000002,0.88999999},
-							1
-						};
-						down[]=
-						{
-							{0.49000001,0.93000001},
-							1
-						};
-					};
-					class RollNumber
-					{
-						type="text";
-						source="horizonBank";
-						sourceScale=57.295799;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.50999999,0.83999997},
-							1
-						};
-						right[]=
-						{
-							{0.56,0.83999997},
-							1
-						};
-						down[]=
-						{
-							{0.50999999,0.88},
-							1
-						};
-					};
-					class RollText
-					{
-						type="text";
-						source="static";
-						text="ROLL";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.49000001,0.83999997},
-							1
-						};
-						right[]=
-						{
-							{0.54000002,0.83999997},
-							1
-						};
-						down[]=
-						{
-							{0.49000001,0.88},
-							1
-						};
-					};
-					class SpeedNumber
-					{
-						type="text";
-						source="speed";
-						sourceScale=3.5999999;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.13,0.14},
-							1
-						};
-						right[]=
-						{
-							{0.18000001,0.14},
-							1
-						};
-						down[]=
-						{
-							{0.13,0.18000001},
-							1
-						};
-					};
-					class SpeedText
-					{
-						type="text";
-						source="static";
-						text="SPD";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.11,0.14},
-							1
-						};
-						right[]=
-						{
-							{0.16,0.14},
-							1
-						};
-						down[]=
-						{
-							{0.11,0.18000001},
-							1
-						};
-					};
-					class AltitudeNumber
-					{
-						type="text";
-						source="altitudeAGL";
-						sourceScale=1;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.88999999,0.14},
-							1
-						};
-						right[]=
-						{
-							{0.94,0.14},
-							1
-						};
-						down[]=
-						{
-							{0.88999999,0.18000001},
-							1
-						};
-					};
-					class AltitudeText
-					{
-						type="text";
-						source="static";
-						text="AGL";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.87,0.14},
-							1
-						};
-						right[]=
-						{
-							{0.92000002,0.14},
-							1
-						};
-						down[]=
-						{
-							{0.87,0.18000001},
-							1
-						};
-					};
-					class AltitudeArrow
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								
-								{
-									"0.88 + 0.018",
-									"0.40 - 0.016"
-								},
-								1
-							},
-							
-							{
-								{0.88,0.40000001},
-								1
-							},
-							
-							{
-								
-								{
-									"0.88 + 0.018",
-									"0.40 + 0.016"
-								},
-								1
-							}
-						};
-					};
-					class AltitudeLine
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								{0.87,0.60000002},
-								1
-							},
-							
-							{
-								{0.87,0.2},
-								1
-							}
-						};
-					};
-					class AltitudeScale
-					{
-						type="scale";
-						horizontal=0;
-						source="altitudeAGL";
-						sourceScale=1;
-						width=4;
-						top=0.60000002;
-						center=0.40000001;
-						bottom=0.2;
-						lineXleft=0.88;
-						lineYright=0.88999999;
-						lineXleftMajor=0.88;
-						lineYrightMajor=0.89999998;
-						majorLineEach=5;
-						numberEach=5;
-						step=20;
-						stepSize="(0.60 - 0.20) / 15";
-						align="right";
-						scale=1;
-						pos[]={0.91000003,0.57999998};
-						right[]={0.95999998,0.57999998};
-						down[]={0.91000003,0.62};
-					};
-					class ClimbNumber
-					{
-						type="text";
-						source="vspeed";
-						sourceScale=1;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.88999999,0.94},
-							1
-						};
-						right[]=
-						{
-							{0.94,0.94},
-							1
-						};
-						down[]=
-						{
-							{0.88999999,0.98000002},
-							1
-						};
-					};
-					class ClimbText
-					{
-						type="text";
-						source="static";
-						text="CLIMB";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.87,0.94},
-							1
-						};
-						right[]=
-						{
-							{0.92000002,0.94},
-							1
-						};
-						down[]=
-						{
-							{0.87,0.98000002},
-							1
-						};
-					};
-					class ClimbArrow
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								
-								{
-									"0.88 + 0.018",
-									"0.80 - 0.016"
-								},
-								1
-							},
-							
-							{
-								{0.88,0.80000001},
-								1
-							},
-							
-							{
-								
-								{
-									"0.88 + 0.018",
-									"0.80 + 0.016"
-								},
-								1
-							}
-						};
-					};
-					class ClimbLine
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								{0.87,0.92500001},
-								1
-							},
-							
-							{
-								{0.87,0.67500001},
-								1
-							}
-						};
-					};
-					class ClimbScale
-					{
-						type="scale";
-						horizontal=0;
-						source="vspeed";
-						sourceScale=1;
-						width=4;
-						top=0.92500001;
-						center=0.80000001;
-						bottom=0.67500001;
-						lineXleft=0.88;
-						lineYright=0.88999999;
-						lineXleftMajor=0.88;
-						lineYrightMajor=0.89999998;
-						majorLineEach=2;
-						numberEach=4;
-						step=5;
-						stepSize="(0.925 - 0.675) / 15";
-						align="right";
-						scale=1;
-						pos[]={0.91000003,0.90499997};
-						right[]={0.95999998,0.90499997};
-						down[]={0.91000003,0.94499999};
-					};
-					class HeadingArrow
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								
-								{
-									"0.5 - 0.02",
-									"0.11 - 0.02"
-								},
-								1
-							},
-							
-							{
-								{0.5,0.11},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5 + 0.02",
-									"0.11 - 0.02"
-								},
-								1
-							}
-						};
-					};
-					class HeadingLine
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								{0.30000001,0.12},
-								1
-							},
-							
-							{
-								{0.69999999,0.12},
-								1
-							}
-						};
-					};
-					class HeadingScale
-					{
-						type="scale";
-						horizontal=1;
-						source="heading";
-						sourceScale=1;
-						width=4;
-						top=0.30000001;
-						center=0.5;
-						bottom=0.69999999;
-						lineXleft="0.06 + 0.05";
-						lineYright="0.05 + 0.05";
-						lineXleftMajor="0.06 + 0.05";
-						lineYrightMajor="0.04 + 0.05";
-						majorLineEach=3;
-						numberEach=9;
-						step=5;
-						stepSize=0.02;
-						align="center";
-						scale=1;
-						pos[]=
-						{
-							0.30000001,
-							"0.0 + 0.05"
-						};
-						right[]=
-						{
-							0.34999999,
-							"0.0 + 0.05"
-						};
-						down[]=
-						{
-							0.30000001,
-							"0.04 + 0.05"
-						};
-					};
-				};
-			};
-			class SU35_parallax_HUD
-			{
-				topLeft="hud_lh";
-				topRight="hud_ph";
-				bottomLeft="hud_ld";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={0,1,0,1};
-				enableParallax=1;
-				class Bones
-				{
-					class PlaneOrientation
-					{
-						type="fixed";
-						pos[]={0.5,0.52999997};
-					};
-					class WeaponAim
-					{
-						type="vector";
-						source="weapon";
-						pos0[]={0.5,0.55500001};
-						pos10[]={1.5,1.5549999};
-					};
-					class Velocity
-					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-					};
-					class Level0
-					{
-						type="horizon";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-						angle=-2.3;
-					};
-				};
-				class Draw
-				{
-					color[]={0,1,0,1};
-					alpha=0.5;
-					condition="on";
-					class RadarTargets
-					{
-						type="radar";
-						width=4;
-						angle=-2.3;
-						pos0[]={0.5,0.55500001};
-						pos10[]={1.24,1.325};
-						points[]=
-						{
-							
-							{
-								{-0.050000001,-0.047297299},
-								1
-							},
-							
-							{
-								{0.050000001,-0.047297299},
-								1
-							},
-							
-							{
-								{0.050000001,0.047297299},
-								1
-							},
-							
-							{
-								{-0.050000001,0.047297299},
-								1
-							},
-							
-							{
-								{-0.050000001,-0.047297299},
-								1
-							}
-						};
-					};
-					class PlaneMovementCrosshair
-					{
-						type="line";
-						width=4;
-						points[]=
-						{
-							
-							{
-								"Velocity",
-								{0,-0.02},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.0099999998,-0.01732},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.01732,-0.0099999998},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.02,0},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.01732,0.0099999998},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.0099999998,0.01732},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0,0.02},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.0099999998,0.01732},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.01732,0.0099999998},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.02,0},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.01732,-0.0099999998},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.0099999998,-0.01732},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0,-0.02},
-								1
-							},
-							{},
-							
-							{
-								"Velocity",
-								{0.039999999,0},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0.02,0},
-								1
-							},
-							{},
-							
-							{
-								"Velocity",
-								{-0.039999999,0},
-								1
-							},
-							
-							{
-								"Velocity",
-								{-0.02,0},
-								1
-							},
-							{},
-							
-							{
-								"Velocity",
-								{0,-0.039999999},
-								1
-							},
-							
-							{
-								"Velocity",
-								{0,-0.02},
-								1
-							}
-						};
-					};
-					class Cros
-					{
-						condition="mgun";
-						width=4;
-						class Cros
-						{
-							type="line";
-							points[]=
-							{
-								
-								{
-									"WeaponAim",
-									{0.050000001,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.015,0},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0,0.039354801},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,0.0118065},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{-0.050000001,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.015,0},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0,-0.039354801},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,-0.0118065},
-									1
-								}
-							};
-						};
-					};
-					class AAMissileCrosshairGroup
-					{
-						type="group";
-						condition="AAmissile";
-						class AAMissileCrosshair
-						{
-							type="line";
-							width=4;
-							points[]=
-							{
-								
-								{
-									"WeaponAim",
-									{0,-0.25},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.043400001,-0.2462},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.085500002,-0.234925},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.125,-0.2165},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.16069999,-0.19149999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.19149999,-0.16069999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.2165,-0.125},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.234925,-0.085500002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.2462,-0.043400001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.25,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.2462,0.043400001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.234925,0.085500002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.2165,0.125},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.19149999,0.16069999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.16069999,0.19149999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.125,0.2165},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.085500002,0.234925},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.043400001,0.2462},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,0.25},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.043400001,0.2462},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.085500002,0.234925},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.125,0.2165},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.16069999,0.19149999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.19149999,0.16069999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.2165,0.125},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.234925,0.085500002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.2462,0.043400001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.25,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.2462,-0.043400001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.234925,-0.085500002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.2165,-0.125},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.19149999,-0.16069999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.16069999,-0.19149999},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.125,-0.2165},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.085500002,-0.234925},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.043400001,-0.2462},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,-0.25},
-									1
-								}
-							};
-						};
-					};
-					class ATMissileCrosshairGroup
-					{
-						condition="ATmissile";
-						type="group";
-						class ATMissileCrosshair
-						{
-							type="line";
-							width=4;
-							points[]=
-							{
-								
-								{
-									"WeaponAim",
-									{-0.15000001,-0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										-0.15000001,
-										"-0.15 + 0.02"
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{-0.15000001,0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										-0.15000001,
-										"0.15 - 0.02"
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0.15000001,-0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										0.15000001,
-										"-0.15 + 0.02"
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0.15000001,0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										0.15000001,
-										"0.15 - 0.02"
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{-0.15000001,-0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										"-0.15 + 0.02",
-										-0.15000001
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{-0.15000001,0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										"-0.15 + 0.02",
-										0.15000001
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0.15000001,-0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										"0.15 - 0.02",
-										-0.15000001
-									},
-									1
-								},
-								{},
-								
-								{
-									"WeaponAim",
-									{0.15000001,0.15000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									
-									{
-										"0.15 - 0.02",
-										0.15000001
-									},
-									1
-								}
-							};
-						};
-					};
-					class BombCrosshairGroup
-					{
-						type="group";
-						condition="bomb";
-						class BombCrosshair
-						{
-							type="line";
-							width=4;
-							points[]=
-							{
-								
-								{
-									"WeaponAim",
-									{0,-0.1},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.01736,-0.098480001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.034200002,-0.093970001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.050000001,-0.086599998},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.064280003,-0.0766},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.0766,-0.064280003},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.086599998,-0.050000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.093970001,-0.034200002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.098480001,-0.01736},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.1,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.098480001,0.01736},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.093970001,0.034200002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.086599998,0.050000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.0766,0.064280003},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.064280003,0.0766},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.050000001,0.086599998},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.034200002,0.093970001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0.01736,0.098480001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,0.1},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.01736,0.098480001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.034200002,0.093970001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.050000001,0.086599998},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.064280003,0.0766},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.0766,0.064280003},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.086599998,0.050000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.093970001,0.034200002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.098480001,0.01736},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.1,0},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.098480001,-0.01736},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.093970001,-0.034200002},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.086599998,-0.050000001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.0766,-0.064280003},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.064280003,-0.0766},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.050000001,-0.086599998},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.034200002,-0.093970001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{-0.01736,-0.098480001},
-									1
-								},
-								
-								{
-									"WeaponAim",
-									{0,-0.1},
-									1
-								},
-								{},
-								
-								{
-									"Velocity",
-									0.001,
-									"WeaponAim",
-									{0,0},
-									1
-								},
-								
-								{
-									"Velocity",
-									{0,0},
-									1
-								}
-							};
-						};
-					};
-				};
-			};
-			class SU35_static_MFD_1_H
-			{
-				topLeft="hud_2_lh";
-				topRight="hud_2_ph";
-				bottomLeft="hud_2_ld";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={1,0.89999998,0.1};
-				enableParallax=0;
-				class Bones
-				{
-					class PlaneOrientation
-					{
-						type="fixed";
-						pos[]={0.5,0.52999997};
-					};
-					class WeaponAim
-					{
-						type="vector";
-						source="weapon";
-						pos0[]={0.5,0.55500001};
-						pos10[]={1.5,1.5549999};
-					};
-					class Velocity
-					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-					};
-					class Level0
-					{
-						type="horizon";
-						pos0[]={0.5,0.52999997};
-						pos10[]={1.5,1.53};
-						angle=-2.3;
-					};
-				};
-				class Draw
-				{
-					color[]={1,1,1};
-					alpha=1;
-					condition="on";
-					class Horizont
-					{
-						clipTL[]={0.25,0.25};
-						clipBR[]={0.75,0.75};
-						class Dimmed
-						{
-							class Level00
-							{
-								type="line";
-								width=15;
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.045 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.005 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"0.005 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"0.045 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"0.125 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"0.200 * 1.4",
-											"0 * 1.4"
-										},
-										1
-									}
-								};
-							};
-							class Level2M5: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 5"
-										},
-										1
-									}
-								};
-							};
-							class Level2P5: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 5"
-										},
-										1
-									}
-								};
-							};
-							class Level2M10: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 10"
-										},
-										1
-									}
-								};
-							};
-							class Level2P10: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 10"
-										},
-										1
-									}
-								};
-							};
-							class Level2M15: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 15"
-										},
-										1
-									}
-								};
-							};
-							class Level2P15: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 15"
-										},
-										1
-									}
-								};
-							};
-							class Level2P20: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 20"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 20"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 20"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 20"
-										},
-										1
-									}
-								};
-							};
-							class Level2M20: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 20"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 20"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 20"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 20"
-										},
-										1
-									}
-								};
-							};
-							class Level2P30: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 30"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 30"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 30"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 30"
-										},
-										1
-									}
-								};
-							};
-							class Level2M30: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 30"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 30"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 30"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 30"
-										},
-										1
-									}
-								};
-							};
-							class Level2P40: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 40"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 40"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 40"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 40"
-										},
-										1
-									}
-								};
-							};
-							class Level2M40: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 40"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 40"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 40"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 40"
-										},
-										1
-									}
-								};
-							};
-							class Level2P50: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 50"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 50"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 50"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 50"
-										},
-										1
-									}
-								};
-							};
-							class Level2M50: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 50"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 50"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 50"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 50"
-										},
-										1
-									}
-								};
-							};
-							class Level2P60: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 60"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 60"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 60"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 60"
-										},
-										1
-									}
-								};
-							};
-							class Level2M60: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 60"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 60"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 60"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 60"
-										},
-										1
-									}
-								};
-							};
-							class Level2P70: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 70"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 70"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 70"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 70"
-										},
-										1
-									}
-								};
-							};
-							class Level2M70: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 70"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 70"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 70"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 70"
-										},
-										1
-									}
-								};
-							};
-							class Level2P80: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 80"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 80"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 80"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 80"
-										},
-										1
-									}
-								};
-							};
-							class Level2M80: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 80"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 80"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 80"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 80"
-										},
-										1
-									}
-								};
-							};
-							class Level2P90: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"+1.0 / 10 * 90"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"+1.0 / 10 * 90"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"+1.0 / 10 * 90"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"+1.0 / 10 * 90"
-										},
-										1
-									}
-								};
-							};
-							class Level2M90: Level00
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										
-										{
-											"-0.200 * 1.4",
-											"-1.0 / 10 * 90"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"-0.125 * 1.4",
-											"-1.0 / 10 * 90"
-										},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.125 * 1.4",
-											"-1.0 / 10 * 90"
-										},
-										1
-									},
-									
-									{
-										"Level0",
-										
-										{
-											"+0.200 * 1.4",
-											"-1.0 / 10 * 90"
-										},
-										1
-									}
-								};
-							};
-						};
-					};
-					class PlaneOrientation_MiniPlane
-					{
-						width=20;
-						type="line";
-						points[]=
-						{
-							
-							{
-								"PlaneOrientation",
-								{0.20999999,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								1,
-								{0.07,0},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								1,
-								{-0.20999999,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{-0.07,0},
-								1
-							},
-							{},
-							
-							{
-								"PlaneOrientation",
-								{0,0},
-								1
-							},
-							
-							{
-								"PlaneOrientation",
-								{0,-0.14},
-								1
-							}
-						};
-					};
-				};
-			};
-		};
-		class RenderTargets
-		{
-			class Center_Pilot_Mirror
-			{
-				renderTarget="rendertarget0";
-				class CameraView1
-				{
-					pointPosition="PIP_mirror_c";
-					pointDirection="PIP_mirror_c_dir";
-					renderQuality=2;
-					renderVisionMode=0;
-					fov=0.69999999;
-				};
-			};
-			class Left_Pilot_Mirror
-			{
-				renderTarget="rendertarget1";
-				class CameraView1
-				{
-					pointPosition="PIP_mirror_l";
-					pointDirection="PIP_mirror_l_dir";
-					renderQuality=2;
-					renderVisionMode=0;
-					fov=0.69999999;
-				};
-			};
-			class Right_Pilot_Mirror
-			{
-				renderTarget="rendertarget2";
-				class CameraView1
-				{
-					pointPosition="PIP_mirror_r";
-					pointDirection="PIP_mirror_r_dir";
-					renderQuality=2;
-					renderVisionMode=0;
-					fov=0.69999999;
-				};
-			};
-		};
-		class AnimationSources
-		{
-			class ejection_seat_motion
-			{
-				source="user";
-				animPeriod=0.25;
-				initPhase=0;
-			};
-			class ab_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class init_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class gps_targeting_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class paint_scheme_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class damage_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class auxtank_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class refueling_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class eject_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class r_canopy_hide
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class ejection_seat_hide
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class service_menu_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class rearming_done_switch
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-			};
-			class fuel_probe
-			{
-				source="user";
-				animPeriod=3.2;
-				initPhase=0;
-			};
-			class burner_fire_1_left
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class burner_fire_1_right
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class Mirrors_pip_hide
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class MFD_Displays_Map_miniplane_animX
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=0;
-			};
-			class MFD_Displays_Map_miniplane_animY
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=0;
-			};
-			class throttle_pilot
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class engine_nozzle_l_1
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_2
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_3
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_4
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_5
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_6
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_7
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_l_8
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_1
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_2
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_3
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_4
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_5
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_6
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_7
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class engine_nozzle_r_8
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class afterburner_left_userhide
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class afterburner_right_userhide
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class afterburner_left_strech
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class afterburner_right_strech
-			{
-				source="user";
-				animPeriod=1.2;
-				initPhase=0;
-			};
-			class MFD_l_scr_1_3_AB_on
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class MFD_l_scr_1_3_AB_off
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=0;
-			};
-			class MFD_l_scr_1_3_N1_100
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class MFD_l_scr_1_3_N1_50
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=0;
-			};
-			class MFD_l_scr_1_3_N2_100
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class MFD_l_scr_1_3_N2_50
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=0;
-			};
-			class MFD_L_scr_1_l_eng_AB
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-			class MFD_L_scr_1_r_eng_AB
-			{
-				source="user";
-				animPeriod=9.9999997e-005;
-				initPhase=1;
-			};
-		};
-		reportRemoteTargets=1;
-		receiveRemoteTargets=1;
-		reportOwnPosition=1;
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
-							minRange=500;
-							maxRange=3500;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=500;
-							maxRange=3500;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						angleRangeHorizontal=360;
-						angleRangeVertical=180;
-						aimDown=0;
-					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange=500;
-							maxRange=14000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=500;
-							maxRange=3000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						angleRangeHorizontal=120;
-						angleRangeVertical=90;
-						aimDown=0;
-						groundNoiseDistanceCoef=0.1;
-						maxSpeedThreshold=40;
-						minSpeedThreshold=30;
-						typeRecognitionDistance=6000;
-					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-					{
-					};
-					class LaserSensorComponent: SensorTemplateLaser
-					{
-					};
-					class NVSensorComponent: SensorTemplateNV
-					{
-					};
-					class VisualSensorComponent: SensorTemplateVisual
-					{
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftSensorsPilot
-			{
-				class Components: Components
-				{
-					class CrewDisplay
-					{
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-						resource="RscTransportCameraComponentMissile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={20000,10000,5000,2000};
-						resource="RscCustomInfoSensors";
-					};
-					class UAVDisplay
-					{
-						componentType="UAVFeedDisplayComponent";
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightSensorsPilot
-			{
-				defaultDisplay="SensorDisplay";
-				class Components: Components
-				{
-					class CrewDisplay
-					{
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-						resource="RscTransportCameraComponentMissile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={20000,10000,5000,2000};
-						resource="RscCustomInfoSensors";
-					};
-					class UAVDisplay
-					{
-						componentType="UAVFeedDisplayComponent";
-					};
-					class VehicleDriverDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Driver";
-					};
-				};
-			};
-			class TransportPylonsComponent
-			{
-				UIPicture="\JS_JC_SU35\UI\SU35_CA.paa";
-				class Pylons
-				{
-					class pylon1
-					{
-						maxweight=1000;
-						hardpoints[]=
-						{
-							"O_KAB250_BOMB",
-							"O_R73",
-							"O_R77",
-							"O_KH25",
-							"O_BOMB_PYLON",
-							"O_MISSILE_PYLON",
-							"UNI_SCALPEL",
-							"JS_JC_SU35_Pylon",
-							"FIR_OPFOR_Combined_HP",
-							"FIR_OPFOR_AA_HP"
-						};
-						attachment="PylonMissile_Missile_AA_R73_x1";
-						bay=-1;
-						priority=100;
-						UIPosition[]={0,0.23};
-						turret[]={};
-					};
-					class pylon2: pylon1
-					{
-						priority=90;
-						UIPosition[]={0.64999998,0.23};
-						mirroredMissilePos=1;
-					};
-					class pylon3: pylon1
-					{
-						maxweight=2000;
-						priority=80;
-						UIPosition[]={0.050000001,0.28};
-					};
-					class pylon4: pylon1
-					{
-						maxweight=2000;
-						priority=70;
-						UIPosition[]={0.60000002,0.28};
-						mirroredMissilePos=3;
-					};
-					class pylon5: pylon1
-					{
-						attachment="PylonMissile_Missile_AA_R77_x1";
-						maxweight=2000;
-						priority=60;
-						UIPosition[]={0.1,0.33000001};
-					};
-					class pylon6: pylon1
-					{
-						attachment="PylonMissile_Missile_AA_R77_x1";
-						maxweight=2000;
-						priority=50;
-						UIPosition[]={0.55000001,0.33000001};
-						mirroredMissilePos=5;
-					};
-					class pylon7: pylon1
-					{
-						attachment="PylonMissile_Missile_AGM_KH25_x1";
-						maxweight=2000;
-						priority=40;
-						UIPosition[]={0.15000001,0.38};
-					};
-					class pylon8: pylon1
-					{
-						attachment="PylonMissile_Missile_AGM_KH25_x1";
-						maxweight=2000;
-						priority=30;
-						UIPosition[]={0.5,0.38};
-						mirroredMissilePos=7;
-					};
-					class pylon9: pylon1
-					{
-						attachment="PylonMissile_Bomb_KAB250_x1";
-						maxweight=4000;
-						priority=20;
-						UIPosition[]={0.2,0.43000001};
-					};
-					class pylon10: pylon1
-					{
-						attachment="PylonMissile_Bomb_KAB250_x1";
-						maxweight=4000;
-						priority=20;
-						UIPosition[]={0.40000001,0.43000001};
-						mirroredMissilePos=9;
-					};
-					class pylon11: pylon1
-					{
-						attachment="PylonRack_Buddy_Pod_JS_SU35_x1";
-						maxweight=4000;
-						priority=10;
-						UIPosition[]={0.30000001,0.5};
-					};
-					class pylon12: pylon1
-					{
-						attachment="PylonRack_Wing_Tank_JS_SU35_x1";
-						maxweight=4000;
-						priority=10;
-						UIPosition[]={0.30000001,0.55000001};
-					};
-				};
-				class Presets
-				{
-					class Default
-					{
-						attachment[]=
-						{
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Bomb_KAB250_x1",
-							"PylonMissile_Bomb_KAB250_x1",
-							"PylonRack_Buddy_Pod_JS_SU35_x1",
-							"PylonRack_Wing_Tank_JS_SU35_x1"
-						};
-						displayName="Default";
-					};
-					class Empty
-					{
-						attachment[]={};
-						displayName="Empty";
-					};
-					class Multirole
-					{
-						attachment[]=
-						{
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonMissile_Bomb_KAB250_x1",
-							"PylonMissile_Bomb_KAB250_x1"
-						};
-						displayName="Multirole";
-					};
-					class CAS
-					{
-						attachment[]=
-						{
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonRack_Rocket_S8_JS_SU35_x20",
-							"PylonMissile_Missile_AGM_KH25_x1",
-							"PylonMissile_Missile_AGM_KH25_x1"
-						};
-						displayName="CAS";
-					};
-					class CAP
-					{
-						attachment[]=
-						{
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R73_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1",
-							"PylonMissile_Missile_AA_R77_x1"
-						};
-						displayName="CAP";
-					};
-				};
-			};
-		};
-		memoryPointDriverOptics="gunnerview";
-		driverWeaponsInfoType="RscOptics_CAS_01_TGP";
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName="WFOV";
-					initAngleX=0;
-					minAngleX=0;
-					maxAngleX=0;
-					initAngleY=0;
-					minAngleY=0;
-					maxAngleY=0;
-					initFov="(30 / 120)";
-					minFov="(30 / 120)";
-					maxFov="(30 / 120)";
-					directionStabilized=1;
-					visionMode[]=
-					{
-						"Normal",
-						"Ti"
-					};
-					thermalMode[]={0,1};
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera2",
-						"OpticsBlur2"
-					};
-				};
-				class Medium: Wide
-				{
-					opticsDisplayName="MFOV";
-					initFov="(15 / 120)";
-					minFov="(15 / 120)";
-					maxFov="(15 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
-				};
-				class Narrow: Wide
-				{
-					opticsDisplayName="NFOV";
-					initFov="(3.75 / 120)";
-					minFov="(3.75 / 120)";
-					maxFov="(3.75 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				showMiniMapInOptics=1;
-				showUAVViewInOptics=0;
-				showSlingLoadManagerInOptics=0;
-			};
-			minTurn=-180;
-			maxTurn=180;
-			initTurn=0;
-			minElev=-10;
-			maxElev=90;
-			initElev=0;
-			maxXRotSpeed=0.5;
-			maxYRotSpeed=0.5;
-			pilotOpticsShowCursor=1;
-			controllable=1;
-		};
-		class ViewPilot
-		{
-			initFov=1;
-			minFov=0.60000002;
-			maxFov=0.85000002;
-			initAngleX=0;
-			minAngleX=-35;
-			maxAngleX=85;
-			initAngleY=0;
-			minAngleY=-130;
-			maxAngleY=130;
-			minMoveX=-0.2;
-			maxMoveX=0.2;
-			minMoveY=-0.025;
-			maxMoveY=0.1;
-			minMoveZ=-0.2;
-			maxMoveZ=0.2;
-		};
-		class turrets
-		{
-		};
-		class Exhausts
-		{
-			class Exhaust_left
-			{
-				position="Exhausts_start_left";
-				direction="Exhausts_end_left";
-				effect="ExhaustsEffectPlane";
-			};
-			class Exhaust_right
-			{
-				position="Exhausts_start_right";
-				direction="Exhausts_end_right";
-				effect="ExhaustsEffectPlane";
-			};
-		};
-		class WingVortices
-		{
-			class WingTipLeft
-			{
-				effectName="FX_SU35_WingVortices";
-				position="wingtip_marker_light_green";
-			};
-			class WingTipRight
-			{
-				effectName="FX_SU35_WingVortices";
-				position="wingtip_marker_light_red";
-			};
-			class BodyLeft_inner
-			{
-				effectName="FX_SU35_Fuselagevapour";
-				position="body_vapour_L_S";
-			};
-			class BodyRight_inner
-			{
-				effectName="FX_SU35_Fuselagevapour";
-				position="body_vapour_R_S";
-			};
-			class BodyLeft_outer
-			{
-				effectName="FX_SU35_Fuselagevapour";
-				position="body_vapour_L_E";
-			};
-			class BodyRight_outer
-			{
-				effectName="FX_SU35_Fuselagevapour";
-				position="body_vapour_R_E";
-			};
-		};
-		class Reflectors
-		{
-			class Left
-			{
-				color[]={7000,7500,10000,1};
-				ambient[]={100,100,100,0};
-				position="light_1_1_source";
-				direction="light_1_1_target";
-				hitpoint="L svetlo";
-				selection="L svetlo";
-				size=1;
-				innerAngle=20;
-				outerAngle=60;
-				coneFadeCoef=10;
-				intensity=50;
-				useFlare=1;
-				dayLight=0;
-				FlareSize=4;
-				class Attenuation
-				{
-					start=1;
-					constant=0;
-					linear=0;
-					quadratic=4;
-				};
-			};
-			class Right
-			{
-				color[]={7000,7500,10000,1};
-				ambient[]={100,100,100,0};
-				position="light_1_2_source";
-				direction="light_1_2_target";
-				hitpoint="P svetlo";
-				selection="P svetlo";
-				size=1;
-				innerAngle=20;
-				outerAngle=60;
-				coneFadeCoef=10;
-				intensity=50;
-				useFlare=1;
-				dayLight=0;
-				FlareSize=4;
-				class Attenuation
-				{
-					start=1;
-					constant=0;
-					linear=0;
-					quadratic=4;
-				};
-			};
-		};
-		class MarkerLights
-		{
-			class Cockpit_light_1
-			{
-				name="cockpit_light_pos";
-				ambient[]={0.0099999998,0.0099999998,0.0099999998,1};
-				color[]={0.029999999,1,0.11,1};
-				brightness=0.035;
-				blinking=0;
-				class Attenuation
-				{
-					start=1;
-					constant=0;
-					linear=0;
-					quadratic=4;
-				};
-			};
-			class Red_Still_R
-			{
-				name="wingtip_marker_light_red";
-				color[]={1,0,0,1};
-				ambient[]={0.003,0.029999999,0.003,1};
-				brightness=0.050000001;
-				blinking=0;
-			};
-			class Green_Still_L
-			{
-				name="wingtip_marker_light_green";
-				color[]={0.029999999,0.30000001,0.029999999,1};
-				ambient[]={0.003,0.029999999,0.003,1};
-				brightness=0.050000001;
-				blinking=0;
-			};
-			class White_Still_L
-			{
-				name="marker_light_white_L";
-				color[]={0.038800001,0.038800001,0.038800001,1};
-				ambient[]={0.029999999,0.023,0.0055999998,1};
-				brightness=0.050000001;
-				blinking=0;
-			};
-			class White_Still_R
-			{
-				name="marker_light_white_R";
-				color[]={0.038800001,0.038800001,0.038800001,1};
-				ambient[]={0.029999999,0.023,0.0055999998,1};
-				brightness=0.050000001;
-				blinking=0;
-			};
-			class Red_blinking_L
-			{
-				name="marker_light_red_L";
-				color[]={10,0,0,1};
-				ambient[]={0.003,0.029999999,0.003,1};
-				brightness=0.029999999;
-				blinking=1;
-			};
-			class Red_blinking_R
-			{
-				name="marker_light_red_R";
-				color[]={10,0,0,1};
-				ambient[]={0.003,0.029999999,0.003,1};
-				brightness=0.029999999;
-				blinking=1;
-			};
-		};
-		class Library
-		{
-			libEnable=1;
-			libTextDesc="The Sukhoi Su-35S (NATO reporting name - Flanker E) is a designation for heavily upgraded derivative of the Su-27 Flanker. It is single-seat, twin-engine supermaneuverable multirole fighter, designed by Sukhoi and built by Komsomolsk-on-Amur Aircraft Production Association. In 2003, Sukhoi embarked on a second modernization of the Su-27 to produce what the company calls a 4++ generation fighter that would serve as an interim fighter prior to the arrival of the Sukhoi PAK FA. This derivative, while omitting the canards and air brake, incorporates a reinforced airframe, improved avionics and radar, thrust-vectoring engines, and a reduced frontal radar signature. In 2008 the revamped variant, erroneously dubbed the Su-35BM in the media, began its flight test programme that would involve four prototypes. The Russian Air Force has ordered 48 production units and CSAT Air Force have placed a contract for 12 units, designated Su-35S, of the newly revamped Su-35.";
-		};
-		class UserActions
-		{
-			class ECM_ON
-			{
-				displayName="ECM JAMMER ON";
-				position="pilotcontrol";
-				radius=15;
-				shortcut="User2";
-				condition="player in this and this getvariable ""ECMJAMMER"" == ""yes"";";
-				statement="[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
-				onlyforplayer="False";
-				hideOnUse=1;
-				showWindow=0;
-			};
-			class Eject
-			{
-				condition="player in this and (isEngineOn this or speed this > 10)";
-				displayName="Eject";
-				hideOnUse=1;
-				onlyforplayer=1;
-				position="pilotcontrol";
-				priority=0.050000001;
-				radius=10;
-				shortcut="Eject";
-				showWindow=0;
-				statement="[this] spawn BIS_fnc_planeEjection";
-			};
-			class extendrefueling
-			{
-				displayName="Extend Refueling Probe";
-				position="pilotcontrol";
-				onlyforplayer=1;
-				showWindow=0;
-				hideOnUse=1;
-				radius=5;
-				condition="player in this and this animationPhase ""fuel_probe"" < 0.5 and speed this > 100";
-				statement="this animate [""fuel_probe"",1]";
-			};
-			class retractrefueling
-			{
-				displayName="Retract Refueling Probe";
-				position="pilotcontrol";
-				onlyforplayer=1;
-				showWindow=0;
-				hideOnUse=1;
-				radius=5;
-				condition="player in this and this animationPhase ""fuel_probe"" > 0.5";
-				statement="this animate [""fuel_probe"",0]";
-			};
-			class service_menu
-			{
-				displayName="Service Menu";
-				position="pilotcontrol";
-				onlyforplayer=1;
-				showWindow=0;
-				hideOnUse=1;
-				radius=5;
-				condition="((this distance (nearestObject [this, ""O_Truck_03_ammo_F""]) < 25) and (damage (nearestObject [this, ""O_Truck_03_ammo_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""O_Truck_02_Ammo_F""]) < 25) and (damage (nearestObject [this, ""O_Truck_02_Ammo_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""Land_TentHangar_V1_F""]) < 55) and (damage (nearestObject [this, ""Land_TentHangar_V1_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""Land_Hangar_F""]) < 55) and (damage (nearestObject [this, ""Land_Hangar_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1)";
-				statement="this animate [""service_menu_switch"",1]; [] spawn JS_JC_fnc_SU35_MAIN_UI;";
-			};
-			class pilots_manual
-			{
-				displayName="Pilots Manual";
-				position="pilotcontrol";
-				onlyforplayer=1;
-				showWindow=0;
-				hideOnUse=1;
-				radius=5;
-				condition="player in this and speed this < 1";
-				statement="[] spawn JS_JC_fnc_SU35_MANUAL_UI";
-			};
-			class Aircraft_MFD_Open_ITGT
-			{
-				displayName="Open I-TGT System";
-				position="pilotcontrol";
-				radius=15;
-				shortcut="FIR_AWS_ACTION_ITGT";
-				condition="this getvariable ""TGT_POD"" == ""yes"" and player in this and isengineon this";
-				statement="this call FIR_fnc_ITGT_Open";
-				onlyforplayer="false";
-				hideOnUse=1;
-				showwindow=0;
-			};
-		};
-		class Eventhandlers: Eventhandlers
-		{
-			init="_this execVM '\js_jc_SU35\scripts\init_SU35.sqf'";
-		};
-		class textureSources
-		{
-			class CSATDesertHex
-			{
-				displayName="CSAT Desert HEX";
-				author="John_Spartan & Saul";
-				textures[]=
-				{
-					"\js_jc_su35\data\Su35_hull_CSAT_D_co.paa",
-					"\js_jc_su35\data\Su35_misc_CSAT_D_co.paa"
-				};
-			};
-			class CSATGreyHex
-			{
-				displayName="CSAT Grey HEX";
-				author="John_Spartan & Saul";
-				textures[]=
-				{
-					"\js_jc_su35\data\Su35_hull_CSAT_S_co.paa",
-					"\js_jc_su35\data\Su35_misc_CSAT_S_co.paa"
-				};
-			};
-			class RussianAFGreyDigital
-			{
-				displayName="Russian AF Grey DIGITAL";
-				author="John_Spartan & Saul";
-				textures[]=
-				{
-					"\js_jc_su35\data\Su35_hull_co.paa",
-					"\js_jc_su35\data\Su35_misc_co.paa"
-				};
-			};
-			class RussianAFSkyBlue
-			{
-				displayName="Russian AF Sky Blue";
-				author="John_Spartan & Saul";
-				textures[]=
-				{
-					"\js_jc_su35\data\Su35_hull_SKY_co.paa",
-					"\js_jc_su35\data\Su35_misc_sky_co.paa"
-				};
-			};
-		};
-		ejectDamageLimit=0.44999999;
-		ejectDeadCargo=0;
-		ejectDeadDriver=0;
-		ejectDeadGunner=0;
-		ejectSpeed[]={0,60,0};
-		class EjectionSystem
-		{
-			CanopyClass="JS_JC_SU35_Canopy";
-			CanopyForce=30;
-			CanopyHideAnim="r_canopy_hide";
-			CanopyPos="pos_eject_canopy";
-			EjectionDual=0;
-			EjectionParachute="Steerable_Parachute_F";
-			EjectionSeatClass="JS_JC_SU35ejection_seat";
-			EjectionSeatEnabled=1;
-			EjectionSeatForce=50;
-			EjectionSeatHideAnim="ejection_seat_hide";
-			EjectionSeatPos="pos_eject";
-			EjectionSeatRailAnim="ejection_seat_motion";
-			EjectionSoundExt="Plane_Fighter_01_ejection_ext_sound";
-			EjectionSoundInt="Plane_Fighter_01_ejection_in_sound";
-		};
-		class HitPoints: HitPoints
-		{
-			class HitHull: HitHull
-			{
-				name="HitHull";
-				armor=30;
-				explosionShielding=5;
-				passThrough=0.5;
-				radius=0.5;
-				minimalHit=0.02;
-				depends="0";
-				material=-1;
-			};
-			class HitEngine: HitHull
-			{
-				name="HitEngine";
-				armor=1.5;
-				explosionShielding=2;
-				radius=0.15000001;
-				minimalHit=0.1;
-			};
-			class HitEngine2: HitEngine
-			{
-				name="HitEngine2";
-				visual="HitEngine2_visual";
-			};
-			class HitAvionics: HitHull
-			{
-				name="HitAvionics";
-				armor=3;
-				explosionShielding=1;
-				passThrough=0.2;
-				radius=0.2;
-			};
-			class HitFuel: HitHull
-			{
-				name="HitFuel";
-				explosionShielding=4;
-				passThrough=0.5;
-				minimalHit=0.1;
-				radius=0.25;
-			};
-			class HitGlass1: HitHull
-			{
-				name="HitGlass1";
-				armor=1.5;
-				explosionShielding=3;
-				passThrough=0;
-				radius=0.2;
-				minimalHit=0.1;
-			};
-			class HitGlass2: HitGlass1
-			{
-				name="HitGlass2";
-				armor=3;
-				explosionShielding=4;
-				radius=0.1;
-			};
-			class HitLAileron: HitHull
-			{
-				name="HitLAileron";
-				armor=1.5;
-				explosionShielding=3;
-				passThrough=0.1;
-				radius=0.18000001;
-				minimalHit=0.1;
-			};
-			class HitRAileron: HitLAileron
-			{
-				name="HitRAileron";
-			};
-			class HitLCRudder: HitHull
-			{
-				name="HitLCRudder";
-				armor=1.5;
-				explosionShielding=3;
-				passThrough=0.1;
-				radius=0.25;
-				minimalHit=0.1;
-			};
-			class HitRRudder: HitLCRudder
-			{
-				name="HitRRudder";
-			};
-			class HitLCElevator: HitHull
-			{
-				name="HitLCElevator";
-				armor=1.5;
-				explosionShielding=3;
-				passThrough=0.1;
-				radius=0.2;
-				minimalHit=0.1;
-			};
-			class HitRElevator: HitLCElevator
-			{
-				name="HitRElevator";
-			};
-		};
-		maxOmega=2000;
-		class Wheels
-		{
-			class n_wheels
-			{
-				boneName="n_wheels";
-				steering=1;
-				side="left";
-				center="Wheel_1_center";
-				boundary="Wheel_1_rim";
-				width=0.30000001;
-				mass=150;
-				MOI=25;
-				dampingRate=0.25;
-				dampingRateDamaged=1;
-				dampingRateDestroyed=1000;
-				maxBrakeTorque=1500;
-				maxHandBrakeTorque=0;
-				suspTravelDirection[]={0,-1,0};
-				suspForceAppPointOffset="Wheel_1_center";
-				tireForceAppPointOffset="Wheel_1_center";
-				maxCompression=0.050000001;
-				maxDroop=0.050000001;
-				sprungMass=3500;
-				springStrength=85000;
-				springDamperRate=14000;
-				longitudinalStiffnessPerUnitGravity=5000;
-				latStiffX=25;
-				latStiffY=180;
-				frictionVsSlipGraph[]=
-				{
-					{0,1},
-					{0.5,1},
-					{1,1}
-				};
-			};
-			class l_wheel: n_wheels
-			{
-				boneName="l_wheel";
-				steering=0;
-				center="Wheel_2_center";
-				boundary="Wheel_2_rim";
-				width=0.28;
-				maxCompression=0.1;
-				maxDroop=0.1;
-				dampingRate=0.25;
-				suspForceAppPointOffset="Wheel_2_center";
-				tireForceAppPointOffset="Wheel_2_center";
-			};
-			class r_wheel: l_wheel
-			{
-				boneName="r_wheel";
-				side="right";
-				center="Wheel_3_center";
-				boundary="Wheel_3_rim";
-				suspForceAppPointOffset="Wheel_3_center";
-				tireForceAppPointOffset="Wheel_3_center";
-			};
-		};
-		class PlateInfos
-		{
-			name="spz";
-			color[]={1,1,1,1};
-			plateFont="RobotoCondensedLight";
-			plateFormat="TeTeT";
-			plateLetters="ABCDEFHIKLMOPRSTVXYZ";
-		};
-	};
-	class JS_JC_SU35Wreck: PlaneWreck
-	{
-		scope=1;
-		author="John_Spartan & Saul";
-		class Armory
-		{
-			disabled=1;
-		};
-		model="\js_jc_su35\JS_JC_SU35_wreck.p3d";
-		typicalCargo[]={};
-		irTarget=0;
-		transportAmmo=0;
-		transportRepair=0;
-		transportFuel=0;
-		transportSoldier=0;
-	};
-	class Ejection_Seat_Base_F;
-	class Plane_Canopy_Base_F;
-	class JS_JC_SU35_canopy: Plane_Canopy_Base_F
-	{
-		author="John_Spartan & Saul";
-		displayName="Su-35S Canopy";
-		model="\js_jc_su35\JS_JC_SU35_canopy.p3d";
-		scope=1;
-	};
-	class JS_JC_SU35ejection_seat: Ejection_Seat_Base_F
-	{
-		crew="JS_JC_OPFOR_Pilot";
-		cargoAction[]=
-		{
-			"Pilot_Plane_Fighter_Ejection"
-		};
-		driverAction="Pilot_Plane_Fighter_Ejection";
-		scope=1;
-		side=0;
-		faction="OPF_F";
-		author="John_Spartan & Saul";
-		displayName="SU-35S Ejection Seat";
-		Icon="iconParachute";
-		picture="\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa";
-		model="\js_jc_su35\JS_JC_SU35_ejection_seat.p3d";
-	};
-	class Logic;
-	class Module_F: Logic
-	{
-		class ArgumentsBaseUnits
-		{
-			class Units;
-		};
-		class ModuleDescription
-		{
-			class AnyBrain;
-		};
-	};
-	class jsjc_Module_su35_init: Module_F
-	{
-		scope=1;
-		displayName="SU35 - INIT/SETUP";
-		icon="\js_jc_su35\ui\icon_su35_module_ca.paa";
-		category="ObjectModifiers";
-		function="js_jc_fnc_SU35_Init_module";
-		functionPriority=10;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=0;
-		curatorInfoType="RscDisplayAttributeModule_su35_init";
-		class Arguments: ArgumentsBaseUnits
-		{
-			class Units
-			{
-				displayName="$STR_A3_CfgVehicles_Module_F_ArgumentsBaseUnits_Units_0";
-				description="";
-				class values
-				{
-					class Objects
-					{
-						name="$STR_A3_CfgVehicles_Module_F_ArgumentsBaseUnits_Units_values_Objects_0";
-						value=0;
-						default=1;
-					};
-				};
-			};
-			class Paintscheme_init
-			{
-				displayName="Paintscheme";
-				description="Possible predifined paintschemes";
-				typeName="NUMBER";
-				class values
-				{
-					class CSAT_D
-					{
-						name="CSAT Desert HEX camo";
-						value=1;
-						default=1;
-					};
-					class CSAT_G
-					{
-						name="CSAT Grey HEX camo";
-						value=2;
-					};
-					class RUS_SKY
-					{
-						name="Russian Airforce GREY DIGITAL camo";
-						value=3;
-					};
-					class RUS_DIGITAL
-					{
-						name="Russian Airforce SKY BLUE camo";
-						value=4;
-					};
-				};
-			};
-			class Weapon_station_1_init
-			{
-				displayName="Weapon Pylon 1";
-				description="Weapon equipped on station 1";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-						default=1;
-					};
-				};
-			};
-			class Weapon_station_2_init
-			{
-				displayName="Weapon Pylon 2";
-				description="Weapon equipped on station 2";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-						default=1;
-					};
-				};
-			};
-			class Weapon_station_3_init
-			{
-				displayName="Weapon Pylon 3";
-				description="Weapon equipped on station 3";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-				};
-			};
-			class Weapon_station_4_init
-			{
-				displayName="Weapon Pylon 4";
-				description="Weapon equipped on station 4";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-				};
-			};
-			class Weapon_station_5_init
-			{
-				displayName="Weapon Pylon 5";
-				description="Weapon equipped on station 5";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-					class S8_ROCKETS_x2
-					{
-						name="S8 Rockets[x2]";
-						value="js_m_su35_S8_rocketpod_x2";
-					};
-				};
-			};
-			class Weapon_station_6_init
-			{
-				displayName="Weapon Pylon 6";
-				description="Weapon equipped on station 6";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-					class S8_ROCKETS_x2
-					{
-						name="S8 Rockets[x2]";
-						value="js_m_su35_S8_rocketpod_x2";
-					};
-				};
-			};
-			class Weapon_station_7_init
-			{
-				displayName="Weapon Pylon 7";
-				description="Weapon equipped on station 7";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-						default=1;
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-				};
-			};
-			class Weapon_station_8_init
-			{
-				displayName="Weapon Pylon 8";
-				description="Weapon equipped on station 8";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-						default=1;
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-				};
-			};
-			class Weapon_station_9_init
-			{
-				displayName="Weapon Pylon 9";
-				description="Weapon equipped on station 9";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-					class S8_ROCKETS_x1
-					{
-						name="S8 Rockets[x1]";
-						value="js_m_su35_S8_rocketpod_x1";
-					};
-				};
-			};
-			class Weapon_station_10_init
-			{
-				displayName="Weapon Pylon 10";
-				description="Weapon equipped on station 10";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-						default=1;
-					};
-					class S8_ROCKETS_x1
-					{
-						name="S8 Rockets[x1]";
-						value="js_m_su35_S8_rocketpod_x1";
-					};
-				};
-			};
-			class Weapon_station_11_init
-			{
-				displayName="Weapon Pylon 11";
-				description="Weapon equipped on station 11";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-						default=1;
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-				};
-			};
-			class Weapon_station_12_init
-			{
-				displayName="Weapon Pylon 12";
-				description="Weapon equipped on station 12";
-				typeName="STRING";
-				class values
-				{
-					class EMPTY
-					{
-						name="EMPTY";
-						value="js_m_su35_empty";
-					};
-					class R_73_ARCHER
-					{
-						name="R-73 Archer";
-						value="js_m_su35_r73_x1";
-					};
-					class R_77_ADDER
-					{
-						name="R-77 Adder";
-						value="js_m_su35_r77_x1";
-					};
-					class KH_29_KEDGE
-					{
-						name="KH-29 Kedge";
-						value="js_m_su35_kh29_x1";
-						default=1;
-					};
-					class KAB_500_L
-					{
-						name="KAB-500L";
-						value="js_m_su35_kab500l_x1";
-					};
-				};
-			};
-			class Hull_number_1
-			{
-				displayName="Hull number [1st digit]";
-				description="Hull number [1st digit]";
-				typeName="NUMBER";
-				class values
-				{
-					class 10
-					{
-						name="RANDOM";
-						value=10;
-						default=1;
-					};
-					class 0
-					{
-						name="0";
-						value=0;
-					};
-					class 1
-					{
-						name="1";
-						value=1;
-					};
-					class 2
-					{
-						name="2";
-						value=2;
-					};
-					class 3
-					{
-						name="3";
-						value=3;
-					};
-					class 4
-					{
-						name="4";
-						value=4;
-					};
-					class 5
-					{
-						name="5";
-						value=5;
-					};
-					class 6
-					{
-						name="6";
-						value=6;
-					};
-					class 7
-					{
-						name="7";
-						value=7;
-					};
-					class 8
-					{
-						name="8";
-						value=8;
-					};
-					class 9
-					{
-						name="9";
-						value=9;
-					};
-				};
-			};
-			class Hull_number_2
-			{
-				displayName="Hull number [2nd digit]";
-				description="Hull number [2nd digit]";
-				typeName="NUMBER";
-				class values
-				{
-					class 10
-					{
-						name="RANDOM";
-						value=10;
-						default=1;
-					};
-					class 0
-					{
-						name="0";
-						value=0;
-					};
-					class 1
-					{
-						name="1";
-						value=1;
-					};
-					class 2
-					{
-						name="2";
-						value=2;
-					};
-					class 3
-					{
-						name="3";
-						value=3;
-					};
-					class 4
-					{
-						name="4";
-						value=4;
-					};
-					class 5
-					{
-						name="5";
-						value=5;
-					};
-					class 6
-					{
-						name="6";
-						value=6;
-					};
-					class 7
-					{
-						name="7";
-						value=7;
-					};
-					class 8
-					{
-						name="8";
-						value=8;
-					};
-					class 9
-					{
-						name="9";
-						value=9;
-					};
-				};
-			};
-			class Hull_number_3
-			{
-				displayName="Hull number [3rd digit]";
-				description="Hull number [3rd digit]";
-				typeName="NUMBER";
-				class values
-				{
-					class 10
-					{
-						name="RANDOM";
-						value=10;
-						default=1;
-					};
-					class 0
-					{
-						name="0";
-						value=0;
-					};
-					class 1
-					{
-						name="1";
-						value=1;
-					};
-					class 2
-					{
-						name="2";
-						value=2;
-					};
-					class 3
-					{
-						name="3";
-						value=3;
-					};
-					class 4
-					{
-						name="4";
-						value=4;
-					};
-					class 5
-					{
-						name="5";
-						value=5;
-					};
-					class 6
-					{
-						name="6";
-						value=6;
-					};
-					class 7
-					{
-						name="7";
-						value=7;
-					};
-					class 8
-					{
-						name="8";
-						value=8;
-					};
-					class 9
-					{
-						name="9";
-						value=9;
-					};
-				};
-			};
-		};
-		class ModuleDescription: ModuleDescription
-		{
-			description="Su-35 Flanker E respawn/init module";
-			sync[]=
-			{
-				"JS_JC_SU35"
-			};
-			class LocationArea_F
-			{
-				description[]=
-				{
-					"A TEST",
-					"B TEST"
-				};
-				position=1;
-				direction=1;
-				optional=1;
-				duplicate=1;
-				synced[]=
-				{
-					"JS_JC_SU35"
-				};
-			};
-			class JS_JC_SU35
-			{
-				description="Su-35 Flanker E";
-				displayName="Su-35 Flanker E";
-				icon="\js_jc_su35\UI\su35_icon.paa";
-				position=1;
-				direction=1;
-				optional=1;
-				duplicate=1;
-				side=0;
-			};
-		};
-	};
+class CfgVehicles {
+    class Air;
+    class Plane: Air {
+        class HitPoints;
+    };
+    class PlaneWreck;
+    class thingX;
+    class Motorcycle;
+    class Paraglide;
+    class Plane_Base_F: Plane {
+        class Components;
+        class HitPoints: HitPoints {
+            class HitHull;
+        };
+    };
+    class WeaponHolder;
+    class O_Pilot_F;
+    class JS_JC_OPFOR_Pilot: O_Pilot_F {
+        class SpeechVariants {
+            class Default {
+                speechSingular[] = {"veh_infantry_pilot_s"};
+                speechPlural[] = {"veh_infantry_pilot_p"};
+            };
+        };
+        textSingular = "$STR_A3_nameSound_veh_infantry_pilot_s";
+        textPlural = "$STR_A3_nameSound_veh_infantry_pilot_p";
+        nameSound = "veh_infantry_pilot_s";
+        author = "$STR_A3_Bohemia_Interactive";
+        _generalMacro = "O_Pilot_F";
+        displayName = "Fighter Pilot";
+        model = "\A3\characters_F\Common\pilot_f.p3d";
+        modelSides[] = {3, 1};
+        uniformClass = "JS_JC_SU35_PilotCoveralls";
+        weapons[] = {"Throw", "Put"};
+        respawnWeapons[] = {"Throw", "Put"};
+        magazines[] = {};
+        respawnMagazines[] = {};
+        backpack = "";
+        linkedItems[] = {
+            "JS_JC_SU35_PilotHelmet",
+            "ItemMap",
+            "ItemCompass",
+            "ItemWatch",
+            "ItemRadio",
+            "ItemGPS"
+        };
+        respawnLinkedItems[] = {
+            "JS_JC_SU35_PilotHelmet",
+            "ItemMap",
+            "ItemCompass",
+            "ItemWatch",
+            "ItemRadio",
+            "ItemGPS"
+        };
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_suit_iran_co.paa"};
+        cost = 165000;
+    };
+    class JS_JC_OPFOR_Pilot_Uniform_container: WeaponHolder {
+        scope = 1;
+        model = "\A3\Weapons_f\dummyweapon.p3d";
+        accuracy = 0.2;
+        forceSupply = 1;
+        showWeaponCargo = 1;
+        transportMaxMagazines = 10;
+        transportMaxWeapons = 1;
+        displayName = "$STR_cfgVehicles_WeaponHolder0";
+        destrType = "DestructNo";
+        transportMaxBackpacks = 0;
+        isGround = 1;
+        maximumLoad = 60;
+        class TransportMagazines {
+            class _xx_16Rnd_9x21_Mag {
+                magazine = "16Rnd_9x21_Mag";
+                count = 4;
+            };
+            class _xx_SmokeShellOrange {
+                magazine = "SmokeShellOrange";
+                count = 1;
+            };
+            class _xx_Chemlight_green {
+                magazine = "Chemlight_green";
+                count = 2;
+            };
+        };
+        class TransportWeapons {
+            class _xx_hgun_Rook40_F {
+                weapon = "hgun_Rook40_F";
+                count = 1;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 1;
+            };
+            class _xx_h_watchcap_camo {
+                name = "h_watchcap_camo";
+                count = 1;
+            };
+            class _xx_NVGoggles {
+                name = "NVGoggles";
+                count = 1;
+            };
+        };
+    };
+    class JS_JC_SU35: Plane_Base_F {
+        class itc_air: itc_air_default_jet {
+            class rover {
+                capable = 1;
+                frequency_default = 5784;
+            };
+            targeting_user = "pilot";
+            tgp = 1;
+            wso = 0;
+            mfdApps[] = {
+                "DSMS",
+                "TGP",
+                "STAT",
+                "TAD",
+                "STPT",
+                "OPT",
+                "MAV",
+                "FCR",
+                "WPN"
+            };
+            systems[] = {
+                "UFC",
+                "SOI",
+                "TAXI",
+                "DSMS",
+                "MAVERICK",
+                "FCR",
+                "MFD",
+                "MFD_L",
+                "MFD_R",
+                "HMD",
+                "AUTOPILOT",
+                "AP-MAN",
+                "ROVER",
+                "FCS",
+                "ACMI",
+                "SADL",
+                "GCAS",
+                "TGP",
+                "WPT",
+                "TAD",
+                "HUD"
+            };
+            mfdType = "classic";
+            class mfd_left {};
+            class mfd_right {};
+        };
+        LESH_canBeTowed = 1;
+        LESH_towFromFront = 1;
+        LESH_AxisOffsetTarget[] = {0, 11, -1.4};
+        LESH_WheelOffset[] = {0, -3.2};
+        scope = 2;
+        vehicleClass = "Air";
+        side = 0;
+        faction = "OPF_F";
+        displayName = "Su-35 Flanker E";
+        author = "John_Spartan & Saul";
+        crew = "JS_JC_OPFOR_Pilot";
+        driverAction = "SU35_pilot";
+        driverCanEject = 0;
+        precisegetinout = 0;
+        editorPreview = "\js_jc_su35\previews\JS_JC_SU35.jpg";
+        picture = "\js_jc_su35\UI\su35_picture.paa";
+        icon = "\js_jc_su35\UI\su35_icon.paa";
+        mapSize = 15.5;
+        unitInfoType = "Rsc_SU35_UnitInfo";
+        simulation = "airplaneX";
+        _generalMacro = "Plane";
+        destrType = "DestructWreck";
+        damageEffect = "AirDestructionEffects";
+        model = "\js_jc_su35\JS_JC_Su35.p3d";
+        animated = 1;
+        extCameraPosition[] = {0, 3, -23};
+        availableForSupportTypes[] = {"CAS_Bombing"};
+        hiddenSelections[] = {
+            "camo_hull",
+            "camo_misc",
+            "camo_cockpit_1",
+            "camo_cockpit_2",
+            "camo_glass",
+            "camo_ladder",
+            "Number_L1",
+            "Number_L2",
+            "Number_L3",
+            "Number_R1",
+            "Number_R2",
+            "Number_R3",
+            "MFD_r_scr_2_map",
+            "MFD_r_scr_2_miniplane",
+            "burner_fire_1_left",
+            "burner_fire_1_right",
+            "afterburner_left",
+            "afterburner_right",
+            "mfcd"
+        };
+        hiddenSelectionsTextures[] = {
+            "\js_jc_su35\data\Su35_hull_CSAT_D_co.paa",
+            "\js_jc_su35\data\Su35_misc_CSAT_D_co.paa",
+            "\js_jc_su35\data\Su35_cockpit1_co.paa",
+            "\js_jc_su35\data\su35_cockpit2_co.paa",
+            "\js_jc_su35\data\Su35_glass_ca.paa",
+            "\js_jc_su35\data\Su35_ladder_co.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "\js_jc_su35\data\su35_clear_ca.paa",
+            "",
+            "",
+            "\js_jc_su35\data\su35_engine_fire_ca.paa",
+            "\js_jc_su35\data\su35_engine_fire_ca.paa",
+            "\js_jc_su35\data\su35_afterburner_ca.paa",
+            "\js_jc_su35\data\su35_afterburner_ca.paa",
+            ""
+        };
+        weapons[] = {
+            "js_w_su35_master_arms_safe",
+            "js_w_su35_gsh30",
+            "CMFlareLauncher",
+            "LaserDesignator_pilotCamera"
+        };
+        magazines[] = {"js_m_su35_gsh", "240Rnd_CMFlare_Chaff_Magazine", "LaserBatteries"};
+        canFloat = 0;
+        driveOnComponent[] = {"n_wheels", "l_wheel", "r_wheel"};
+        cabinOpening = 1;
+        gearRetracting = 1;
+        geardowntime = 3;
+        gearuptime = 4.5;
+        armor = 80;
+        fuelCapacity = 2540;
+        LockDetectionSystem = "2 + 4 + 8";
+        incomingMissileDetectionSystem = 16;
+        radarType = 4;
+        laserScanner = 1;
+        irTarget = 1;
+        irScanRangeMin = 100;
+        irScanRangeMax = 10500;
+        irScanToEyeFactor = 4;
+        irScanGround = 1;
+        namesound = "Plane";
+        envelope[] = {
+            0,
+            0.4,
+            1.9,
+            4.8,
+            6.8,
+            8.5,
+            8.5,
+            8.5,
+            7.2,
+            5.8,
+            4,
+            1.8,
+            0.5,
+            0
+        };
+        brakeDistance = 65;
+        aileronSensitivity = 1.2;
+        elevatorSensitivity = 1.6;
+        wheelSteeringSensitivity = 1.5;
+        flapsFrictionCoef = 0.5;
+        landingSpeed = 190;
+        landingAoa = "rad 10";
+        acceleration = 100;
+        maxSpeed = 1300;
+        airFriction0[] = {100, 50, 12};
+        airFriction1[] = {100, 50, 12};
+        airFriction2[] = {100, 50, 12};
+        noseDownCoef = 0;
+        gunAimDown = 0;
+        altFullForce = 12000;
+        altNoForce = 15000;
+        draconicForceXCoef = 8.5;
+        draconicForceYCoef = 2;
+        draconicForceZCoef = 1;
+        draconicTorqueXCoef = 0.15;
+        draconicTorqueYCoef = 1;
+        angleOfIndicence = 0.05;
+        selectionFireAnim = "zasleh";
+        driverLeftHandAnimName = "throttle_pilot";
+        driverRightHandAnimName = "stick_pilot";
+        memoryPointsGetInDriver = "GetIn_driver_pos";
+        memoryPointsGetInDriverDir = "GetIn_driver_dir";
+        memoryPointLDust = "levy prach";
+        memoryPointRDust = "pravy prach";
+        memoryPointGun = "nosegun";
+        memoryPointLRocket = "l_rocket_point";
+        memoryPointRRocket = "r_rocket_point";
+        memoryPointCM[] = {
+            "flare_launcher",
+            "flare_launcher",
+            "flare_launcher",
+            "flare_launcher"
+        };
+        memoryPointCMDir[] = {
+            "flare_launcher1_dir",
+            "flare_launcher2_dir",
+            "flare_launcher3_dir",
+            "flare_launcher4_dir"
+        };
+        class TransportItems {};
+        attenuationEffectType = "HeliAttenuation";
+        soundGetIn[] = {"js_jc_su35\sounds\ext-jetair-cabine-close1", 0.562341, 1};
+        soundGetOut[] = {
+            "js_jc_su35\sounds\ext-jetair-cabine-open1",
+            0.562341,
+            1,
+            20
+        };
+        soundDammage[] = {"", 0.562341, 1};
+        soundEngineOnInt[] = {"js_jc_su35\sounds\int-av8b-start-1", 1, 1};
+        soundEngineOnExt[] = {
+            "js_jc_su35\sounds\ext-jetair-start1",
+            1.77828,
+            1,
+            900
+        };
+        soundEngineOffInt[] = {"js_jc_su35\sounds\int-av8b-stop-1", 1, 1};
+        soundEngineOffExt[] = {
+            "js_jc_su35\sounds\ext-jetair-stop1",
+            1.77828,
+            1,
+            900
+        };
+        soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", 1, 1};
+        soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", 1, 1.5};
+        soundSetSonicBoom[] = {"Plane_Fighter_SonicBoom_SoundSet"};
+        soundGearUp[] = {"A3\Sounds_F_EPC\CAS_02\gear_up", 0.794328, 1, 150};
+        soundGearDown[] = {
+            "A3\Sounds_F_EPC\CAS_02\gear_down",
+            0.794328,
+            1,
+            150
+        };
+        soundFlapsUp[] = {
+            "A3\Sounds_F_EPC\CAS_02\Flaps_Up",
+            0.630957,
+            1,
+            100
+        };
+        soundFlapsDown[] = {
+            "A3\Sounds_F_EPC\CAS_02\Flaps_Down",
+            0.630957,
+            1,
+            100
+        };
+        class Sounds {
+            class EngineLowOut {
+                sound[] = {
+                    "js_jc_su35\sounds\ext-jetair-engine-low1",
+                    2.51189,
+                    1,
+                    1600
+                };
+                frequency = "1.0 min (rpm + 0.5)";
+                volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
+            };
+            class EngineHighOut {
+                sound[] = {
+                    "js_jc_su35\sounds\ext-jetair-engine-high3",
+                    2.51189,
+                    1.2,
+                    1800
+                };
+                frequency = "1";
+                volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
+            };
+            class ForsageOut {
+                sound[] = {
+                    "js_jc_su35\sounds\ext-jetair-forsage1",
+                    "db5",
+                    0.99,
+                    2000
+                };
+                frequency = "1";
+                volume = "engineOn*camPos*(thrust factor[0.6, 1.0])";
+                cone[] = {3.14, 3.92, 2, 0.5};
+            };
+            class WindNoiseOut {
+                sound[] = {
+                    "A3\Sounds_F\air\Plane_Fighter_03\noise",
+                    0.562341,
+                    1,
+                    150
+                };
+                frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+                volume = "camPos*(speed factor[1, 150])";
+            };
+            class EngineLowIn {
+                sound[] = {"js_jc_su35\sounds\int-av8b-engine-low", "db-5", 1};
+                frequency = "1.0 min (rpm + 0.5)";
+                volume = "(1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]))";
+            };
+            class EngineHighIn {
+                sound[] = {"js_jc_su35\sounds\int-av8b-engine", "db-5", 1.2};
+                frequency = "1";
+                volume = "(1-camPos)*(rpm factor[0.85, 1.0])";
+            };
+            class ForsageIn {
+                sound[] = {"js_jc_su35\sounds\int-av8b-forsage-1", "db-5", 1};
+                frequency = "1";
+                volume = "(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";
+            };
+            class WindNoiseIn {
+                sound[] = {"A3\Sounds_F\air\Plane_Fighter_03\noise", "db-10", 1};
+                frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+                volume = "(1-camPos)*(speed factor[1, 150])";
+            };
+        };
+        class MFD {
+            class SU35_static_HUD {
+                topLeft = "hud_lh";
+                topRight = "hud_ph";
+                bottomLeft = "hud_ld";
+                borderLeft = 0;
+                borderRight = 0;
+                borderTop = 0;
+                borderBottom = 0;
+                color[] = {0, 1, 0, 1};
+                enableParallax = 0;
+                class Bones {
+                    class PlaneOrientation {
+                        type = "fixed";
+                        pos[] = {0.5, 0.53};
+                    };
+                    class WeaponAim {
+                        type = "vector";
+                        source = "weapon";
+                        pos0[] = {0.5, 0.555};
+                        pos10[] = {1.5, 1.555};
+                    };
+                    class Velocity {
+                        type = "vector";
+                        source = "velocity";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                        angle = -2.3;
+                    };
+                    class Level0 {
+                        type = "horizon";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                        angle = -2.3;
+                    };
+                };
+                class Draw {
+                    color[] = {0, 1, 0, 1};
+                    alpha = 0.5;
+                    condition = "on";
+                    class Horizont {
+                        clipTL[] = {0.25, 0.25};
+                        clipBR[] = {0.75, 0.75};
+                        class Dimmed {
+                            class Level00 {
+                                type = "line";
+                                width = 4;
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"-0.045 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"-0.005 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"0.005 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"0.045 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"0.125 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"0.200 * 1.4", "0 * 1.4"}, 1}
+                                };
+                            };
+                            class Level2M5: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 5"}, 1}
+                                };
+                            };
+                            class VALM2_1_5 {
+                                type = "text";
+                                source = "static";
+                                text = 5;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 5"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 5"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 - 1.0 / 10 * 5"}, 1};
+                            };
+                            class Level2P5: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 5"}, 1}
+                                };
+                            };
+                            class VALP2_1_5 {
+                                type = "text";
+                                source = "static";
+                                text = -5;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 5"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 5"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 + 1.0 / 10 * 5"}, 1};
+                            };
+                            class Level2M10: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 10"}, 1}
+                                };
+                            };
+                            class VALM2_1_10 {
+                                type = "text";
+                                source = "static";
+                                text = 10;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 10"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 10"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 - 1.0 / 10 * 10"}, 1};
+                            };
+                            class Level2P10: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 10"}, 1}
+                                };
+                            };
+                            class VALP2_1_10 {
+                                type = "text";
+                                source = "static";
+                                text = -10;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 10"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 10"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 + 1.0 / 10 * 10"}, 1};
+                            };
+                            class Level2M15: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 15"}, 1}
+                                };
+                            };
+                            class VALM2_1_15 {
+                                type = "text";
+                                source = "static";
+                                text = 15;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 15"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 - 1.0 / 10 * 15"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 - 1.0 / 10 * 15"}, 1};
+                            };
+                            class Level2P15: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 15"}, 1}
+                                };
+                            };
+                            class VALP2_1_15 {
+                                type = "text";
+                                source = "static";
+                                text = -15;
+                                align = "center";
+                                scale = 1;
+                                sourceScale = 1;
+                                pos[] = {"Level0", {"0.000 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 15"}, 1};
+                                right[] = {"Level0", {"0.050 * 1.4", "-0.020 * 1.4 + 1.0 / 10 * 15"}, 1};
+                                down[] = {"Level0", {"0.000 * 1.4", "+0.020 * 1.4 + 1.0 / 10 * 15"}, 1};
+                            };
+                        };
+                    };
+                    class PlaneOrientation_MiniPlane {
+                        width = 4;
+                        type = "line";
+                        points[] = {
+                            {"PlaneOrientation", {0.21, 0}, 1},
+                            {"PlaneOrientation", 1, {0.07, 0}, 1},
+                            {},
+                            {"PlaneOrientation", 1, {-0.21, 0}, 1},
+                            {"PlaneOrientation", {-0.07, 0}, 1},
+                            {},
+                            {"PlaneOrientation", {0, 0}, 1},
+                            {"PlaneOrientation", {0, -0.14}, 1}
+                        };
+                    };
+                    class PlaneOrientationLines {
+                        clipTL[] = {0, 0.1};
+                        clipBR[] = {1, 0};
+                        type = "line";
+                        width = 4;
+                        points[] = {
+                            {"PlaneOrientation", {-0.21, 0.00000000722507}, 1},
+                            {"PlaneOrientation", {-0.28, 0.00000000963343}, 1},
+                            {},
+                            {"PlaneOrientation", {0.21, -0.00000000197107}, 1},
+                            {"PlaneOrientation", {0.28, -0.00000000262809}, 1},
+                            {},
+                            {"PlaneOrientation", {-0.105, 0.143146}, 1},
+                            {"PlaneOrientation", {-0.14, 0.190861}, 1},
+                            {},
+                            {"PlaneOrientation", {0.105, 0.143146}, 1},
+                            {"PlaneOrientation", {0.14, 0.190861}, 1},
+                            {},
+                            {"PlaneOrientation", {-0.181865, 0.0826452}, 1},
+                            {"PlaneOrientation", {-0.242487, 0.110194}, 1},
+                            {},
+                            {"PlaneOrientation", {0.181865, 0.0826452}, 1},
+                            {"PlaneOrientation", {0.242487, 0.110194}, 1},
+                            {},
+                            {"PlaneOrientation", {-0.202844, 0.0427803}, 1},
+                            {"PlaneOrientation", {-0.270459, 0.0570404}, 1},
+                            {},
+                            {"PlaneOrientation", {0.202844, 0.0427803}, 1},
+                            {"PlaneOrientation", {0.270459, 0.0570404}, 1},
+                            {},
+                            {"PlaneOrientation", {-0.209201, 0.014406}, 1},
+                            {"PlaneOrientation", {-0.244068, 0.016807}, 1},
+                            {},
+                            {"PlaneOrientation", {-0.20681, 0.0287024}, 1},
+                            {"PlaneOrientation", {-0.241278, 0.0334861}, 1},
+                            {},
+                            {"PlaneOrientation", {0.20681, 0.0287024}, 1},
+                            {"PlaneOrientation", {0.241278, 0.0334861}, 1},
+                            {},
+                            {"PlaneOrientation", {0.209201, 0.014406}, 1},
+                            {"PlaneOrientation", {0.244068, 0.016807}, 1},
+                            {}
+                        };
+                    };
+                    class WeaponName {
+                        type = "text";
+                        source = "weapon";
+                        sourceScale = 1;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.03, 0.94}, 1};
+                        right[] = {{0.08, 0.94}, 1};
+                        down[] = {{0.03, 0.98}, 1};
+                    };
+                    class AmmoCount {
+                        type = "text";
+                        source = "ammo";
+                        sourceScale = 1;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.03, 0.89}, 1};
+                        right[] = {{0.08, 0.89}, 1};
+                        down[] = {{0.03, 0.93}, 1};
+                    };
+                    class FlapsGroup {
+                        type = "group";
+                        condition = "flaps";
+                        class FlapsText {
+                            type = "text";
+                            source = "static";
+                            text = "FLAPS";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.03, "0.53 - 0.045"}, 1};
+                            right[] = {{0.08, "0.53 - 0.045"}, 1};
+                            down[] = {{0.03, "0.53 - 0.005"}, 1};
+                        };
+                    };
+                    class GearGroup {
+                        type = "group";
+                        condition = "ils";
+                        class GearText {
+                            type = "text";
+                            source = "static";
+                            text = "GEAR";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.03, "0.53 + 0.005"}, 1};
+                            right[] = {{0.08, "0.53 + 0.005"}, 1};
+                            down[] = {{0.03, "0.53 + 0.045"}, 1};
+                        };
+                    };
+                    class StallGroup {
+                        type = "group";
+                        condition = "stall";
+                        color[] = {1, 0, 0};
+                        class StallText {
+                            type = "text";
+                            source = "static";
+                            text = "STALL";
+                            align = "center";
+                            scale = 1;
+                            pos[] = {{0.5, "0.53 - 0.25"}, 1};
+                            right[] = {{0.55, "0.53 - 0.25"}, 1};
+                            down[] = {{0.5, "0.53 - 0.17"}, 1};
+                        };
+                    };
+                    class LightsGroup {
+                        type = "group";
+                        condition = "lights";
+                        class LightsText {
+                            type = "text";
+                            source = "static";
+                            text = "LIGHTS";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.03, "0.53 + 0.055"}, 1};
+                            right[] = {{0.08, "0.53 + 0.055"}, 1};
+                            down[] = {{0.03, "0.53 + 0.095"}, 1};
+                        };
+                    };
+                    class CollisionLightsGroup {
+                        type = "group";
+                        condition = "collisionlights";
+                        class CollisionLightsText {
+                            type = "text";
+                            source = "static";
+                            text = "A-COL";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.03, "0.53 + 0.105"}, 1};
+                            right[] = {{0.08, "0.53 + 0.105"}, 1};
+                            down[] = {{0.03, "0.53 + 0.145"}, 1};
+                        };
+                    };
+                    class PitchNumber {
+                        type = "text";
+                        source = "horizonDive";
+                        sourceScale = 57.2958;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.51, 0.89}, 1};
+                        right[] = {{0.56, 0.89}, 1};
+                        down[] = {{0.51, 0.93}, 1};
+                    };
+                    class PitchText {
+                        type = "text";
+                        source = "static";
+                        text = "PITCH";
+                        align = "left";
+                        scale = 1;
+                        pos[] = {{0.49, 0.89}, 1};
+                        right[] = {{0.54, 0.89}, 1};
+                        down[] = {{0.49, 0.93}, 1};
+                    };
+                    class RollNumber {
+                        type = "text";
+                        source = "horizonBank";
+                        sourceScale = 57.2958;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.51, 0.84}, 1};
+                        right[] = {{0.56, 0.84}, 1};
+                        down[] = {{0.51, 0.88}, 1};
+                    };
+                    class RollText {
+                        type = "text";
+                        source = "static";
+                        text = "ROLL";
+                        align = "left";
+                        scale = 1;
+                        pos[] = {{0.49, 0.84}, 1};
+                        right[] = {{0.54, 0.84}, 1};
+                        down[] = {{0.49, 0.88}, 1};
+                    };
+                    class SpeedNumber {
+                        type = "text";
+                        source = "speed";
+                        sourceScale = 3.6;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.13, 0.14}, 1};
+                        right[] = {{0.18, 0.14}, 1};
+                        down[] = {{0.13, 0.18}, 1};
+                    };
+                    class SpeedText {
+                        type = "text";
+                        source = "static";
+                        text = "SPD";
+                        align = "left";
+                        scale = 1;
+                        pos[] = {{0.11, 0.14}, 1};
+                        right[] = {{0.16, 0.14}, 1};
+                        down[] = {{0.11, 0.18}, 1};
+                    };
+                    class AltitudeNumber {
+                        type = "text";
+                        source = "altitudeAGL";
+                        sourceScale = 1;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.89, 0.14}, 1};
+                        right[] = {{0.94, 0.14}, 1};
+                        down[] = {{0.89, 0.18}, 1};
+                    };
+                    class AltitudeText {
+                        type = "text";
+                        source = "static";
+                        text = "AGL";
+                        align = "left";
+                        scale = 1;
+                        pos[] = {{0.87, 0.14}, 1};
+                        right[] = {{0.92, 0.14}, 1};
+                        down[] = {{0.87, 0.18}, 1};
+                    };
+                    class AltitudeArrow {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{"0.88 + 0.018", "0.40 - 0.016"}, 1}, {{0.88, 0.4}, 1}, {{"0.88 + 0.018", "0.40 + 0.016"}, 1}};
+                    };
+                    class AltitudeLine {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{0.87, 0.6}, 1}, {{0.87, 0.2}, 1}};
+                    };
+                    class AltitudeScale {
+                        type = "scale";
+                        horizontal = 0;
+                        source = "altitudeAGL";
+                        sourceScale = 1;
+                        width = 4;
+                        top = 0.6;
+                        center = 0.4;
+                        bottom = 0.2;
+                        lineXleft = 0.88;
+                        lineYright = 0.89;
+                        lineXleftMajor = 0.88;
+                        lineYrightMajor = 0.9;
+                        majorLineEach = 5;
+                        numberEach = 5;
+                        step = 20;
+                        stepSize = "(0.60 - 0.20) / 15";
+                        align = "right";
+                        scale = 1;
+                        pos[] = {0.91, 0.58};
+                        right[] = {0.96, 0.58};
+                        down[] = {0.91, 0.62};
+                    };
+                    class ClimbNumber {
+                        type = "text";
+                        source = "vspeed";
+                        sourceScale = 1;
+                        align = "right";
+                        scale = 1;
+                        pos[] = {{0.89, 0.94}, 1};
+                        right[] = {{0.94, 0.94}, 1};
+                        down[] = {{0.89, 0.98}, 1};
+                    };
+                    class ClimbText {
+                        type = "text";
+                        source = "static";
+                        text = "CLIMB";
+                        align = "left";
+                        scale = 1;
+                        pos[] = {{0.87, 0.94}, 1};
+                        right[] = {{0.92, 0.94}, 1};
+                        down[] = {{0.87, 0.98}, 1};
+                    };
+                    class ClimbArrow {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{"0.88 + 0.018", "0.80 - 0.016"}, 1}, {{0.88, 0.8}, 1}, {{"0.88 + 0.018", "0.80 + 0.016"}, 1}};
+                    };
+                    class ClimbLine {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{0.87, 0.925}, 1}, {{0.87, 0.675}, 1}};
+                    };
+                    class ClimbScale {
+                        type = "scale";
+                        horizontal = 0;
+                        source = "vspeed";
+                        sourceScale = 1;
+                        width = 4;
+                        top = 0.925;
+                        center = 0.8;
+                        bottom = 0.675;
+                        lineXleft = 0.88;
+                        lineYright = 0.89;
+                        lineXleftMajor = 0.88;
+                        lineYrightMajor = 0.9;
+                        majorLineEach = 2;
+                        numberEach = 4;
+                        step = 5;
+                        stepSize = "(0.925 - 0.675) / 15";
+                        align = "right";
+                        scale = 1;
+                        pos[] = {0.91, 0.905};
+                        right[] = {0.96, 0.905};
+                        down[] = {0.91, 0.945};
+                    };
+                    class HeadingArrow {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{"0.5 - 0.02", "0.11 - 0.02"}, 1}, {{0.5, 0.11}, 1}, {{"0.5 + 0.02", "0.11 - 0.02"}, 1}};
+                    };
+                    class HeadingLine {
+                        type = "line";
+                        width = 4;
+                        points[] = {{{0.3, 0.12}, 1}, {{0.7, 0.12}, 1}};
+                    };
+                    class HeadingScale {
+                        type = "scale";
+                        horizontal = 1;
+                        source = "heading";
+                        sourceScale = 1;
+                        width = 4;
+                        top = 0.3;
+                        center = 0.5;
+                        bottom = 0.7;
+                        lineXleft = "0.06 + 0.05";
+                        lineYright = "0.05 + 0.05";
+                        lineXleftMajor = "0.06 + 0.05";
+                        lineYrightMajor = "0.04 + 0.05";
+                        majorLineEach = 3;
+                        numberEach = 9;
+                        step = 5;
+                        stepSize = 0.02;
+                        align = "center";
+                        scale = 1;
+                        pos[] = {0.3, "0.0 + 0.05"};
+                        right[] = {0.35, "0.0 + 0.05"};
+                        down[] = {0.3, "0.04 + 0.05"};
+                    };
+                };
+            };
+            class SU35_parallax_HUD {
+                topLeft = "hud_lh";
+                topRight = "hud_ph";
+                bottomLeft = "hud_ld";
+                borderLeft = 0;
+                borderRight = 0;
+                borderTop = 0;
+                borderBottom = 0;
+                color[] = {0, 1, 0, 1};
+                enableParallax = 1;
+                class Bones {
+                    class PlaneOrientation {
+                        type = "fixed";
+                        pos[] = {0.5, 0.53};
+                    };
+                    class WeaponAim {
+                        type = "vector";
+                        source = "weapon";
+                        pos0[] = {0.5, 0.555};
+                        pos10[] = {1.5, 1.555};
+                    };
+                    class Velocity {
+                        type = "vector";
+                        source = "velocity";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                    };
+                    class Level0 {
+                        type = "horizon";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                        angle = -2.3;
+                    };
+                };
+                class Draw {
+                    color[] = {0, 1, 0, 1};
+                    alpha = 0.5;
+                    condition = "on";
+                    class RadarTargets {
+                        type = "radar";
+                        width = 4;
+                        angle = -2.3;
+                        pos0[] = {0.5, 0.555};
+                        pos10[] = {1.24, 1.325};
+                        points[] = {
+                            {{-0.05, -0.0472973}, 1},
+                            {{0.05, -0.0472973}, 1},
+                            {{0.05, 0.0472973}, 1},
+                            {{-0.05, 0.0472973}, 1},
+                            {{-0.05, -0.0472973}, 1}
+                        };
+                    };
+                    class PlaneMovementCrosshair {
+                        type = "line";
+                        width = 4;
+                        points[] = {
+                            {"Velocity", {0, -0.02}, 1},
+                            {"Velocity", {0.01, -0.01732}, 1},
+                            {"Velocity", {0.01732, -0.01}, 1},
+                            {"Velocity", {0.02, 0}, 1},
+                            {"Velocity", {0.01732, 0.01}, 1},
+                            {"Velocity", {0.01, 0.01732}, 1},
+                            {"Velocity", {0, 0.02}, 1},
+                            {"Velocity", {-0.01, 0.01732}, 1},
+                            {"Velocity", {-0.01732, 0.01}, 1},
+                            {"Velocity", {-0.02, 0}, 1},
+                            {"Velocity", {-0.01732, -0.01}, 1},
+                            {"Velocity", {-0.01, -0.01732}, 1},
+                            {"Velocity", {0, -0.02}, 1},
+                            {},
+                            {"Velocity", {0.04, 0}, 1},
+                            {"Velocity", {0.02, 0}, 1},
+                            {},
+                            {"Velocity", {-0.04, 0}, 1},
+                            {"Velocity", {-0.02, 0}, 1},
+                            {},
+                            {"Velocity", {0, -0.04}, 1},
+                            {"Velocity", {0, -0.02}, 1}
+                        };
+                    };
+                    class Cros {
+                        condition = "mgun";
+                        width = 4;
+                        class Cros {
+                            type = "line";
+                            points[] = {
+                                {"WeaponAim", {0.05, 0}, 1},
+                                {"WeaponAim", {0.015, 0}, 1},
+                                {},
+                                {"WeaponAim", {0, 0.0393548}, 1},
+                                {"WeaponAim", {0, 0.0118065}, 1},
+                                {},
+                                {"WeaponAim", {-0.05, 0}, 1},
+                                {"WeaponAim", {-0.015, 0}, 1},
+                                {},
+                                {"WeaponAim", {0, -0.0393548}, 1},
+                                {"WeaponAim", {0, -0.0118065}, 1}
+                            };
+                        };
+                    };
+                    class AAMissileCrosshairGroup {
+                        type = "group";
+                        condition = "AAmissile";
+                        class AAMissileCrosshair {
+                            type = "line";
+                            width = 4;
+                            points[] = {
+                                {"WeaponAim", {0, -0.25}, 1},
+                                {"WeaponAim", {0.0434, -0.2462}, 1},
+                                {"WeaponAim", {0.0855, -0.234925}, 1},
+                                {"WeaponAim", {0.125, -0.2165}, 1},
+                                {"WeaponAim", {0.1607, -0.1915}, 1},
+                                {"WeaponAim", {0.1915, -0.1607}, 1},
+                                {"WeaponAim", {0.2165, -0.125}, 1},
+                                {"WeaponAim", {0.234925, -0.0855}, 1},
+                                {"WeaponAim", {0.2462, -0.0434}, 1},
+                                {"WeaponAim", {0.25, 0}, 1},
+                                {"WeaponAim", {0.2462, 0.0434}, 1},
+                                {"WeaponAim", {0.234925, 0.0855}, 1},
+                                {"WeaponAim", {0.2165, 0.125}, 1},
+                                {"WeaponAim", {0.1915, 0.1607}, 1},
+                                {"WeaponAim", {0.1607, 0.1915}, 1},
+                                {"WeaponAim", {0.125, 0.2165}, 1},
+                                {"WeaponAim", {0.0855, 0.234925}, 1},
+                                {"WeaponAim", {0.0434, 0.2462}, 1},
+                                {"WeaponAim", {0, 0.25}, 1},
+                                {"WeaponAim", {-0.0434, 0.2462}, 1},
+                                {"WeaponAim", {-0.0855, 0.234925}, 1},
+                                {"WeaponAim", {-0.125, 0.2165}, 1},
+                                {"WeaponAim", {-0.1607, 0.1915}, 1},
+                                {"WeaponAim", {-0.1915, 0.1607}, 1},
+                                {"WeaponAim", {-0.2165, 0.125}, 1},
+                                {"WeaponAim", {-0.234925, 0.0855}, 1},
+                                {"WeaponAim", {-0.2462, 0.0434}, 1},
+                                {"WeaponAim", {-0.25, 0}, 1},
+                                {"WeaponAim", {-0.2462, -0.0434}, 1},
+                                {"WeaponAim", {-0.234925, -0.0855}, 1},
+                                {"WeaponAim", {-0.2165, -0.125}, 1},
+                                {"WeaponAim", {-0.1915, -0.1607}, 1},
+                                {"WeaponAim", {-0.1607, -0.1915}, 1},
+                                {"WeaponAim", {-0.125, -0.2165}, 1},
+                                {"WeaponAim", {-0.0855, -0.234925}, 1},
+                                {"WeaponAim", {-0.0434, -0.2462}, 1},
+                                {"WeaponAim", {0, -0.25}, 1}
+                            };
+                        };
+                    };
+                    class ATMissileCrosshairGroup {
+                        condition = "ATmissile";
+                        type = "group";
+                        class ATMissileCrosshair {
+                            type = "line";
+                            width = 4;
+                            points[] = {
+                                {"WeaponAim", {-0.15, -0.15}, 1},
+                                {"WeaponAim", {-0.15, "-0.15 + 0.02"}, 1},
+                                {},
+                                {"WeaponAim", {-0.15, 0.15}, 1},
+                                {"WeaponAim", {-0.15, "0.15 - 0.02"}, 1},
+                                {},
+                                {"WeaponAim", {0.15, -0.15}, 1},
+                                {"WeaponAim", {0.15, "-0.15 + 0.02"}, 1},
+                                {},
+                                {"WeaponAim", {0.15, 0.15}, 1},
+                                {"WeaponAim", {0.15, "0.15 - 0.02"}, 1},
+                                {},
+                                {"WeaponAim", {-0.15, -0.15}, 1},
+                                {"WeaponAim", {"-0.15 + 0.02", -0.15}, 1},
+                                {},
+                                {"WeaponAim", {-0.15, 0.15}, 1},
+                                {"WeaponAim", {"-0.15 + 0.02", 0.15}, 1},
+                                {},
+                                {"WeaponAim", {0.15, -0.15}, 1},
+                                {"WeaponAim", {"0.15 - 0.02", -0.15}, 1},
+                                {},
+                                {"WeaponAim", {0.15, 0.15}, 1},
+                                {"WeaponAim", {"0.15 - 0.02", 0.15}, 1}
+                            };
+                        };
+                    };
+                    class BombCrosshairGroup {
+                        type = "group";
+                        condition = "bomb";
+                        class BombCrosshair {
+                            type = "line";
+                            width = 4;
+                            points[] = {
+                                {"WeaponAim", {0, -0.1}, 1},
+                                {"WeaponAim", {0.01736, -0.09848}, 1},
+                                {"WeaponAim", {0.0342, -0.09397}, 1},
+                                {"WeaponAim", {0.05, -0.0866}, 1},
+                                {"WeaponAim", {0.06428, -0.0766}, 1},
+                                {"WeaponAim", {0.0766, -0.06428}, 1},
+                                {"WeaponAim", {0.0866, -0.05}, 1},
+                                {"WeaponAim", {0.09397, -0.0342}, 1},
+                                {"WeaponAim", {0.09848, -0.01736}, 1},
+                                {"WeaponAim", {0.1, 0}, 1},
+                                {"WeaponAim", {0.09848, 0.01736}, 1},
+                                {"WeaponAim", {0.09397, 0.0342}, 1},
+                                {"WeaponAim", {0.0866, 0.05}, 1},
+                                {"WeaponAim", {0.0766, 0.06428}, 1},
+                                {"WeaponAim", {0.06428, 0.0766}, 1},
+                                {"WeaponAim", {0.05, 0.0866}, 1},
+                                {"WeaponAim", {0.0342, 0.09397}, 1},
+                                {"WeaponAim", {0.01736, 0.09848}, 1},
+                                {"WeaponAim", {0, 0.1}, 1},
+                                {"WeaponAim", {-0.01736, 0.09848}, 1},
+                                {"WeaponAim", {-0.0342, 0.09397}, 1},
+                                {"WeaponAim", {-0.05, 0.0866}, 1},
+                                {"WeaponAim", {-0.06428, 0.0766}, 1},
+                                {"WeaponAim", {-0.0766, 0.06428}, 1},
+                                {"WeaponAim", {-0.0866, 0.05}, 1},
+                                {"WeaponAim", {-0.09397, 0.0342}, 1},
+                                {"WeaponAim", {-0.09848, 0.01736}, 1},
+                                {"WeaponAim", {-0.1, 0}, 1},
+                                {"WeaponAim", {-0.09848, -0.01736}, 1},
+                                {"WeaponAim", {-0.09397, -0.0342}, 1},
+                                {"WeaponAim", {-0.0866, -0.05}, 1},
+                                {"WeaponAim", {-0.0766, -0.06428}, 1},
+                                {"WeaponAim", {-0.06428, -0.0766}, 1},
+                                {"WeaponAim", {-0.05, -0.0866}, 1},
+                                {"WeaponAim", {-0.0342, -0.09397}, 1},
+                                {"WeaponAim", {-0.01736, -0.09848}, 1},
+                                {"WeaponAim", {0, -0.1}, 1},
+                                {},
+                                {"Velocity", 0.001, "WeaponAim", {0, 0}, 1},
+                                {"Velocity", {0, 0}, 1}
+                            };
+                        };
+                    };
+                };
+            };
+            class SU35_static_MFD_1_H {
+                topLeft = "hud_2_lh";
+                topRight = "hud_2_ph";
+                bottomLeft = "hud_2_ld";
+                borderLeft = 0;
+                borderRight = 0;
+                borderTop = 0;
+                borderBottom = 0;
+                color[] = {1, 0.9, 0.1};
+                enableParallax = 0;
+                class Bones {
+                    class PlaneOrientation {
+                        type = "fixed";
+                        pos[] = {0.5, 0.53};
+                    };
+                    class WeaponAim {
+                        type = "vector";
+                        source = "weapon";
+                        pos0[] = {0.5, 0.555};
+                        pos10[] = {1.5, 1.555};
+                    };
+                    class Velocity {
+                        type = "vector";
+                        source = "velocity";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                    };
+                    class Level0 {
+                        type = "horizon";
+                        pos0[] = {0.5, 0.53};
+                        pos10[] = {1.5, 1.53};
+                        angle = -2.3;
+                    };
+                };
+                class Draw {
+                    color[] = {1, 1, 1};
+                    alpha = 1;
+                    condition = "on";
+                    class Horizont {
+                        clipTL[] = {0.25, 0.25};
+                        clipBR[] = {0.75, 0.75};
+                        class Dimmed {
+                            class Level00 {
+                                type = "line";
+                                width = 15;
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"-0.045 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"-0.005 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"0.005 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"0.045 * 1.4", "0 * 1.4"}, 1},
+                                    {},
+                                    {"Level0", {"0.125 * 1.4", "0 * 1.4"}, 1},
+                                    {"Level0", {"0.200 * 1.4", "0 * 1.4"}, 1}
+                                };
+                            };
+                            class Level2M5: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 5"}, 1}
+                                };
+                            };
+                            class Level2P5: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 5"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 5"}, 1}
+                                };
+                            };
+                            class Level2M10: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 10"}, 1}
+                                };
+                            };
+                            class Level2P10: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 10"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 10"}, 1}
+                                };
+                            };
+                            class Level2M15: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 15"}, 1}
+                                };
+                            };
+                            class Level2P15: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 15"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 15"}, 1}
+                                };
+                            };
+                            class Level2P20: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 20"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 20"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 20"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 20"}, 1}
+                                };
+                            };
+                            class Level2M20: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 20"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 20"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 20"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 20"}, 1}
+                                };
+                            };
+                            class Level2P30: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 30"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 30"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 30"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 30"}, 1}
+                                };
+                            };
+                            class Level2M30: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 30"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 30"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 30"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 30"}, 1}
+                                };
+                            };
+                            class Level2P40: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 40"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 40"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 40"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 40"}, 1}
+                                };
+                            };
+                            class Level2M40: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 40"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 40"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 40"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 40"}, 1}
+                                };
+                            };
+                            class Level2P50: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 50"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 50"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 50"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 50"}, 1}
+                                };
+                            };
+                            class Level2M50: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 50"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 50"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 50"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 50"}, 1}
+                                };
+                            };
+                            class Level2P60: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 60"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 60"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 60"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 60"}, 1}
+                                };
+                            };
+                            class Level2M60: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 60"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 60"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 60"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 60"}, 1}
+                                };
+                            };
+                            class Level2P70: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 70"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 70"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 70"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 70"}, 1}
+                                };
+                            };
+                            class Level2M70: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 70"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 70"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 70"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 70"}, 1}
+                                };
+                            };
+                            class Level2P80: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 80"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 80"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 80"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 80"}, 1}
+                                };
+                            };
+                            class Level2M80: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 80"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 80"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 80"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 80"}, 1}
+                                };
+                            };
+                            class Level2P90: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "+1.0 / 10 * 90"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "+1.0 / 10 * 90"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "+1.0 / 10 * 90"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "+1.0 / 10 * 90"}, 1}
+                                };
+                            };
+                            class Level2M90: Level00 {
+                                type = "line";
+                                points[] = {
+                                    {"Level0", {"-0.200 * 1.4", "-1.0 / 10 * 90"}, 1},
+                                    {"Level0", {"-0.125 * 1.4", "-1.0 / 10 * 90"}, 1},
+                                    {},
+                                    {"Level0", {"+0.125 * 1.4", "-1.0 / 10 * 90"}, 1},
+                                    {"Level0", {"+0.200 * 1.4", "-1.0 / 10 * 90"}, 1}
+                                };
+                            };
+                        };
+                    };
+                    class PlaneOrientation_MiniPlane {
+                        width = 20;
+                        type = "line";
+                        points[] = {
+                            {"PlaneOrientation", {0.21, 0}, 1},
+                            {"PlaneOrientation", 1, {0.07, 0}, 1},
+                            {},
+                            {"PlaneOrientation", 1, {-0.21, 0}, 1},
+                            {"PlaneOrientation", {-0.07, 0}, 1},
+                            {},
+                            {"PlaneOrientation", {0, 0}, 1},
+                            {"PlaneOrientation", {0, -0.14}, 1}
+                        };
+                    };
+                };
+            };
+        };
+        class RenderTargets {
+            class Center_Pilot_Mirror {
+                renderTarget = "rendertarget0";
+                class CameraView1 {
+                    pointPosition = "PIP_mirror_c";
+                    pointDirection = "PIP_mirror_c_dir";
+                    renderQuality = 2;
+                    renderVisionMode = 0;
+                    fov = 0.7;
+                };
+            };
+            class Left_Pilot_Mirror {
+                renderTarget = "rendertarget1";
+                class CameraView1 {
+                    pointPosition = "PIP_mirror_l";
+                    pointDirection = "PIP_mirror_l_dir";
+                    renderQuality = 2;
+                    renderVisionMode = 0;
+                    fov = 0.7;
+                };
+            };
+            class Right_Pilot_Mirror {
+                renderTarget = "rendertarget2";
+                class CameraView1 {
+                    pointPosition = "PIP_mirror_r";
+                    pointDirection = "PIP_mirror_r_dir";
+                    renderQuality = 2;
+                    renderVisionMode = 0;
+                    fov = 0.7;
+                };
+            };
+        };
+        class AnimationSources {
+            class ejection_seat_motion {
+                source = "user";
+                animPeriod = 0.25;
+                initPhase = 0;
+            };
+            class ab_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class init_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class gps_targeting_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class paint_scheme_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class damage_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class auxtank_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class refueling_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class eject_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class r_canopy_hide {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class ejection_seat_hide {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class service_menu_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class rearming_done_switch {
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+            };
+            class fuel_probe {
+                source = "user";
+                animPeriod = 3.2;
+                initPhase = 0;
+            };
+            class burner_fire_1_left {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class burner_fire_1_right {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class Mirrors_pip_hide {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class MFD_Displays_Map_miniplane_animX {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 0;
+            };
+            class MFD_Displays_Map_miniplane_animY {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 0;
+            };
+            class throttle_pilot {
+                source = "user";
+                animPeriod = 0.5;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_1 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_2 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_3 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_4 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_5 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_6 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_7 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_l_8 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_1 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_2 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_3 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_4 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_5 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_6 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_7 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class engine_nozzle_r_8 {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class afterburner_left_userhide {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class afterburner_right_userhide {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class afterburner_left_strech {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class afterburner_right_strech {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+            class MFD_l_scr_1_3_AB_on {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class MFD_l_scr_1_3_AB_off {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 0;
+            };
+            class MFD_l_scr_1_3_N1_100 {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class MFD_l_scr_1_3_N1_50 {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 0;
+            };
+            class MFD_l_scr_1_3_N2_100 {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class MFD_l_scr_1_3_N2_50 {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 0;
+            };
+            class MFD_L_scr_1_l_eng_AB {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+            class MFD_L_scr_1_r_eng_AB {
+                source = "user";
+                animPeriod = 0.0001;
+                initPhase = 1;
+            };
+        };
+        reportRemoteTargets = 1;
+        receiveRemoteTargets = 1;
+        reportOwnPosition = 1;
+        class Components: Components {
+            class SensorsManagerComponent {
+                class Components {
+                    class IRSensorComponent: SensorTemplateIR {
+                        class AirTarget {
+                            minRange = 500;
+                            maxRange = 3500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        class GroundTarget {
+                            minRange = 500;
+                            maxRange = 3500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 180;
+                        aimDown = 0;
+                    };
+                    class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
+                        class AirTarget {
+                            minRange = 500;
+                            maxRange = 14000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        class GroundTarget {
+                            minRange = 500;
+                            maxRange = 3000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        angleRangeHorizontal = 120;
+                        angleRangeVertical = 90;
+                        aimDown = 0;
+                        groundNoiseDistanceCoef = 0.1;
+                        maxSpeedThreshold = 40;
+                        minSpeedThreshold = 30;
+                        typeRecognitionDistance = 6000;
+                    };
+                    class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {};
+                    class LaserSensorComponent: SensorTemplateLaser {};
+                    class NVSensorComponent: SensorTemplateNV {};
+                    class VisualSensorComponent: SensorTemplateVisual {};
+                };
+            };
+            class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftSensorsPilot {
+                class Components: Components {
+                    class CrewDisplay {};
+                    class VehicleMissileDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "Missile";
+                        resource = "RscTransportCameraComponentMissile";
+                    };
+                    class SensorDisplay {
+                        componentType = "SensorsDisplayComponent";
+                        range[] = {20000, 10000, 5000, 2000};
+                        resource = "RscCustomInfoSensors";
+                    };
+                    class UAVDisplay {
+                        componentType = "UAVFeedDisplayComponent";
+                    };
+                };
+            };
+            class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightSensorsPilot {
+                defaultDisplay = "SensorDisplay";
+                class Components: Components {
+                    class CrewDisplay {};
+                    class VehicleMissileDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "Missile";
+                        resource = "RscTransportCameraComponentMissile";
+                    };
+                    class SensorDisplay {
+                        componentType = "SensorsDisplayComponent";
+                        range[] = {20000, 10000, 5000, 2000};
+                        resource = "RscCustomInfoSensors";
+                    };
+                    class UAVDisplay {
+                        componentType = "UAVFeedDisplayComponent";
+                    };
+                    class VehicleDriverDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "Driver";
+                    };
+                };
+            };
+            class TransportPylonsComponent {
+                UIPicture = "\JS_JC_SU35\UI\SU35_CA.paa";
+                class Pylons {
+                    class pylon1 {
+                        maxweight = 1000;
+                        hardpoints[] = {
+                            "O_KAB250_BOMB",
+                            "O_R73",
+                            "O_R77",
+                            "O_KH25",
+                            "O_BOMB_PYLON",
+                            "O_MISSILE_PYLON",
+                            "UNI_SCALPEL",
+                            "JS_JC_SU35_Pylon",
+                            "FIR_OPFOR_Combined_HP",
+                            "FIR_OPFOR_AA_HP"
+                        };
+                        attachment = "PylonMissile_Missile_AA_R73_x1";
+                        bay = -1;
+                        priority = 100;
+                        UIPosition[] = {0, 0.23};
+                        turret[] = {};
+                    };
+                    class pylon2: pylon1 {
+                        priority = 90;
+                        UIPosition[] = {0.65, 0.23};
+                        mirroredMissilePos = 1;
+                    };
+                    class pylon3: pylon1 {
+                        maxweight = 2000;
+                        priority = 80;
+                        UIPosition[] = {0.05, 0.28};
+                    };
+                    class pylon4: pylon1 {
+                        maxweight = 2000;
+                        priority = 70;
+                        UIPosition[] = {0.6, 0.28};
+                        mirroredMissilePos = 3;
+                    };
+                    class pylon5: pylon1 {
+                        attachment = "PylonMissile_Missile_AA_R77_x1";
+                        maxweight = 2000;
+                        priority = 60;
+                        UIPosition[] = {0.1, 0.33};
+                    };
+                    class pylon6: pylon1 {
+                        attachment = "PylonMissile_Missile_AA_R77_x1";
+                        maxweight = 2000;
+                        priority = 50;
+                        UIPosition[] = {0.55, 0.33};
+                        mirroredMissilePos = 5;
+                    };
+                    class pylon7: pylon1 {
+                        attachment = "PylonMissile_Missile_AGM_KH25_x1";
+                        maxweight = 2000;
+                        priority = 40;
+                        UIPosition[] = {0.15, 0.38};
+                    };
+                    class pylon8: pylon1 {
+                        attachment = "PylonMissile_Missile_AGM_KH25_x1";
+                        maxweight = 2000;
+                        priority = 30;
+                        UIPosition[] = {0.5, 0.38};
+                        mirroredMissilePos = 7;
+                    };
+                    class pylon9: pylon1 {
+                        attachment = "PylonMissile_Bomb_KAB250_x1";
+                        maxweight = 4000;
+                        priority = 20;
+                        UIPosition[] = {0.2, 0.43};
+                    };
+                    class pylon10: pylon1 {
+                        attachment = "PylonMissile_Bomb_KAB250_x1";
+                        maxweight = 4000;
+                        priority = 20;
+                        UIPosition[] = {0.4, 0.43};
+                        mirroredMissilePos = 9;
+                    };
+                    class pylon11: pylon1 {
+                        attachment = "PylonRack_Buddy_Pod_JS_SU35_x1";
+                        maxweight = 4000;
+                        priority = 10;
+                        UIPosition[] = {0.3, 0.5};
+                    };
+                    class pylon12: pylon1 {
+                        attachment = "PylonRack_Wing_Tank_JS_SU35_x1";
+                        maxweight = 4000;
+                        priority = 10;
+                        UIPosition[] = {0.3, 0.55};
+                    };
+                };
+                class Presets {
+                    class Default {
+                        attachment[] = {
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Bomb_KAB250_x1",
+                            "PylonMissile_Bomb_KAB250_x1",
+                            "PylonRack_Buddy_Pod_JS_SU35_x1",
+                            "PylonRack_Wing_Tank_JS_SU35_x1"
+                        };
+                        displayName = "Default";
+                    };
+                    class Empty {
+                        attachment[] = {};
+                        displayName = "Empty";
+                    };
+                    class Multirole {
+                        attachment[] = {
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonMissile_Bomb_KAB250_x1",
+                            "PylonMissile_Bomb_KAB250_x1"
+                        };
+                        displayName = "Multirole";
+                    };
+                    class CAS {
+                        attachment[] = {
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonRack_Rocket_S8_JS_SU35_x20",
+                            "PylonMissile_Missile_AGM_KH25_x1",
+                            "PylonMissile_Missile_AGM_KH25_x1"
+                        };
+                        displayName = "CAS";
+                    };
+                    class CAP {
+                        attachment[] = {
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R73_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1",
+                            "PylonMissile_Missile_AA_R77_x1"
+                        };
+                        displayName = "CAP";
+                    };
+                };
+            };
+        };
+        memoryPointDriverOptics = "gunnerview";
+        driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
+        class pilotCamera {
+            class OpticsIn {
+                class Wide {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(30 / 120)";
+                    minFov = "(30 / 120)";
+                    maxFov = "(30 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal", "Ti"};
+                    thermalMode[] = {0, 1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
+                };
+                class Medium: Wide {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(15 / 120)";
+                    minFov = "(15 / 120)";
+                    maxFov = "(15 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(3.75 / 120)";
+                    minFov = "(3.75 / 120)";
+                    maxFov = "(3.75 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                showMiniMapInOptics = 1;
+                showUAVViewInOptics = 0;
+                showSlingLoadManagerInOptics = 0;
+            };
+            minTurn = -180;
+            maxTurn = 180;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = 0;
+            maxXRotSpeed = 0.5;
+            maxYRotSpeed = 0.5;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+        };
+        class ViewPilot {
+            initFov = 1;
+            minFov = 0.6;
+            maxFov = 0.85;
+            initAngleX = 0;
+            minAngleX = -35;
+            maxAngleX = 85;
+            initAngleY = 0;
+            minAngleY = -130;
+            maxAngleY = 130;
+            minMoveX = -0.2;
+            maxMoveX = 0.2;
+            minMoveY = -0.025;
+            maxMoveY = 0.1;
+            minMoveZ = -0.2;
+            maxMoveZ = 0.2;
+        };
+        class turrets {};
+        class Exhausts {
+            class Exhaust_left {
+                position = "Exhausts_start_left";
+                direction = "Exhausts_end_left";
+                effect = "ExhaustsEffectPlane";
+            };
+            class Exhaust_right {
+                position = "Exhausts_start_right";
+                direction = "Exhausts_end_right";
+                effect = "ExhaustsEffectPlane";
+            };
+        };
+        class WingVortices {
+            class WingTipLeft {
+                effectName = "FX_SU35_WingVortices";
+                position = "wingtip_marker_light_green";
+            };
+            class WingTipRight {
+                effectName = "FX_SU35_WingVortices";
+                position = "wingtip_marker_light_red";
+            };
+            class BodyLeft_inner {
+                effectName = "FX_SU35_Fuselagevapour";
+                position = "body_vapour_L_S";
+            };
+            class BodyRight_inner {
+                effectName = "FX_SU35_Fuselagevapour";
+                position = "body_vapour_R_S";
+            };
+            class BodyLeft_outer {
+                effectName = "FX_SU35_Fuselagevapour";
+                position = "body_vapour_L_E";
+            };
+            class BodyRight_outer {
+                effectName = "FX_SU35_Fuselagevapour";
+                position = "body_vapour_R_E";
+            };
+        };
+        class Reflectors {
+            class Left {
+                color[] = {7000, 7500, 10000, 1};
+                ambient[] = {100, 100, 100, 0};
+                position = "light_1_1_source";
+                direction = "light_1_1_target";
+                hitpoint = "L svetlo";
+                selection = "L svetlo";
+                size = 1;
+                innerAngle = 20;
+                outerAngle = 60;
+                coneFadeCoef = 10;
+                intensity = 50;
+                useFlare = 1;
+                dayLight = 0;
+                FlareSize = 4;
+                class Attenuation {
+                    start = 1;
+                    constant = 0;
+                    linear = 0;
+                    quadratic = 4;
+                };
+            };
+            class Right {
+                color[] = {7000, 7500, 10000, 1};
+                ambient[] = {100, 100, 100, 0};
+                position = "light_1_2_source";
+                direction = "light_1_2_target";
+                hitpoint = "P svetlo";
+                selection = "P svetlo";
+                size = 1;
+                innerAngle = 20;
+                outerAngle = 60;
+                coneFadeCoef = 10;
+                intensity = 50;
+                useFlare = 1;
+                dayLight = 0;
+                FlareSize = 4;
+                class Attenuation {
+                    start = 1;
+                    constant = 0;
+                    linear = 0;
+                    quadratic = 4;
+                };
+            };
+        };
+        class MarkerLights {
+            class Cockpit_light_1 {
+                name = "cockpit_light_pos";
+                ambient[] = {0.01, 0.01, 0.01, 1};
+                color[] = {0.03, 1, 0.11, 1};
+                brightness = 0.035;
+                blinking = 0;
+                class Attenuation {
+                    start = 1;
+                    constant = 0;
+                    linear = 0;
+                    quadratic = 4;
+                };
+            };
+            class Red_Still_R {
+                name = "wingtip_marker_light_red";
+                color[] = {1, 0, 0, 1};
+                ambient[] = {0.003, 0.03, 0.003, 1};
+                brightness = 0.05;
+                blinking = 0;
+            };
+            class Green_Still_L {
+                name = "wingtip_marker_light_green";
+                color[] = {0.03, 0.3, 0.03, 1};
+                ambient[] = {0.003, 0.03, 0.003, 1};
+                brightness = 0.05;
+                blinking = 0;
+            };
+            class White_Still_L {
+                name = "marker_light_white_L";
+                color[] = {0.0388, 0.0388, 0.0388, 1};
+                ambient[] = {0.03, 0.023, 0.0056, 1};
+                brightness = 0.05;
+                blinking = 0;
+            };
+            class White_Still_R {
+                name = "marker_light_white_R";
+                color[] = {0.0388, 0.0388, 0.0388, 1};
+                ambient[] = {0.03, 0.023, 0.0056, 1};
+                brightness = 0.05;
+                blinking = 0;
+            };
+            class Red_blinking_L {
+                name = "marker_light_red_L";
+                color[] = {10, 0, 0, 1};
+                ambient[] = {0.003, 0.03, 0.003, 1};
+                brightness = 0.03;
+                blinking = 1;
+            };
+            class Red_blinking_R {
+                name = "marker_light_red_R";
+                color[] = {10, 0, 0, 1};
+                ambient[] = {0.003, 0.03, 0.003, 1};
+                brightness = 0.03;
+                blinking = 1;
+            };
+        };
+        class Library {
+            libEnable = 1;
+            libTextDesc = "The Sukhoi Su-35S (NATO reporting name - Flanker E) is a designation for heavily upgraded derivative of the Su-27 Flanker. It is single-seat, twin-engine supermaneuverable multirole fighter, designed by Sukhoi and built by Komsomolsk-on-Amur Aircraft Production Association. In 2003, Sukhoi embarked on a second modernization of the Su-27 to produce what the company calls a 4++ generation fighter that would serve as an interim fighter prior to the arrival of the Sukhoi PAK FA. This derivative, while omitting the canards and air brake, incorporates a reinforced airframe, improved avionics and radar, thrust-vectoring engines, and a reduced frontal radar signature. In 2008 the revamped variant, erroneously dubbed the Su-35BM in the media, began its flight test programme that would involve four prototypes. The Russian Air Force has ordered 48 production units and CSAT Air Force have placed a contract for 12 units, designated Su-35S, of the newly revamped Su-35.";
+        };
+        class UserActions {
+            class ECM_ON {
+                displayName = "ECM JAMMER ON";
+                position = "pilotcontrol";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and this getvariable ""ECMJAMMER"" == ""yes"";";
+                statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+                showWindow = 0;
+            };
+            class Eject {
+                condition = "player in this and (isEngineOn this or speed this > 10)";
+                displayName = "Eject";
+                hideOnUse = 1;
+                onlyforplayer = 1;
+                position = "pilotcontrol";
+                priority = 0.05;
+                radius = 10;
+                shortcut = "Eject";
+                showWindow = 0;
+                statement = "[this] spawn BIS_fnc_planeEjection";
+            };
+            class extendrefueling {
+                displayName = "Extend Refueling Probe";
+                position = "pilotcontrol";
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+                radius = 5;
+                condition = "player in this and this animationPhase ""fuel_probe"" < 0.5 and speed this > 100";
+                statement = "this animate [""fuel_probe"",1]";
+            };
+            class retractrefueling {
+                displayName = "Retract Refueling Probe";
+                position = "pilotcontrol";
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+                radius = 5;
+                condition = "player in this and this animationPhase ""fuel_probe"" > 0.5";
+                statement = "this animate [""fuel_probe"",0]";
+            };
+            class service_menu {
+                displayName = "Service Menu";
+                position = "pilotcontrol";
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+                radius = 5;
+                condition = "((this distance (nearestObject [this, ""O_Truck_03_ammo_F""]) < 25) and (damage (nearestObject [this, ""O_Truck_03_ammo_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""O_Truck_02_Ammo_F""]) < 25) and (damage (nearestObject [this, ""O_Truck_02_Ammo_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""Land_TentHangar_V1_F""]) < 55) and (damage (nearestObject [this, ""Land_TentHangar_V1_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1) or ((this distance (nearestObject [this, ""Land_Hangar_F""]) < 55) and (damage (nearestObject [this, ""Land_Hangar_F""]) < 1) and player == driver this and this animationPhase ""service_menu_switch"" < 0.5 and speed this < 1)";
+                statement = "this animate [""service_menu_switch"",1]; [] spawn JS_JC_fnc_SU35_MAIN_UI;";
+            };
+            class pilots_manual {
+                displayName = "Pilots Manual";
+                position = "pilotcontrol";
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+                radius = 5;
+                condition = "player in this and speed this < 1";
+                statement = "[] spawn JS_JC_fnc_SU35_MANUAL_UI";
+            };
+            class Aircraft_MFD_Open_ITGT {
+                displayName = "Open I-TGT System";
+                position = "pilotcontrol";
+                radius = 15;
+                shortcut = "FIR_AWS_ACTION_ITGT";
+                condition = "this getvariable ""TGT_POD"" == ""yes"" and player in this and isengineon this";
+                statement = "this call FIR_fnc_ITGT_Open";
+                onlyforplayer = "false";
+                hideOnUse = 1;
+                showwindow = 0;
+            };
+        };
+        class Eventhandlers: Eventhandlers {
+            init = "_this execVM '\js_jc_SU35\scripts\init_SU35.sqf'";
+        };
+        class textureSources {
+            class CSATDesertHex {
+                displayName = "CSAT Desert HEX";
+                author = "John_Spartan & Saul";
+                textures[] = {"\js_jc_su35\data\Su35_hull_CSAT_D_co.paa", "\js_jc_su35\data\Su35_misc_CSAT_D_co.paa"};
+            };
+            class CSATGreyHex {
+                displayName = "CSAT Grey HEX";
+                author = "John_Spartan & Saul";
+                textures[] = {"\js_jc_su35\data\Su35_hull_CSAT_S_co.paa", "\js_jc_su35\data\Su35_misc_CSAT_S_co.paa"};
+            };
+            class RussianAFGreyDigital {
+                displayName = "Russian AF Grey DIGITAL";
+                author = "John_Spartan & Saul";
+                textures[] = {"\js_jc_su35\data\Su35_hull_co.paa", "\js_jc_su35\data\Su35_misc_co.paa"};
+            };
+            class RussianAFSkyBlue {
+                displayName = "Russian AF Sky Blue";
+                author = "John_Spartan & Saul";
+                textures[] = {"\js_jc_su35\data\Su35_hull_SKY_co.paa", "\js_jc_su35\data\Su35_misc_sky_co.paa"};
+            };
+        };
+        ejectDamageLimit = 0.45;
+        ejectDeadCargo = 0;
+        ejectDeadDriver = 0;
+        ejectDeadGunner = 0;
+        ejectSpeed[] = {0, 60, 0};
+        class EjectionSystem {
+            CanopyClass = "JS_JC_SU35_Canopy";
+            CanopyForce = 30;
+            CanopyHideAnim = "r_canopy_hide";
+            CanopyPos = "pos_eject_canopy";
+            EjectionDual = 0;
+            EjectionParachute = "Steerable_Parachute_F";
+            EjectionSeatClass = "JS_JC_SU35ejection_seat";
+            EjectionSeatEnabled = 1;
+            EjectionSeatForce = 50;
+            EjectionSeatHideAnim = "ejection_seat_hide";
+            EjectionSeatPos = "pos_eject";
+            EjectionSeatRailAnim = "ejection_seat_motion";
+            EjectionSoundExt = "Plane_Fighter_01_ejection_ext_sound";
+            EjectionSoundInt = "Plane_Fighter_01_ejection_in_sound";
+        };
+        class HitPoints: HitPoints {
+            class HitHull: HitHull {
+                name = "HitHull";
+                armor = 30;
+                explosionShielding = 5;
+                passThrough = 0.5;
+                radius = 0.5;
+                minimalHit = 0.02;
+                depends = "0";
+                material = -1;
+            };
+            class HitEngine: HitHull {
+                name = "HitEngine";
+                armor = 1.5;
+                explosionShielding = 2;
+                radius = 0.15;
+                minimalHit = 0.1;
+            };
+            class HitEngine2: HitEngine {
+                name = "HitEngine2";
+                visual = "HitEngine2_visual";
+            };
+            class HitAvionics: HitHull {
+                name = "HitAvionics";
+                armor = 3;
+                explosionShielding = 1;
+                passThrough = 0.2;
+                radius = 0.2;
+            };
+            class HitFuel: HitHull {
+                name = "HitFuel";
+                explosionShielding = 4;
+                passThrough = 0.5;
+                minimalHit = 0.1;
+                radius = 0.25;
+            };
+            class HitGlass1: HitHull {
+                name = "HitGlass1";
+                armor = 1.5;
+                explosionShielding = 3;
+                passThrough = 0;
+                radius = 0.2;
+                minimalHit = 0.1;
+            };
+            class HitGlass2: HitGlass1 {
+                name = "HitGlass2";
+                armor = 3;
+                explosionShielding = 4;
+                radius = 0.1;
+            };
+            class HitLAileron: HitHull {
+                name = "HitLAileron";
+                armor = 1.5;
+                explosionShielding = 3;
+                passThrough = 0.1;
+                radius = 0.18;
+                minimalHit = 0.1;
+            };
+            class HitRAileron: HitLAileron {
+                name = "HitRAileron";
+            };
+            class HitLCRudder: HitHull {
+                name = "HitLCRudder";
+                armor = 1.5;
+                explosionShielding = 3;
+                passThrough = 0.1;
+                radius = 0.25;
+                minimalHit = 0.1;
+            };
+            class HitRRudder: HitLCRudder {
+                name = "HitRRudder";
+            };
+            class HitLCElevator: HitHull {
+                name = "HitLCElevator";
+                armor = 1.5;
+                explosionShielding = 3;
+                passThrough = 0.1;
+                radius = 0.2;
+                minimalHit = 0.1;
+            };
+            class HitRElevator: HitLCElevator {
+                name = "HitRElevator";
+            };
+        };
+        maxOmega = 2000;
+        class Wheels {
+            class n_wheels {
+                boneName = "n_wheels";
+                steering = 1;
+                side = "left";
+                center = "Wheel_1_center";
+                boundary = "Wheel_1_rim";
+                width = 0.3;
+                mass = 150;
+                MOI = 25;
+                dampingRate = 0.25;
+                dampingRateDamaged = 1;
+                dampingRateDestroyed = 1000;
+                maxBrakeTorque = 1500;
+                maxHandBrakeTorque = 0;
+                suspTravelDirection[] = {0, -1, 0};
+                suspForceAppPointOffset = "Wheel_1_center";
+                tireForceAppPointOffset = "Wheel_1_center";
+                maxCompression = 0.05;
+                maxDroop = 0.05;
+                sprungMass = 3500;
+                springStrength = 85000;
+                springDamperRate = 14000;
+                longitudinalStiffnessPerUnitGravity = 5000;
+                latStiffX = 25;
+                latStiffY = 180;
+                frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+            };
+            class l_wheel: n_wheels {
+                boneName = "l_wheel";
+                steering = 0;
+                center = "Wheel_2_center";
+                boundary = "Wheel_2_rim";
+                width = 0.28;
+                maxCompression = 0.1;
+                maxDroop = 0.1;
+                dampingRate = 0.25;
+                suspForceAppPointOffset = "Wheel_2_center";
+                tireForceAppPointOffset = "Wheel_2_center";
+            };
+            class r_wheel: l_wheel {
+                boneName = "r_wheel";
+                side = "right";
+                center = "Wheel_3_center";
+                boundary = "Wheel_3_rim";
+                suspForceAppPointOffset = "Wheel_3_center";
+                tireForceAppPointOffset = "Wheel_3_center";
+            };
+        };
+        class PlateInfos {
+            name = "spz";
+            color[] = {1, 1, 1, 1};
+            plateFont = "RobotoCondensedLight";
+            plateFormat = "TeTeT";
+            plateLetters = "ABCDEFHIKLMOPRSTVXYZ";
+        };
+    };
+    class JS_JC_SU35Wreck: PlaneWreck {
+        scope = 1;
+        author = "John_Spartan & Saul";
+        class Armory {
+            disabled = 1;
+        };
+        model = "\js_jc_su35\JS_JC_SU35_wreck.p3d";
+        typicalCargo[] = {};
+        irTarget = 0;
+        transportAmmo = 0;
+        transportRepair = 0;
+        transportFuel = 0;
+        transportSoldier = 0;
+    };
+    class Ejection_Seat_Base_F;
+    class Plane_Canopy_Base_F;
+    class JS_JC_SU35_canopy: Plane_Canopy_Base_F {
+        author = "John_Spartan & Saul";
+        displayName = "Su-35S Canopy";
+        model = "\js_jc_su35\JS_JC_SU35_canopy.p3d";
+        scope = 1;
+    };
+    class JS_JC_SU35ejection_seat: Ejection_Seat_Base_F {
+        crew = "JS_JC_OPFOR_Pilot";
+        cargoAction[] = {"Pilot_Plane_Fighter_Ejection"};
+        driverAction = "Pilot_Plane_Fighter_Ejection";
+        scope = 1;
+        side = 0;
+        faction = "OPF_F";
+        author = "John_Spartan & Saul";
+        displayName = "SU-35S Ejection Seat";
+        Icon = "iconParachute";
+        picture = "\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa";
+        model = "\js_jc_su35\JS_JC_SU35_ejection_seat.p3d";
+    };
+    class Logic;
+    class Module_F: Logic {
+        class ArgumentsBaseUnits {
+            class Units;
+        };
+        class ModuleDescription {
+            class AnyBrain;
+        };
+    };
+    class jsjc_Module_su35_init: Module_F {
+        scope = 1;
+        displayName = "SU35 - INIT/SETUP";
+        icon = "\js_jc_su35\ui\icon_su35_module_ca.paa";
+        category = "ObjectModifiers";
+        function = "js_jc_fnc_SU35_Init_module";
+        functionPriority = 10;
+        isGlobal = 0;
+        isTriggerActivated = 0;
+        isDisposable = 0;
+        curatorInfoType = "RscDisplayAttributeModule_su35_init";
+        class Arguments: ArgumentsBaseUnits {
+            class Units {
+                displayName = "$STR_A3_CfgVehicles_Module_F_ArgumentsBaseUnits_Units_0";
+                description = "";
+                class values {
+                    class Objects {
+                        name = "$STR_A3_CfgVehicles_Module_F_ArgumentsBaseUnits_Units_values_Objects_0";
+                        value = 0;
+                        default = 1;
+                    };
+                };
+            };
+            class Paintscheme_init {
+                displayName = "Paintscheme";
+                description = "Possible predifined paintschemes";
+                typeName = "NUMBER";
+                class values {
+                    class CSAT_D {
+                        name = "CSAT Desert HEX camo";
+                        value = 1;
+                        default = 1;
+                    };
+                    class CSAT_G {
+                        name = "CSAT Grey HEX camo";
+                        value = 2;
+                    };
+                    class RUS_SKY {
+                        name = "Russian Airforce GREY DIGITAL camo";
+                        value = 3;
+                    };
+                    class RUS_DIGITAL {
+                        name = "Russian Airforce SKY BLUE camo";
+                        value = 4;
+                    };
+                };
+            };
+            class Weapon_station_1_init {
+                displayName = "Weapon Pylon 1";
+                description = "Weapon equipped on station 1";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                        default = 1;
+                    };
+                };
+            };
+            class Weapon_station_2_init {
+                displayName = "Weapon Pylon 2";
+                description = "Weapon equipped on station 2";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                        default = 1;
+                    };
+                };
+            };
+            class Weapon_station_3_init {
+                displayName = "Weapon Pylon 3";
+                description = "Weapon equipped on station 3";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                };
+            };
+            class Weapon_station_4_init {
+                displayName = "Weapon Pylon 4";
+                description = "Weapon equipped on station 4";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                };
+            };
+            class Weapon_station_5_init {
+                displayName = "Weapon Pylon 5";
+                description = "Weapon equipped on station 5";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                    class S8_ROCKETS_x2 {
+                        name = "S8 Rockets[x2]";
+                        value = "js_m_su35_S8_rocketpod_x2";
+                    };
+                };
+            };
+            class Weapon_station_6_init {
+                displayName = "Weapon Pylon 6";
+                description = "Weapon equipped on station 6";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                    class S8_ROCKETS_x2 {
+                        name = "S8 Rockets[x2]";
+                        value = "js_m_su35_S8_rocketpod_x2";
+                    };
+                };
+            };
+            class Weapon_station_7_init {
+                displayName = "Weapon Pylon 7";
+                description = "Weapon equipped on station 7";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                        default = 1;
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                };
+            };
+            class Weapon_station_8_init {
+                displayName = "Weapon Pylon 8";
+                description = "Weapon equipped on station 8";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                        default = 1;
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                };
+            };
+            class Weapon_station_9_init {
+                displayName = "Weapon Pylon 9";
+                description = "Weapon equipped on station 9";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                    class S8_ROCKETS_x1 {
+                        name = "S8 Rockets[x1]";
+                        value = "js_m_su35_S8_rocketpod_x1";
+                    };
+                };
+            };
+            class Weapon_station_10_init {
+                displayName = "Weapon Pylon 10";
+                description = "Weapon equipped on station 10";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                        default = 1;
+                    };
+                    class S8_ROCKETS_x1 {
+                        name = "S8 Rockets[x1]";
+                        value = "js_m_su35_S8_rocketpod_x1";
+                    };
+                };
+            };
+            class Weapon_station_11_init {
+                displayName = "Weapon Pylon 11";
+                description = "Weapon equipped on station 11";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                        default = 1;
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                };
+            };
+            class Weapon_station_12_init {
+                displayName = "Weapon Pylon 12";
+                description = "Weapon equipped on station 12";
+                typeName = "STRING";
+                class values {
+                    class EMPTY {
+                        name = "EMPTY";
+                        value = "js_m_su35_empty";
+                    };
+                    class R_73_ARCHER {
+                        name = "R-73 Archer";
+                        value = "js_m_su35_r73_x1";
+                    };
+                    class R_77_ADDER {
+                        name = "R-77 Adder";
+                        value = "js_m_su35_r77_x1";
+                    };
+                    class KH_29_KEDGE {
+                        name = "KH-29 Kedge";
+                        value = "js_m_su35_kh29_x1";
+                        default = 1;
+                    };
+                    class KAB_500_L {
+                        name = "KAB-500L";
+                        value = "js_m_su35_kab500l_x1";
+                    };
+                };
+            };
+            class Hull_number_1 {
+                displayName = "Hull number [1st digit]";
+                description = "Hull number [1st digit]";
+                typeName = "NUMBER";
+                class values {
+                    class 10 {
+                        name = "RANDOM";
+                        value = 10;
+                        default = 1;
+                    };
+                    class 0 {
+                        name = "0";
+                        value = 0;
+                    };
+                    class 1 {
+                        name = "1";
+                        value = 1;
+                    };
+                    class 2 {
+                        name = "2";
+                        value = 2;
+                    };
+                    class 3 {
+                        name = "3";
+                        value = 3;
+                    };
+                    class 4 {
+                        name = "4";
+                        value = 4;
+                    };
+                    class 5 {
+                        name = "5";
+                        value = 5;
+                    };
+                    class 6 {
+                        name = "6";
+                        value = 6;
+                    };
+                    class 7 {
+                        name = "7";
+                        value = 7;
+                    };
+                    class 8 {
+                        name = "8";
+                        value = 8;
+                    };
+                    class 9 {
+                        name = "9";
+                        value = 9;
+                    };
+                };
+            };
+            class Hull_number_2 {
+                displayName = "Hull number [2nd digit]";
+                description = "Hull number [2nd digit]";
+                typeName = "NUMBER";
+                class values {
+                    class 10 {
+                        name = "RANDOM";
+                        value = 10;
+                        default = 1;
+                    };
+                    class 0 {
+                        name = "0";
+                        value = 0;
+                    };
+                    class 1 {
+                        name = "1";
+                        value = 1;
+                    };
+                    class 2 {
+                        name = "2";
+                        value = 2;
+                    };
+                    class 3 {
+                        name = "3";
+                        value = 3;
+                    };
+                    class 4 {
+                        name = "4";
+                        value = 4;
+                    };
+                    class 5 {
+                        name = "5";
+                        value = 5;
+                    };
+                    class 6 {
+                        name = "6";
+                        value = 6;
+                    };
+                    class 7 {
+                        name = "7";
+                        value = 7;
+                    };
+                    class 8 {
+                        name = "8";
+                        value = 8;
+                    };
+                    class 9 {
+                        name = "9";
+                        value = 9;
+                    };
+                };
+            };
+            class Hull_number_3 {
+                displayName = "Hull number [3rd digit]";
+                description = "Hull number [3rd digit]";
+                typeName = "NUMBER";
+                class values {
+                    class 10 {
+                        name = "RANDOM";
+                        value = 10;
+                        default = 1;
+                    };
+                    class 0 {
+                        name = "0";
+                        value = 0;
+                    };
+                    class 1 {
+                        name = "1";
+                        value = 1;
+                    };
+                    class 2 {
+                        name = "2";
+                        value = 2;
+                    };
+                    class 3 {
+                        name = "3";
+                        value = 3;
+                    };
+                    class 4 {
+                        name = "4";
+                        value = 4;
+                    };
+                    class 5 {
+                        name = "5";
+                        value = 5;
+                    };
+                    class 6 {
+                        name = "6";
+                        value = 6;
+                    };
+                    class 7 {
+                        name = "7";
+                        value = 7;
+                    };
+                    class 8 {
+                        name = "8";
+                        value = 8;
+                    };
+                    class 9 {
+                        name = "9";
+                        value = 9;
+                    };
+                };
+            };
+        };
+        class ModuleDescription: ModuleDescription {
+            description = "Su-35 Flanker E respawn/init module";
+            sync[] = {"JS_JC_SU35"};
+            class LocationArea_F {
+                description[] = {"A TEST", "B TEST"};
+                position = 1;
+                direction = 1;
+                optional = 1;
+                duplicate = 1;
+                synced[] = {"JS_JC_SU35"};
+            };
+            class JS_JC_SU35 {
+                description = "Su-35 Flanker E";
+                displayName = "Su-35 Flanker E";
+                icon = "\js_jc_su35\UI\su35_icon.paa";
+                position = 1;
+                direction = 1;
+                optional = 1;
+                duplicate = 1;
+                side = 0;
+            };
+        };
+    };
 };
-class CfgNonAIVehicles
-{
-	class ProxyDriver;
-	class ProxyWeapon;
-	class Proxym_kh29: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_kh29";
-		simulation="pylonpod";
-	};
-	class Proxym_r73: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_r73";
-		simulation="pylonpod";
-	};
-	class Proxym_r77: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_r77";
-		simulation="pylonpod";
-	};
-	class Proxym_kab500l: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_kab500l";
-		simulation="pylonpod";
-	};
-	class Proxym_wing_tank: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_wing_tank";
-		simulation="pylonpod";
-	};
-	class Proxym_buddy_pod: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_buddy_pod";
-		simulation="pylonpod";
-	};
-	class Proxym_s8_launcher_x1: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_s8_launcher_x1";
-		simulation="pylonpod";
-	};
-	class Proxym_s8_launcher_x2: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_s8_launcher_x2";
-		simulation="pylonpod";
-	};
-	class Proxym_empty: ProxyWeapon
-	{
-		model="\js_jc_su35\stores\m_empty";
-		simulation="pylonpod";
-	};
+class CfgNonAIVehicles {
+    class ProxyDriver;
+    class ProxyWeapon;
+    class Proxym_kh29: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_kh29";
+        simulation = "pylonpod";
+    };
+    class Proxym_r73: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_r73";
+        simulation = "pylonpod";
+    };
+    class Proxym_r77: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_r77";
+        simulation = "pylonpod";
+    };
+    class Proxym_kab500l: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_kab500l";
+        simulation = "pylonpod";
+    };
+    class Proxym_wing_tank: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_wing_tank";
+        simulation = "pylonpod";
+    };
+    class Proxym_buddy_pod: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_buddy_pod";
+        simulation = "pylonpod";
+    };
+    class Proxym_s8_launcher_x1: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_s8_launcher_x1";
+        simulation = "pylonpod";
+    };
+    class Proxym_s8_launcher_x2: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_s8_launcher_x2";
+        simulation = "pylonpod";
+    };
+    class Proxym_empty: ProxyWeapon {
+        model = "\js_jc_su35\stores\m_empty";
+        simulation = "pylonpod";
+    };
 };
