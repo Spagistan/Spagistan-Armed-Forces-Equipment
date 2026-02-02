@@ -1,6 +1,5 @@
 
-//class rhs_weap_ak74m;
-//class rhs_weap_ak74m_gp25;
+
 class rhs_weap_rpk74m;
 class rhs_weap_ak103;
 class rhs_weap_ak103_npz;
