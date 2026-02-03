@@ -1,8 +1,8 @@
 class XtdGearInfos {
     class CfgWeapons {
-		
+
 		//Weapons Start
-		
+
 		//HKG36KV
 		class rhs_weap_g36kv {
 		model = "HKG36KV_RHS_SAF";
@@ -12,7 +12,7 @@ class XtdGearInfos {
 		model = "HKG36KV_RHS_SAF";
 		UBGL = "AG36";
 		};
-		
+
 		//M21A
 		class rhs_weap_m21a {
 		model = "M21A_RHS_SAF";
@@ -34,7 +34,7 @@ class XtdGearInfos {
 		UBGL = "PBG";
 		Rail = "Yes";
 		};
-		
+
 		//M21S
 		class rhs_weap_m21s {
 		model = "M21S_RHS_SAF";
@@ -44,7 +44,7 @@ class XtdGearInfos {
 		model = "M21S_RHS_SAF";
 		Rail = "Yes";
 		};
-		
+
 		//SCAR-H
 		class rhs_weap_SCARH_STD {
 		model = "SCARH_RHS_SAF";
@@ -61,7 +61,7 @@ class XtdGearInfos {
 		Camo = "Black";
 		Variant = "CQC";
 		};
-		
+
 		class rhs_weap_SCARH_FDE_STD {
 		model = "SCARH_RHS_SAF";
 		Camo = "Tan";
@@ -77,7 +77,7 @@ class XtdGearInfos {
 		Camo = "Tan";
 		Variant = "CQC";
 		};
-		
+
 		//CZ99
 		class rhs_weap_cz99 {
 		model = "CZ99_RHS_SAF";
@@ -87,7 +87,7 @@ class XtdGearInfos {
 		model = "CZ99_RHS_SAF";
 		Camo = "Engraved";
 		};
-		
+
 		//M70
 		class rhs_weap_m70ab2 {
 		model = "M70_RHS_SAF";
@@ -109,12 +109,12 @@ class XtdGearInfos {
 		model = "M70_RHS_SAF";
 		Variant = "M70B3N GL";
 		};
-		
+
 		//Weapons End
-		
-		
+
+
 		//Helmets Start
-		
+
 		//Bandana
 		class rhssaf_bandana_digital {
 		model = "Bandana_RHS_SAF";
@@ -136,7 +136,7 @@ class XtdGearInfos {
 		model = "Bandana_RHS_SAF";
 		Camo = "SMB";
 		};
-		
+
 		//Bandana
 		class rhssaf_beret_para {
 		model = "Beret_RHS_SAF";
@@ -158,7 +158,7 @@ class XtdGearInfos {
 		model = "Beret_RHS_SAF";
 		Camo = "UN";
 		};
-		
+
 		//Booniehat
 		class rhssaf_booniehat_digital {
 		model = "Booniehat_RHS_SAF";
@@ -172,7 +172,7 @@ class XtdGearInfos {
 		model = "Booniehat_RHS_SAF";
 		Camo = "Woodland";
 		};
-		
+
 		//M59/85
 		class rhssaf_helmet_m59_85_nocamo {
 		model = "M5985_RHS_SAF";
@@ -182,8 +182,35 @@ class XtdGearInfos {
 		model = "M5985_RHS_SAF";
 		Camo = "Oakleaf";
 		};
-		
+
 		//M97
+		class S_Helmet_SPAGPAT {
+		model = "M97_RHS_SAF";
+		Camo = "Spagpat";
+		Extras = "None";
+		};
+		class S_Helmet_SPAGPAT_black_ess {
+		model = "M97_RHS_SAF";
+		Camo = "Spagpat";
+		Extras = "ESS Cov";
+		};
+
+		class S_Helmet_SPAGPAT_black_ess_bare {
+		model = "M97_RHS_SAF";
+		Camo = "Spagpat";
+		Extras = "ESS";
+		};
+
+		class S_Helmet_SPAGPAT_tan_ess {
+		model = "M97_RHS_SAF";
+		Camo = "Spagpat";
+		Extras = "Tan ESS Cov";
+		};
+		class S_Helmet_SPAGPAT_tan_ess_bare {
+		model = "M97_RHS_SAF";
+		Camo = "Spagpat";
+		Extras = "Tan ESS";
+		};
 		class rhssaf_helmet_m97_black_nocamo {
 		model = "M97_RHS_SAF";
 		Camo = "Black";
@@ -199,7 +226,7 @@ class XtdGearInfos {
 		Camo = "Black";
 		Extras = "ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_nostrap_blue {
 		model = "M97_RHS_SAF";
 		Camo = "Blue UN";
@@ -208,14 +235,14 @@ class XtdGearInfos {
 		class rhssaf_helmet_m97_nostrap_blue_tan_ess {
 		model = "M97_RHS_SAF";
 		Camo = "Blue UN";
-		Extras = "ESS Cov";
+		Extras = "Tan ESS Cov";
 		};
 		class rhssaf_helmet_m97_nostrap_blue_tan_ess_bare {
 		model = "M97_RHS_SAF";
 		Camo = "Blue UN";
-		Extras = "ESS";
+		Extras = "Tan ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_digital {
 		model = "M97_RHS_SAF";
 		Camo = "Digital WL";
@@ -231,7 +258,7 @@ class XtdGearInfos {
 		Camo = "Digital WL";
 		Extras = "ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_md2camo {
 		model = "M97_RHS_SAF";
 		Camo = "MDU02";
@@ -247,7 +274,7 @@ class XtdGearInfos {
 		Camo = "MDU02";
 		Extras = "ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_oakleaf {
 		model = "M97_RHS_SAF";
 		Camo = "Oakleaf";
@@ -263,23 +290,35 @@ class XtdGearInfos {
 		Camo = "Oakleaf";
 		Extras = "ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_olive_nocamo {
 		model = "M97_RHS_SAF";
 		Camo = "Olive";
 		Extras = "None";
 		};
+		class S_Helmet_Winter
+        {
+            model = "M97_RHS_SAF";
+            Camo = "Winter";
+			Extras = "None";
+        };
 		class rhssaf_helmet_m97_olive_nocamo_black_ess {
 		model = "M97_RHS_SAF";
 		Camo = "Olive";
 		Extras = "ESS Cov";
 		};
+		class S_Helmet_Olive_tan_ess
+        {
+            model = "M97_RHS_SAF";
+            Camo = "Olive";
+            Extras = "Tan ESS Cov";
+        };
 		class rhssaf_helmet_m97_olive_nocamo_black_ess_bare {
 		model = "M97_RHS_SAF";
 		Camo = "Olive";
 		Extras = "ESS";
 		};
-		
+
 		class rhssaf_helmet_m97_woodland {
 		model = "M97_RHS_SAF";
 		Camo = "Woodland";
@@ -295,7 +334,7 @@ class XtdGearInfos {
 		Camo = "Woodland";
 		Extras = "ESS";
 		};
-		
+
 		//M97 Veil
 		class rhssaf_helmet_m97_veil_digital {
 		model = "M97Veil_RHS_SAF";
@@ -312,12 +351,12 @@ class XtdGearInfos {
 		class rhssaf_helmet_m97_veil_woodland {
 		model = "M97Veil_RHS_SAF";
 		Camo = "Woodland";
-		};		
-		
+		};
+
 		//Helmets End
-		
-		//Uniforms Start 
-		
+
+		//Uniforms Start
+
 		//M10
 		class rhssaf_uniform_m10_digital {
 		model = "M10_RHS_SAF";
@@ -343,12 +382,12 @@ class XtdGearInfos {
 		model = "M10_RHS_SAF";
 		Camo = "Oakleaf S";
 		};
-		
-		//Uniforms End 
-		
-		
-		//Vests Start 
-		
+
+		//Uniforms End
+
+
+		//Vests Start
+
 		//PBB M-99T
 		class rhssaf_vest_md99_digital {
 		model = "PBBM99T_RHS_SAF";
@@ -370,7 +409,7 @@ class XtdGearInfos {
 		Camo = "Digi WL";
 		Loadout = "Rifle Rad";
 		};
-		
+
 		class rhssaf_vest_md99_md2camo {
 		model = "PBBM99T_RHS_SAF";
 		Camo = "MDU02";
@@ -391,7 +430,7 @@ class XtdGearInfos {
 		Camo = "MDU02";
 		Loadout = "Rifle Rad";
 		};
-		
+
 		class rhssaf_vest_md99_woodland {
 		model = "PBBM99T_RHS_SAF";
 		Camo = "Woodland";
@@ -412,7 +451,7 @@ class XtdGearInfos {
 		Camo = "Woodland";
 		Loadout = "Rifle Rad";
 		};
-		
+
 		//PBB M-99T
 		class rhssaf_vest_md12_digital {
 		model = "PBBM12_RHS_SAF";
@@ -426,7 +465,7 @@ class XtdGearInfos {
 		model = "PBBM12_RHS_SAF";
 		Camo = "Digi Des";
 		};
-		
+
 		//PBB M-98
 		class rhssaf_vest_md98_digital {
 		model = "PBBM98_RHS_SAF";
@@ -444,49 +483,49 @@ class XtdGearInfos {
 		model = "PBBM98_RHS_SAF";
 		Camo = "WL Alt";
 		};
-		
-		
-		//Vests End 
-		
-		
+
+
+		//Vests End
+
+
     };
-	
+
 	class CfgVehicles {
-		
-		//Backpacks Start 
-		
+
+		//Backpacks Start
+
 		//ALICE
 		class rhssaf_alice_md2camo {
 		model = "ALICE_RHS_SAF";
 		Camo = "MDU02";
-		};		
+		};
 		class rhssaf_alice_smb {
 		model = "ALICE_RHS_SAF";
 		Camo = "SMB";
 		};
-		
+
 		//Kitbag
 		class rhssaf_kitbag_digital {
 		model = "Kitbag_RHS_SAF";
 		Camo = "Digi WL";
-		};	
+		};
 		class rhssaf_kitbag_md2camo {
 		model = "Kitbag_RHS_SAF";
 		Camo = "MDU02";
-		};	
+		};
 		class rhssaf_kitbag_smb {
 		model = "Kitbag_RHS_SAF";
 		Camo = "SMB";
-		};	
-		
-		//Backpacks End 
-		
+		};
+
+		//Backpacks End
+
 	};
 	/*
 	class CfgGlasses {
-		
-		
-		
+
+
+
 	};
 	*/
 };

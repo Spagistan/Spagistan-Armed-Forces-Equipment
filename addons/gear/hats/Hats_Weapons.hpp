@@ -21,7 +21,7 @@ class S_Helmet_SPAGPAT: rhssaf_helmet_m97_woodland
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (SPAGPAT)";
+  displayName = "M97 (SPAGPAT)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co)};
   descriptionShort = "Spagistan Helmet";
 };
@@ -32,7 +32,7 @@ class S_Helmet_SPAGPAT_black_ess: rhssaf_helmet_m97_woodland_black_ess
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (SPAGPAT/Black ESS)";
+  displayName = "M97 (SPAGPAT/Black ESS)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co), QPATHTOF(data\hats\rhssaf_m97_ess_black_co)};
 };
 
@@ -42,7 +42,7 @@ class S_Helmet_SPAGPAT_tan_ess: rhssaf_helmet_m97_woodland_black_ess
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (SPAGPAT/Tan ESS)";
+  displayName = "M97 (Spagpat/Tan ESS)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
 };
 
@@ -52,7 +52,7 @@ class S_Helmet_SPAGPAT_tan_ess_bare: rhssaf_helmet_m97_woodland_black_ess_bare
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (Spagpat/Tan ESS/Bare)";
+  displayName = "M97 (Spagpat/Tan ESS/Bare)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
 };
 
@@ -62,7 +62,7 @@ class S_Helmet_SPAGPAT_black_ess_bare: rhssaf_helmet_m97_woodland_black_ess_bare
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (Spagpat/Black ESS/Bare)";
+  displayName = "M97 (Spagpat/Black ESS/Bare)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co), QPATHTOF(data\hats\rhssaf_m97_ess_black_co)};
 };
 
@@ -72,7 +72,7 @@ class S_Helmet_Olive_tan_ess: rhssaf_helmet_m97_olive_nocamo_black_ess
   scopeArsenal = 2;
   author = "Red Hammer Studios";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (Olive/Tan ESS)";
+  displayName = "M97 (Olive/Tan ESS)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_nocamo_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
 };
 
@@ -81,9 +81,9 @@ class S_Helmet_Winter: rhssaf_helmet_m97_olive_nocamo
 {
   scope = 2;
   scopeArsenal = 2;
-  author = "Red Hammer Studios";
+  author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "Combat Helm (Winter)";
+  displayName = "M97 (Winter)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_winter_co)};
 };
 

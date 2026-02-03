@@ -1,27 +1,23 @@
-class rhs_weap_ak74m;
-class rhs_weap_ak74m_gp25;
-class rhs_weap_rpk74m;
-/*
-class rhs_weap_ak103;
-class rhs_weap_ak103_npz;
-class rhs_weap_ak103_folded;
-class rhs_weap_ak103_gp25;
-class rhs_weap_ak103_gp25_npz;
-class rhs_weap_ak103_zenitco01;
-class rhs_weap_ak103_zenitco01_folded;
-class rhs_weap_ak103_zenitco01_npz;
-class rhs_weap_ak103_zenitco01_b33;
-class rhs_weap_ak104;
-class rhs_weap_ak104_npz;
-class rhs_weap_ak104_folded;
-class rhs_weap_ak104_zenitco01: rhs_weap_ak104
+class CfgPatches
 {
+	class simpel_rhs_ak_retex
+	{
+		requiredAddons[]=
+		{
+			"rhs_weapons",
+			"rhs_c_weapons"
+		};
+		units[]={};
+		weapons[]={};
+		requiredVersion=0.1;
+		author="simpel";
+	};
 };
 class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class rhs_weap_ak103
+		class bcb_ak103_spray
 		{
 			label="";
 			author="";
@@ -41,40 +37,40 @@ class XtdGearModels
 				};
 			};
 		};
-		class bcb_ak103_npz_spray: rhs_weap_ak103
+		class bcb_ak103_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak103_gp25_spray: rhs_weap_ak103
+		class bcb_ak103_gp25_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak103_gp25_npz_spray: rhs_weap_ak103
+		class bcb_ak103_gp25_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak104_spray: rhs_weap_ak103
+		class bcb_ak104_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak104_npz_spray: rhs_weap_ak103
+		class bcb_ak104_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak105_spray: rhs_weap_ak103
+		class bcb_ak105_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak105_npz_spray: rhs_weap_ak103
+		class bcb_ak105_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak74m_spray: rhs_weap_ak103
+		class bcb_ak74m_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak74m_npz_spray: rhs_weap_ak103
+		class bcb_ak74m_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak74m_gp25_spray: rhs_weap_ak103
+		class bcb_ak74m_gp25_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak74m_gp25_npz_spray: rhs_weap_ak103
+		class bcb_ak74m_gp25_npz_spray: bcb_ak103_spray
 		{
 		};
-		class bcb_ak103_zenitco01_spray: rhs_weap_ak103
+		class bcb_ak103_zenitco01_spray: bcb_ak103_spray
 		{
 			class Material
 			{
@@ -124,8 +120,24 @@ class XtdGearModels
 		};
 	};
 };
-
-class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
+class CfgWeapons
+{
+	class rhs_weap_ak103;
+	class rhs_weap_ak103_npz;
+	class rhs_weap_ak103_folded;
+	class rhs_weap_ak103_gp25;
+	class rhs_weap_ak103_gp25_npz;
+	class rhs_weap_ak103_zenitco01;
+	class rhs_weap_ak103_zenitco01_folded;
+	class rhs_weap_ak103_zenitco01_npz;
+	class rhs_weap_ak103_zenitco01_b33;
+	class rhs_weap_ak104;
+	class rhs_weap_ak104_npz;
+	class rhs_weap_ak104_folded;
+	class rhs_weap_ak104_zenitco01: rhs_weap_ak104
+	{
+	};
+	class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 	{
 		scopeArsenal=2;
 		displayName="AK-104 (Zenitco/B-13)";
@@ -177,9 +189,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK103_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_tan";
 		rhs_npz="bcb_weap_ak103_zenitco01_tan_npz";
@@ -203,9 +215,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK103_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_tan";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_tan_grip1";
@@ -259,9 +271,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK103_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_tan_npz";
@@ -302,9 +314,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK103_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -348,9 +360,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK104_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_tan_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_tan_grip1";
@@ -391,9 +403,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK104_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_tan_npz";
@@ -434,9 +446,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK104_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -480,9 +492,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK105_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_tan_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_tan_grip1";
@@ -523,9 +535,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK105_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_tan_npz";
@@ -566,9 +578,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK105_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -612,9 +624,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK74m_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_tan_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_tan_grip1";
@@ -655,9 +667,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK74m_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_tan_npz";
@@ -698,9 +710,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		{
 			"rhsafrf\addons\rhs_weapons\texture\AK74m_co.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -742,18 +754,18 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_folded_t_spray";
 		rhs_npz="bcb_weap_ak103_t_spray_npz";
 		baseWeapon="bcb_weap_ak103_t_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
+			model="bcb_ak103_spray";
 			Material="DESERT 1";
 		};
 	};
@@ -765,11 +777,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_t_spray";
 		baseWeapon="bcb_weap_ak103_npz_t_spray";
@@ -787,11 +799,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_t_spray";
 		baseWeapon="bcb_weap_ak103_folded_t_spray";
@@ -804,11 +816,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_npz_t_spray";
 		baseWeapon="bcb_weap_ak103_gp25_t_spray";
@@ -826,11 +838,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_t_spray";
 		baseWeapon="bcb_weap_ak103_gp25_npz_t_spray";
@@ -848,11 +860,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_t_spray";
 		rhs_npz="bcb_weap_ak103_zenitco01_t_spray_npz";
@@ -874,11 +886,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_t_spray";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_t_spray_grip1";
@@ -930,11 +942,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_t_spray_npz";
@@ -973,11 +985,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-103 (Zenitco/B-33, Desert Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -1019,11 +1031,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_folded_t_spray";
 		rhs_npz="bcb_weap_ak104_t_spray_npz";
@@ -1042,11 +1054,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_t_spray";
 		baseWeapon="bcb_weap_ak104_npz_t_spray";
@@ -1064,11 +1076,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_t_spray";
 		baseWeapon="bcb_weap_ak104_folded_t_spray";
@@ -1081,11 +1093,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_t_spray_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_t_spray_grip1";
@@ -1124,11 +1136,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_t_spray_npz";
@@ -1167,11 +1179,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-104 (Zenitco/B-33, Desert Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -1213,11 +1225,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_folded_t_spray";
 		rhs_npz="bcb_weap_ak105_t_spray_npz";
@@ -1236,11 +1248,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_t_spray";
 		baseWeapon="bcb_weap_ak105_npz_t_spray";
@@ -1258,11 +1270,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_t_spray";
 		baseWeapon="bcb_weap_ak105_folded_t_spray";
@@ -1275,11 +1287,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_t_spray_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_t_spray_grip1";
@@ -1318,11 +1330,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_t_spray_npz";
@@ -1361,11 +1373,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-105 (Zenitco/B-33, Desert Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -1407,11 +1419,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_folded_t_spray";
 		rhs_npz="bcb_weap_ak74m_t_spray_npz";
@@ -1430,11 +1442,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_t_spray";
 		baseWeapon="bcb_weap_ak74m_npz_t_spray";
@@ -1452,11 +1464,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_t_spray";
 		baseWeapon="bcb_weap_ak74m_folded_t_spray";
@@ -1469,11 +1481,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_npz_t_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_t_spray";
@@ -1491,11 +1503,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_t_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_npz_t_spray";
@@ -1513,11 +1525,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_t_spray_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_t_spray_grip1";
@@ -1556,11 +1568,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_t_spray_npz";
@@ -1599,11 +1611,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-74M (Zenitco/B-33, Desert Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -1645,18 +1657,18 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_folded_t2_spray";
 		rhs_npz="bcb_weap_ak103_t2_spray_npz";
 		baseWeapon="bcb_weap_ak103_t2_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
+			model="bcb_ak103_spray";
 			Material="DESERT 2";
 		};
 	};
@@ -1668,11 +1680,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_t2_spray";
 		baseWeapon="bcb_weap_ak103_npz_t2_spray";
@@ -1690,11 +1702,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_t2_spray";
 		baseWeapon="bcb_weap_ak103_folded_t2_spray";
@@ -1707,11 +1719,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_npz_t2_spray";
 		baseWeapon="bcb_weap_ak103_gp25_t2_spray";
@@ -1729,11 +1741,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_t2_spray";
 		baseWeapon="bcb_weap_ak103_gp25_npz_t2_spray";
@@ -1751,11 +1763,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_t2_spray";
 		rhs_npz="bcb_weap_ak103_zenitco01_t2_spray_npz";
@@ -1777,11 +1789,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_t2_spray";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_t2_spray_grip1";
@@ -1833,11 +1845,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_t2_spray_npz";
@@ -1876,11 +1888,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-103 (Zenitco/B-33, Desert Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -1922,11 +1934,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_folded_t2_spray";
 		rhs_npz="bcb_weap_ak104_t2_spray_npz";
@@ -1945,11 +1957,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_t2_spray";
 		baseWeapon="bcb_weap_ak104_npz_t2_spray";
@@ -1967,11 +1979,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_t2_spray";
 		baseWeapon="bcb_weap_ak104_folded_t2_spray";
@@ -1984,11 +1996,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_t2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_t2_spray_grip1";
@@ -2027,11 +2039,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_t2_spray_npz";
@@ -2070,11 +2082,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-104 (Zenitco/B-33, Desert Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -2116,11 +2128,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_folded_t2_spray";
 		rhs_npz="bcb_weap_ak105_t2_spray_npz";
@@ -2139,11 +2151,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_t2_spray";
 		baseWeapon="bcb_weap_ak105_npz_t2_spray";
@@ -2161,11 +2173,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_t2_spray";
 		baseWeapon="bcb_weap_ak105_folded_t2_spray";
@@ -2178,11 +2190,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_t2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_t2_spray_grip1";
@@ -2221,11 +2233,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_t2_spray_npz";
@@ -2264,11 +2276,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-105 (Zenitco/B-33, Desert Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -2310,11 +2322,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_folded_t2_spray";
 		rhs_npz="bcb_weap_ak74m_t2_spray_npz";
@@ -2333,11 +2345,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_t2_spray";
 		baseWeapon="bcb_weap_ak74m_npz_t2_spray";
@@ -2355,11 +2367,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_t2_spray";
 		baseWeapon="bcb_weap_ak74m_folded_t2_spray";
@@ -2372,11 +2384,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_npz_t2_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_t2_spray";
@@ -2394,11 +2406,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_t2_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_npz_t2_spray";
@@ -2416,11 +2428,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_t2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_t2_spray_grip1";
@@ -2459,11 +2471,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_t2_spray_npz";
@@ -2502,11 +2514,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-74M (Zenitco/B-33, Desert Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -2548,18 +2560,18 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_folded_t3_spray";
 		rhs_npz="bcb_weap_ak103_t3_spray_npz";
 		baseWeapon="bcb_weap_ak103_t3_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
+			model="bcb_ak103_spray";
 			Material="DESERT 3";
 		};
 	};
@@ -2571,11 +2583,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_t3_spray";
 		baseWeapon="bcb_weap_ak103_npz_t3_spray";
@@ -2593,11 +2605,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_t3_spray";
 		baseWeapon="bcb_weap_ak103_folded_t3_spray";
@@ -2610,11 +2622,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_npz_t3_spray";
 		baseWeapon="bcb_weap_ak103_gp25_t3_spray";
@@ -2632,11 +2644,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_t3_spray";
 		baseWeapon="bcb_weap_ak103_gp25_npz_t3_spray";
@@ -2654,11 +2666,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_t3_spray";
 		rhs_npz="bcb_weap_ak103_zenitco01_t3_spray_npz";
@@ -2680,11 +2692,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_t3_spray";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_t3_spray_grip1";
@@ -2736,11 +2748,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_t3_spray_npz";
@@ -2779,11 +2791,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-103 (Zenitco/B-33, Desert Spray 3)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -2825,11 +2837,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_folded_t3_spray";
 		rhs_npz="bcb_weap_ak104_t3_spray_npz";
@@ -2848,11 +2860,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_t3_spray";
 		baseWeapon="bcb_weap_ak104_npz_t3_spray";
@@ -2870,11 +2882,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_t3_spray";
 		baseWeapon="bcb_weap_ak104_folded_t3_spray";
@@ -2887,11 +2899,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_t3_spray_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_t3_spray_grip1";
@@ -2930,11 +2942,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_t3_spray_npz";
@@ -2973,11 +2985,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-104 (Zenitco/B-33, Desert Spray 3)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -3019,11 +3031,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_folded_t3_spray";
 		rhs_npz="bcb_weap_ak105_t3_spray_npz";
@@ -3042,11 +3054,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_t3_spray";
 		baseWeapon="bcb_weap_ak105_npz_t3_spray";
@@ -3064,11 +3076,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_t3_spray";
 		baseWeapon="bcb_weap_ak105_folded_t3_spray";
@@ -3081,11 +3093,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_t3_spray_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_t3_spray_grip1";
@@ -3124,11 +3136,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_t3_spray_npz";
@@ -3167,11 +3179,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-105 (Zenitco/B-33, Desert Spray 3)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -3213,11 +3225,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_folded_t3_spray";
 		rhs_npz="bcb_weap_ak74m_t3_spray_npz";
@@ -3236,11 +3248,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_t3_spray";
 		baseWeapon="bcb_weap_ak74m_npz_t3_spray";
@@ -3258,11 +3270,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_t3_spray";
 		baseWeapon="bcb_weap_ak74m_folded_t3_spray";
@@ -3275,11 +3287,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_npz_t3_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_t3_spray";
@@ -3297,11 +3309,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_t3_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_npz_t3_spray";
@@ -3319,11 +3331,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_t3_spray_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_t3_spray_grip1";
@@ -3362,11 +3374,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_t3_spray_npz";
@@ -3405,11 +3417,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-74M (Zenitco/B-33, Desert Spray 3)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_t3_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_t3_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_t3_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_t3_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_t3_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_t3_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -3451,18 +3463,18 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_folded_w_spray";
 		rhs_npz="bcb_weap_ak103_w_spray_npz";
 		baseWeapon="bcb_weap_ak103_w_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
+			model="bcb_ak103_spray";
 			Material="WOODLAND 1";
 		};
 	};
@@ -3474,11 +3486,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_w_spray";
 		baseWeapon="bcb_weap_ak103_npz_w_spray";
@@ -3496,11 +3508,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_w_spray";
 		baseWeapon="bcb_weap_ak103_folded_w_spray";
@@ -3513,11 +3525,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_npz_w_spray";
 		baseWeapon="bcb_weap_ak103_gp25_w_spray";
@@ -3535,11 +3547,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_w_spray";
 		baseWeapon="bcb_weap_ak103_gp25_npz_w_spray";
@@ -3557,11 +3569,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_w_spray";
 		rhs_npz="bcb_weap_ak103_zenitco01_w_spray_npz";
@@ -3583,11 +3595,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_w_spray";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_w_spray_grip1";
@@ -3639,11 +3651,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_w_spray_npz";
@@ -3682,11 +3694,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-103 (Zenitco/B-33, Woodland Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -3728,11 +3740,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_folded_w_spray";
 		rhs_npz="bcb_weap_ak104_w_spray_npz";
@@ -3751,11 +3763,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_w_spray";
 		baseWeapon="bcb_weap_ak104_npz_w_spray";
@@ -3773,11 +3785,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_w_spray";
 		baseWeapon="bcb_weap_ak104_folded_w_spray";
@@ -3790,11 +3802,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_w_spray_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_w_spray_grip1";
@@ -3833,11 +3845,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_w_spray_npz";
@@ -3876,11 +3888,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-104 (Zenitco/B-33, Woodland Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -3922,11 +3934,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_folded_w_spray";
 		rhs_npz="bcb_weap_ak105_w_spray_npz";
@@ -3945,11 +3957,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_w_spray";
 		baseWeapon="bcb_weap_ak105_npz_w_spray";
@@ -3967,11 +3979,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_w_spray";
 		baseWeapon="bcb_weap_ak105_folded_w_spray";
@@ -3984,11 +3996,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_w_spray_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_w_spray_grip1";
@@ -4027,11 +4039,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_w_spray_npz";
@@ -4070,11 +4082,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-105 (Zenitco/B-33, Woodland Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -4116,11 +4128,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_folded_w_spray";
 		rhs_npz="bcb_weap_ak74m_w_spray_npz";
@@ -4139,11 +4151,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_w_spray";
 		baseWeapon="bcb_weap_ak74m_npz_w_spray";
@@ -4161,11 +4173,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_w_spray";
 		baseWeapon="bcb_weap_ak74m_folded_w_spray";
@@ -4178,11 +4190,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_npz_w_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_w_spray";
@@ -4200,11 +4212,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_w_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_npz_w_spray";
@@ -4222,11 +4234,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_w_spray_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_w_spray_grip1";
@@ -4265,11 +4277,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_w_spray_npz";
@@ -4308,11 +4320,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-74M (Zenitco/B-33, Woodland Spray 1)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -4354,18 +4366,18 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_folded_w2_spray";
 		rhs_npz="bcb_weap_ak103_w2_spray_npz";
 		baseWeapon="bcb_weap_ak103_w2_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
+			model="bcb_ak103_spray";
 			Material="WOODLAND 2";
 		};
 	};
@@ -4377,11 +4389,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_w2_spray";
 		baseWeapon="bcb_weap_ak103_npz_w2_spray";
@@ -4399,11 +4411,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_w2_spray";
 		baseWeapon="bcb_weap_ak103_folded_w2_spray";
@@ -4416,11 +4428,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_npz_w2_spray";
 		baseWeapon="bcb_weap_ak103_gp25_w2_spray";
@@ -4438,11 +4450,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak103_gp25_w2_spray";
 		baseWeapon="bcb_weap_ak103_gp25_npz_w2_spray";
@@ -4460,11 +4472,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_w2_spray";
 		rhs_npz="bcb_weap_ak103_zenitco01_w2_spray_npz";
@@ -4486,11 +4498,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_w2_spray";
 		rhs_grip1_change="bcb_weap_ak103_zenitco01_folded_w2_spray_grip1";
@@ -4542,11 +4554,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak103_zenitco01";
 		baseWeapon="bcb_weap_ak103_zenitco01_w2_spray_npz";
@@ -4585,11 +4597,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-103 (Zenitco/B-33, Woodland Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak103_zenitco01_b33";
@@ -4631,11 +4643,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_folded_w2_spray";
 		rhs_npz="bcb_weap_ak104_w2_spray_npz";
@@ -4654,11 +4666,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_w2_spray";
 		baseWeapon="bcb_weap_ak104_npz_w2_spray";
@@ -4676,11 +4688,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak104_w2_spray";
 		baseWeapon="bcb_weap_ak104_folded_w2_spray";
@@ -4693,11 +4705,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak104_zenitco01_w2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak104_zenitco01_w2_spray_grip1";
@@ -4736,11 +4748,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak104_zenitco01";
 		baseWeapon="bcb_weap_ak104_zenitco01_w2_spray_npz";
@@ -4779,11 +4791,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-104 (Zenitco/B-33, Woodland Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak104_zenitco01_b33";
@@ -4825,11 +4837,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_folded_w2_spray";
 		rhs_npz="bcb_weap_ak105_w2_spray_npz";
@@ -4848,11 +4860,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_w2_spray";
 		baseWeapon="bcb_weap_ak105_npz_w2_spray";
@@ -4870,11 +4882,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak105_w2_spray";
 		baseWeapon="bcb_weap_ak105_folded_w2_spray";
@@ -4887,11 +4899,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak105_zenitco01_w2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak105_zenitco01_w2_spray_grip1";
@@ -4930,11 +4942,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak105_zenitco01";
 		baseWeapon="bcb_weap_ak105_zenitco01_w2_spray_npz";
@@ -4973,11 +4985,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-105 (Zenitco/B-33, Woodland Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak105_zenitco01_b33";
@@ -5019,11 +5031,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_folded_w2_spray";
 		rhs_npz="bcb_weap_ak74m_w2_spray_npz";
@@ -5042,11 +5054,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_w2_spray";
 		baseWeapon="bcb_weap_ak74m_npz_w2_spray";
@@ -5064,11 +5076,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_fold="bcb_weap_ak74m_w2_spray";
 		baseWeapon="bcb_weap_ak74m_folded_w2_spray";
@@ -5081,11 +5093,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_npz_w2_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_w2_spray";
@@ -5103,11 +5115,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_gp25_w2_spray";
 		baseWeapon="bcb_weap_ak74m_gp25_npz_w2_spray";
@@ -5125,11 +5137,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		author="simpel";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="bcb_weap_ak74m_zenitco01_w2_spray_npz";
 		rhs_grip1_change="bcb_weap_ak74m_zenitco01_w2_spray_grip1";
@@ -5168,11 +5180,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="rhs_weap_ak74m_zenitco01";
 		baseWeapon="bcb_weap_ak74m_zenitco01_w2_spray_npz";
@@ -5211,11 +5223,11 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		displayName="AK-74M (Zenitco/B-33, Woodland Spray 2)";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\weapons\ak_shared\ak104_w2_co.paa),
-			QPATHTOF(data\weapons\ak_shared\ak105_barrel_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_w2_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_w2_co.paa)
+			"simpel_rhs_ak_retex\data\ak_shared\ak104_w2_co.paa",
+			"simpel_rhs_ak_retex\data\ak_shared\ak105_barrel_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_01_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_zenitko_02_w2_co.paa",
+			"simpel_rhs_ak_retex\data\zenitco\rhs_b33_w2_co.paa"
 		};
 		rhs_npz="";
 		weaponInfoType="rhs_rscOptics_ak74m_zenitco01_b33";
@@ -5249,43 +5261,9 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 			"\rhsafrf\addons\rhs_c_weapons\anims\rhs_hand_akmr_afg.rtm"
 		};
 	};
-
-//Spag stuff_________________________________________________________________________________________
-*/
-class S_weap_ak74m_ip78: rhs_weap_ak74m {
-    class LinkedItems {
-        class LinkedItemsOptic {
-            slot = "CowsSlot";
-            item = "rhs_acc_1p78";
-        };
-        class LinkedItemsMuzzle {
-            slot = "MuzzleSlot";
-            item = "rhs_acc_dtk";
-        };
-    };
 };
-class S_weap_ak74m_gp25_ip78: rhs_weap_ak74m_gp25 {
-    class LinkedItems {
-        class LinkedItemsOptic {
-            slot = "CowsSlot";
-            item = "rhs_acc_1p78";
-        };
-        class LinkedItemsMuzzle {
-            slot = "MuzzleSlot";
-            item = "rhs_acc_dtk";
-        };
-    };
-};
-
-class S_weap_rpk_ip78: rhs_weap_rpk74m {
-    class LinkedItems {
-        class LinkedItemsOptic {
-            slot = "CowsSlot";
-            item = "rhs_acc_1p78";
-        };
-        class LinkedItemsMuzzle {
-            slot = "MuzzleSlot";
-            item = "rhs_acc_dtk";
-        };
-    };
+class cfgMods
+{
+	author="simpel";
+	timepacked="1769447217";
 };
