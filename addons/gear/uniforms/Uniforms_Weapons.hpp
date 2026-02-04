@@ -10,7 +10,7 @@ class U_S_Uniform_SPAGPAT: rhssaf_uniform_m10_digital_summer
 	scope = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Spagpat)";
+	displayName = "M10 (Spagpat)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt)}; //this texture defines the texture when the object is on the ground
 	class ItemInfo: UniformItem
@@ -31,14 +31,14 @@ class U_S_Uniform_Telnyashka_SPAGPAT: rhssaf_uniform_m10_digital_summer
 	scopeCurator = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Spagpat/Telnyashka)";
+	displayName = "M10 (Spagpat/Telnyashka)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt) }; //this texture defines the texture when the object is on the ground
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
 		uniformClass = "U_S_TEL_SPAGPAT";
-		//uniformClass = "rhssaf_soldier_army_digital_base"; 
+		//uniformClass = "rhssaf_soldier_army_digital_base";
 		containerClass = "Supply60";
 		mass = 40;
 		scope = 1;
@@ -51,10 +51,10 @@ class U_S_Uniform_Neck_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	scope = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Spagpat/Neck)";
+	displayName = "M10 (Spagpat/Neck)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_shirt)};
-	
+
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -70,10 +70,10 @@ class U_S_Uniform_Winter_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	scope = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Winter/Neck)";
+	displayName = "M10 (Winter/Neck)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_shirt)};
-	
+
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -89,10 +89,10 @@ class U_S_Uniform_Winter_Mix1_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	scope = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Winter, Mixed 1)";
+	displayName = "M10 (Winter, Mixed 1)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_shirt)};
-	
+
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -108,10 +108,10 @@ class U_S_Uniform_Winter_Mix2_SPAGPAT: rhssaf_uniform_m10_digital_desert
 	scope = 2;
 	scopeArsenal = 2;
 	author = "Spagistan Mod Team";
-	displayName = "Combat Uniform (Winter, Mixed 2)";
+	displayName = "M10 (Winter, Mixed 2)";
 	hiddenSelections[] = {"camo","Insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\m10_d_spag_shirt)};
-	
+
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -173,7 +173,7 @@ class U_OG_leader: Uniform_Base
 
 class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
 {
-    displayName="Gorka-R (Spagpat, Mixed)";
+    displayName="Gorka-R (Spagpat/Mixed/Gloves)";
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author = "Spagistan Mod Team";
     scope=2;
@@ -191,7 +191,7 @@ class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
 
 class U_S_Uniform_Gorka_Winter_Mix_SPAGPAT: Uniform_Base
 {
-    displayName="Gorka-R (Winter, Mixed)";
+    displayName="Gorka-R (Winter/Mixed/Gloves)";
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author = "Spagistan Mod Team";
     scope=2;
@@ -209,7 +209,7 @@ class U_S_Uniform_Gorka_Winter_Mix_SPAGPAT: Uniform_Base
 
 class U_S_Uniform_Gorka_Winter_Full_SPAGPAT: Uniform_Base
 {
-    displayName="Gorka-R (Winter)";
+    displayName="Gorka-R (Winter/Gloves)";
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author = "Spagistan Mod Team";
     scope=2;
@@ -227,7 +227,7 @@ class U_S_Uniform_Gorka_Winter_Full_SPAGPAT: Uniform_Base
 
 class U_S_Uniform_Gorka_Full_SPAGPAT: Uniform_Base
 {
-    displayName="Gorka-R (Spagpat)";
+    displayName="Gorka-R (Spagpat/Gloves)";
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author = "Spagistan Mod Team";
     scope=2;
@@ -243,6 +243,78 @@ class U_S_Uniform_Gorka_Full_SPAGPAT: Uniform_Base
     };
 };
 
+//BARE HANDS GORKA
+class U_S_Uniform_Gorka_Hands_SPAGPAT: Uniform_Base
+{
+    displayName="Gorka-R (Spagpat, Mixed)";
+    picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
+    author = "Spagistan Mod Team";
+    scope=2;
+	hiddenSelections[] = {"camo1","Insignia"};
+	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
+	class ItemInfo: UniformItem
+    {
+            uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
+            uniformClass="U_S_Gorka_Hands_SPAGPAT";
+            containerClass="Supply60";
+            mass = 40;
+			scope = 1;
+    };
+};
+
+class U_S_Uniform_Gorka_Winter_Mix_Hands_SPAGPAT: Uniform_Base
+{
+    displayName="Gorka-R (Winter, Mixed)";
+    picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
+    author = "Spagistan Mod Team";
+    scope=2;
+	hiddenSelections[] = {"camo1","Insignia"};
+	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_mix)};
+	class ItemInfo: UniformItem
+    {
+            uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
+            uniformClass="U_S_Gorka_Winter_Mix_Hands_SPAGPAT";
+            containerClass="Supply60";
+            mass = 40;
+			scope = 1;
+    };
+};
+
+class U_S_Uniform_Gorka_Winter_Full_Hands_SPAGPAT: Uniform_Base
+{
+    displayName="Gorka-R (Winter)";
+    picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
+    author = "Spagistan Mod Team";
+    scope=2;
+	hiddenSelections[] = {"camo1","Insignia"};
+	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_full)};
+	class ItemInfo: UniformItem
+    {
+            uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
+            uniformClass="U_S_Gorka_Winter_Full_Hands_SPAGPAT";
+            containerClass="Supply60";
+            mass = 40;
+			scope = 1;
+    };
+};
+
+class U_S_Uniform_Gorka_Full_Hands_SPAGPAT: Uniform_Base
+{
+    displayName="Gorka-R (Spagpat)";
+    picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
+    author = "Spagistan Mod Team";
+    scope=2;
+	hiddenSelections[] = {"camo1","Insignia"};
+	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_full)};
+	class ItemInfo: UniformItem
+    {
+            uniformModel="\rhsafrf\addons\rhs_infantry2\rhs_gorka_base.p3d";
+            uniformClass="U_S_Gorka_Full_Hands_SPAGPAT";
+            containerClass="Supply60";
+            mass = 40;
+			scope = 1;
+    };
+};
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
 //  BACKWARDS COMPATIBILITY

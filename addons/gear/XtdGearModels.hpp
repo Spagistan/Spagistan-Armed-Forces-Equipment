@@ -4,7 +4,7 @@ class xtdGearModels
         {
             class spag_tee
             {
-                label = "Combat Uniform (Spagpat/Tee)";
+                label = "M10 (SPAG/Tee)";
                 options[] = {"Variant"};
                 class Variant
                 {
@@ -17,27 +17,108 @@ class xtdGearModels
             };
             class spag_sweater
             {
-                label = "Combat Uniform (Spagpat/Sweater)";
+                label = "M10 (SPAG/Sweater)";
                 options[] = {"Variant"};
                 class Variant
                 {
                     alwaysSelectable = 1;
                     values[] =
                     {
-                        "Standard", "Winter", "Mixed 1", "Mixed 2"
+                        "Spagpat", "Winter", "Mixed 1", "Mixed 2"
                     };
                 };
             };
             class sporka
             {
-                label = "Gorka-R (Spagpat)";
-                options[] = {"Variant"};
+                label = "Gorka-R (SPAG)";
+                options[] = {"Variant", "Gloves"};
                 class Variant
                 {
                     alwaysSelectable = 1;
                     values[] =
                     {
                         "Full", "Half", "Winter", "Mix"
+                    };
+                };
+                class Gloves
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Yes", "No"
+                    };
+                };
+            };
+
+            class spag_helm
+            {
+                label = "M97 (SPAG)";
+                options[] = {"Camo", "Extras"};
+                class Camo
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Spagpat", "Spagpat Winter"
+                    };
+                };
+                class Extras
+                {
+				    alwaysSelectable = 1;
+				    values[] =
+                    {
+				        "None",
+				        "ESS Cov",
+				        "Tan ESS Cov",
+				        "ESS",
+				        "Tan ESS"
+				    };
+                };
+            };
+            class spag_cap
+            {
+                label = "Patrol Cap (SPAG)";
+                options[] = {"Variant"};
+                class Variant
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Spagpat", "Spagpat Air"
+                    };
+                };
+            };
+            class spag_beret
+            {
+                label = "Beret (SPAG)";
+                options[] = {"Color", "Flash"};
+                class Color
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Green", "Red"
+                    };
+                };
+                class Flash
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Yes", "No"
+                    };
+                };
+            };
+            class spag_vest
+            {
+                label = "M-12 Vest (SPAG)";
+                options[] = {"Variant"};
+                class Variant
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Spagpat", "Spagpat Air"
                     };
                 };
             };
@@ -63,5 +144,21 @@ class xtdGearModels
                     };
                 };
             }; */
+        };
+        class CfgVehicles
+        {
+            class spag_mr3000
+            {
+                label = "MR3000 (SPAG)";
+                options[] = {"Variant"};
+                class Variant
+                {
+                    alwaysSelectable = 1;
+                    values[] =
+                    {
+                        "Spagpat", "Spagpat Air"
+                    };
+                };
+            };
         };
     };

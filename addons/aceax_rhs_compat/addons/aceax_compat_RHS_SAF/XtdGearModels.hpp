@@ -183,7 +183,6 @@ class XtdGearModels {
 			{
 				alwaysSelectable = 1;
 				values[] = {
-				"Spagpat",
 				"Black",
 				"Blue UN",
 				"Digital WL",

@@ -21,7 +21,7 @@ class S_Helmet_SPAGPAT: rhssaf_helmet_m97_woodland
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "M97 (SPAGPAT)";
+  displayName = "M97 (Spagpat)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co)};
   descriptionShort = "Spagistan Helmet";
 };
@@ -32,7 +32,7 @@ class S_Helmet_SPAGPAT_black_ess: rhssaf_helmet_m97_woodland_black_ess
   scopeArsenal = 2;
   author = "Spagistan Mod Team";
   allowedSlots[] = {701,801,901};
-  displayName = "M97 (SPAGPAT/Black ESS)";
+  displayName = "M97 (Spagpat/Black ESS)";
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_co), QPATHTOF(data\hats\rhssaf_m97_ess_black_co)};
 };
 
@@ -76,6 +76,15 @@ class S_Helmet_Olive_tan_ess: rhssaf_helmet_m97_olive_nocamo_black_ess
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_nocamo_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
 };
 
+class S_Helmet_Olive_tan_ess_bare: rhssaf_helmet_m97_olive_nocamo_black_ess_bare
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Red Hammer Studios";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Olive/Tan ESS/Bare)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_nocamo_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
+};
 
 class S_Helmet_Winter: rhssaf_helmet_m97_olive_nocamo
 {
@@ -87,6 +96,59 @@ class S_Helmet_Winter: rhssaf_helmet_m97_olive_nocamo
   hiddenSelectionsTextures[] = {QPATHTOF(data\hats\rhssaf_m97_winter_co)};
 };
 
+class S_Helmet_SPAGPAT_Winter: rhssaf_helmet_m97_woodland
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Spagistan Mod Team";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Spagpat Winter)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_winter_co)};
+  descriptionShort = "Spagistan Helmet";
+};
+
+class S_Helmet_SPAGPAT_Winter_black_ess: rhssaf_helmet_m97_woodland_black_ess
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Spagistan Mod Team";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Spagpat Winter/Black ESS)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_winter_co), QPATHTOF(data\hats\rhssaf_m97_ess_black_co)};
+  descriptionShort = "Spagistan Helmet";
+};
+class S_Helmet_SPAGPAT_Winter_black_ess_bare: rhssaf_helmet_m97_woodland_black_ess_bare
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Spagistan Mod Team";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Spagpat Winter/Black ESS/Bare)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_winter_co), QPATHTOF(data\hats\rhssaf_m97_ess_black_co)};
+  descriptionShort = "Spagistan Helmet";
+};
+
+class S_Helmet_SPAGPAT_Winter_tan_ess: rhssaf_helmet_m97_woodland_black_ess
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Spagistan Mod Team";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Spagpat Winter/Tan ESS)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_winter_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
+  descriptionShort = "Spagistan Helmet";
+};
+class S_Helmet_SPAGPAT_Winter_tan_ess_bare: rhssaf_helmet_m97_woodland_black_ess_bare
+{
+  scope = 2;
+  scopeArsenal = 2;
+  author = "Spagistan Mod Team";
+  allowedSlots[] = {701,801,901};
+  displayName = "M97 (Spagpat Winter/Tan ESS/Bare)";
+  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\m97_canvas_d_spag_winter_co), QPATHTOF(data\hats\rhssaf_m97_ess_tan_co)};
+  descriptionShort = "Spagistan Helmet";
+};
+
 // HATS
 class S_PatrolCap_SPAGPAT: rhsusf_patrolcap_ucp
 {
@@ -94,6 +156,14 @@ class S_PatrolCap_SPAGPAT: rhsusf_patrolcap_ucp
     displayName = "Patrol Cap (Spagpat)";
     scope = 2;
     hiddenSelectionsTextures[] = {QPATHTOF(data\hats\PatrolCap_SPAGPAT_ca)};
+};
+
+class S_PatrolCap_SPAGPAT_AIR: rhsusf_patrolcap_ucp
+{
+	//dexterity = 3.1
+    displayName = "Patrol Cap (Spagpat Air)";
+    scope = 2;
+    hiddenSelectionsTextures[] = {QPATHTOF(data\hats\PatrolCap_SPAGPATAIR_ca)};
 };
 
 

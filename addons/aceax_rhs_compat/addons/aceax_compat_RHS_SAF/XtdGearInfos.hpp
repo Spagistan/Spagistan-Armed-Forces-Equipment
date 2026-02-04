@@ -184,33 +184,6 @@ class XtdGearInfos {
 		};
 
 		//M97
-		class S_Helmet_SPAGPAT {
-		model = "M97_RHS_SAF";
-		Camo = "Spagpat";
-		Extras = "None";
-		};
-		class S_Helmet_SPAGPAT_black_ess {
-		model = "M97_RHS_SAF";
-		Camo = "Spagpat";
-		Extras = "ESS Cov";
-		};
-
-		class S_Helmet_SPAGPAT_black_ess_bare {
-		model = "M97_RHS_SAF";
-		Camo = "Spagpat";
-		Extras = "ESS";
-		};
-
-		class S_Helmet_SPAGPAT_tan_ess {
-		model = "M97_RHS_SAF";
-		Camo = "Spagpat";
-		Extras = "Tan ESS Cov";
-		};
-		class S_Helmet_SPAGPAT_tan_ess_bare {
-		model = "M97_RHS_SAF";
-		Camo = "Spagpat";
-		Extras = "Tan ESS";
-		};
 		class rhssaf_helmet_m97_black_nocamo {
 		model = "M97_RHS_SAF";
 		Camo = "Black";
@@ -317,6 +290,13 @@ class XtdGearInfos {
 		model = "M97_RHS_SAF";
 		Camo = "Olive";
 		Extras = "ESS";
+		};
+
+		class S_Helmet_Olive_tan_ess_bare
+		{
+			model = "M97_RHS_SAF";
+			Camo = "Olive";
+			Extras = "Tan ESS";
 		};
 
 		class rhssaf_helmet_m97_woodland {
