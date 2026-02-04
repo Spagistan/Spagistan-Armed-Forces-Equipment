@@ -25,7 +25,13 @@ class CfgPatches
 			"S_Helmet_Olive_tan_ess",
 			"S_Helmet_SPAGPAT_tan_ess_bare",
 			"S_Helmet_Winter",
+			"S_Helmet_SPAGPAT_Winter",
+			"S_Helmet_SPAGPAT_Winter_black_ess",
+			"S_Helmet_SPAGPAT_Winter_black_ess_bare",
+			"S_Helmet_SPAGPAT_Winter_tan_ess",
+			"S_Helmet_SPAGPAT_Winter_tan_ess_bare",
 			"S_PatrolCap_SPAGPAT",
+			"S_PatrolCap_SPAGPAT_AIR",
 			"U_S_Uniform_SPAGPAT",
 			"U_S_Uniform_Neck_SPAGPAT",
 			"U_S_Uniform_Winter_SPAGPAT",
@@ -36,6 +42,10 @@ class CfgPatches
 			"U_S_Uniform_Gorka_Full_SPAGPAT",
 			"U_S_Uniform_Telnyashka_SPAGPAT",
 			"U_S_Uniform_Gorka_SPAGPAT",
+			"U_S_Uniform_Gorka_Hands_SPAGPAT",
+			"U_S_Uniform_Gorka_Winter_Mix_Hands_SPAGPAT",
+			"U_S_Uniform_Gorka_Winter_Full_Hands_SPAGPAT",
+			"U_S_Uniform_Gorka_Full_Hands_SPAGPAT"
 			};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"spag_main","spag_common", "rhs_weapons", "rhs_c_weapons"};

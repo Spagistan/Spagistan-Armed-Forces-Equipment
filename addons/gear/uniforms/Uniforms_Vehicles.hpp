@@ -24,7 +24,7 @@ class U_S_SPAGPAT: rhssaf_soldier_army_para_digital_base
 {
   /* nakedUniform = "U_BasicBody"; */
   side = 2;
-  scope = 2;	
+  scope = 2;
   uniformClass = "U_S_Uniform_SPAGPAT";
   hiddenSelections[] = {"camo","Insignia"};
   hiddenSelectionsTextures[] = { QPATHTOF(data\uniforms\m10_d_spag_shirt) };
@@ -121,6 +121,8 @@ class Custom_Uniform_TShirt: O_officer_F {
 
 
 class rhs_vdv_gorka_r_g_gloves_rifleman;
+class rhs_vdv_gorka_r_g_rifleman;
+
 class U_S_Gorka_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
 {
         author="Muz";
@@ -157,6 +159,46 @@ class U_S_Gorka_Full_SPAGPAT: rhs_vdv_gorka_r_g_gloves_rifleman
 		side = 2;
 		scope = 2;
         uniformClass="U_S_Uniform_Gorka_Full_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_full)};
+};
+//BARE HANDS GORKA
+class U_S_Gorka_Hands_SPAGPAT: rhs_vdv_gorka_r_g_rifleman
+{
+        author="Muz";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Hands_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};
+};
+
+class U_S_Gorka_Winter_Mix_Hands_SPAGPAT: rhs_vdv_gorka_r_g_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Winter_Mix_Hands_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_mix)};
+};
+
+class U_S_Gorka_Winter_Full_Hands_SPAGPAT: rhs_vdv_gorka_r_g_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Winter_Full_Hands_SPAGPAT";
+        hiddenSelections[] = {"camo1","Insignia"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_winter_full)};
+};
+
+class U_S_Gorka_Full_Hands_SPAGPAT: rhs_vdv_gorka_r_g_rifleman
+{
+        author="Dan";
+		side = 2;
+		scope = 2;
+        uniformClass="U_S_Uniform_Gorka_Full_Hands_SPAGPAT";
         hiddenSelections[] = {"camo1","Insignia"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_full)};
 };

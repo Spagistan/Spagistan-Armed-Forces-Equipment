@@ -19,7 +19,7 @@
 		"files.insertFinalNewline": true,
 		"files.trimTrailingWhitespace": true,
 		"files.associations": {
-			"*.hpp": "arma-config",
+			"*.hpp": "cpp",
 			"$PBOPREFIX$": "addon-prefix"
 		},
 		"files.exclude": {
