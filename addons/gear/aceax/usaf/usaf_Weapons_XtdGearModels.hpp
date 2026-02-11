@@ -1,116 +1,112 @@
-class XtdGearModels {
-    class CfgWeapons {
-		
-		// Uniforms Start
-		
+// Uniforms Start
 		class Army_Combat_Uniforms_RHS
 		{
 			options[] = { "Camo" };
-			label = "Army Combat Uniform";			
-			class Camo 
+			label = "Army Combat Uniform";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OCP",
 				"OEF-CP",
 				"UCP",
 				"UCP-IR Flag",
-				"UCP-D"				
-				}; 
-			};	
-			
-		};	
-		
+				"UCP-D"
+				};
+			};
+
+		};
+
 		class Combat_Uniforms_RHS
 		{
 			options[] = { "Division", "Camo" };
 			label = "Combat Uniform";
-			class Division 
+			class Division
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"101st Air.",
 				"82nd Air.",
-				"10th Moun.", 
-				"1st Cav.", 
-				}; 
+				"10th Moun.",
+				"1st Cav.",
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OCP",
-				"UCP"				
-				}; 
-			};	
-			
-		};	
-		
+				"UCP"
+				};
+			};
+
+		};
+
 		class MARPAT_RHS
 		{
 			options[] = { "Camo" };
-			label = "FROG MARPAT";			
-			class Camo 
+			label = "FROG MARPAT";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"D",
-				"WD"				
-				}; 
-			};	
-			
+				"WD"
+				};
+			};
+
 		};
-		
+
 		class G3_Uniforms_RHS
 		{
 			options[] = { "Camo" };
-			label = "G3 Uniform";			
-			class Camo 
+			label = "G3 Uniform";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"BLK",
 				"TAN",
 				"MC",
 				"M81",
 				"RGR",
-				"AOR2"				
-				}; 
-			};	
-			
+				"AOR2"
+				};
+			};
+
 		};
-		
+
 		// Uniforms Start
-		
+
 		// Vests Start
-		
+
 		class MBAV_RHS
 		{
 			options[] = { "Loadout" };
-			label = "MBAV";			
-			class Loadout 
+			label = "MBAV";
+			class Loadout
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Grenadier",
 				"Light",
 				"Gunner",
 				"Medic",
 				"Rifleman"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class Plateframe_RHS
 		{
 			options[] = { "Loadout" };
-			label = "Plateframe";			
-			class Loadout 
+			label = "Plateframe";
+			class Loadout
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Grenadier",
 				"Light",
@@ -119,18 +115,18 @@ class XtdGearModels {
 				"Medic",
 				"Rifleman",
 				"Team Leader"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class SPC_RHS
 		{
 			options[] = { "Loadout" };
-			label = "SPC";			
-			class Loadout 
+			label = "SPC";
+			class Loadout
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Corpsman",
 				"Crewman",
@@ -144,18 +140,18 @@ class XtdGearModels {
 				"Scout Sniper",
 				"Squad Leader",
 				"Team Leader"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class IOTV_RHS
 		{
 			options[] = { "Loadout", "Camo" };
-			label = "IOTV";			
-			class Loadout 
+			label = "IOTV";
+			class Loadout
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Grenadier",
 				"Medic",
@@ -164,26 +160,26 @@ class XtdGearModels {
 				"SAW",
 				"Squad Leader",
 				"Team Leader"
-				}; 
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OEF-CP",
 				"UCP"
-				}; 
-			};	
+				};
+			};
 		};
-		
+
 		class SPCS_RHS
 		{
 			options[] = { "Loadout", "Camo", "Alt" };
-			label = "SPCS";			
-			class Loadout 
+			label = "SPCS";
+			class Loadout
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Grenadier",
 				"Medic",
@@ -194,167 +190,167 @@ class XtdGearModels {
 				"Sniper",
 				"Squad Leader",
 				"Team Leader"
-				}; 
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OEF-CP",
 				"UCP"
-				}; 
+				};
 			};
-			class Alt 
+			class Alt
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"Yes",
 				"No"
-				}; 
-			};	
-		};		
-		
+				};
+			};
+		};
+
 		// Vests End
-		
+
 		// Binos Start
-		
+
 		class Lerca_RHS
 		{
 			options[] = { "Camo" };
-			label = "Lerca";			
-			class Camo 
+			label = "Lerca";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"BLK",
-				"TAN"				
-				}; 
-			};			
+				"TAN"
+				};
+			};
 		};
-		
+
 		class M24Binos_RHS
 		{
 			options[] = { "ARD" };
-			label = "M24";			
-			class ARD 
+			label = "M24";
+			class ARD
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"Yes",
-				"No"				
-				}; 
-			};				
+				"No"
+				};
+			};
 		};
-		
+
 		// Binos End
-		
+
 		// Secondaries Start
-		
+
 		class MP7A2Folded_RHS
 		{
 			options[] = { "Camo" };
-			label = "MP7A2 Folded";			
-			class Camo 
+			label = "MP7A2 Folded";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"AOR1",
 				"AOR1 WHT",
 				"DESERT"
-				}; 
-			};			
+				};
+			};
 		};
-		
+
 		// Secondaries End
-		
+
 		// Launchers Start
-		
+
 		class LM136_RHS
 		{
 			options[] = { "Ammo" };
-			label = "M136";			
-			class Ammo 
+			label = "M136";
+			class Ammo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"HEAT",
 				"HEDP",
 				"HP"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class LSMAW_RHS
 		{
 			options[] = { "Camo" };
-			label = "SMAW";			
-			class Camo 
+			label = "SMAW";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"BLK",
 				"OD"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		// Launchers End
-		
+
 		// Helmets Start
-		
+
 		class ProTech_RHS
 		{
 			options[] = { "Extras" };
-			label = "Pro-Tech";			
-			class Extras 
+			label = "Pro-Tech";
+			class Extras
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"ESS",
 				"Rhino",
 				"Rhi w ESS",
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class UtilCap_RHS
 		{
 			options[] = { "Camo" };
-			label = "Utility Cap";			
-			class Camo 
+			label = "Utility Cap";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"MARPAT-D",
 				"MARPAT-WD"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class PatrCap_RHS
 		{
 			options[] = { "Camo" };
-			label = "Patrol Cap";			
-			class Camo 
+			label = "Patrol Cap";
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OEF-CP",
 				"UCP"
-				}; 
-			};				
+				};
+			};
 		};
-		
+
 		class ACH_RHS
 		{
 			options[] = { "Extras", "Camo" };
-			label = "ACH";			
-			class Extras 
+			label = "ACH";
+			class Extras
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"ESS",
 				"Headset",
@@ -363,16 +359,16 @@ class XtdGearModels {
 				"Early Rhi",
 				"Alt",
 				"ESS Alt",
-				"Head Alt",				
+				"Head Alt",
 				"Netting",
 				"Norotos",
 				"Head ESS Alt"
-				}; 
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"OD",
 				"D",
@@ -383,85 +379,85 @@ class XtdGearModels {
 				"M81",
 				"OEF-CP",
 				"UCP"
-				}; 
-			};	
+				};
+			};
 		};
-		
+
 		class ACVCH_RHS
 		{
 			options[] = { "Extras", "Camo" };
-			label = "ACVC-H";			
+			label = "ACVC-H";
 			class Extras
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Alt",
 				"ESS"
-				}; 
+				};
 			};
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OD",
 				"TAN"
-				}; 
-			};	
+				};
+			};
 		};
-		
+
 		class BooHat_RHS
 		{
 			options[] = { "Camo" };
-			label = "Booniehat";			
+			label = "Booniehat";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"MARPAT-D",
 				"MARPAT-WD",
 				"M81",
 				"OEF-CP",
 				"UCP"
-				}; 
-			};	
+				};
+			};
 		};
-		
+
 		class LWH_RHS
 		{
 			options[] = { "Camo", "Extras" };
-			label = "LWH";			
+			label = "LWH";
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"MARPAT-D",
 				"MARPAT-WD",
 				"M1942"
-				}; 
+				};
 			};
 			class Extras
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"ESS",
 				"Headset",
 				"Blk ESS",
 				"Head ESS",
-				"Head ESS BLK",							
-				}; 
-			};	
+				"Head ESS BLK",
+				};
+			};
 		};
-		
+
 		class MICH2000_RHS
 		{
 			options[] = { "Extras", "Camo" };
-			label = "MICH 2000";			
-			class Extras 
+			label = "MICH 2000";
+			class Extras
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Alt",
 				"Headset",
@@ -473,42 +469,42 @@ class XtdGearModels {
 				"Nor ARC Alt",
 				"Nor ARC Alt HS",
 				"Nor ARC HS",
-				"Nor HS"				
-				}; 
+				"Nor HS"
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"OD",
 				"Semi-Arid",
 				"TAN",
 				"MARPAT-D",
-				"MARPAT-WD"			
-				}; 
-			};	
+				"MARPAT-WD"
+				};
+			};
 		};
-		
+
 		class FASTB_RHS
 		{
 			options[] = { "Extras", "Camo" };
-			label = "FAST";			
-			class Extras 
+			label = "FAST";
+			class Extras
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Alt",
 				"Headset",
 				"HS CAM",
 				"HS NSW",
 				"HS NSW CAM"
-				}; 
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"AOR1",
 				"AOR2",
 				"BLK",
@@ -518,54 +514,54 @@ class XtdGearModels {
 				"MC PNT",
 				"PAINT",
 				"RGR COV",
-				"URBAN TAN"			
-				}; 
-			};	
+				"URBAN TAN"
+				};
+			};
 		};
-		
+
 		class FASTM_RHS
 		{
 			options[] = { "Extras", "Camo" };
-			label = "FAST Maritime";			
-			class Extras 
+			label = "FAST Maritime";
+			class Extras
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
-				"Headset"				
-				}; 
+				"Headset"
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 				
+				values[] = {
 				"RGR",
-				"URBAN TAN"			
-				}; 
-			};	
+				"URBAN TAN"
+				};
+			};
 		};
-		
-		
+
+
 		//HGU Helmets Start
-		
+
 		class HGU_RHS
 		{
 			options[] = { "Visor", "Camo", "Mask", "Design" };
-			label = "HGU";			
-			class Visor 
+			label = "HGU";
+			class Visor
 			{
 				changeingame = 1;
 				changedelay = 0.5;
-				alwaysSelectable = 1;				
-				values[] = { 
+				alwaysSelectable = 1;
+				values[] = {
 				"Up",
-				"Down"				
-				}; 
+				"Down"
+				};
 			};
-			class Camo 
+			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 				
+				values[] = {
 				"White",
 				"Black",
 				"Green",
@@ -573,423 +569,423 @@ class XtdGearModels {
 				"Pink",
 				"SAF",
 				"Tan",
-				"USA"				
-				}; 
-			};			
-			class Mask 
-			{
-				alwaysSelectable = 0;
-				values[] = { 				
-				"Yes",
-				"No"			
-				}; 
+				"USA"
+				};
 			};
-			class Design 
+			class Mask
 			{
 				alwaysSelectable = 0;
-				values[] = { 				
+				values[] = {
+				"Yes",
+				"No"
+				};
+			};
+			class Design
+			{
+				alwaysSelectable = 0;
+				values[] = {
 				"None",
 				"Skull",
 				"Moustache",
 				"Smiley"
-				}; 
+				};
 			};
 		};
-		
+
 		class Bowman_RHS
 		{
 			options[] = { "Cap" };
-			label = "Bowman";			
+			label = "Bowman";
 			class Cap
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"Yes",
 				"No"
-				
-				}; 
-			};	
-		};		
+
+				};
+			};
+		};
 		//HGU Helmets End
-		
+
 		// Helmets End
-		
-		
-		
+
+
+
 		// Weapons Start
-		
+
 		class M107_RHS
 		{
 			options[] = { "Camo" };
-			label = "M107";			
+			label = "M107";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
-				"Woodland"				
-				}; 
-			};	
+				"Woodland"
+				};
+			};
 		};
-		
+
 		class SOCOM16_RHS
 		{
 			options[] = { "Rail" };
-			label = "SOCOM 16";			
+			label = "SOCOM 16";
 			class Rail
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"Yes",
-				"No"				
-				}; 
-			};	
-		};	
-		
+				"No"
+				};
+			};
+		};
+
 		class SCARH_RHS
 		{
 			options[] = { "Camo", "Variant" };
-			label = "SCAR-H";			
+			label = "SCAR-H";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"TAN",
-				"USA"				
-				}; 
+				"USA"
+				};
 			};
 			class Variant
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"CQC",
 				"LB",
 				"STD"
-				}; 
+				};
 			};
 		};
-		
+
 		class MP7A2PRM_RHS
 		{
 			options[] = { "Camo" };
-			label = "MP7A2";			
+			label = "MP7A2";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"AOR1",
 				"Desert",
-				"Winter"				
-				}; 
-			};			
+				"Winter"
+				};
+			};
 		};
-		
+
 		class MK11MOD0_RHS
 		{
 			options[] = { "Camo", "Variant" };
-			label = "MK11";			
+			label = "MK11";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
-				"Woodland"				
-				}; 
+				"Woodland"
+				};
 			};
 			class Variant
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"STD",
-				"EC"				
-				}; 
+				"EC"
+				};
 			};
 		};
-		
+
 		class M590A1_RHS
 		{
 			options[] = { "Barrel" };
-			label = "M590A1";			
+			label = "M590A1";
 			class Barrel
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"Short",
-				"Long"				
-				}; 
-			};			
+				"Long"
+				};
+			};
 		};
-		
+
 		class M4A1PIP_RHS
 		{
 			options[] = { "Camo", "Stock", "UBGL" };
-			label = "M4A1 PIP";			
+			label = "M4A1 PIP";
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
-				"Woodland"				
-				}; 
+				"Woodland"
+				};
 			};
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"Magpull"				
-				}; 
+				"Magpull"
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M203",
 				"M203S",
 				"M320"
-				}; 
+				};
 			};
 		};
-		
+
 		class M4A1_RHS
 		{
 			options[] = { "Stock", "UBGL" };
-			label = "M4A1";				
+			label = "M4A1";
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"Magpull"				
-				}; 
+				"Magpull"
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M203",
 				"M203S",
 				"M320"
-				}; 
+				};
 			};
 		};
-		
+
 		class M40A5_RHS
 		{
 			options[] = { "Camo" };
-			label = "M40A5";				
+			label = "M40A5";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"OD",
 				"Desert",
-				"Woodland"				
-				}; 
-			};			
+				"Woodland"
+				};
+			};
 		};
-		
+
 		class M27IAR_RHS
 		{
 			options[] = { "Grip" };
-			label = "M27 IAR";				
+			label = "M27 IAR";
 			class Grip
 			{
 				alwaysSelectable = 1;
-				values[] = { 
+				values[] = {
 				"None",
-				"KAC"		
-				}; 
-			};			
+				"KAC"
+				};
+			};
 		};
-		
+
 		class M24SWS_RHS
 		{
 			options[] = { "Camo" };
-			label = "M24 SWS";				
+			label = "M24 SWS";
 			class Camo
 			{
 				alwaysSelectable = 1;
-				values[] = { 
-				"None",
-				"Desert",
-				"Woodland"				
-				}; 
-			};			
-		};
-		
-		class M2010ESR_RHS
-		{
-			options[] = { "Camo" };
-			label = "M2010 ESR";				
-			class Camo
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"None",
-				"Desert",
-				"Woodland",	
-				"Semi Arid"
-				}; 
-			};			
-		};
-		
-		class MK18mod1_RHS
-		{
-			options[] = { 
-			"Stock",
-			"UBGL", 
-			"Camo",
-			"Rail"
-			};
-			label = "MK18";		
-			class Stock
-			{
-				alwaysSelectable = 0;
-				values[] = { 
-				"STD",
-				"SOPMOD"				
-				}; 
-			};
-			class Camo
-			{
-				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
 				"Woodland"
-				}; 
+				};
+			};
+		};
+
+		class M2010ESR_RHS
+		{
+			options[] = { "Camo" };
+			label = "M2010 ESR";
+			class Camo
+			{
+				alwaysSelectable = 1;
+				values[] = {
+				"None",
+				"Desert",
+				"Woodland",
+				"Semi Arid"
+				};
+			};
+		};
+
+		class MK18mod1_RHS
+		{
+			options[] = {
+			"Stock",
+			"UBGL",
+			"Camo",
+			"Rail"
+			};
+			label = "MK18";
+			class Stock
+			{
+				alwaysSelectable = 0;
+				values[] = {
+				"STD",
+				"SOPMOD"
+				};
+			};
+			class Camo
+			{
+				alwaysSelectable = 0;
+				values[] = {
+				"None",
+				"Desert",
+				"Woodland"
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
-				"None",				
+				values[] = {
+				"None",
 				"M320"
-				}; 
+				};
 			};
 			class Rail
 			{
 				alwaysSelectable = 0;
-				values[] = { 
-				"Black",				
+				values[] = {
+				"Black",
 				"STD"
-				}; 
+				};
 			};
 		};
-		
+
 		class M4_RHS
 		{
 			options[] = { "Stock", "UBGL", "Carryhandle" };
-			label = "M4";					
+			label = "M4";
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"Magpull"				
-				}; 
+				"Magpull"
+				};
 			};
 			class Carryhandle
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"No",
 				"Yes"
-				}; 
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M203",
 				"M203S",
 				"M320"
-				}; 
+				};
 			};
 		};
-		
+
 		class M4A1BII_RHS
 		{
-			options[] = { 
+			options[] = {
 			"Stock",
-			"UBGL", 
+			"UBGL",
 			"Camo",
 			"Rail"
 			};
-			label = "M4A1 Block II";		
+			label = "M4A1 Block II";
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"SOPMOD"				
-				}; 
+				"SOPMOD"
+				};
 			};
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
 				"Woodland"
-				}; 
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
-				"None",				
+				values[] = {
+				"None",
 				"M203"
-				}; 
+				};
 			};
 			class Rail
 			{
 				alwaysSelectable = 0;
-				values[] = { 
-				"Black",				
+				values[] = {
+				"Black",
 				"STD"
-				}; 
+				};
 			};
 		};
-		
+
 		class M16A4_RHS
 		{
 			options[] = { "Stock", "UBGL", "Carryhandle" };
-			label = "M16A4";					
+			label = "M16A4";
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"IMOD"				
-				}; 
+				"IMOD"
+				};
 			};
 			class Carryhandle
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"No",
 				"Yes"
-				}; 
+				};
 			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M203"
-				}; 
+				};
 			};
 		};
-		
+
 		class HK416D10_RHS
 		{
 			options[] = { "Camo", "Stock", "UBGL" };
@@ -997,30 +993,30 @@ class XtdGearModels {
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
-				"Woodland"				
-				}; 
+				"Woodland"
+				};
 			};
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
-				"SOPMOD"				
-				}; 
-			};			
+				"SOPMOD"
+				};
+			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M320"
-				}; 
+				};
 			};
 		};
-		
+
 		class HK416D145_RHS
 		{
 			options[] = { "Camo", "Stock", "UBGL" };
@@ -1028,203 +1024,85 @@ class XtdGearModels {
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"D Grass",
 				"D Net",
 				"WL Grass",
-				"WL Net"				
-				}; 
-			};					
+				"WL Net"
+				};
+			};
 			class UBGL
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"M320"
-				}; 
+				};
 			};
 		};
-		
+
 		class M14_RHS
 		{
 			options[] = { "Camo", "Variant" };
-			label = "M14";					
+			label = "M14";
 			class Camo
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"None",
 				"Desert",
 				"Fiberglass",
-				"Woodland"		
-				}; 
+				"Woodland"
+				};
 			};
 			class Variant
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
 				"RIS",
 				"Rail"
-				}; 
-			};			
+				};
+			};
 		};
-		
+
 		class M240BG_RHS
 		{
 			options[] = { "Variant" };
-			label = "M240";					
+			label = "M240";
 			class Variant
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"M240B",
-				"M240G"		
-				}; 
-			};			
+				"M240G"
+				};
+			};
 		};
-		
-		
+
+
 		class M249PIPRIS_RHS
 		{
 			options[] = { "Barrel", "Stock" };
-			label = "M249 PIP RIS";					
+			label = "M249 PIP RIS";
 			class Barrel
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"Short",
 				"Long"
-				}; 
-			};			
+				};
+			};
 			class Stock
 			{
 				alwaysSelectable = 0;
-				values[] = { 
+				values[] = {
 				"STD",
 				"LCBA",
 				"Para",
 				"Savit"
-				}; 
+				};
 			};
 		};
-		
 		// Weapons End
-		
-    };
-	
-	class CfgVehicles {
-		
-		// Backpacks Start
-		
-		class Falcon_II_RHS
-		{
-			options[] = { "Camo" };
-			label = "Falcon-II";			
-			class Camo 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"CB",
-				"MC",
-				"RGR"
-				}; 
-			};				
-		};
-		
-		class Eagle_RHS
-		{
-			options[] = { "Camo" };
-			label = "Eagle A-III";			
-			class Camo 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"CB",
-				"OEF-CP",
-				"UCP"
-				}; 
-			};	
-			
-		};
-		
-		// Backpacks End
-		
-	};
-	
-	class CfgGlasses {
-		
-		// Facewear Start
-		
-		class BGlasses_RHS
-		{
-			options[] = { "Tint" };
-			label = "Ballistic Glasses";			
-			class Tint 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"Clear",
-				"Black",
-				"Orange",
-				"Yellow"
-				}; 
-			};				
-		};
-		
-		class BGoggles_RHS
-		{
-			options[] = { "Tint" };
-			label = "SI Ballistic";			
-			class Tint 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"Clear",
-				"Black",
-				"Yellow"
-				}; 
-			};				
-		};
-		
-		class Shemagh_RHS
-		{
-			options[] = { "Camo", "Goggles", "PULL" };
-			label = "Shemagh";			
-			class Camo 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"Green",
-				"OD",
-				"Tan",
-				"White",
-				}; 
-			};
-			class Goggles 
-			{
-				alwaysSelectable = 1;
-				values[] = { 
-				"Yes",
-				"No"
-				}; 
-			};
-			class PULL 
-			{
-				changeingame = 1;
-				changedelay = 0.5;
-				alwaysSelectable = 1;
-				values[] = { 
-				"UP",
-				"DOWN"
-				}; 
-			};
-			
-		};
-		
-		// Facewear End
-		
-	};
-	
-};

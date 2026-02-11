@@ -1,7 +1,7 @@
-class rhs_weap_ak74m;
-class rhs_weap_ak74m_gp25;
+// class rhs_weap_ak74m;
+// class rhs_weap_ak74m_gp25;
 class rhs_weap_rpk74m;
-/*
+
 class rhs_weap_ak103;
 class rhs_weap_ak103_npz;
 class rhs_weap_ak103_folded;
@@ -5251,7 +5251,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 	};
 
 //Spag stuff_________________________________________________________________________________________
-*/
+
 class S_weap_ak74m_ip78: rhs_weap_ak74m {
     class LinkedItems {
         class LinkedItemsOptic {

@@ -1,7 +1,4 @@
-class XtdGearModels {
-    class CfgWeapons {
-
-		//Weapons Start
+//Weapons Start
 
 		class HKG36KV_RHS_SAF
 		{
@@ -306,50 +303,3 @@ class XtdGearModels {
 		};
 
 		//Vests End
-
-    };
-
-	class CfgVehicles {
-
-		//Backpacks Start
-
-		class ALICE_RHS_SAF
-		{
-			options[] = { "Camo" };
-			label = "ALICE";
-			class Camo
-			{
-				alwaysSelectable = 1;
-				values[] = {
-				"MDU02",
-				"SMB"
-				};
-			};
-		};
-
-		class Kitbag_RHS_SAF
-		{
-			options[] = { "Camo" };
-			label = "Kitbag";
-			class Camo
-			{
-				alwaysSelectable = 1;
-				values[] = {
-				"Digi WL",
-				"MDU02",
-				"SMB"
-				};
-			};
-		};
-
-		//Backpacks Start
-
-	};
-	/*
-	class CfgGlasses {
-
-
-
-    };
-	*/
-};

@@ -1,8 +1,5 @@
-class XtdGearInfos {
-    class CfgWeapons {
-		
-		//Weapons Start
-		
+//Weapons Start
+
 		//L1A1
 		class rhs_weap_l1a1 {
 		model = "L1A1_RHS_GREF";
@@ -12,7 +9,7 @@ class XtdGearInfos {
 		model = "L1A1_RHS_GREF";
 		Material = "Wood";
 		};
-		
+
 		//Mosin Nagant M38
 		class rhs_weap_m38 {
 		model = "L1A1_RHS_GREF";
@@ -22,7 +19,7 @@ class XtdGearInfos {
 		model = "L1A1_RHS_GREF";
 		Rail = "Yes";
 		};
-		
+
 		//Sa vz. 58P
 		class rhs_weap_savz58p {
 		model = "SAVZ58P_RHS_GREF";
@@ -36,7 +33,7 @@ class XtdGearInfos {
 		Rail = "Yes";
 		Variant = "Sa vz. 58P";
 		};
-		
+
 		class rhs_weap_savz58p_black {
 		model = "SAVZ58P_RHS_GREF";
 		Material = "Plastic";
@@ -49,7 +46,7 @@ class XtdGearInfos {
 		Rail = "Yes";
 		Variant = "Sa vz. 58P";
 		};
-		
+
 		class rhs_weap_savz58v {
 		model = "SAVZ58P_RHS_GREF";
 		Material = "Wood";
@@ -62,7 +59,7 @@ class XtdGearInfos {
 		Rail = "Yes";
 		Variant = "Sa vz. 58V";
 		};
-		
+
 		class rhs_weap_savz58v_black {
 		model = "SAVZ58P_RHS_GREF";
 		Material = "Plastic";
@@ -74,8 +71,8 @@ class XtdGearInfos {
 		Material = "Plastic";
 		Rail = "Yes";
 		Variant = "Sa vz. 58V";
-		};	
-		
+		};
+
 		//VHS-D2
 		class rhs_weap_vhsd2 {
 		model = "VHSD2_RHS_GREF";
@@ -97,12 +94,12 @@ class XtdGearInfos {
 		Scope = "Yes";
 		UBGL = "Yes";
 		};
-		
+
 		//Weapons End
-		
-		
+
+
 		//Vests Start
-		
+
 		//OTV
 		class rhsgref_otv_digi {
 		model = "OTV_RHS_GREF";
@@ -112,7 +109,7 @@ class XtdGearInfos {
 		model = "OTV_RHS_GREF";
 		Camo = "Khaki";
 		};
-		
+
 		//6B23
 		class rhsgref_6b23_khaki_medic {
 		model = "6B23_RHS_GREF";
@@ -144,7 +141,7 @@ class XtdGearInfos {
 		Camo = "Khaki";
 		Loadout = "Utility";
 		};
-		
+
 		class rhsgref_6b23_ttsko_digi_medic {
 		model = "6B23_RHS_GREF";
 		Camo = "TTsKO Digi";
@@ -175,7 +172,7 @@ class XtdGearInfos {
 		Camo = "TTsKO Digi";
 		Loadout = "Utility";
 		};
-		
+
 		class rhsgref_6b23_ttsko_mountain_medic {
 		model = "6B23_RHS_GREF";
 		Camo = "TTsKO Moun";
@@ -206,7 +203,7 @@ class XtdGearInfos {
 		Camo = "TTsKO Moun";
 		Loadout = "Utility";
 		};
-		
+
 		class rhsgref_6b23_ttsko_forest_rifleman {
 		model = "6B23_RHS_GREF";
 		Camo = "TTsKO For";
@@ -217,12 +214,12 @@ class XtdGearInfos {
 		Camo = "TTsKO For";
 		Loadout = "Utility";
 		};
-		
+
 		//Vests End
-		
-		
+
+
 		//Uniforms Start
-		
+
 		//Guerilla Uniform
 		class rhsgref_uniform_TLA_1 {
 		model = "Guerilla_RHS_GREF";
@@ -232,7 +229,7 @@ class XtdGearInfos {
 		model = "Guerilla_RHS_GREF";
 		Camo = "Tan Liz Oli";
 		};
-		
+
 		//M10
 		class rhsgref_uniform_para_ttsko_mountain {
 		model = "M10_RHS_GREF";
@@ -246,7 +243,7 @@ class XtdGearInfos {
 		model = "M10_RHS_GREF";
 		Camo = "Urban";
 		};
-		
+
 		//M88
 		class rhsgref_uniform_vsr {
 		model = "M88_RHS_GREF";
@@ -264,7 +261,7 @@ class XtdGearInfos {
 		model = "M88_RHS_GREF";
 		Camo = "Urban";
 		};
-		
+
 		//M93
 		class rhsgref_uniform_3color_desert {
 		model = "M93_RHS_GREF";
@@ -330,12 +327,12 @@ class XtdGearInfos {
 		model = "M93_RHS_GREF";
 		Camo = "WL Oli";
 		};
-		
+
 		//Uniforms End
-		
-		
+
+
 		//Helmet Start
-		
+
 		//Field Cap
 		class rhsgref_fieldcap_ttsko_digi {
 		model = "FC_RHS_GREF";
@@ -353,7 +350,7 @@ class XtdGearInfos {
 		model = "FC_RHS_GREF";
 		Camo = "Urban";
 		};
-		
+
 		//Kaska K93
 		class rhsgref_6b27m_ttsko_digi {
 		model = "KaskaK93_RHS_GREF";
@@ -371,7 +368,7 @@ class XtdGearInfos {
 		model = "KaskaK93_RHS_GREF";
 		Camo = "Urban";
 		};
-		
+
 		//M1
 		class rhsgref_helmet_M1_des {
 		model = "M1_RHS_GREF";
@@ -405,7 +402,7 @@ class XtdGearInfos {
 		model = "M1_RHS_GREF";
 		Camo = "Painted Alt";
 		};
-		
+
 		//M40
 		class rhsgref_helmet_m1940 {
 		model = "M40_RHS_GREF";
@@ -417,7 +414,7 @@ class XtdGearInfos {
 		Camo = "Black";
 		Strap = "Up";
 		};
-		
+
 		class rhsgref_helmet_m1940_camo01 {
 		model = "M40_RHS_GREF";
 		Camo = "Painted";
@@ -428,7 +425,7 @@ class XtdGearInfos {
 		Camo = "Painted";
 		Strap = "Up";
 		};
-		
+
 		class rhsgref_helmet_m1940_winter {
 		model = "M40_RHS_GREF";
 		Camo = "Winter";
@@ -439,7 +436,7 @@ class XtdGearInfos {
 		Camo = "Winter";
 		Strap = "Up";
 		};
-		
+
 		//M42
 		class rhsgref_helmet_m1942 {
 		model = "M42_RHS_GREF";
@@ -451,7 +448,7 @@ class XtdGearInfos {
 		Camo = "Black";
 		Strap = "Up";
 		};
-		
+
 		class rhsgref_helmet_m1942_camo01 {
 		model = "M42_RHS_GREF";
 		Camo = "Painted";
@@ -462,7 +459,7 @@ class XtdGearInfos {
 		Camo = "Painted";
 		Strap = "Up";
 		};
-		
+
 		class rhsgref_helmet_m1942_winter {
 		model = "M42_RHS_GREF";
 		Camo = "Winter";
@@ -473,7 +470,7 @@ class XtdGearInfos {
 		Camo = "Winter";
 		Strap = "Up";
 		};
-		
+
 		//M42 Covered
 		class rhsgref_helmet_m1942_heergreycover {
 		model = "M42Cov_RHS_GREF";
@@ -491,7 +488,7 @@ class XtdGearInfos {
 		model = "M42Cov_RHS_GREF";
 		Camo = "Winter";
 		};
-		
+
 		//M43
 		class rhsgref_hat_m43cap_heer {
 		model = "M43_RHS_GREF";
@@ -501,7 +498,7 @@ class XtdGearInfos {
 		model = "M43_RHS_GREF";
 		Move = "Cap Sideways";
 		};
-		
+
 		//PAGST
 		class rhsgref_helmet_pasgt_3color_desert {
 		model = "PAGST_RHS_GREF";
@@ -511,12 +508,12 @@ class XtdGearInfos {
 		model = "PAGST_RHS_GREF";
 		Camo = "3CD Rhino";
 		};
-		
+
 		class rhsgref_helmet_pasgt_altis_lizard {
 		model = "PAGST_RHS_GREF";
 		Camo = "Altis Liz";
 		};
-		
+
 		class rhsgref_helmet_pasgt_erdl {
 		model = "PAGST_RHS_GREF";
 		Camo = "ERDL";
@@ -525,32 +522,32 @@ class XtdGearInfos {
 		model = "PAGST_RHS_GREF";
 		Camo = "ERDL Rhino";
 		};
-		
+
 		class rhsgref_helmet_pasgt_flecktarn {
 		model = "PAGST_RHS_GREF";
 		Camo = "Flecktam";
 		};
-		
+
 		class rhsgref_helmet_pasgt_olive {
 		model = "PAGST_RHS_GREF";
 		Camo = "Olive";
 		};
-		
+
 		class rhsgref_helmet_pasgt_press {
 		model = "PAGST_RHS_GREF";
 		Camo = "Press";
 		};
-		
+
 		class rhsgref_helmet_pasgt_un {
 		model = "PAGST_RHS_GREF";
 		Camo = "UN";
 		};
-		
+
 		class rhsgref_helmet_pasgt_woodland {
 		model = "PAGST_RHS_GREF";
 		Camo = "WL";
 		};
-		
+
 		class rhsgref_helmet_pasgt_woodland_rhino {
 		model = "PAGST_RHS_GREF";
 		Camo = "WL Rhino";
@@ -585,37 +582,5 @@ class XtdGearInfos {
 		model = "SSh68_RHS_GREF";
 		Camo = "VSR";
 		};
-		
+
 		//Helmet End
-		
-    };
-	
-	class CfgVehicles {
-		
-		//Backpacks Start
-		
-		//ALICE
-		class rhsgref_hidf_alicepack {
-		model = "ALICE_RHS_GREF";
-		Camo = "OD";
-		};
-		class rhsgref_ttsko_alicepack {
-		model = "ALICE_RHS_GREF";
-		Camo = "TTsKO";
-		};
-		class rhsgref_wdl_alicepack {
-		model = "ALICE_RHS_GREF";
-		Camo = "Woodland";
-		};
-		
-		//Backpacks End
-		
-	};
-	/*
-	class CfgGlasses {
-		
-		
-		
-	};
-	*/
-};
