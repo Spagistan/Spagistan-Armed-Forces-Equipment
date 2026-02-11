@@ -8,7 +8,8 @@ workshop = [
     "843593391",  # RHS GREF Workshop ID
     "843632231",  # RHS SAF  Workshop ID
     "894678801",  # TFAR Workshop ID
-    "583496184",  # CUPS Terrains - Core Workshop ID
+    "583496184",  # CUP Terrains - Core Workshop ID
+    "583544987",  # CUP Terrains - Maps
     "2890312862", # Uncon Actions Workshop ID
     "3125837686", # Bulat UAV Workshop ID
     "3045129955", # FPV Drone Crocus Workshop ID
@@ -29,4 +30,4 @@ workshop = [
 
 [arty]
 extends = "default"
-mission = "test.VR"
+mission = "operationironveilwinter.chernarus_winter"

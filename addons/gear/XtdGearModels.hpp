@@ -6,6 +6,7 @@ class XtdGearModels
         #include "aceax/saf/saf_Weapons_XtdGearModels.hpp"
         #include "aceax/spag/spag_Weapons_XtdGearModels.hpp"
         #include "aceax/usaf/usaf_Weapons_XtdGearModels.hpp"
+        // #include "aceax/aks/aks_Weapons_XtdGearModels.hpp"
     };
 
     class CfgVehicles {
