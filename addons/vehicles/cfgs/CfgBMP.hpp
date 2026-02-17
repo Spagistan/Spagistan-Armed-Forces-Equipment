@@ -21,7 +21,7 @@ hiddenSelectionsTextures[] = {
 	}; */
 class BMP_Spagpat: rhsgref_cdf_bmp1
 {
-	displayName = "BMP 1";
+	displayName = "BMP-1";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -46,7 +46,7 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 
 class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 {
-	displayName = "BMP 2";
+	displayName = "BMP-2";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -71,7 +71,7 @@ class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 
 class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 {
-	displayName = "BMP 2D";
+	displayName = "BMP-2D";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -88,9 +88,10 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
 	crew = "S_Soldier_Armor";
-	HiddenSelectionsTextures[] = {QPATHTOF(data\bmp\bmp_1_spagpat.paa), QPATHTOF(data\bmp\bmp_2_spagpat.paa),
-			 QPATHTOF(data\bmp\bmp_3_spagpat.paa), QPATHTOF(data\bmp\bmp_4_spagpat.paa),
-	QPATHTOF(data\bmp\bmp_5_spagpat.paa), QPATHTOF(data\bmp\bmp_6_spagpat.paa),
+	HiddenSelectionsTextures[] = {
+		"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa",
+		"rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa",
+		"rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa"
 		  };
 };
 
@@ -98,7 +99,7 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Objyekt-681";
+        displayName = "Obyekt-681-2";
 		editorCategory = "Spagistan_Category";
 		editorSubcategory = "EdSubcat_APCs";
         side = 2;
@@ -112,8 +113,9 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 		tf_encryptionCode = "_independent";
 		tf_hasLRradio_api = 1;
 		tf_isolatedAmount_api = 0.3;
-		HiddenSelectionsTextures[] = {QPATHTOF(data\bmp\bmp_1_spagpat.paa), QPATHTOF(data\bmp\bmp_2_spagpat.paa),
-			 QPATHTOF(data\bmp\bmp_3_spagpat.paa), QPATHTOF(data\bmp\bmp_4_spagpat.paa),
-	QPATHTOF(data\bmp\bmp_5_spagpat.paa), QPATHTOF(data\bmp\bmp_6_spagpat.paa),
+		HiddenSelectionsTextures[] = {
+			"rhsafrf\addons\rhs_bmp_camo\data\bmp_1_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_2_desert_co.paa",
+			"rhsafrf\addons\rhs_bmp_camo\data\bmp_3_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_4_desert_co.paa",
+			"rhsafrf\addons\rhs_bmp_camo\data\bmp_5_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_6_desert_co.paa"
 		  };
     };

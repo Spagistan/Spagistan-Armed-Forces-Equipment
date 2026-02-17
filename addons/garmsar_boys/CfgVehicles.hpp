@@ -27,8 +27,8 @@ class CfgVehicles {
 
     class ua_chvk_afr_ural_open;
     class ua_chvk_afr_ural_open_OCimport_01 : ua_chvk_afr_ural_open { scope = 0; class EventHandlers; class Turrets; };
-    class ua_chvk_afr_ural_open_OCimport_02 : ua_chvk_afr_ural_open_OCimport_01 { 
-        class EventHandlers; 
+    class ua_chvk_afr_ural_open_OCimport_02 : ua_chvk_afr_ural_open_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class CargoTurret_01;
             class CargoTurret_02;
@@ -47,8 +47,8 @@ class CfgVehicles {
 
     class ua_chvk_afr_2b14;
     class ua_chvk_afr_2b14_OCimport_01 : ua_chvk_afr_2b14 { scope = 0; class EventHandlers; class Turrets; };
-    class ua_chvk_afr_2b14_OCimport_02 : ua_chvk_afr_2b14_OCimport_01 { 
-        class EventHandlers; 
+    class ua_chvk_afr_2b14_OCimport_02 : ua_chvk_afr_2b14_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
         };
@@ -77,7 +77,7 @@ class CfgVehicles {
         magazines[] = {"rhsgref_5Rnd_762x54_m38","rhs_mag_9x18_8_57N181S","rhsgref_5Rnd_762x54_m38","rhs_mag_9x18_8_57N181S"};
         respawnMagazines[] = {"rhsgref_5Rnd_762x54_m38","rhs_mag_9x18_8_57N181S","rhsgref_5Rnd_762x54_m38","rhs_mag_9x18_8_57N181S"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{"rhs_weap_makarov_pm","","","",{"rhs_mag_9x18_8_57N181S",8},{},""},{"U_S_Uniform_SPAGPAT",{{"ACE_microDAGR",1},{"ACE_CableTie",2},{"ACE_EarPlugs",1},{"ACE_elasticBandage",20},{"ACE_Banana",1},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_suture",10},{"rhsgref_5Rnd_762x54_m38",3,5},{"rhssaf_mag_brd_m83_white",1,1},{"rhssaf_mag_br_m84",1,1}}},{"rhs_chicom_khk",{{"rhsgref_5Rnd_762x54_m38",10,5},{"rhssaf_mag_br_m84",4,1},{"ALiVE_Handgrenade_can",2,1}}},{},"rhs_pilotka","",{},{"ItemMap","","TFAR_anprc148jem","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{"rhs_weap_makarov_pm","","","",{"rhs_mag_9x18_8_57N181S",8},{},""},{"U_S_Uniform_SPAGPAT",{{"ACE_microDAGR",1},{"ACE_CableTie",2},{"ACE_EarPlugs",1},{"ACE_elasticBandage",20},{"ACE_Banana",1},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_suture",10},{"rhsgref_5Rnd_762x54_m38",3,5},{"rhssaf_mag_brd_m83_white",1,1},{"rhssaf_mag_br_m84",1,1}}},{"rhs_chicom_khk",{{"rhsgref_5Rnd_762x54_m38",10,5},{"rhssaf_mag_br_m84",4,1}}},{},"rhs_pilotka","",{},{"ItemMap","","TFAR_anprc148jem","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -299,7 +299,7 @@ class CfgVehicles {
         side = 2;
         faction = "I_Spagistan_Garmsar";
         editorCategory = "Spagistan_GC_Category";
-    
+
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
