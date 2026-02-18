@@ -7,9 +7,9 @@ class TFAR_SPAG_mr3000: TFAR_mr3000
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "Spagistan Mod Team";
-  displayName = "MR3000 (Spagpat)";
-  descriptionShort = "Spagistan camo LR Radio";
+  author = "Taepodong/Kalthramis";
+  displayName = "MR3000 BWMOD (Spagpat)";
+  descriptionShort = "Spagistan-camo LR Radio";
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAGPAT_ca) };
 };
 
@@ -18,8 +18,8 @@ class TFAR_SPAG_Air_mr3000: TFAR_mr3000
   scope = 2;
   side = 2;
   scopeArsenal = 2;
-  author = "Spagistan Mod Team";
-  displayName = "MR3000 (Spagpat - Air)";
+  author = "Taepodong/Kalthramis";
+  displayName = "MR3000 BWMOD (Spagpat - Air)";
   descriptionShort = "Spagistan air camo LR Radio";
   hiddenSelectionsTextures[] = { QPATHTOF(data\pack\MR3000_SPAIRPAT_ca) };
 };

@@ -10,8 +10,10 @@ on:
 
 jobs:
   build:
-    name: Build and Release
+    name: Build
     runs-on: ubuntu-latest
+    outputs:
+      VERSION: ${{ github.ref_name }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,41 +27,36 @@ jobs:
         run: hemtt release
 
       - name: Rename build folder
-        run: mv .hemttout/release .hemttout/@safe # Change "yourmodname"
-
-      - name: Zip the mod
-        run: |
-          cd .hemttout
-          zip -r @safe.zip @safe
+        run: mv .hemttout/release .hemttout/@safe
 
       - name: Upload Mod Artifact
         uses: actions/upload-artifact@v4
-        if: github.ref_type == 'tag'
         with:
-          name: mod-artifact
-          path: .hemttout/@safe.zip # Upload the zip
+          name: safe
+          path: .hemttout/@safe
           if-no-files-found: error
 
+  release:
+    name: Release
+    needs: build
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    steps:
       - name: Download Artifact
         uses: actions/download-artifact@v4
-        if: github.ref_type == 'tag'
         with:
-          name: mod-artifact
-          path: release-files
+          name: safe
+          path: artifacts/safe
+
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
-        if: github.ref_type == 'tag'
+        with:
+          files: artifacts/@safe.zip
+          name: ${{ needs.build.outputs.VERSION }}
+
+      - name: Upload to Steam Workshop
+        uses: arma-actions/workshop-upload@v1
         with:
           files: release-files/@safe.zip # Path to the zip in downloaded artifact
           name: ${{ github.ref_name }} # Use tag name as release name
-
-      - name: Upload to Workshop
-        uses: m00nl1ght-dev/steam-workshop-deploy@v4
-        if: github.ref_type == 'tag'
-        with:
-          username: ${{ secrets.STEAM_USERNAME }}
-          configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
-          path: .hemttout/@safe
-          appId: 3615632492
-          publishedFileId: 3615632492

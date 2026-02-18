@@ -7,3 +7,4 @@ keys/*.biprivatekey
 *.biprivatekey
 .vscode
 .hemtt/missions/~test.vr/
+.github/workflows/example_workflow.yaml
