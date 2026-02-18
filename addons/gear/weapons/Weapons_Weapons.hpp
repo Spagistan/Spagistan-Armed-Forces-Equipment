@@ -1,7 +1,6 @@
 class rhs_weap_ak74m;
 class rhs_weap_ak74m_gp25;
 class rhs_weap_rpk74m;
-/*
 class rhs_weap_ak103;
 class rhs_weap_ak103_npz;
 class rhs_weap_ak103_folded;
@@ -17,6 +16,8 @@ class rhs_weap_ak104_folded;
 class rhs_weap_ak104_zenitco01: rhs_weap_ak104
 {
 };
+
+
 class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 	{
 		scopeArsenal=2;
@@ -82,7 +83,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_tan: rhs_weap_ak103_zenitco01_folded
@@ -164,7 +165,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_tan_npz_grip1: bcb_weap_ak103_zenitco01_tan_npz
@@ -209,7 +210,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_tan_b33_grip1: bcb_weap_ak103_zenitco01_tan_b33
@@ -252,7 +253,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_tan_grip1: bcb_weap_ak104_zenitco01_tan
@@ -296,7 +297,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_tan_npz_grip1: bcb_weap_ak104_zenitco01_tan_npz
@@ -341,7 +342,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_tan_b33_grip1: bcb_weap_ak104_zenitco01_tan_b33
@@ -384,7 +385,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_tan_grip1: bcb_weap_ak105_zenitco01_tan
@@ -428,7 +429,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_tan_npz_grip1: bcb_weap_ak105_zenitco01_tan_npz
@@ -473,7 +474,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_tan_b33_grip1: bcb_weap_ak105_zenitco01_tan_b33
@@ -516,7 +517,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_tan_grip1: bcb_weap_ak74m_zenitco01_tan
@@ -560,7 +561,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_tan_npz_grip1: bcb_weap_ak74m_zenitco01_tan_npz
@@ -605,7 +606,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="ZENITCO TAN";
+			Finish="ZENITCO TAN";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_tan_b33_grip1: bcb_weap_ak74m_zenitco01_tan_b33
@@ -645,8 +646,8 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		baseWeapon="bcb_weap_ak103_t_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
-			Material="DESERT 1";
+			model="bcb_ak103_spray";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_npz_t_spray: rhs_weap_ak103_npz
@@ -668,7 +669,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_folded_t_spray: rhs_weap_ak103_folded
@@ -707,7 +708,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_gp25_npz_t_spray: rhs_weap_ak103_gp25_npz
@@ -729,7 +730,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t_spray: rhs_weap_ak103_zenitco01
@@ -755,7 +756,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_t_spray: rhs_weap_ak103_zenitco01_folded
@@ -837,7 +838,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t_spray_npz_grip1: bcb_weap_ak103_zenitco01_t_spray_npz
@@ -882,7 +883,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t_spray_b33_grip1: bcb_weap_ak103_zenitco01_t_spray_b33
@@ -923,7 +924,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak104_npz_t_spray: rhs_weap_ak104_npz
@@ -945,7 +946,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak104_folded_t_spray: rhs_weap_ak104_folded
@@ -987,7 +988,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t_spray_grip1: bcb_weap_ak104_zenitco01_t_spray
@@ -1031,7 +1032,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t_spray_npz_grip1: bcb_weap_ak104_zenitco01_t_spray_npz
@@ -1076,7 +1077,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t_spray_b33_grip1: bcb_weap_ak104_zenitco01_t_spray_b33
@@ -1117,7 +1118,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak105_npz_t_spray: rhs_weap_ak105_npz
@@ -1139,7 +1140,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak105_folded_t_spray: rhs_weap_ak105_folded
@@ -1181,7 +1182,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t_spray_grip1: bcb_weap_ak105_zenitco01_t_spray
@@ -1225,7 +1226,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t_spray_npz_grip1: bcb_weap_ak105_zenitco01_t_spray_npz
@@ -1270,7 +1271,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t_spray_b33_grip1: bcb_weap_ak105_zenitco01_t_spray_b33
@@ -1311,7 +1312,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_npz_t_spray: rhs_weap_ak74m_npz
@@ -1333,7 +1334,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_folded_t_spray: rhs_weap_ak74m_folded
@@ -1372,7 +1373,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_gp25_npz_t_spray: rhs_weap_ak74m_gp25_npz
@@ -1394,7 +1395,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t_spray: rhs_weap_ak74m_zenitco01
@@ -1419,7 +1420,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t_spray_grip1: bcb_weap_ak74m_zenitco01_t_spray
@@ -1463,7 +1464,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t_spray_npz_grip1: bcb_weap_ak74m_zenitco01_t_spray_npz
@@ -1508,7 +1509,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="DESERT 1";
+			Finish="DESERT 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t_spray_b33_grip1: bcb_weap_ak74m_zenitco01_t_spray_b33
@@ -1548,8 +1549,8 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		baseWeapon="bcb_weap_ak103_t2_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
-			Material="DESERT 2";
+			model="bcb_ak103_spray";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_npz_t2_spray: rhs_weap_ak103_npz
@@ -1571,7 +1572,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_folded_t2_spray: rhs_weap_ak103_folded
@@ -1610,7 +1611,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_gp25_npz_t2_spray: rhs_weap_ak103_gp25_npz
@@ -1632,7 +1633,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t2_spray: rhs_weap_ak103_zenitco01
@@ -1658,7 +1659,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_t2_spray: rhs_weap_ak103_zenitco01_folded
@@ -1740,7 +1741,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t2_spray_npz_grip1: bcb_weap_ak103_zenitco01_t2_spray_npz
@@ -1785,7 +1786,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t2_spray_b33_grip1: bcb_weap_ak103_zenitco01_t2_spray_b33
@@ -1826,7 +1827,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak104_npz_t2_spray: rhs_weap_ak104_npz
@@ -1848,7 +1849,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak104_folded_t2_spray: rhs_weap_ak104_folded
@@ -1890,7 +1891,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t2_spray_grip1: bcb_weap_ak104_zenitco01_t2_spray
@@ -1934,7 +1935,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t2_spray_npz_grip1: bcb_weap_ak104_zenitco01_t2_spray_npz
@@ -1979,7 +1980,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t2_spray_b33_grip1: bcb_weap_ak104_zenitco01_t2_spray_b33
@@ -2020,7 +2021,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak105_npz_t2_spray: rhs_weap_ak105_npz
@@ -2042,7 +2043,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak105_folded_t2_spray: rhs_weap_ak105_folded
@@ -2084,7 +2085,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t2_spray_grip1: bcb_weap_ak105_zenitco01_t2_spray
@@ -2128,7 +2129,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t2_spray_npz_grip1: bcb_weap_ak105_zenitco01_t2_spray_npz
@@ -2173,7 +2174,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t2_spray_b33_grip1: bcb_weap_ak105_zenitco01_t2_spray_b33
@@ -2214,7 +2215,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_npz_t2_spray: rhs_weap_ak74m_npz
@@ -2236,7 +2237,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_folded_t2_spray: rhs_weap_ak74m_folded
@@ -2275,7 +2276,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_gp25_npz_t2_spray: rhs_weap_ak74m_gp25_npz
@@ -2297,7 +2298,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t2_spray: rhs_weap_ak74m_zenitco01
@@ -2322,7 +2323,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t2_spray_grip1: bcb_weap_ak74m_zenitco01_t2_spray
@@ -2366,7 +2367,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t2_spray_npz_grip1: bcb_weap_ak74m_zenitco01_t2_spray_npz
@@ -2411,7 +2412,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="DESERT 2";
+			Finish="DESERT 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t2_spray_b33_grip1: bcb_weap_ak74m_zenitco01_t2_spray_b33
@@ -2451,8 +2452,8 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		baseWeapon="bcb_weap_ak103_t3_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
-			Material="DESERT 3";
+			model="bcb_ak103_spray";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_npz_t3_spray: rhs_weap_ak103_npz
@@ -2474,7 +2475,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_folded_t3_spray: rhs_weap_ak103_folded
@@ -2513,7 +2514,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_gp25_npz_t3_spray: rhs_weap_ak103_gp25_npz
@@ -2535,7 +2536,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t3_spray: rhs_weap_ak103_zenitco01
@@ -2561,7 +2562,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_t3_spray: rhs_weap_ak103_zenitco01_folded
@@ -2643,7 +2644,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t3_spray_npz_grip1: bcb_weap_ak103_zenitco01_t3_spray_npz
@@ -2688,7 +2689,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_t3_spray_b33_grip1: bcb_weap_ak103_zenitco01_t3_spray_b33
@@ -2729,7 +2730,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak104_npz_t3_spray: rhs_weap_ak104_npz
@@ -2751,7 +2752,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak104_folded_t3_spray: rhs_weap_ak104_folded
@@ -2793,7 +2794,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t3_spray_grip1: bcb_weap_ak104_zenitco01_t3_spray
@@ -2837,7 +2838,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t3_spray_npz_grip1: bcb_weap_ak104_zenitco01_t3_spray_npz
@@ -2882,7 +2883,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_t3_spray_b33_grip1: bcb_weap_ak104_zenitco01_t3_spray_b33
@@ -2923,7 +2924,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak105_npz_t3_spray: rhs_weap_ak105_npz
@@ -2945,7 +2946,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak105_folded_t3_spray: rhs_weap_ak105_folded
@@ -2987,7 +2988,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t3_spray_grip1: bcb_weap_ak105_zenitco01_t3_spray
@@ -3031,7 +3032,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t3_spray_npz_grip1: bcb_weap_ak105_zenitco01_t3_spray_npz
@@ -3076,7 +3077,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_t3_spray_b33_grip1: bcb_weap_ak105_zenitco01_t3_spray_b33
@@ -3117,7 +3118,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_npz_t3_spray: rhs_weap_ak74m_npz
@@ -3139,7 +3140,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_folded_t3_spray: rhs_weap_ak74m_folded
@@ -3178,7 +3179,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_gp25_npz_t3_spray: rhs_weap_ak74m_gp25_npz
@@ -3200,7 +3201,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t3_spray: rhs_weap_ak74m_zenitco01
@@ -3225,7 +3226,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t3_spray_grip1: bcb_weap_ak74m_zenitco01_t3_spray
@@ -3269,7 +3270,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t3_spray_npz_grip1: bcb_weap_ak74m_zenitco01_t3_spray_npz
@@ -3314,7 +3315,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="DESERT 3";
+			Finish="DESERT 3";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_t3_spray_b33_grip1: bcb_weap_ak74m_zenitco01_t3_spray_b33
@@ -3354,8 +3355,8 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		baseWeapon="bcb_weap_ak103_w_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
-			Material="WOODLAND 1";
+			model="bcb_ak103_spray";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_npz_w_spray: rhs_weap_ak103_npz
@@ -3377,7 +3378,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_folded_w_spray: rhs_weap_ak103_folded
@@ -3416,7 +3417,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_gp25_npz_w_spray: rhs_weap_ak103_gp25_npz
@@ -3438,7 +3439,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w_spray: rhs_weap_ak103_zenitco01
@@ -3464,7 +3465,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_w_spray: rhs_weap_ak103_zenitco01_folded
@@ -3546,7 +3547,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w_spray_npz_grip1: bcb_weap_ak103_zenitco01_w_spray_npz
@@ -3591,7 +3592,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w_spray_b33_grip1: bcb_weap_ak103_zenitco01_w_spray_b33
@@ -3632,7 +3633,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak104_npz_w_spray: rhs_weap_ak104_npz
@@ -3654,7 +3655,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak104_folded_w_spray: rhs_weap_ak104_folded
@@ -3696,7 +3697,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w_spray_grip1: bcb_weap_ak104_zenitco01_w_spray
@@ -3740,7 +3741,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w_spray_npz_grip1: bcb_weap_ak104_zenitco01_w_spray_npz
@@ -3785,7 +3786,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w_spray_b33_grip1: bcb_weap_ak104_zenitco01_w_spray_b33
@@ -3826,7 +3827,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak105_npz_w_spray: rhs_weap_ak105_npz
@@ -3848,7 +3849,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak105_folded_w_spray: rhs_weap_ak105_folded
@@ -3890,7 +3891,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w_spray_grip1: bcb_weap_ak105_zenitco01_w_spray
@@ -3934,7 +3935,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w_spray_npz_grip1: bcb_weap_ak105_zenitco01_w_spray_npz
@@ -3979,7 +3980,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w_spray_b33_grip1: bcb_weap_ak105_zenitco01_w_spray_b33
@@ -4020,7 +4021,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_npz_w_spray: rhs_weap_ak74m_npz
@@ -4042,7 +4043,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_folded_w_spray: rhs_weap_ak74m_folded
@@ -4081,7 +4082,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_gp25_npz_w_spray: rhs_weap_ak74m_gp25_npz
@@ -4103,7 +4104,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w_spray: rhs_weap_ak74m_zenitco01
@@ -4128,7 +4129,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w_spray_grip1: bcb_weap_ak74m_zenitco01_w_spray
@@ -4172,7 +4173,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w_spray_npz_grip1: bcb_weap_ak74m_zenitco01_w_spray_npz
@@ -4217,7 +4218,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="WOODLAND 1";
+			Finish="WOODLAND 1";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w_spray_b33_grip1: bcb_weap_ak74m_zenitco01_w_spray_b33
@@ -4257,8 +4258,8 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		baseWeapon="bcb_weap_ak103_w2_spray";
 		class XtdGearInfo
 		{
-			model="rhs_weap_ak103";
-			Material="WOODLAND 2";
+			model="bcb_ak103_spray";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_npz_w2_spray: rhs_weap_ak103_npz
@@ -4280,7 +4281,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_folded_w2_spray: rhs_weap_ak103_folded
@@ -4319,7 +4320,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_gp25_npz_w2_spray: rhs_weap_ak103_gp25_npz
@@ -4341,7 +4342,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_gp25_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w2_spray: rhs_weap_ak103_zenitco01
@@ -4367,7 +4368,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_folded_w2_spray: rhs_weap_ak103_zenitco01_folded
@@ -4449,7 +4450,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w2_spray_npz_grip1: bcb_weap_ak103_zenitco01_w2_spray_npz
@@ -4494,7 +4495,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak103_zenitco01_b33_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak103_zenitco01_w2_spray_b33_grip1: bcb_weap_ak103_zenitco01_w2_spray_b33
@@ -4535,7 +4536,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak104_npz_w2_spray: rhs_weap_ak104_npz
@@ -4557,7 +4558,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak104_folded_w2_spray: rhs_weap_ak104_folded
@@ -4599,7 +4600,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w2_spray_grip1: bcb_weap_ak104_zenitco01_w2_spray
@@ -4643,7 +4644,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w2_spray_npz_grip1: bcb_weap_ak104_zenitco01_w2_spray_npz
@@ -4688,7 +4689,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak104_zenitco01_b33_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak104_zenitco01_w2_spray_b33_grip1: bcb_weap_ak104_zenitco01_w2_spray_b33
@@ -4729,7 +4730,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak105_npz_w2_spray: rhs_weap_ak105_npz
@@ -4751,7 +4752,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak105_folded_w2_spray: rhs_weap_ak105_folded
@@ -4793,7 +4794,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w2_spray_grip1: bcb_weap_ak105_zenitco01_w2_spray
@@ -4837,7 +4838,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w2_spray_npz_grip1: bcb_weap_ak105_zenitco01_w2_spray_npz
@@ -4882,7 +4883,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak105_zenitco01_b33_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak105_zenitco01_w2_spray_b33_grip1: bcb_weap_ak105_zenitco01_w2_spray_b33
@@ -4923,7 +4924,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_npz_w2_spray: rhs_weap_ak74m_npz
@@ -4945,7 +4946,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_folded_w2_spray: rhs_weap_ak74m_folded
@@ -4984,7 +4985,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_gp25_npz_w2_spray: rhs_weap_ak74m_gp25_npz
@@ -5006,7 +5007,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_gp25_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w2_spray: rhs_weap_ak74m_zenitco01
@@ -5031,7 +5032,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w2_spray_grip1: bcb_weap_ak74m_zenitco01_w2_spray
@@ -5075,7 +5076,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_npz_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w2_spray_npz_grip1: bcb_weap_ak74m_zenitco01_w2_spray_npz
@@ -5120,7 +5121,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 		class XtdGearInfo
 		{
 			model="bcb_ak74m_zenitco01_b33_spray";
-			Material="WOODLAND 2";
+			Finish="WOODLAND 2";
 		};
 	};
 	class bcb_weap_ak74m_zenitco01_w2_spray_b33_grip1: bcb_weap_ak74m_zenitco01_w2_spray_b33
@@ -5141,8 +5142,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 			"\rhsafrf\addons\rhs_c_weapons\anims\rhs_hand_akmr_afg.rtm"
 		};
 	};
-*/
-//Spag stuff_________________________________________________________________________________________
+
 
 class S_weap_ak74m_ip78: rhs_weap_ak74m {
     class LinkedItems {
