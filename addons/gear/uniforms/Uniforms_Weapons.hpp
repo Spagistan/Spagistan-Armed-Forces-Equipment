@@ -176,7 +176,6 @@ class U_S_Uniform_Gorka_SPAGPAT: Uniform_Base
     displayName="Gorka-R (Spagpat/Mixed/Gloves)";
     picture="\rhsafrf\addons\rhs_infantry2\inventory\gear_icon_gorka_y_ca.paa";
     author = "Spagistan Mod Team";
-    author = "Spagistan Mod Team";
     scope=2;
 	hiddenSelections[] = {"camo1","Insignia"};
 	hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka)};

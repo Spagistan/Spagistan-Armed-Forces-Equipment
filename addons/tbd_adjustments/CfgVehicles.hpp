@@ -4,7 +4,7 @@ class CfgVehicles {
     class tbd_mortars_152mm_box_he;
     class tbd_mortars_152mm_box_dpicm;
     class tbd_mortars_152mm_box_laser;
-    
+
     class spag_152mm_box_he : tbd_mortars_152mm_box_he {
         scope = 2;
         scopeCurator = 2;

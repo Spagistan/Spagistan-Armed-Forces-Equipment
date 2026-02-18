@@ -1,5 +1,3 @@
-class rhs_weap_ak74m;
-class rhs_weap_ak74m_gp25;
 class rhs_weap_rpk74m;
 class rhs_weap_ak103;
 class rhs_weap_ak103_npz;
@@ -72,7 +70,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
 			QPATHTOF(data\weapons\zenitco\rhs_zenitko_01_co.paa),
 			QPATHTOF(data\weapons\zenitco\rhs_zenitko_02_co.paa),
-			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paa)
+			QPATHTOF(data\weapons\zenitco\rhs_b33_co.paas)
 		};
 		rhs_fold="bcb_weap_ak103_zenitco01_folded_tan";
 		rhs_npz="bcb_weap_ak103_zenitco01_tan_npz";

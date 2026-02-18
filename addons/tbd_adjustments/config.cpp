@@ -13,7 +13,13 @@ class CfgPatches
 			"spag_82mm_box_smoke",
 			"spag_82mm_box_illum",
 			"spag_82mm_box_cumul",
-			"spag_107mm_box_he"
+			"spag_107mm_box_he",
+			"spag_100mm_box_ap",
+			"spag_100mm_box_atgm",
+			"spag_100mm_box_he",
+			"spag_100mm_box_heat",
+			"spag_100mm_box_stal",
+			"spag_2b9_vasilek_magazine"
 			};
 		weapons[] = {};
 		requiredVersion = 0.1;

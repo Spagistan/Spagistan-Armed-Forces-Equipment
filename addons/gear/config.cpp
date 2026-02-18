@@ -13,9 +13,8 @@ class CfgPatches
 			"S_KitBag_Rifleman",
 			"S_KitBag_Spag_Grenadier",
 			"S_KitBag_Spag_CLS",
-			"S_KitBag_Spag_PLM",
 			"TFAR_SPAG_mr3000_SL",
-			"NG_KitBag_Rifleman",
+			"NG_KitBag_RF",
 			};
 		weapons[] = {
 			"S_Helmet_SPAGPAT",
