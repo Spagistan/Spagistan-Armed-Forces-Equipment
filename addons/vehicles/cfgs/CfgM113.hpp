@@ -9,7 +9,7 @@
 
 class rhsusf_m113d_usarmy_unarmed;
 class m113_spagpat: rhsusf_m113d_usarmy_unarmed {
-	displayName = "M113 Spagistan (Unarmed)";
+	displayName = "M113A3 (Unarmed)";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;

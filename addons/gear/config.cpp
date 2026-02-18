@@ -58,4 +58,5 @@ class CfgPatches
 };
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"

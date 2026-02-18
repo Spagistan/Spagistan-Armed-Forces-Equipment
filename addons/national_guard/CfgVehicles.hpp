@@ -16,8 +16,8 @@ class CfgVehicles {
 
     class m113_spagpat;
     class m113_spagpat_OCimport_01 : m113_spagpat { scope = 0; class EventHandlers; class Turrets; };
-    class m113_spagpat_OCimport_02 : m113_spagpat_OCimport_01 { 
-        class EventHandlers; 
+    class m113_spagpat_OCimport_02 : m113_spagpat_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class MainTurret_In;
             class CargoTurret_01;
@@ -31,8 +31,8 @@ class CfgVehicles {
 
     class rhsgref_cdf_btr70;
     class rhsgref_cdf_btr70_OCimport_01 : rhsgref_cdf_btr70 { scope = 0; class EventHandlers; class Turrets; };
-    class rhsgref_cdf_btr70_OCimport_02 : rhsgref_cdf_btr70_OCimport_01 { 
-        class EventHandlers; 
+    class rhsgref_cdf_btr70_OCimport_02 : rhsgref_cdf_btr70_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
             class CommanderOptics;
@@ -50,8 +50,8 @@ class CfgVehicles {
 
     class BMP_Spagpat;
     class BMP_Spagpat_OCimport_01 : BMP_Spagpat { scope = 0; class EventHandlers; class Turrets; };
-    class BMP_Spagpat_OCimport_02 : BMP_Spagpat_OCimport_01 { 
-        class EventHandlers; 
+    class BMP_Spagpat_OCimport_02 : BMP_Spagpat_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
             class Com_BMP1;
@@ -203,7 +203,7 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 2;
         faction = "i_spagistan_ng";
-        editorCategory = "Spagistan_NG_Category";   
+        editorCategory = "Spagistan_NG_Category";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
@@ -284,7 +284,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "M113";
+        displayName = "M113A3 (Unarmed)";
         side = 2;
         faction = "i_spagistan_ng";
         crew = "I_Spagistan_NG_Crewman_01";
@@ -320,7 +320,7 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-        
+
         identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
@@ -404,7 +404,7 @@ class CfgVehicles {
         faction = "i_spagistan_ng";
         crew = "I_Spagistan_NG_Crewman_01";
         editorCategory = "Spagistan_NG_Category";
-    
+
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "I_Spagistan_NG_Crewman_01"; };
             class Com_BMP1 : Com_BMP1 { gunnerType = "I_Spagistan_NG_Crewman_01"; };
