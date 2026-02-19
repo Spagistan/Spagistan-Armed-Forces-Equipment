@@ -19,6 +19,15 @@ class CfgPatches
 			"S_Helmet_SPAGPAT",
 			"S_Helmet_SPAGPAT_black_ess",
 			"S_Helmet_SPAGPAT_black_ess_bare",
+			"S_Helmet_SPAGPAT_tan_ess",
+			"S_Helmet_Olive_tan_ess",
+			"S_Helmet_SPAGPAT_tan_ess_bare",
+			"S_Helmet_Winter",
+			"S_Helmet_SPAGPAT_Winter",
+			"S_Helmet_SPAGPAT_Winter_black_ess",
+			"S_Helmet_SPAGPAT_Winter_black_ess_bare",
+			"S_Helmet_SPAGPAT_Winter_tan_ess",
+			"S_Helmet_SPAGPAT_Winter_tan_ess_bare",
 			"S_PatrolCap_SPAGPAT",
 			"S_PatrolCap_SPAGPAT_AIR",
 			"U_S_Uniform_SPAGPAT",
@@ -47,3 +56,5 @@ class CfgPatches
 };
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"
