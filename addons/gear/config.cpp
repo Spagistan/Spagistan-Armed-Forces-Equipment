@@ -10,7 +10,6 @@ class CfgPatches
 			"TFAR_SPAG_Air_mr3000",
 			"S_KitBag_Spag",
 			"S_Tubitak_Spag",
-			"S_KitBag_Rifleman",
 			"S_KitBag_Spag_Grenadier",
 			"S_KitBag_Spag_CLS",
 			"TFAR_SPAG_mr3000_SL",
@@ -48,5 +47,3 @@ class CfgPatches
 };
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-#include "XtdGearModels.hpp"
-#include "XtdGearInfos.hpp"

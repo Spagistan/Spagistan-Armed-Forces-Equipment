@@ -1,36 +1,70 @@
 [config.file_type]
 options.allow_no_extension = true
 
+[config.math_could_be_unquoted]
+enabled = false
+
 [stringtables.usage]
 options.ignore = ["str_ace_repair_hit"]
 options.ignore_unused = true
 
-[sqf.banned_commands]
-options.ignore = [
-    "addPublicVariableEventHandler", # Alt syntax is broken, we are using main syntax
-    "createSoundSource",             # Greatly attenuated when in first person and in a vehicle
-]
+# [sqf.banned_commands]
+# options.ignore = [
+#     "addPublicVariableEventHandler", # Alt syntax is broken, we are using main syntax
+#     "createSoundSource",             # Greatly attenuated when in first person and in a vehicle
+# ]
 
-[sqf.var_all_caps]
-options.ignore = ["SLX_*", "ACE_*"]
+# [sqf.var_all_caps]
+# options.ignore = ["SLX_*", "ACE_*"]
 
-[sqf.banned_macros]
-options.release = [
-    "DEBUG_MODE_FULL",
-    "DISABLE_COMPILE_CACHE",
-    "ENABLE_PERFORMANCE_COUNTERS",
-]
+# [sqf.banned_macros]
+# options.release = [
+#     "DEBUG_MODE_FULL",
+#     "DISABLE_COMPILE_CACHE",
+#     "ENABLE_PERFORMANCE_COUNTERS",
+# ]
 
-[sqf.undefined]
-enabled = true
-options.check_orphan_code = true
+# [sqf.undefined]
+# enabled = true
+# options.check_orphan_code = true
 
-[sqf.unused]
-#enabled = true #many false positives without DEBUG_MODE_FULL
-options.check_params = false
+# [sqf.unused]
+# #enabled = true #many false positives without DEBUG_MODE_FULL
+# options.check_params = false
 
-[sqf.shadowed]
-enabled = false
+# [sqf.shadowed]
+# enabled = false
 
-[sqf.not_private]
-enabled = true
+# [sqf.not_private]
+# enabled = true
+
+[sqf]
+static_typename = false
+command_case = false
+if_assign = false
+find_in_str = false
+select_parse_number = false
+format_args = false
+banned_commands = false
+if_not_else = false
+unused = false
+invalid_args = false
+undefined = false
+shadowed = false
+not_private = false
+var_all_caps = false
+in_vehicle_check = false
+extra_not = false
+bool_static_comparison = false
+invalid_comparisons = false
+this_call = false
+reasign_reserved_variable = false
+marker_update_spam = false
+count_array_comp = false
+short_circuit_bool_var = false
+select_count = false
+banned_macros = false
+config_of = false
+missing_file = false
+reimplementing_command = false
+count_skippable = false

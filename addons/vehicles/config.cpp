@@ -18,7 +18,6 @@ class CfgPatches
 			"m113_spagpat",
 			"mi8t_spagpat",
 			"SU25_Spagpat",
-			"RHS_Su25SM_vvs_DonkeyPunched",
 			"YAK130_Spagpat",
 			"spag_ural_closed",
 			"spag_ural_open",
@@ -37,7 +36,7 @@ class CfgPatches
 			"spag_uaz_dshkm",
 			"spag_uaz_ags30"
 			};
-			
+
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"spag_main","spag_common","rhs_main", "rhs_c_a2port_car"};

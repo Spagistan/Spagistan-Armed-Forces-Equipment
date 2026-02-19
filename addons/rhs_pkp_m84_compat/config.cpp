@@ -3,7 +3,7 @@ class CfgPatches {
 	class rhs_pkp_m84_compat {
 		units[] = {};
 		weapons[] = {
-			"rhs_weap_pkp"
+			"rhs_weap_pkp_changed"
 		};
 		requiredAddons[] = {"rhs_c_weapons", "rhssaf_c_weapons"};
 		author = "D. Ank";
