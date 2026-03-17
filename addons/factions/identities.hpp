@@ -64,7 +64,8 @@ class GenericNames
             toshmatov="Toshmatov";
             herrington="Herrington";
             darkholme="Darkholme";
-            spagistani="Spagistani";
+            spagistan="Spagistan";
+            hussein="Hussein";
         };
     };
 };
