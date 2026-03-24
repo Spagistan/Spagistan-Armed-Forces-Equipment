@@ -10,7 +10,6 @@ workshop = [
     "894678801",  # TFAR Workshop ID
     "583496184",  # CUP Terrains - Core Workshop ID
     "583544987",  # CUP Terrains - Maps
-    "2890312862", # Uncon Actions Workshop ID
     "3125837686", # Bulat UAV Workshop ID
     "3045129955", # FPV Drone Crocus Workshop ID
     "1779063631", # Zeus Enhanced Workshop ID
@@ -26,8 +25,10 @@ workshop = [
     "2890312862", # Unconventional Actors
     "1885205711", # RHS Mixed Mags
     "2522638637", # ACE3 Arsenal Extended - Core
+    "2170387941", # TOH Characters
+    #    "620260972", # ALiVE
 ]
 
-[arty]
-extends = "default"
-mission = "operationironveilwinter.chernarus_winter"
+# [arty]
+# extends = "default"
+mission = "testCiv.VR"

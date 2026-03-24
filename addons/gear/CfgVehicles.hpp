@@ -11,7 +11,7 @@ class CfgVehicles
   #include "hats/Hats_Vehicles.hpp"
   #include "uniforms/Uniforms_Vehicles.hpp"
   #include "vests/Vests_Vehicles.hpp"
-  
+  // #include "items/items_Vehicles.hpp"
   #include "backpacks/NG_Backpacks_Vehicles.hpp"
 
 };
