@@ -315,6 +315,58 @@ class U_S_Uniform_Gorka_Full_Hands_SPAGPAT: Uniform_Base
 			scope = 1;
     };
 };
+
+class S_Uniform_Civ1: Uniform_Base
+	{
+		displayName="Civilian Clothes (Beige)";
+		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
+		author= "Spagistan Mod Team";
+		scope = 2;
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="S_Civilian1";
+			containerClass="Supply60";
+			mass=60;
+			scope = 1;
+		};
+	};
+
+class S_Uniform_Civ2: Uniform_Base
+	{
+		displayName="Civilian Clothes (Violet)";
+		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
+		author= "Spagistan Mod Team";
+		scope = 2;
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="S_Civilian2";
+			containerClass="Supply60";
+			mass=60;
+			scope = 1;
+		};
+	};
+
+class S_Uniform_Civ3: Uniform_Base
+	{
+		displayName="Civilian Clothes (Blue)";
+		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
+		author= "Spagistan Mod Team";
+		scope = 2;
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="S_Civilian3";
+			containerClass="Supply60";
+			mass=60;
+			scope = 1;
+		};
+	};	
+
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
 //  BACKWARDS COMPATIBILITY
