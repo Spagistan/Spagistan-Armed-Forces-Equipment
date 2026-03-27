@@ -12,4 +12,20 @@ class CfgFactionClasses {
         icon = "\z\spag\addons\common\gui\Spag_Flag_Square_ca.paa";
         priority = 7;
     };
+
+    class O_SPAG_Militia_OPFOR {
+        displayName = "Spagistani Militia";
+        side = 0;
+        flag = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
+        icon = "\z\spag\addons\common\gui\Spag_Flag_Square_ca.paa";
+        priority = 7;
+    };
+
+        class C_SPAG_Civilian {
+        displayName = "Spagistani Civilians";
+        side = 3;
+        flag = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";
+        icon = "\z\spag\addons\common\gui\Spag_Flag_Square_ca.paa";
+        priority = 7;
+    };
 };

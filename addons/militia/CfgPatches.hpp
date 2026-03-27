@@ -1,11 +1,32 @@
 class CfgPatches {
     class I_SPAG_Militia {
         units[] = {
+            ///INDEPENDENT///
             "I_Spagistan_Militiaman_Izh18",
             "I_Spagistan_Militiaman_PM_63",
             "I_Spagistan_Militiaman_M84",
             "I_Spagistan_Militiaman_M79",
-            "I_Spagistan_Militiaman_M3A1"
+            "I_Spagistan_Militiaman_M3A1",
+            "I_Spagistan_Militiaman_K98",
+            "I_Spagistan_Militiaman_RPG7",
+            "I_Spagistan_Militiaman_Mosin",
+            "I_Spagistan_Militiawoman_M590A1",
+            "I_Spagistan_Militiawoman_Medic",
+            ///OPFOR///
+            "O_Spagistan_Militiaman_Izh18_opfor",
+            "O_Spagistan_Militiaman_PM_63_opfor",
+            "O_Spagistan_Militiaman_M84_opfor",
+            "O_Spagistan_Militiaman_M79_opfor",
+            "O_Spagistan_Militiaman_M3A1_opfor",
+            "O_Spagistan_Militiaman_K98_opfor",
+            "O_Spagistan_Militiaman_RPG7_opfor",
+            "O_Spagistan_Militiaman_Mosin_opfor",
+            "O_Spagistan_Militiawoman_M590A1_opfor",
+            "O_Spagistan_Militiawoman_Medic_opfor",
+            ///CIVILIAN///
+            "C_Spag_Civ_Dealer1"
+
+
         };
         weapons[] = {};
         requiredVersion = 1.62;

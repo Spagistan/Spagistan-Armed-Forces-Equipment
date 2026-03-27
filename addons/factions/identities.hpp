@@ -68,9 +68,8 @@ class GenericNames
             hussein="Hussein";
         };
     };
-};
 
-class SpagistanWomen
+    class SpagistanWomen
     {
         class FirstNames
         {
@@ -143,6 +142,9 @@ class SpagistanWomen
             hussein="Hussein";
         };
     };
+};
+
+
 
 
 /*
