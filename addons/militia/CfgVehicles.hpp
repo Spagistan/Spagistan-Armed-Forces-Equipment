@@ -7,11 +7,40 @@
 class CBA_Extended_EventHandlers_base;
 class EventHandlers;
 class I_G_Soldier_base_F;
+class S_Tubitak_Spag;
+class rhs_medic_bag;
 
 class CfgVehicles {
 
+    class S_Tubitak_Militia_AT : S_Tubitak_Spag {
+        scope = 1;
+        scopeArsenal = 1;
+		class TransportMagazines
+		{
+			mag_xx(rhs_rpg7_PG7VL_mag,4);
+			mag_xx(rhs_rpg7_OG7V_mag,2);
+		};
+
+    };
+
+    class S_Medic_Bag_Militia : rhs_medic_bag {
+        scope = 1;
+        scopeArsenal = 1;
+		class TransportItems
+		{
+			item_xx(ACE_salineIV,5);
+			item_xx(ACE_surgicalKit,1);
+            item_xx(ACE_suture,30);
+            item_xx(ACE_tourniquet,4);
+            item_xx(ACE_morphine,3);
+            item_xx(ACE_epinephrine,3);
+            item_xx(ACE_elasticBandage,20);
+            item_xx(ACE_splint,3);
+		};
+    };
+
     class I_Spagistan_Militiaman_Base : I_G_Soldier_base_F {
-    author = "A. Dan";
+        author = "A. Dan";
         scope = 0;
         scopeCurator = 0;
         side = 2;
@@ -19,6 +48,13 @@ class CfgVehicles {
         faction = "I_SPAG_Militia";
         editorCategory = "Spagistani_Militia_Category";
         identityTypes[] = {"Head_TK","LanguagePER_F"};
+        uniformClass = "";
+        linkedItems[] = {"","","","","",""};
+        respawnLinkedItems[] = {"","","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {""};
+        respawnWeapons[] = {""};
+        magazines[] = {""};
+        respawnMagazines[] = {""};
         Items[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
 		RespawnItems[] = { "cigs_matches", "ACE_tourniquet" };
         headgearList[] =
@@ -30,7 +66,10 @@ class CfgVehicles {
             "rhs_fieldcap_m88_back", 0.5,
             "rhs_fieldcap_m88_", 0.2,
             "S_beret_green_NONE", 0.2,
-            "H_Cap_red", 0.2
+            "H_Cap_blk", 0.2,
+            "H_Cap_red", 0.2,
+            "H_Hat_Safari_sand_F", 0.2
+
 		};
 
 		class EventHandlers : EventHandlers
@@ -39,37 +78,39 @@ class CfgVehicles {
         };
     };
 
-
+        class I_Spagistan_Militiawoman_Base : I_Spagistan_Militiaman_Base {
+        genericNames = "SpagistanWomen";
+        identityTypes[] = {"Head_TK_W","LanguagePER_F"};
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';}; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
 
     class I_Spagistan_Militiaman_Izh18 : I_Spagistan_Militiaman_Base {
         scope = 2;
         scopeCurator = 2;
         displayName = "Militiaman (Shotgun)";
         uniformClass = "U_I_C_Soldier_Bandit_4_F";
+        linkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         weapons[] = {"rhs_weap_Izh18"};
         respawnWeapons[] = {"rhs_weap_Izh18"};
         magazines[] = { ITEM_8("rhsgref_1Rnd_Slug"), ITEM_11("rhsgref_1Rnd_00Buck") };
         respawnMagazines[] = { ITEM_8("rhsgref_1Rnd_Slug"), ITEM_11("rhsgref_1Rnd_00Buck") };
-        linkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        respawnLinkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
     };
 
     class I_Spagistan_Militiaman_PM_63 : I_Spagistan_Militiaman_Base {
         scope = 2;
         scopeCurator = 2;
-        displayName = "Militiaman (AK Rifle)";
+        displayName = "Militiaman (Rifle 1)";
         uniformClass = "U_I_C_Soldier_Bandit_1_F";
-        linkedItems[] = {"rhs_gear_OFF","S_beret_green_NONE","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"rhs_gear_OFF","S_beret_green_NONE","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_gear_OFF","S_beret_green_NONE","ItemMap","ItemCompass","ItemWatch"};
-
         weapons[] = {"rhs_weap_pm63"};
         respawnWeapons[] = {"rhs_weap_pm63"};
-
-        magazines[] = {"rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm"};
-        respawnMagazines[] = {"rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm"};
-
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_pm63","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm",30},{},""},{},{},{"U_I_C_Soldier_Bandit_1_F",{}},{"rhs_gear_OFF",{{"rhs_30Rnd_762x39mm",2,30}}},{},"S_beret_green_NONE","",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
-
+        magazines[] = {ITEM_3("rhs_30Rnd_762x39mm"),};
+        respawnMagazines[] = {ITEM_3("rhs_30Rnd_762x39mm"),};
     };
 
     class I_Spagistan_Militiaman_M84 : I_Spagistan_Militiaman_Base {
@@ -77,35 +118,35 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Militiaman (GPMG)";
         uniformClass = "U_C_Poloshirt_stripped";
-        linkedItems[] = {"rhs_chicom_khk","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"rhs_chicom_khk","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-
+        linkedItems[] = {"rhs_chicom_khk","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"rhs_chicom_khk","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         weapons[] = {"rhs_weap_m84"};
         respawnWeapons[] = {"rhs_weap_m84"};
-
         magazines[] = {"rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N13"};
         respawnMagazines[] = {"rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N13"};
-
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m84","","","",{"rhs_100Rnd_762x54mmR_7N13",100},{},""},{},{},{"U_C_Poloshirt_stripped",{}},{"rhs_chicom_khk",{}},{},"S_Pakol","",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
-
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_stripped';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
     };
 
     class I_Spagistan_Militiaman_M79 : I_Spagistan_Militiaman_Base {
         scope = 2;
         scopeCurator = 2;
-        displayName = "Militiaman (Grenade Launcher)";
+        displayName = "Militiaman (GL)";
         uniformClass = "U_C_Poloshirt_tricolour";
-        linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-
+        linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         weapons[] = {"rhs_weap_m79"};
         respawnWeapons[] = {"rhs_weap_m79"};
-
-        magazines[] = {"rhs_mag_M441_HE","rhs_mag_M441_HE"};
-        respawnMagazines[] = {"rhs_mag_M441_HE","rhs_mag_M441_HE"};
-
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m79","","","",{"rhs_mag_M441_HE",1},{},""},{},{},{"U_C_Poloshirt_tricolour",{}},{"rhs_belt_AK_GL",{{"rhs_mag_M441_HE",10,1}}},{},"S_Turban","",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
-
+        magazines[] = {ITEM_11("rhs_mag_M441_HE")};
+        respawnMagazines[] = {ITEM_11("rhs_mag_M441_HE")};
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_tricolour';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
     };
 
         class I_Spagistan_Militiaman_M3A1 : I_Spagistan_Militiaman_Base {
@@ -113,16 +154,223 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Militiaman (SMG)";
         uniformClass = "U_C_Poloshirt_salmon";
-        linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","ItemMap","ItemCompass","ItemWatch"};
-
+        linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         weapons[] = {"rhs_weap_m3a1"};
         respawnWeapons[] = {"rhs_weap_m3a1"};
+        magazines[] = {ITEM_4("rhsgref_30rnd_1143x23_M1911B_SMG")};
+        respawnMagazines[] = {ITEM_4("rhsgref_30rnd_1143x23_M1911B_SMG")};
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_salmon';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
 
-        magazines[] = {"rhsgref_30rnd_1143x23_M1911B_SMG","rhsgref_30rnd_1143x23_M1911B_SMG"};
-        respawnMagazines[] = {"rhsgref_30rnd_1143x23_M1911B_SMG","rhsgref_30rnd_1143x23_M1911B_SMG"};
+    class I_Spagistan_Militiaman_K98 : I_Spagistan_Militiaman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Militiaman (Rifle 2)";
+        uniformClass = "U_I_C_Soldier_Para_5_F";
+        linkedItems[] = {"","","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {"rhs_weap_kar98k"};
+        respawnWeapons[] = {"rhs_weap_kar98k"};
+        magazines[] = {ITEM_10("rhsgref_5Rnd_792x57_kar98k"),};
+        respawnMagazines[] = {ITEM_10("rhsgref_5Rnd_792x57_kar98k"),};
+    };
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m3a1","","","",{"rhsgref_30rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_C_Poloshirt_salmon",{}},{"rhs_6b2",{{"rhsgref_30rnd_1143x23_M1911B_SMG",1,30}}},{},"H_Cap_red","",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+    class I_Spagistan_Militiaman_RPG7 : I_Spagistan_Militiaman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Militiaman (Anti-Tank)";
+        uniformClass = "U_I_C_Soldier_Bandit_5_F";
+        backpack = "S_Tubitak_Militia_AT";
+        linkedItems[] = {"","H_Hat_Safari_sand_F","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","H_Hat_Safari_sand_F","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {"rhs_weap_rpg7"};
+        respawnWeapons[] = {"rhs_weap_rpg7"};
+        magazines[] = {ITEM_4("rhs_rpg7_PG7VL_mag"), ITEM_2("rhs_rpg7_OG7V_mag")};
+        respawnMagazines[] = {ITEM_4("rhs_rpg7_PG7VL_mag"), ITEM_2("rhs_rpg7_OG7V_mag")};
+    };
 
+        class I_Spagistan_Militiaman_Mosin : I_Spagistan_Militiaman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Militiaman (Rifle 3)";
+        uniformClass = "U_I_C_Soldier_Bandit_3_F";
+        linkedItems[] = {"rhs_chicom_khk","rhs_pilotka","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"rhs_chicom_khk","rhs_pilotka","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {"rhs_weap_m38"};
+        respawnWeapons[] = {"rhs_weap_m38"};
+        magazines[] = {ITEM_11("rhsgref_5Rnd_762x54_m38")};
+        respawnMagazines[] = {ITEM_11("rhsgref_5Rnd_762x54_m38")};
+    };
+
+        class I_Spagistan_Militiawoman_M590A1 : I_Spagistan_Militiawoman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Militiawoman (Shotgun)";
+        uniformClass = "U_BG_Guerilla3_1";
+        linkedItems[] = {"","rhs_fieldcap_m88_back","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","rhs_fieldcap_m88_back","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {"rhs_weap_M590_8RD"};
+        respawnWeapons[] = {"rhs_weap_M590_8RD"};
+        magazines[] = {ITEM_5("rhsusf_8Rnd_Slug")};
+        respawnMagazines[] = {ITEM_5("rhsusf_8Rnd_Slug")};
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
+        (_this select 0) forceAddUniform 'U_BG_Guerilla3_1'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+        class I_Spagistan_Militiawoman_Medic : I_Spagistan_Militiawoman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        attendant = 1;
+        displayName = "Militiawoman (Medic)";
+        uniformClass = "U_C_HunterBody_grn";
+        backpack = "S_Medic_Bag_Militia";
+        linkedItems[] = {"","H_Bandanna_sand","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","H_Bandanna_sand","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {"rhs_weap_pp2000"};
+        respawnWeapons[] = {"rhs_weap_pp2000"};
+        magazines[] = {ITEM_3("rhs_mag_9x19mm_7n21_20")};
+        respawnMagazines[] = {ITEM_3("rhs_mag_9x19mm_7n21_20")};
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
+        (_this select 0) forceAddUniform 'U_C_HunterBody_grn'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+///// _____OPFOR MILITIA_____ /////
+    class O_Spagistan_Militiaman_Izh18_opfor : I_Spagistan_Militiaman_Izh18 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_C_Soldier_Bandit_4_F';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_PM_63_opfor : I_Spagistan_Militiaman_PM_63 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_C_Soldier_Bandit_1_F';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_M84_opfor : I_Spagistan_Militiaman_M84 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_stripped';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_M79_opfor : I_Spagistan_Militiaman_M79 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_tricolour';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_M3A1_opfor : I_Spagistan_Militiaman_M3A1 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_salmon';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_K98_opfor : I_Spagistan_Militiaman_K98 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_C_Soldier_Para_5_F';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_RPG7_opfor : I_Spagistan_Militiaman_RPG7 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_C_Soldier_Bandit_5_F';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiaman_Mosin_opfor : I_Spagistan_Militiaman_Mosin {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_C_Soldier_Bandit_3_F';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class O_Spagistan_Militiawoman_M590A1_opfor : I_Spagistan_Militiawoman_M590A1 {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
+        (_this select 0) forceAddUniform 'U_BG_Guerilla3_1'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+    class O_Spagistan_Militiawoman_Medic_opfor : I_Spagistan_Militiawoman_Medic {
+        side = 0;
+        faction = "O_SPAG_Militia_OPFOR";
+        editorCategory = "Spagistani_Militia_OPFOR_Category";
+        class EventHandlers : EventHandlers
+        {
+        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
+        (_this select 0) forceAddUniform 'U_C_HunterBody_grn'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+/////_____CIVILIANS_____/////
+    class C_Spag_Civ_Base : I_Spagistan_Militiaman_Base {
+        side = 3;
+        faction = "C_SPAG_Civ";
+        editorCategory = "Spagistani_Civilian_Category";
+    };
+    class C_Spag_Civ_Dealer1 : C_Spag_Civ_Base {
+        displayName = "Dealer 1";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "";
+        linkedItems[] = {"","","","","",""};
+        respawnLinkedItems[] = {"","","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
+        weapons[] = {""};
+        respawnWeapons[] = {""};
+        magazines[] = {""};
+        respawnMagazines[] = {""};
+        Items[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
+		RespawnItems[] = { "cigs_matches", "ACE_tourniquet" };
     };
 };
