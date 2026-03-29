@@ -56,7 +56,7 @@ class CfgVehicles {
         magazines[] = {""};
         respawnMagazines[] = {""};
         Items[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
-		RespawnItems[] = { "cigs_matches", "ACE_tourniquet" };
+		RespawnItems[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
         headgearList[] =
 		{
 			"H_FakeHeadgear", 0.7,
@@ -363,14 +363,64 @@ class CfgVehicles {
         displayName = "Dealer 1";
         scope = 2;
         scopeCurator = 2;
-        uniformClass = "";
-        linkedItems[] = {"","","","","",""};
-        respawnLinkedItems[] = {"","","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {""};
-        respawnWeapons[] = {""};
-        magazines[] = {""};
-        respawnMagazines[] = {""};
-        Items[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
-		RespawnItems[] = { "cigs_matches", "ACE_tourniquet" };
+        uniformClass = "U_C_FormalSuit_01_tshirt_gray_F";
+        linkedItems[] = {"S_Turban","G_Aviator","ItemMap","ItemCompass","ItemWatch","cigs_cigars_cigar0_nv"};
+        respawnLinkedItems[] = {"S_Turban","G_Aviator","ItemMap","ItemCompass","ItemWatch","cigs_cigars_cigar0_nv"};
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_FormalSuit_01_tshirt_gray_F';};";
+        };
+    };
+
+    class C_Spag_Civ_Dealer2 : C_Spag_Civ_Dealer1 {
+        displayName = "Dealer 2";
+        uniformClass = "U_C_FormalSuit_01_tshirt_black_F";
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_FormalSuit_01_tshirt_black_F';};";
+        };
+    };
+
+    class C_Spag_Civ_Trad1 : C_Spag_Civ_Base {
+        displayName = "Civilian, Traditional (Beige)";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "S_Uniform_Civ1";
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'S_Uniform_Civ1';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class C_Spag_Civ_Trad2 : C_Spag_Civ_Base {
+        displayName = "Civilian, Traditional (Violet)";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "S_Uniform_Civ2";
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'S_Uniform_Civ2';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class C_Spag_Civ_Trad3 : C_Spag_Civ_Base {
+        displayName = "Civilian, Traditional (Blue)";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "S_Uniform_Civ3";
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'S_Uniform_Civ3';
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        };
+    };
+
+    class C_Spag_Civ_Const1 : C_Spag_Civ_Base {
+        displayName = "Civilian, Construction Worker 1";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "U_C_Poloshirt_salmon";
+        linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
+        respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_salmon';};";
+        };
     };
 };
