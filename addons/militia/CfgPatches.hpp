@@ -24,7 +24,13 @@ class CfgPatches {
             "O_Spagistan_Militiawoman_M590A1_opfor",
             "O_Spagistan_Militiawoman_Medic_opfor",
             ///CIVILIAN///
-            "C_Spag_Civ_Dealer1"
+            "C_Spag_Civ_Dealer1",
+            "C_Spag_Civ_Dealer2",
+            "C_Spag_Civ_Trad1",
+            "C_Spag_Civ_Trad2",
+            "C_Spag_Civ_Trad3",
+            "C_Spag_Civ_Const1"
+
 
 
         };
