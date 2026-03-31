@@ -4,5 +4,5 @@ class CfgWeapons {
 	#include "vests/Vests_Weapons.hpp"
 	#include "uniforms/Uniforms_Weapons.hpp"
 	#include "weapons/Weapons_Weapons.hpp"
-	#include "items/items_Weapons.hpp"
+	// #include "items/items_Weapons.hpp"
 };

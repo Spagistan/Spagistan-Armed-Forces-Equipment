@@ -55,8 +55,8 @@ class CfgVehicles {
         respawnWeapons[] = {""};
         magazines[] = {""};
         respawnMagazines[] = {""};
-        Items[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
-		RespawnItems[] = { "cigs_matches", "ACE_tourniquet", "uzbek_Wallet" };
+        Items[] = { "cigs_matches", "ACE_tourniquet" };
+		RespawnItems[] = { "cigs_matches", "ACE_tourniquet" };
         headgearList[] =
 		{
 			"H_FakeHeadgear", 0.7,
@@ -194,7 +194,7 @@ class CfgVehicles {
         respawnMagazines[] = {ITEM_4("rhs_rpg7_PG7VL_mag"), ITEM_2("rhs_rpg7_OG7V_mag")};
     };
 
-        class I_Spagistan_Militiaman_Mosin : I_Spagistan_Militiaman_Base {
+    class I_Spagistan_Militiaman_Mosin : I_Spagistan_Militiaman_Base {
         scope = 2;
         scopeCurator = 2;
         displayName = "Militiaman (Rifle 3)";
@@ -207,7 +207,7 @@ class CfgVehicles {
         respawnMagazines[] = {ITEM_11("rhsgref_5Rnd_762x54_m38")};
     };
 
-        class I_Spagistan_Militiawoman_M590A1 : I_Spagistan_Militiawoman_Base {
+    class I_Spagistan_Militiawoman_M590A1 : I_Spagistan_Militiawoman_Base {
         scope = 2;
         scopeCurator = 2;
         displayName = "Militiawoman (Shotgun)";
@@ -224,7 +224,7 @@ class CfgVehicles {
         (_this select 0) forceAddUniform 'U_BG_Guerilla3_1'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
     };
-        class I_Spagistan_Militiawoman_Medic : I_Spagistan_Militiawoman_Base {
+    class I_Spagistan_Militiawoman_Medic : I_Spagistan_Militiawoman_Base {
         scope = 2;
         scopeCurator = 2;
         attendant = 1;
@@ -239,10 +239,61 @@ class CfgVehicles {
         respawnMagazines[] = {ITEM_3("rhs_mag_9x19mm_7n21_20")};
         class EventHandlers : EventHandlers
         {
-        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
-        (_this select 0) forceAddUniform 'U_C_HunterBody_grn'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        init = "if (local (_this select 0)) then {
+            (_this select 0) spawn {
+                sleep 0.3;
+                (_this) setSpeaker 'rhs_female01ENG';
+                };
+            (_this select 0) forceAddUniform 'U_C_HunterBody_grn'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
     };
+
+
+//  SetName is broken, might need to make a custom identity and then apply it in the unit config normally
+    class I_Spagistan_Yussy : I_Spagistan_Militiaman_Base {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Khamzat Yusupov";
+        identityTypes[] = {};
+        uniformClass = "U_I_C_Soldier_Para_3_F";
+        linkedItems[] = {"","rhs_6b13_6sh92_headset_mapcase","cigs_apollo_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","rhs_6b13_6sh92_headset_mapcase","cigs_apollo_cig0","ItemMap","ItemCompass","ItemWatch"};
+        Items[] = { "cigs_lighter", "cigs_apollo_cigpack","ACE_painkillers", ITEM_2("ACE_tourniquet"), ITEM_3("ACE_quikclot"), "ACE_splint", };
+		RespawnItems[] = { "cigs_lighter", "cigs_apollo_cigpack","ACE_painkillers", ITEM_2("ACE_tourniquet"), ITEM_3("ACE_quikclot"), "ACE_splint", };
+        class EventHandlers : EventHandlers {
+            init = "if (local (_this select 0)) then {
+                (_this select 0) spawn {
+                    params ['_unit'];
+                    sleep 0.3;
+
+                    _unit setSpeaker 'Male01RUS';
+                    _unit forceAddUniform 'U_I_C_Soldier_Para_3_F';
+                    _unit setFace 'Instructor';
+                    _unit setName ['Khamzat Yusupov', 'Khamzat', 'Yusupov'];
+                };
+            };";
+        };
+    };
+
+    class I_Spagistan_Yussy_Beach : I_Spagistan_Yussy {
+        uniformClass = "U_C_man_sport_2_F";
+        linkedItems[] = {"","rhs_6sh92_headset","cigs_apollo_cig0","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"","rhs_6sh92_headset","cigs_apollo_cig0","ItemMap","ItemCompass","ItemWatch"};
+        class EventHandlers : EventHandlers {
+            init = "if (local (_this select 0)) then {
+                (_this select 0) spawn {
+                    params ['_unit'];
+                    sleep 0.3;
+
+                    _unit setSpeaker 'Male01RUS';
+                    _unit forceAddUniform 'U_C_man_sport_2_F';
+                    _unit setFace 'Instructor';
+                    _unit setName ['Khamzat Yusupov', 'Khamzat', 'Yusupov'];
+                };
+            };";
+        };
+    };
+
 
 ///// _____OPFOR MILITIA_____ /////
     class O_Spagistan_Militiaman_Izh18_opfor : I_Spagistan_Militiaman_Izh18 {
@@ -412,15 +463,33 @@ class CfgVehicles {
         };
     };
 
-    class C_Spag_Civ_Const1 : C_Spag_Civ_Base {
-        displayName = "Civilian, Construction Worker 1";
+    class C_Spag_Civ_Const_Base : C_Spag_Civ_Base {
+    Items[] = { "cigs_matches", "ACE_tourniquet", "ACE_fortify", "ACE_EntrenchingTool" };
+	RespawnItems[] = { "cigs_matches", "ACE_tourniquet", "ACE_fortify", "ACE_EntrenchingTool" };
+    };
+
+    class C_Spag_Civ_Const1 : C_Spag_Civ_Const_Base {
+        displayName = "Civilian, Worker 1";
         scope = 2;
         scopeCurator = 2;
-        uniformClass = "U_C_Poloshirt_salmon";
+        uniformClass = "U_C_Poloshirt_Salmon";
         linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_salmon';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_Salmon';};";
+        };
+    };
+
+    class C_Spag_Civ_Const2 : C_Spag_Civ_Const_Base {
+        displayName = "Civilian, Worker 2";
+        scope = 2;
+        scopeCurator = 2;
+        uniformClass = "U_C_Poloshirt_tricolour";
+        linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
+        respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_tricolour';};";
         };
     };
 };
+

@@ -48,8 +48,7 @@ class CfgPatches
 			"U_S_Uniform_Gorka_Hands_SPAGPAT",
 			"U_S_Uniform_Gorka_Winter_Mix_Hands_SPAGPAT",
 			"U_S_Uniform_Gorka_Winter_Full_Hands_SPAGPAT",
-			"U_S_Uniform_Gorka_Full_Hands_SPAGPAT",
-			"wallet_Uzbek"
+			"U_S_Uniform_Gorka_Full_Hands_SPAGPAT"
 			};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Data_F", "spag_main","spag_common", "rhs_weapons", "rhs_c_weapons"};
