@@ -4,5 +4,3 @@
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEditorCategories.hpp"
-
-class cfgWeapons;

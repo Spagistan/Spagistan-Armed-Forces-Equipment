@@ -12,6 +12,8 @@ class CfgPatches {
             "I_Spagistan_Militiaman_Mosin",
             "I_Spagistan_Militiawoman_M590A1",
             "I_Spagistan_Militiawoman_Medic",
+            "I_Spagistan_Yussy",
+            "I_Spagistan_Yussy_Beach",
             ///OPFOR///
             "O_Spagistan_Militiaman_Izh18_opfor",
             "O_Spagistan_Militiaman_PM_63_opfor",
@@ -29,7 +31,8 @@ class CfgPatches {
             "C_Spag_Civ_Trad1",
             "C_Spag_Civ_Trad2",
             "C_Spag_Civ_Trad3",
-            "C_Spag_Civ_Const1"
+            "C_Spag_Civ_Const1",
+            "C_Spag_Civ_Const2"
 
 
 
