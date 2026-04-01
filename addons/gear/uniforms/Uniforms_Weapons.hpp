@@ -322,7 +322,7 @@ class S_Uniform_Civ1: Uniform_Base
 		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
 		author= "Spagistan Mod Team";
 		scope = 2;
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver.p3d";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -339,7 +339,7 @@ class S_Uniform_Civ2: Uniform_Base
 		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
 		author= "Spagistan Mod Team";
 		scope = 2;
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver.p3d";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -356,7 +356,7 @@ class S_Uniform_Civ3: Uniform_Base
 		picture="\z\spag\addons\main\spagistan_logo_ca.paa";
 		author= "Spagistan Mod Team";
 		scope = 2;
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver.p3d";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -365,7 +365,7 @@ class S_Uniform_Civ3: Uniform_Base
 			mass=60;
 			scope = 1;
 		};
-	};	
+	};
 
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903

@@ -208,17 +208,17 @@ class S_Civilian1: Civilian_F
 		scope=2;
 		side=3;
 		uniformClass="S_Uniform_Civ1";
-		model="\po_factions_me\civilians\tak_civil01.p3d";
+		model="\po_factions_me\Civilians\tak_civil01.p3d";
 		hiddenSelections[]= {"Camo"};
-		hiddenSelectionsTextures[]={"\po_factions_me\civilians\tak_civil01_3_co.paa"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil01_3_co.paa"};
 		class Wounds
 		{
 			tex[]={};
 			mat[]=
 			{
-				"po_factions_me\civilians\Tak_civil01.rvmat",
-				"po_factions_me\civilians\W1_Tak_civil01.rvmat",
-				"po_factions_me\civilians\W2_Tak_civil01.rvmat"
+				"po_factions_me\Civilians\Tak_civil01.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil01.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil01.rvmat"
 			};
 		};
 	};
@@ -229,17 +229,17 @@ class S_Civilian2: Civilian_F
 		scope=2;
 		side=3;
 		uniformClass="S_Uniform_Civ2";
-		model="\po_factions_me\civilians\tak_civil02.p3d";
+		model="\po_factions_me\Civilians\tak_civil02.p3d";
 		hiddenSelections[]= {"Camo"};
-		hiddenSelectionsTextures[]={"\po_factions_me\civilians\tak_civil02_5_co.paa"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil02_5_co.paa"};
 		class Wounds
 		{
 			tex[]={};
 			mat[]=
 			{
-				"po_factions_me\civilians\Tak_civil02.rvmat",
-				"po_factions_me\civilians\W1_Tak_civil02.rvmat",
-				"po_factions_me\civilians\W2_Tak_civil02.rvmat"
+				"po_factions_me\Civilians\Tak_civil02.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil02.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil02.rvmat"
 			};
 		};
 	};
@@ -250,17 +250,17 @@ class S_Civilian3: Civilian_F
 		scope=2;
 		side=3;
 		uniformClass="S_Uniform_Civ3";
-		model="\po_factions_me\civilians\tak_civil06.p3d";
+		model="\po_factions_me\Civilians\tak_civil06.p3d";
 		hiddenSelections[]= {"Camo"};
-		hiddenSelectionsTextures[]={"\po_factions_me\civilians\tak_civil06_3_co.paa"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil06_3_co.paa"};
 		class Wounds
 		{
 			tex[]={};
 			mat[]=
 			{
-				"po_factions_me\civilians\Tak_civil06.rvmat",
-				"po_factions_me\civilians\W1_Tak_civil06.rvmat",
-				"po_factions_me\civilians\W2_Tak_civil06.rvmat"
+				"po_factions_me\Civilians\Tak_civil06.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil06.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil06.rvmat"
 			};
 		};
 	};
