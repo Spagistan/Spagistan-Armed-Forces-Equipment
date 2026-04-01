@@ -6,6 +6,19 @@
     side = 2;\
     uniformClass = "U_S_Uniform_SPAGPAT";\
 
+#define SPAG_MILITA_TO_CIV_CONFIG\
+    side = 3;\
+    scope = 2;\
+    scopeCurator = 2;\
+    faction = "C_SPAG_Civ";\
+    editorCategory = "Spagistani_Civilian_Category";\
+    attendant = 0;\
+    backpack = "";\
+    weapons[] = {};\
+    respawnWeapons[] = {};\
+    magazines[] = {};\
+    respawnMagazines[] = {}; \
+
 
 #define ITEM_2(a) a, a
 #define ITEM_3(a) a, a, a

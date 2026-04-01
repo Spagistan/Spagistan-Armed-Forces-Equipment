@@ -142,6 +142,16 @@ class GenericNames
             hussein="Hussein";
         };
     };
+
+    class YussyName
+    {
+        class FirstNames {
+            khamzat="Khamzat";
+        };
+        class LastNames {
+            yusupov="Yusupov";
+        };
+    };
 };
 
 
