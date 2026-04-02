@@ -16,6 +16,6 @@ class CfgEditorCategories {
     class Spagistani_Civilian_Category // Category class, you point to it in editorCategory property
         {
             displayName = "Spagistani Civilians"; // Name visible in the list
-            faction = "C_SPAG_Civilian";
+            faction = "C_SPAG_Civ";
         };
 };

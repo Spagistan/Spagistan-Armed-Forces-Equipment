@@ -21,7 +21,7 @@ class CfgFactionClasses {
         priority = 7;
     };
 
-        class C_SPAG_Civilian {
+        class C_SPAG_Civ {
         displayName = "Spagistani Civilians";
         side = 3;
         flag = "\z\spag\addons\common\gui\Spag_Flag_ca.paa";

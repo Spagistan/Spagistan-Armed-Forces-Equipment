@@ -219,8 +219,12 @@ class CfgVehicles {
         respawnMagazines[] = {ITEM_5("rhsusf_8Rnd_Slug")};
         class EventHandlers : EventHandlers
         {
-        init = "if (local (_this select 0)) then { (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
-        (_this select 0) forceAddUniform 'U_BG_Guerilla3_1'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+        init = "if (local (_this select 0)) then {
+        (_this select 0) forceAddUniform 'U_BG_Guerilla3_1';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addMagazines ['rhsusf_8Rnd_Slug', 4];
+        (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
+         [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
     };
     class I_Spagistan_Militiawoman_Medic : I_Spagistan_Militiawoman_Base {
@@ -239,18 +243,21 @@ class CfgVehicles {
         class EventHandlers : EventHandlers
         {
         init = "if (local (_this select 0)) then {
+            (_this select 0) forceAddUniform 'U_C_HunterBody_grn';
+            (_this select 0) addItem 'ACE_tourniquet';
+            (_this select 0) addMagazines ['rhs_mag_9x19mm_7n21_20', 3];
             (_this select 0) spawn {
                 sleep 0.3;
                 (_this) setSpeaker 'rhs_female01ENG';
                 };
-            (_this select 0) forceAddUniform 'U_C_HunterBody_grn'; [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+            [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
     };
 
     class I_Spagistan_Yussy : I_Spagistan_Militiaman_Base {
         scope = 2;
         scopeCurator = 2;
-        faction = "Spagistan";
+        faction = "SPAG_F";
         editorCategory = "Spagistan_Category";
         displayName = "LTCOL, Y-Bn";
         genericNames = "YussyName";
@@ -261,10 +268,21 @@ class CfgVehicles {
 		RespawnItems[] = { "cigs_lighter", "cigs_apollo_cigpack","ACE_painkillers", ITEM_2("ACE_tourniquet"), ITEM_3("ACE_quikclot"), "ACE_splint" };
         class EventHandlers : EventHandlers {
             init = "if (local (_this select 0)) then {
+                (_this select 0) forceAddUniform 'U_I_C_Soldier_Para_3_F';
+                (_this select 0) addItem 'cigs_lighter';
+                (_this select 0) addItem 'cigs_apollo_cigpack';
+                (_this select 0) addItem 'ACE_painkillers';
+                (_this select 0) addItem 'ACE_tourniquet';
+                (_this select 0) addItem 'ACE_tourniquet';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_splint';
+
                 (_this select 0) spawn {
                     params ['_unit'];
                     sleep 0.3;
-                    _unit forceAddUniform 'U_I_C_Soldier_Para_3_F';
                     _unit setSpeaker 'Male01RUS';
                     _unit setFace 'Instructor';
                 };
@@ -279,10 +297,20 @@ class CfgVehicles {
         respawnlinkedItems[] = {"U_C_man_sport_2_F","rhs_6sh92_headset","cigs_apollo_cig0","ItemMap","ItemCompass","ItemWatch"};
         class EventHandlers : EventHandlers {
             init = "if (local (_this select 0)) then {
+                (_this select 0) forceAddUniform 'U_C_man_sport_2_F';
+                (_this select 0) addItem 'cigs_lighter';
+                (_this select 0) addItem 'cigs_apollo_cigpack';
+                (_this select 0) addItem 'ACE_painkillers';
+                (_this select 0) addItem 'ACE_tourniquet';
+                (_this select 0) addItem 'ACE_tourniquet';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_quikclot';
+                (_this select 0) addItem 'ACE_splint';
                 (_this select 0) spawn {
                     params ['_unit'];
                     sleep 0.3;
-                    _unit forceAddUniform 'U_C_man_sport_2_F';
                     _unit setSpeaker 'Male01RUS';
                     _unit setFace 'Instructor';
 
@@ -499,7 +527,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_Salmon';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_Salmon';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 
@@ -511,7 +543,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_tricolour';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Poloshirt_tricolour';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 
@@ -523,7 +559,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_earprot_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_earprot_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_BG_Guerilla2_2';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_BG_Guerilla2_2';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 
@@ -535,7 +575,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_yellow_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_L_Uniform_01_tshirt_olive_F';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_I_L_Uniform_01_tshirt_olive_F';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 
@@ -547,7 +591,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_basic_orange_F","V_safety_orange_F", "G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_orange_F","V_safety_orange_F","G_Eyeprotectors_F","ItemMap","ItemCompass","ItemWatch","cigs_morley_cig0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Mechanic_01_F';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_C_Mechanic_01_F';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 
@@ -559,7 +607,11 @@ class CfgVehicles {
         linkedItems[] = {"H_Construction_basic_white_F","V_safety_orange_F", "G_Aviator","ItemMap","ItemCompass","ItemWatch","cigs_cigars_cigar0_nv"};
         respawnLinkedItems[] = {"H_Construction_basic_white_F","V_safety_orange_F","G_Aviator","ItemMap","ItemCompass","ItemWatch","cigs_cigars_cigar0_nv"};
         class EventHandlers : EventHandlers {
-        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_Marshal';};";
+        init = "if (local (_this select 0)) then {(_this select 0) forceAddUniform 'U_Marshal';
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ACE_fortify';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
         };
     };
 };
