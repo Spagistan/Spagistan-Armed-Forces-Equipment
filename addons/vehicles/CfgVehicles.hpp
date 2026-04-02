@@ -33,6 +33,7 @@
 		mag_xx(rhssaf_mag_br_m75,10);\
 		mag_xx(rhssaf_mag_brd_m83_white,10);\
 		mag_xx(cigs_morley_cigpack,1);\
+		mag_xx(rhs_250Rnd_762x54mmR_7N26,2);\
 	};\
 	class TransportItems\
 	{\
@@ -51,6 +52,37 @@
 		item_xx(ACE_salineIV_500,5);\
 	};
 
+	#define SPAG_BTR40_CONFIG\
+	scope = 2;\
+	scopeCurator = 2;\
+	side = 2;\
+	author = "A. Dan";\
+	editorCategory = "Spagistan_Category";\
+	editorSubcategory = "EdSubcat_APCs";\
+	faction = QUOTE(SPAGFACTION);\
+	tf_hasLRradio = 1;\
+	tf_RadioType = "TFAR_anprc155_coyote";\
+	tf_isolatedAmount = 1;\
+	tf_RadioType_api = "TFAR_anprc155_coyote";\
+	tf_encryptionCode = "_independent";\
+	tf_hasLRradio_api = 1;\
+	tf_isolatedAmount_api = 0.3;\
+	crew = "S_Soldier_Armor";\
+	hiddenSelections[]=\
+		{\
+			"Camo",\
+			"n1",\
+			"n2",\
+			"n3"\
+		};\
+		hiddenSelectionsTextures[]=\
+		{\
+			"z\spag\addons\vehicles\data\BTR40\Spag_BTR40.paa",\
+			"PRACS_SLA_common\nums\no_ca.paa",\
+			"PRACS_SLA_common\nums\no_ca.paa",\
+			"PRACS_SLA_common\nums\no_ca.paa"\
+		};\
+
 class CfgVehicles
 {
 	#include "cfgs\CfgVehicles.hpp"
@@ -62,4 +94,3 @@ class CfgVehicles
 #undef mag_xx
 #undef weap_xx
 #undef item_xx
-#undef VEHICLEINVENTORY

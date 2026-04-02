@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=383;
+		nextID=415;
 	};
 	class Camera
 	{
-		pos[]={7049.0542,21.304907,5876.9717};
-		dir[]={-0.43658307,-0.43007144,-0.79023188};
-		up[]={-0.20798039,0.90278739,-0.37645176};
-		aside[]={-0.87531483,4.2386819e-07,0.48358819};
+		pos[]={7050.5493,35.076473,5831.5435};
+		dir[]={-0.68038285,-0.72923124,0.072838068};
+		up[]={-0.72508907,0.68426633,0.077624075};
+		aside[]={0.10644653,-6.1554601e-09,0.99432021};
 	};
 };
 binarizationWanted=0;
@@ -29,13 +29,14 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Oldman",
 	"A3_Props_F_Orange_Items_Documents",
-	"I_SPAG_Militia"
+	"I_SPAG_Militia",
+	"spag_vehicles"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -91,13 +92,21 @@ class AddonsMetaData
 			name="I_SPAG_Militia";
 			author="A. Dan";
 		};
+		class Item8
+		{
+			className="spag_vehicles";
+			name="vehicles";
+			author="Spagistan Development Team";
+			url="SPAGLINK";
+		};
 	};
 };
 dlcs[]=
 {
 	"Expansion",
 	"RHS_AFRF",
-	"ORANGE"
+	"ORANGE",
+	"PRACS_SLA_Mod"
 };
 randomSeed=4066009;
 class ScenarioData
@@ -127,7 +136,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=9;
 		class Item0
 		{
 			dataType="Group";
@@ -283,7 +292,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7057.4189,5.0014391,5883.8687};
+						position[]={7059.4458,5.0014391,5899.3828};
 					};
 					side="Independent";
 					flags=7;
@@ -298,6 +307,69 @@ class Mission
 			{
 			};
 			id=379;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7021.2856,5.1619768,5848.5225};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=411;
+			type="spag_BTR40";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7022.3872,5.1619768,5844.7695};
+				angles[]={-0,1.5872881,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=412;
+			type="spag_BTR40_AGS";
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7021.1968,5.1619768,5840.8467};
+				angles[]={-0,3.1527083,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=413;
+			type="spag_BTR40_NSV";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7022.1064,5.1619768,5836.9072};
+				angles[]={-0,4.7546873,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=414;
+			type="spag_BTR40_Mortar";
 		};
 	};
 	class Connections
