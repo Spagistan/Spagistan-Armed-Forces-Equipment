@@ -14,8 +14,8 @@
     editorCategory = "Spagistani_Civilian_Category";\
     attendant = 0;\
     backpack = "";\
-    weapons[] = {};\
-    respawnWeapons[] = {};\
+    weapons[] = {"Throw", "Put"};\
+    respawnWeapons[] = {"Throw", "Put"};\
     magazines[] = {};\
     respawnMagazines[] = {}; \
 

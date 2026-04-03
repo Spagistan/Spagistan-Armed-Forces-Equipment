@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=415;
+		nextID=420;
 	};
 	class Camera
 	{
-		pos[]={7050.5493,35.076473,5831.5435};
-		dir[]={-0.68038285,-0.72923124,0.072838068};
-		up[]={-0.72508907,0.68426633,0.077624075};
-		aside[]={0.10644653,-6.1554601e-09,0.99432021};
+		pos[]={7014.877,10.243461,5828.9033};
+		dir[]={0.016970195,-0.79084671,-0.61177897};
+		up[]={0.021928938,0.61201429,-0.79054266};
+		aside[]={-0.99961555,9.3132257e-10,-0.027728431};
 	};
 };
 binarizationWanted=0;
@@ -29,8 +29,8 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Oldman",
 	"A3_Props_F_Orange_Items_Documents",
-	"I_SPAG_Militia",
-	"spag_vehicles"
+	"spag_vehicles",
+	"rhs_c_weapons"
 };
 class AddonsMetaData
 {
@@ -88,16 +88,17 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="I_SPAG_Militia";
-			name="I_SPAG_Militia";
-			author="A. Dan";
-		};
-		class Item8
-		{
 			className="spag_vehicles";
 			name="vehicles";
 			author="Spagistan Development Team";
 			url="SPAGLINK";
+		};
+		class Item8
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -136,7 +137,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -282,34 +283,6 @@ class Mission
 		};
 		class Item4
 		{
-			dataType="Group";
-			side="Independent";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7059.4458,5.0014391,5899.3828};
-					};
-					side="Independent";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=380;
-					type="I_Spagistan_Yussy";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=379;
-		};
-		class Item5
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -323,13 +296,13 @@ class Mission
 			id=411;
 			type="spag_BTR40";
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7022.3872,5.1619768,5844.7695};
-				angles[]={-0,1.5872881,0};
+				angles[]={0,1.5872881,0};
 			};
 			side="Empty";
 			flags=4;
@@ -339,13 +312,13 @@ class Mission
 			id=412;
 			type="spag_BTR40_AGS";
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7021.1968,5.1619768,5840.8467};
-				angles[]={-0,3.1527083,0};
+				angles[]={0,3.1527083,0};
 			};
 			side="Empty";
 			flags=4;
@@ -355,13 +328,13 @@ class Mission
 			id=413;
 			type="spag_BTR40_NSV";
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7022.1064,5.1619768,5836.9072};
-				angles[]={-0,4.7546873,0};
+				angles[]={0,4.7546873,0};
 			};
 			side="Empty";
 			flags=4;
@@ -370,6 +343,36 @@ class Mission
 			};
 			id=414;
 			type="spag_BTR40_Mortar";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7016.5791,5.1487255,5825.9155};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=418;
+			type="Spag_Rifle_Crate";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7013.2026,5.1487255,5826.0776};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=419;
+			type="rhs_7ya37_1_single";
 		};
 	};
 	class Connections

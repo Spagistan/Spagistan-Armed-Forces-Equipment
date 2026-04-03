@@ -41,12 +41,10 @@ class CfgPatches {
             "C_Spag_Civ_Const5",
             "C_Spag_Civ_Foreman",
             "C_Spag_Civ_Woman1",
-            "C_Spag_Civ_Woman2"
-
-
-
-
+            "C_Spag_Civ_Woman2",
+            "C_Spag_Civ_Pipe_worker"
         };
+
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
