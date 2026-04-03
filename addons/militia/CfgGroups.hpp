@@ -131,30 +131,30 @@ class CfgGroups {
 
             faction = "O_SPAG_Militia_OPFOR";
             name = "Maneuver Team";
-            side = 2;
+            side = 0;
 
             class unit0 {
                 position[] = {0,0,0};
                 rank = "CORPORAL";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_Mosin_OPFOR";
             };
             class unit1 {
                 position[] = {-5,-5,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_M3A1_OPFOR";
             };
             class unit2 {
                 position[] = {5,-5,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiawoman_M590A1_OPFOR";
             };
             class unit3 {
                 position[] = {10,-10,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_Izh18_OPFOR";
             };
             };
@@ -162,30 +162,30 @@ class CfgGroups {
 
             faction = "I_SPAG_Militia";
             name = "Support Team";
-            side = 2;
+            side = 0;
 
             class unit0 {
                 position[] = {0,0,0};
                 rank = "CORPORAL";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_PM_63_OPFOR";
             };
             class unit1 {
                 position[] = {-5,-5,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_M84_OPFOR";
             };
             class unit2 {
                 position[] = {5,-5,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_M79_OPFOR";
             };
             class unit3 {
                 position[] = {10,-10,0};
                 rank = "PRIVATE";
-                side = 2;
+                side = 0;
                 vehicle = "O_Spagistan_Militiaman_RPG7_OPFOR";
             };
         };

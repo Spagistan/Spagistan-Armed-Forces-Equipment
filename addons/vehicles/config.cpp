@@ -38,7 +38,12 @@ class CfgPatches
 			"spag_BTR40",
 			"spag_BTR40_Mortar",
 			"spag_BTR40_AGS",
-			"spag_BTR40_NSV"
+			"spag_BTR40_NSV",
+			"Spag_Empty_Crate",
+			"Spag_Rifle_Crate",
+			"Spag_Weap_Crate",
+			"Spag_Metis_Crate",
+			"Spag_Med_Crate"
 
 
 			};

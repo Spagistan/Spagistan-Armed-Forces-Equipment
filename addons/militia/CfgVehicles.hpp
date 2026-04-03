@@ -93,8 +93,8 @@ class CfgVehicles {
         uniformClass = "U_I_C_Soldier_Bandit_4_F";
         linkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnLinkedItems[] = {"rhs_suspender_AK","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_Izh18"};
-        respawnWeapons[] = {"rhs_weap_Izh18"};
+        weapons[] = {"rhs_weap_Izh18", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_Izh18", "Throw", "Put"};
         magazines[] = { ITEM_8("rhsgref_1Rnd_Slug"), ITEM_11("rhsgref_1Rnd_00Buck") };
         respawnMagazines[] = { ITEM_8("rhsgref_1Rnd_Slug"), ITEM_11("rhsgref_1Rnd_00Buck") };
     };
@@ -106,8 +106,8 @@ class CfgVehicles {
         uniformClass = "U_I_C_Soldier_Bandit_1_F";
         linkedItems[] = {"rhs_gear_OFF","S_beret_green_NONE","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_gear_OFF","S_beret_green_NONE","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_pm63"};
-        respawnWeapons[] = {"rhs_weap_pm63"};
+        weapons[] = {"rhs_weap_pm63", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_pm63", "Throw", "Put"};
         magazines[] = {ITEM_3("rhs_30Rnd_762x39mm"),};
         respawnMagazines[] = {ITEM_3("rhs_30Rnd_762x39mm"),};
     };
@@ -119,8 +119,8 @@ class CfgVehicles {
         uniformClass = "U_C_Poloshirt_stripped";
         linkedItems[] = {"rhs_chicom_khk","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_chicom_khk","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_m84"};
-        respawnWeapons[] = {"rhs_weap_m84"};
+        weapons[] = {"rhs_weap_m84", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_m84", "Throw", "Put"};
         magazines[] = {"rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N13"};
         respawnMagazines[] = {"rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N13"};
         class EventHandlers : EventHandlers
@@ -137,8 +137,8 @@ class CfgVehicles {
         uniformClass = "U_C_Poloshirt_tricolour";
         linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_m79"};
-        respawnWeapons[] = {"rhs_weap_m79"};
+        weapons[] = {"rhs_weap_m79", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_m79", "Throw", "Put"};
         magazines[] = {ITEM_11("rhs_mag_M441_HE")};
         respawnMagazines[] = {ITEM_11("rhs_mag_M441_HE")};
         class EventHandlers : EventHandlers
@@ -155,8 +155,8 @@ class CfgVehicles {
         uniformClass = "U_C_Poloshirt_salmon";
         linkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_belt_AK_GL","S_Pakol","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_m3a1"};
-        respawnWeapons[] = {"rhs_weap_m3a1"};
+        weapons[] = {"rhs_weap_m3a1", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_m3a1", "Throw", "Put"};
         magazines[] = {ITEM_4("rhsgref_30rnd_1143x23_M1911B_SMG")};
         respawnMagazines[] = {ITEM_4("rhsgref_30rnd_1143x23_M1911B_SMG")};
         class EventHandlers : EventHandlers
@@ -173,8 +173,8 @@ class CfgVehicles {
         uniformClass = "U_I_C_Soldier_Para_5_F";
         linkedItems[] = {"cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_kar98k"};
-        respawnWeapons[] = {"rhs_weap_kar98k"};
+        weapons[] = {"rhs_weap_kar98k", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_kar98k", "Throw", "Put"};
         magazines[] = {ITEM_10("rhsgref_5Rnd_792x57_kar98k"),};
         respawnMagazines[] = {ITEM_10("rhsgref_5Rnd_792x57_kar98k"),};
     };
@@ -187,8 +187,8 @@ class CfgVehicles {
         backpack = "S_Tubitak_Militia_AT";
         linkedItems[] = {"H_Hat_Safari_sand_F","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"H_Hat_Safari_sand_F","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_rpg7"};
-        respawnWeapons[] = {"rhs_weap_rpg7"};
+        weapons[] = {"rhs_weap_rpg7", "Throw", "Put"};
+        respawnWeapons[] = {"rhs_weap_rpg7", "Throw", "Put"};
         magazines[] = {ITEM_4("rhs_rpg7_PG7VL_mag"), ITEM_2("rhs_rpg7_OG7V_mag")};
         respawnMagazines[] = {ITEM_4("rhs_rpg7_PG7VL_mag"), ITEM_2("rhs_rpg7_OG7V_mag")};
     };
@@ -200,7 +200,7 @@ class CfgVehicles {
         uniformClass = "U_I_C_Soldier_Bandit_3_F";
         linkedItems[] = {"rhs_chicom_khk","rhs_pilotka","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_chicom_khk","rhs_pilotka","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_m38"};
+        weapons[] = {"rhs_weap_m38", "Throw", "Put"};
         respawnWeapons[] = {"rhs_weap_m38"};
         magazines[] = {ITEM_11("rhsgref_5Rnd_762x54_m38")};
         respawnMagazines[] = {ITEM_11("rhsgref_5Rnd_762x54_m38")};
@@ -213,18 +213,21 @@ class CfgVehicles {
         uniformClass = "U_BG_Guerilla3_1";
         linkedItems[] = {"rhs_fieldcap_m88_back","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"rhs_fieldcap_m88_back","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_M590_8RD"};
+        weapons[] = {"rhs_weap_M590_8RD", "Throw", "Put"};
         respawnWeapons[] = {"rhs_weap_M590_8RD"};
         magazines[] = {ITEM_5("rhsusf_8Rnd_Slug")};
         respawnMagazines[] = {ITEM_5("rhsusf_8Rnd_Slug")};
         class EventHandlers : EventHandlers
         {
         init = "if (local (_this select 0)) then {
-        (_this select 0) forceAddUniform 'U_BG_Guerilla3_1';
-        (_this select 0) addItem 'ACE_tourniquet';
-        (_this select 0) addMagazines ['rhsusf_8Rnd_Slug', 4];
-        (_this select 0) spawn { sleep 0.3; (_this) setSpeaker 'rhs_female01ENG';};
-         [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+            (_this select 0) forceAddUniform 'U_BG_Guerilla3_1';
+            (_this select 0) addItem 'ACE_tourniquet';
+            (_this select 0) addMagazines ['rhsusf_8Rnd_Slug', 4];
+            (_this select 0) spawn {
+                sleep 0.3;
+                (_this) setSpeaker 'rhs_female01ENG';
+                };
+        [(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
     };
     class I_Spagistan_Militiawoman_Medic : I_Spagistan_Militiawoman_Base {
@@ -236,7 +239,7 @@ class CfgVehicles {
         backpack = "S_Medic_Bag_Militia";
         linkedItems[] = {"H_Bandanna_sand","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"H_Bandanna_sand","cigs_morley_cig0","ItemMap","ItemCompass","ItemWatch"};
-        weapons[] = {"rhs_weap_pp2000"};
+        weapons[] = {"rhs_weap_pp2000", "Throw", "Put"};
         respawnWeapons[] = {"rhs_weap_pp2000"};
         magazines[] = {ITEM_3("rhs_mag_9x19mm_7n21_20")};
         respawnMagazines[] = {ITEM_3("rhs_mag_9x19mm_7n21_20")};
@@ -611,6 +614,28 @@ class CfgVehicles {
         (_this select 0) addItem 'ACE_tourniquet';
         (_this select 0) addItem 'ACE_fortify';
         (_this select 0) addItem 'ACE_EntrenchingTool';
+        };";
+        };
+    };
+
+    class C_Spag_Civ_Pipe_worker : C_Spag_Civ_Base {
+        displayName = "Pipe Worker";
+        scope = 2;
+        scopeCurator = 2;
+        canDeactivateMines = 1;
+        uniformClass = "U_C_CBRN_Suit_01_White_F";
+        backpack = "rhs_assault_umbts_engineer_empty";
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","cigs_morley_cigar0_nv"};
+        respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","cigs_morley_cigar0_nv"};
+
+        class EventHandlers : EventHandlers {
+        init = "if (local (_this select 0)) then {
+        (_this select 0) addItem 'ACE_tourniquet';
+        (_this select 0) addItem 'ToolKit';
+        (_this select 0) addItem 'ACE_DeadManSwitch';
+        (_this select 0) addItem 'ACE_DefusalKit';
+        (_this select 0) addItem 'ACE_EntrenchingTool';
+        (_this select 0) addmagazine 'IEDLandBig_Remote_Mag';
         };";
         };
     };
