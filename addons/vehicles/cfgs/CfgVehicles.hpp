@@ -8,4 +8,6 @@
 	#include "CfgYak.hpp"
 	#include "CfgUAZ.hpp"
 	#include "CfgKraz.hpp"
+	#include "CfgBTR40.hpp"
+	#include "CfgCrates.hpp"
 	//#include "CfgSU25-2.hpp"

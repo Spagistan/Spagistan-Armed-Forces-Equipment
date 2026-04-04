@@ -10,6 +10,8 @@ class rhssaf_helmet_m97_woodland_black_ess_bare;
 class rhsusf_patrolcap_ucp;
 class RHSSAF_beret_para;
 class RHSSAF_beret_green;
+class H_Hat_Tan;
+class HeadgearItem;
 
 //15:39:48 Warning Message: Cannot load texture z\spag\addons\equipment\uniforms\m10_spagpat_ca.
 //15:40:15 Warning Message: No entry 'bin\config.bin/CfgWeapons/U_S_Uniform_SPAGPAT/ItemInfo.containerClass
@@ -152,7 +154,6 @@ class S_Helmet_SPAGPAT_Winter_tan_ess_bare: rhssaf_helmet_m97_woodland_black_ess
 // HATS
 class S_PatrolCap_SPAGPAT: rhsusf_patrolcap_ucp
 {
-	//dexterity = 3.1
     displayName = "Patrol Cap (Spagpat)";
     scope = 2;
     hiddenSelectionsTextures[] = {QPATHTOF(data\hats\PatrolCap_SPAGPAT_ca)};
@@ -160,7 +161,6 @@ class S_PatrolCap_SPAGPAT: rhsusf_patrolcap_ucp
 
 class S_PatrolCap_SPAGPAT_AIR: rhsusf_patrolcap_ucp
 {
-	//dexterity = 3.1
     displayName = "Patrol Cap (Spagpat Air)";
     scope = 2;
     hiddenSelectionsTextures[] = {QPATHTOF(data\hats\PatrolCap_SPAGPATAIR_ca)};
@@ -195,8 +195,57 @@ class S_beret_green_NONE: RHSSAF_beret_green
 	hiddenselectionsTextures[] = {QPATHTOF(data\hats\beret_green)};
 };
 
+class S_Pakol: H_Hat_Tan
+{
+	author="Spagistan Mod Team";
+	scope=2;
+	displayName="Pakol hat";
+	model= "\po_factions_me\amil\pakol";
+  hiddenSelections[]= {"Camo"};
+	hiddenSelectionsTextures[]= {"\po_factions_me\amil\loc_opfor03_1_co.paa"};
+	class ItemInfo: HeadgearItem
+	{
+		mass= 20;
+    uniformmodel= "\po_factions_me\amil\pakol";
+		modelSides[]={3,1};
+		hiddenSelections[]= {"Camo"};
 
+    class HitpointsProtectionInfo
+		  {
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 0;
+					passThrough = 1;
+				};
+      };
+	};
+};
 
+class S_Turban: S_Pakol
+{
+	displayName="Turban";
+	model= "\po_factions_me\amil\turban_2";
+  hiddenSelections[]= {"Camo"};
+	hiddenSelectionsTextures[]= {"\po_factions_me\amil\loc_opfor01_2_co.paa"};
+
+	class ItemInfo: HeadgearItem
+	{
+		uniformmodel= "\po_factions_me\amil\turban_2";
+		modelSides[]={3,1};
+		hiddenSelections[]= {"Camo"};
+
+    class HitpointsProtectionInfo
+		  {
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 0;
+					passThrough = 1;
+				};
+      };
+	};
+};
 //  BACKWARDS COMPATIBILITY
 
 class spag_helmet: S_Helmet_SPAGPAT	{ displayName = "(DEPRECATED) Combat Helmet (Spagistan)"; scope = 1; scopeArsenal = 1; };

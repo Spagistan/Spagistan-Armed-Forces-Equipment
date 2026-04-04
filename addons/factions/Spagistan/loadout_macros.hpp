@@ -6,6 +6,19 @@
     side = 2;\
     uniformClass = "U_S_Uniform_SPAGPAT";\
 
+#define SPAG_MILITA_TO_CIV_CONFIG\
+    side = 3;\
+    scope = 2;\
+    scopeCurator = 2;\
+    faction = "C_SPAG_Civ";\
+    editorCategory = "Spagistani_Civilian_Category";\
+    attendant = 0;\
+    backpack = "";\
+    weapons[] = {"Throw", "Put"};\
+    respawnWeapons[] = {"Throw", "Put"};\
+    magazines[] = {};\
+    respawnMagazines[] = {}; \
+
 
 #define ITEM_2(a) a, a
 #define ITEM_3(a) a, a, a
@@ -27,3 +40,9 @@
 #define ITEM_19(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_20(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
 
+/// Equipment list macros definition ///
+
+#define backpack_xx(a,b) class _xx_##a {backpack = #a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = #a; count = b;}
+#define item_xx(a,b) class _xx_##a {name = #a; count = b;}
+#define mag_xx(a,b) class _xx_##a {magazine = #a; count = b;}

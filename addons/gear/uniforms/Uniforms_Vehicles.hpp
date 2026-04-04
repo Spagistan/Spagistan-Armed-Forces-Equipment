@@ -17,8 +17,7 @@ class I_Soldier_base_F; // for AAF uniform
 class I_officer_F;
 class B_soldier_F;
 class I_Story_Officer_01_F;
-
-
+class Civilian_F;
 class rhssaf_soldier_army_para_digital_base;
 class U_S_SPAGPAT: rhssaf_soldier_army_para_digital_base
 {
@@ -202,6 +201,69 @@ class U_S_Gorka_Full_Hands_SPAGPAT: rhs_vdv_gorka_r_g_rifleman
         hiddenSelections[] = {"camo1","Insignia"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniforms\gorka_full)};
 };
+
+class S_Civilian1: Civilian_F
+{
+		author="Dan";
+		scope=2;
+		side=3;
+		uniformClass="S_Uniform_Civ1";
+		model="\po_factions_me\Civilians\tak_civil01.p3d";
+		hiddenSelections[]= {"Camo"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil01_3_co.paa"};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"po_factions_me\Civilians\Tak_civil01.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil01.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil01.rvmat"
+			};
+		};
+	};
+
+class S_Civilian2: Civilian_F
+{
+		author="Dan";
+		scope=2;
+		side=3;
+		uniformClass="S_Uniform_Civ2";
+		model="\po_factions_me\Civilians\tak_civil02.p3d";
+		hiddenSelections[]= {"Camo"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil02_5_co.paa"};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"po_factions_me\Civilians\Tak_civil02.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil02.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil02.rvmat"
+			};
+		};
+	};
+
+class S_Civilian3: Civilian_F
+{
+		author="Dan";
+		scope=2;
+		side=3;
+		uniformClass="S_Uniform_Civ3";
+		model="\po_factions_me\Civilians\tak_civil06.p3d";
+		hiddenSelections[]= {"Camo"};
+		hiddenSelectionsTextures[]={"\po_factions_me\Civilians\tak_civil06_3_co.paa"};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"po_factions_me\Civilians\Tak_civil06.rvmat",
+				"po_factions_me\Civilians\W1_Tak_civil06.rvmat",
+				"po_factions_me\Civilians\W2_Tak_civil06.rvmat"
+			};
+		};
+	};
 
 //  BACKWARDS COMPATIBILITY
 class spag_turk: U_S_SPAGPAT { displayName = "(Depricated) Spagistan Combat Uniform";  scope = 1; side = 1;	scopeArsenal = 1; };

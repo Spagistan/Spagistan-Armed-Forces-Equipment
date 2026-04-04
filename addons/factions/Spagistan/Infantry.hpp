@@ -7,6 +7,7 @@ class S_Soldier_Base: I_G_Soldier_base_F
 {
 	scope = 1;
     scopeCurator = 1;
+	genericNames = "SpagistanMen";
 	BASE_SPAGISTAN_CONFIG
 	backpack = "S_KitBag_SPAG_Rifleman";
 	weapons[] = {
