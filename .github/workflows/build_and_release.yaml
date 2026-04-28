@@ -48,6 +48,11 @@ jobs:
           name: safe
           path: artifacts/safe
 
+      - name: Zip mod
+        run: |
+          ls
+          mv artifacts/safe artifacts/@safe
+          zip -r artifacts/@safe.zip artifacts/@safe
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
