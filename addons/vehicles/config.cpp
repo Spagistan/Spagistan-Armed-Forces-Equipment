@@ -43,14 +43,17 @@ class CfgPatches
 			"Spag_Rifle_Crate",
 			"Spag_Weap_Crate",
 			"Spag_Metis_Crate",
-			"Spag_Med_Crate"
+			"Spag_Med_Crate",
+			"SPAG_MTLB_AMB",
+			"spag_mi24pm",
+			"spag_mi24g"
 
 
 			};
 
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"spag_main","spag_common","rhs_main", "rhs_c_a2port_car"};
+		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
 		author = "Spagistan Development Team";
 		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";

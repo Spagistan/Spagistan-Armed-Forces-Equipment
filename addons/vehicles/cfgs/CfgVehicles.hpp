@@ -10,4 +10,7 @@
 	#include "CfgKraz.hpp"
 	#include "CfgBTR40.hpp"
 	#include "CfgCrates.hpp"
+	#include "CfgMTLB.hpp"
+	#include "CfgMI24.hpp"
+
 	//#include "CfgSU25-2.hpp"
