@@ -12,5 +12,5 @@
 	#include "CfgCrates.hpp"
 	#include "CfgMTLB.hpp"
 	#include "CfgMI24.hpp"
-
+	#include "CfgDrones.hpp"
 	//#include "CfgSU25-2.hpp"
