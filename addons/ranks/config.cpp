@@ -1,4 +1,5 @@
 #include "\z\spag\addons\ranks\script_component.hpp"
+//#include "CfgRanks.hpp"
 
 class CfgPatches
 {
@@ -15,4 +16,3 @@ class CfgPatches
 		VERSION_CONFIG;
 	};
 };
-
