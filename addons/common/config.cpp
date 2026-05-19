@@ -21,6 +21,8 @@ class CfgPatches
 #include "CfgEventHandlers.hpp"
 #include "CfgModules.hpp"
 #include "CfgDebriefing.hpp"
+#include "CfgTagging.hpp"
+#include "CfgAudio.hpp"
 
 //#include "CfgVehicles.hpp"//#include "CfgArsenal.hpp"
 

@@ -10,8 +10,8 @@ diag_log "helloooo"; */
 
 [] remoteExec [QFUNC(freezePlayers), 2];
 
-systemChat "---Ending mission";
+systemChat "Ending mission. All grenades and ammunition have been removed.";
 
-sleep 4;
-
-["end1", true] remoteExecCall ["BIS_fnc_endMission"];
+sleep 3;
+["end1", true, true, false] remoteExecCall ["BIS_fnc_endMission"];
+playMusic "YorYor";

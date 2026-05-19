@@ -67,42 +67,42 @@ class PRIVATE
     class CORPORAL
     {
         displayName = "Corporal";
-        texture = "z\spag\addons\ranks\data\TL.paa";
+        texture = "z\spag\addons\ranks\data\med.paa";
 		rank= 1;
     };
 
     class SERGEANT
     {
         displayName = "Sergeant";
-        texture = "z\spag\addons\ranks\data\SL.paa";
+        texture = "z\spag\addons\ranks\data\eng.paa";
 		rank = 2;
     };
 
     class LIEUTENANT
     {
         displayName = "Lieutenant";
-        texture = "z\spag\addons\ranks\data\PSG.paa";
+        texture = "z\spag\addons\ranks\data\TL.paa";
 		rank = 3;
     };
 
     class CAPTAIN
     {
         displayName = "Captain";
-        texture = "z\spag\addons\ranks\data\PL.paa";
+        texture = "z\spag\addons\ranks\data\SL.paa";
 		rank = 4;
     };
 
     class MAJOR
     {
         displayName = "Major";
-        texture = "z\spag\addons\ranks\data\med.paa";
+        texture = "z\spag\addons\ranks\data\PSG.paa";
 		rank = 5;
     };
 
     class COLONEL
     {
         displayName = "Colonel";
-        texture = "z\spag\addons\ranks\data\eng.paa";
+        texture = "z\spag\addons\ranks\data\PL.paa";
 		rank = 6;
     };
 

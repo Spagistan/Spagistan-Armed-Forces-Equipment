@@ -9,4 +9,5 @@
  */
 {
 	_x enableSimulationGlobal false;
+	removeAllMagazines _x;
 } forEach allPlayers;

@@ -2,11 +2,11 @@ class CfgDebriefing
 {
 	class end1
 	{
-		title = "Complete Success";
+		title = "Mission Complete";
 		//subtitle = "";
-		//description = "You successfully rescued our forces and neutralized the spotters, despite being forced to retreat.";
+		description = "How can our forces improve? Discuss the results of this operation in Discord voice chat or in the Rasman Military Academy.";
 		pictureBackground = "z\spag\addons\main\mission\img\missionPlanning.jpg";
-		picture = "z\spag\addons\main\cogBlack.paa";
-		pictureColor[] = { 1, 1, 1, 1 };
+		//picture = "z\spag\addons\common\data\cogYellow.paa";
+		//pictureColor[] = { 1, 1, 1, 1 };
 	};
 };

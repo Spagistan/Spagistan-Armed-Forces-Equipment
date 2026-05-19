@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=541;
+		nextID=543;
 	};
 	class Camera
 	{
-		pos[]={7017.8682,22.59597,5879.0093};
-		dir[]={-0.12672171,-0.74588788,-0.65390617};
-		up[]={-0.14190681,0.66607195,-0.73226422};
-		aside[]={-0.98173565,-9.95351e-09,0.19025232};
+		pos[]={7005.3564,19.400122,5884.5093};
+		dir[]={0.15478763,-0.58333379,-0.79734832};
+		up[]={0.11116617,0.81223238,-0.57264346};
+		aside[]={-0.98167473,2.6891939e-08,-0.19057068};
 	};
 };
 binarizationWanted=0;
@@ -42,6 +42,7 @@ addons[]=
 	"ace_maptools",
 	"ace_trenches",
 	"ace_fortify",
+	"ace_tagging",
 	"rhssaf_c_weapons",
 	"ace_intelitems",
 	"ace_medical_treatment",
@@ -59,7 +60,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -200,78 +201,85 @@ class AddonsMetaData
 		};
 		class Item20
 		{
+			className="ace_tagging";
+			name="ACE3 - Tagging";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item21
+		{
 			className="rhssaf_c_weapons";
 			name="RHS: SAF Weapons configuration";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_intelitems";
 			name="ACE3 - Intel Items";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item24
+		class Item25
 		{
 			className="rhs_c_heavyweapons";
 			name="Heavy weapons pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_CA_Config";
 			name="CUP_CA_Config";
 		};
-		class Item26
+		class Item27
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="spag_vehicles";
 			name="vehicles";
 			author="Spagistan Development Team";
 			url="SPAGLINK";
 		};
-		class Item31
+		class Item32
 		{
 			className="ArmaFPV_Data";
 			name="ArmaFPV";
@@ -314,7 +322,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			dataType="Logic";
@@ -503,6 +511,30 @@ class Mission
 										ammoLeft=60;
 									};
 								};
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_SpraypaintBlack";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_SpraypaintBlue";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACE_SpraypaintGreen";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_SpraypaintRed";
+										count=1;
+									};
+								};
 							};
 							class backpack
 							{
@@ -532,7 +564,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=9;
+									items=11;
 									class Item0
 									{
 										name="ACE_elasticBandage";
@@ -576,6 +608,16 @@ class Mission
 									class Item8
 									{
 										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+									class Item9
+									{
+										name="ACE_SpraypaintWhite";
+										count=1;
+									};
+									class Item10
+									{
+										name="ACE_SpraypaintYellow";
 										count=1;
 									};
 								};
@@ -1700,6 +1742,72 @@ class Mission
 			};
 			id=535;
 			type="I_Crocus_AP";
+		};
+		class Item29
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7006.7769,5,5859.8252};
+			};
+			id=541;
+			type="acex_fortify_setupModule";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_fortify_setupModule_Budget";
+					expression="_this setVariable ['Budget',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_fortify_setupModule_AddToolItem";
+					expression="_this setVariable ['AddToolItem',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_fortify_setupModule_Preset";
+					expression="_this setVariable ['Preset',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="big";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fortify_setupModule_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
