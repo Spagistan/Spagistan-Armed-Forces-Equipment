@@ -20,6 +20,7 @@ class CfgPatches
 #include "CfgUnitInsignia.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgModules.hpp"
+#include "CfgDebriefing.hpp"
 
 //#include "CfgVehicles.hpp"//#include "CfgArsenal.hpp"
 

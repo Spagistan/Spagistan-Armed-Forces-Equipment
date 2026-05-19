@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=530;
+		nextID=541;
 	};
 	class Camera
 	{
-		pos[]={7025.8516,13.221778,5873.686};
-		dir[]={-0.72534293,-0.68838906,0.0068789804};
-		up[]={-0.68838948,0.72530401,0.0065281983};
-		aside[]={0.0094829341,3.1125091e-07,0.99997109};
+		pos[]={7017.8682,22.59597,5879.0093};
+		dir[]={-0.12672171,-0.74588788,-0.65390617};
+		up[]={-0.14190681,0.66607195,-0.73226422};
+		aside[]={-0.98173565,-9.95351e-09,0.19025232};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,18 @@ addons[]=
 	"ace_flashlights",
 	"rhs_c_heavyweapons",
 	"CUP_CA_Config",
-	"CUP_Misc3_Config"
+	"CUP_Misc3_Config",
+	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Props_F_Enoch_Military_Camps",
+	"A3_Characters_F_Common",
+	"spag_vehicles",
+	"ArmaFPV_Data"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=32;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -238,13 +243,48 @@ class AddonsMetaData
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
+		class Item27
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item28
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item29
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item30
+		{
+			className="spag_vehicles";
+			name="vehicles";
+			author="Spagistan Development Team";
+			url="SPAGLINK";
+		};
+		class Item31
+		{
+			className="ArmaFPV_Data";
+			name="ArmaFPV";
+			author="DarkBall & Sam";
+		};
 	};
 };
 dlcs[]=
 {
 	"RHS_AFRF",
 	"ace",
-	"RHS_SAF"
+	"RHS_SAF",
+	"Enoch"
 };
 randomSeed=4066009;
 class ScenarioData
@@ -274,13 +314,13 @@ class Mission
 	};
 	class Entities
 	{
-		items=25;
+		items=29;
 		class Item0
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7009.7271,5,5847.7715};
+				position[]={7009.7271,5,5847.771};
 			};
 			id=190;
 			type="ModuleCurator_F";
@@ -295,7 +335,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="zeus";
 						};
 					};
 				};
@@ -353,12 +393,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7017.2354,5.0014391,5866.9355};
+						position[]={7017.2349,5.0014391,5866.936};
 					};
 					side="Independent";
 					flags=7;
 					class Attributes
 					{
+						name="zeus";
 						isPlayer=1;
 						class Inventory
 						{
@@ -1529,6 +1570,136 @@ class Mission
 			{
 			};
 			id=528;
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7021.2412,5.9688811,5874.7959};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=530;
+			type="Land_MapBoard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="z\spag\addons\main\mission\img\hintsign.jpg";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7016.147,6.0431652,5879.4912};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=532;
+			type="Land_TripodScreen_01_large_black_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="z\spag\addons\main\mission\img\dodSlide8.jpg";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7025.811,5.0014386,5861.4824};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=536;
+					type="I_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=536;
+						item1=535;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=534;
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7025.814,5.0137668,5861.4526};
+			};
+			side="Independent";
+			flags=6;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=535;
+			type="I_Crocus_AP";
 		};
 	};
 	class Connections

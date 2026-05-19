@@ -14,4 +14,4 @@ systemChat "---Ending mission";
 
 sleep 4;
 
-["end1"] remoteExec ["bis_fnc_endMissionServer", 0];
+["end1", true] remoteExecCall ["BIS_fnc_endMission"];
