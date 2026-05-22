@@ -34,23 +34,12 @@ class CfgPatches
 			"spag_uaz",
 			"spag_uaz_open",
 			"spag_uaz_dshkm",
-			"spag_uaz_ags30",
-			"spag_BTR40",
-			"spag_BTR40_Mortar",
-			"spag_BTR40_AGS",
-			"spag_BTR40_NSV",
-			"Spag_Empty_Crate",
-			"Spag_Rifle_Crate",
-			"Spag_Weap_Crate",
-			"Spag_Metis_Crate",
-			"Spag_Med_Crate"
-
-
+			"spag_uaz_ags30"
 			};
 
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"spag_main","spag_common","rhs_main", "rhs_c_a2port_car"};
+		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
 		author = "Spagistan Development Team";
 		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";

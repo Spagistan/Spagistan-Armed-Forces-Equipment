@@ -35,6 +35,7 @@ class GenericNames
             billy="Billy";
             van="Van";
             john="John";
+            chud="Chud";
         };
         class LastNames
         {
@@ -66,6 +67,7 @@ class GenericNames
             darkholme="Darkholme";
             spagistan="Spagistan";
             hussein="Hussein";
+            vogman="Vogman";
         };
     };
 
