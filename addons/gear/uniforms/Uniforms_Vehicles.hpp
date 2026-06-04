@@ -264,6 +264,25 @@ class S_Civilian3: Civilian_F
 			};
 		};
 	};
+	/*class spag_tanktop_green: ua_combatuniform_tubitak_tanktop_soldier
+	{
+		uniformClass="ua_combatuniform_tubitak_tanktop";
+		model="\a3\Characters_F_Enoch\Uniforms\I_E_Soldier_01_TankTop_F.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ua_equipment\unif\data\I_E_Soldier_01_TankTop_TUR_TLF_CO.paa",
+			"ua_equipment\unif\data\I_I_Soldier_01_TUR_TLF_CO.paa",
+			"\A3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_gloves_black_CO.paa"
+		};
+	};
+*/
 
 //  BACKWARDS COMPATIBILITY
 class spag_turk: U_S_SPAGPAT { displayName = "(Depricated) Spagistan Combat Uniform";  scope = 1; side = 1;	scopeArsenal = 1; };

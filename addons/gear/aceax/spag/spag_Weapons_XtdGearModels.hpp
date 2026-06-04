@@ -118,6 +118,47 @@
                     };
                 };
             };
+class ua_loadout;
+class ua_camobase;
+class spag_6b45
+		{
+			label="6B45";
+			author="Spagistan Mod Team";
+			options[]=
+			{
+				"Loadout",
+				"Camo"
+			};
+			class loadout: ua_loadout
+			{
+				values[]=
+				{
+					"Slick",
+					"Holster",
+					"Light",
+					"Ammo pouch",
+					"SW Radio",
+					"Rifle",
+					"Rifle alt",
+					"VOG"
+				};
+				class holster
+				{
+					label="Holster";
+				};
+				class rifle2
+				{
+					label="Rifle Alt";
+				};
+			};
+			class camo: ua_camobase
+			{
+				values[]=
+				{
+					"SPAGPAT"
+				};
+			};
+		};
 
             /*
             class M97_RHS_SAF

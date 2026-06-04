@@ -366,7 +366,22 @@ class S_Uniform_Civ3: Uniform_Base
 			scope = 1;
 		};
 	};
-
+/*class spag_tanktop_green: ua_combatuniform_tubitak_tanktop
+	{
+		displayName="Combat Uniform (TUBITAK, Tanktop)";
+		author="Seb";
+		descriptionShort="A lightweight combat uniform printed in TUBITAK, with a tanktop";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="ua_combatuniform_tubitak_tanktop_soldier";
+		};
+		class XtdGearInfo: XtdGearInfo
+		{
+			top="tanktop";
+			camo="tlf";
+		};
+	};
+*/
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
 //  BACKWARDS COMPATIBILITY
