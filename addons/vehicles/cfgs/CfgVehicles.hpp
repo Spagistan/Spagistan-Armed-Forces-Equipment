@@ -13,4 +13,5 @@
 	#include "CfgMTLB.hpp"
 	#include "CfgMI24.hpp"
 	#include "CfgDrones.hpp"
+	#include "CfgBRDM.hpp"
 	//#include "CfgSU25-2.hpp"

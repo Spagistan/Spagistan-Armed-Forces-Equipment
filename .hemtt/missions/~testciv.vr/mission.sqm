@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=691;
+		nextID=712;
 	};
 	class Camera
 	{
-		pos[]={6942.3887,14.532555,5953.7231};
-		dir[]={-0.18345936,-0.66644442,-0.72269541};
-		up[]={-0.16399166,0.74550372,-0.64600766};
-		aside[]={-0.96930015,3.5401899e-07,0.24606231};
+		pos[]={6909.0493,15.405423,5936.4009};
+		dir[]={-0.15338078,-0.63162589,0.7600311};
+		up[]={-0.1249681,0.77519751,0.61923385};
+		aside[]={0.98029995,3.6420533e-07,0.19783348};
 	};
 };
 binarizationWanted=0;
-sourceName="testciv";
+sourceName="~testciv";
 addons[]=
 {
 	"A3_Modules_F_Curator_Curator",
@@ -400,7 +400,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=59;
+		items=63;
 		class Item0
 		{
 			dataType="Logic";
@@ -5005,12 +5005,13 @@ class Mission
 						position[]={6936.3438,7.5005641,5939.3662};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=686;
 					type="I_Spagistan_NG_Crewman_01";
+					atlOffset=2.499125;
 				};
 				class Item2
 				{
@@ -5035,12 +5036,12 @@ class Mission
 						position[]={6927.7305,7.3375921,5942.1831};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=689;
 					type="I_Spagistan_NG_Crewman_01";
+					atlOffset=2.336153;
 				};
 				class Item4
 				{
@@ -5050,12 +5051,12 @@ class Mission
 						position[]={6927.7305,7.3375921,5942.1831};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=690;
 					type="I_Spagistan_NG_Crewman_01";
+					atlOffset=2.336153;
 				};
 			};
 			class Attributes
@@ -5156,6 +5157,66 @@ class Mission
 			};
 			id=687;
 			type="spag_BRDM2";
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6902.6509,5.1487255,5947.439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=708;
+			type="Spag_Weap_Crate";
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6903.6426,5.1487255,5947.4907};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=709;
+			type="Spag_Rifle_Crate";
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6904.7192,5.1487255,5947.5054};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=710;
+			type="Spag_Metis_Crate";
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6904.0874,5.1487255,5949.4614};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=711;
+			type="rhs_7ya37_1_single";
 		};
 	};
 	class Connections
