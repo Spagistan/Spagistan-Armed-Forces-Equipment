@@ -46,6 +46,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
+		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
 		author = "Spagistan Development Team";
 		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";
