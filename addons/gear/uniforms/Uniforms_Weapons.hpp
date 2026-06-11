@@ -366,6 +366,78 @@ class S_Uniform_Civ3: Uniform_Base
 			scope = 1;
 		};
 	};
+class S_uniform_tank_green: Uniform_Base
+	{
+		scope = 2;
+		displayName="Combat Uniform (SPAGPAT, Tanktop)";
+		author="Spagistan Mod Team";
+		descriptionShort="A lightweight combat uniform printed in SPAGPAT, with a tanktop";
+		picture="\A3\characters_f_beta\data\ui\icon_u_ir_crewuniform_rucamo_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="U_S_tank_green";
+			containerClass="Supply40";
+			mass=40;
+		};
+		class XtdGearInfo
+		{
+			model="spag_tanktop";
+			shirt="Green";
+		};
+	};
+class S_uniform_tank_tan: S_uniform_tank_green
+	{
+		displayName="Combat Uniform (SPAGPAT, Tanktop)";
+		descriptionShort="A lightweight combat uniform printed in SPAGPAT, with a tanktop";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="U_S_tank_tan";
+			containerClass="Supply40";
+			mass=40;
+		};
+		class XtdGearInfo
+		{
+			model="spag_tanktop";
+			shirt="Tan";
+		};
+	};
+class S_uniform_tank_telnik: S_uniform_tank_green
+	{
+		displayName="Combat Uniform (SPAGPAT, Tanktop)";
+		descriptionShort="A lightweight combat uniform printed in SPAGPAT, with a tanktop";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="U_S_tank_telnik";
+			containerClass="Supply40";
+			mass=40;
+		};
+		class XtdGearInfo
+		{
+			model="spag_tanktop";
+			shirt="Telnik";
+		};
+	};
+class S_uniform_tank_tapout: S_uniform_tank_green
+	{
+		displayName="Combat Uniform (SPAGPAT, Tanktop)";
+		descriptionShort="A lightweight combat uniform printed in SPAGPAT, with a tanktop";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="U_S_tank_tapout";
+			containerClass="Supply40";
+			mass=40;
+		};
+		class XtdGearInfo
+		{
+			model="spag_tanktop";
+			shirt="Tapout";
+		};
+	};
 
 // cfgWeapons line : 73,722
 // cfgvehicles line : 229,903
