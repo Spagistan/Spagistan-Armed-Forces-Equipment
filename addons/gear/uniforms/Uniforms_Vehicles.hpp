@@ -1,18 +1,13 @@
 //CfgVehicle bases and groundholders for Uniforms
-
-
-//russian vests are 乇乂ㄒ尺卂 ㄒ卄丨匚匚
-
-
 // UNIFORMS
 /* class SoldierGB ;
 class rhssaf_soldier_m10_base: SoldierGB
 {
 	hiddenSelectionsTextures = {"camo1","camo2","camo3","insignia"};
 }; */
-/* class Item_Base_F; */
 
 //rhssaf_soldier_m10_base
+class I_G_Soldier_base_F;
 class I_Soldier_base_F; // for AAF uniform
 class I_officer_F;
 class B_soldier_F;
@@ -263,7 +258,59 @@ class S_Civilian3: Civilian_F
 				"po_factions_me\Civilians\W2_Tak_civil06.rvmat"
 			};
 		};
-	};
+};
+class U_S_tank_green: I_G_Soldier_base_F
+	{
+		scope=1;
+		side=2;
+		modelSides[]={0,1,2,3,4,5,6,7};
+		uniformClass="S_uniform_tank_green";
+		model="\a3\Characters_F_Enoch\Uniforms\I_E_Soldier_01_TankTop_F.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_TankTop_CO.paa",
+			"z\spag\addons\gear\data\uniforms\spag_tank_pants.paa",
+			"\A3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_gloves_black_CO.paa"
+		};
+};
+class U_S_tank_tan: U_S_tank_green
+	{
+		uniformClass="S_uniform_tank_tan";
+		hiddenSelectionsTextures[]=
+		{
+			"ua_equipment\unif\data\I_E_Soldier_01_TankTop_TUR_TLF_CO.paa",
+			"z\spag\addons\gear\data\uniforms\spag_tank_pants.paa",
+			"\A3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_gloves_black_CO.paa"
+		};
+};
+class U_S_tank_telnik: U_S_tank_green
+	{
+		uniformClass="S_uniform_tank_telnik";
+		hiddenSelectionsTextures[]=
+		{
+			"z\spag\addons\gear\data\uniforms\spag_tank_telnik.paa",
+			"z\spag\addons\gear\data\uniforms\spag_tank_pants.paa",
+			"\A3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_gloves_black_CO.paa"
+		};
+};
+class U_S_tank_tapout: U_S_tank_green
+	{
+		uniformClass="S_uniform_tank_tapout";
+		hiddenSelectionsTextures[]=
+		{
+			"z\spag\addons\gear\data\uniforms\spag_tank_tapout.paa",
+			"z\spag\addons\gear\data\uniforms\spag_tank_pants.paa",
+			"\A3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_gloves_black_CO.paa"
+		};
+};
+
 
 //  BACKWARDS COMPATIBILITY
 class spag_turk: U_S_SPAGPAT { displayName = "(Depricated) Spagistan Combat Uniform";  scope = 1; side = 1;	scopeArsenal = 1; };

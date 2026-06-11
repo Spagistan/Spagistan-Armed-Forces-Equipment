@@ -48,12 +48,17 @@ class CfgPatches
 			"U_S_Uniform_Gorka_Hands_SPAGPAT",
 			"U_S_Uniform_Gorka_Winter_Mix_Hands_SPAGPAT",
 			"U_S_Uniform_Gorka_Winter_Full_Hands_SPAGPAT",
-			"U_S_Uniform_Gorka_Full_Hands_SPAGPAT"
+			"U_S_Uniform_Gorka_Full_Hands_SPAGPAT",
+			"S_uniform_tank_green",
+			"S_uniform_tank_tan",
+			"S_uniform_tank_telnik",
+			"S_uniform_tank_tapout"
+
 			};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Data_F", "spag_main","spag_common", "rhs_weapons", "rhs_c_weapons"};
+		requiredAddons[] = {"A3_Data_F", "spag_main","spag_common", "rhs_weapons", "rhs_c_weapons", "rhs_c_troops"};
 		author = "Spagistan Development Team";
-		authors[] = {"Taepodong","Kalthramis"};
+		authors[] = {"Taepodong","A. Dan"};
 		url = "SPAGLINK";
 		VERSION_CONFIG;
 
