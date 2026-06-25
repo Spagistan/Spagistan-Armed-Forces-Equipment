@@ -9,7 +9,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 	editorCategory = "Spagistan_Category";
 	editorSubcategory = "EdSubcat_Helicopters";
 	faction = QUOTE(SPAGFACTION);
-	crew = "S_Soldier_Pilot";
+	crew = "I_spag_NG_Pilot_Heli";
 	tf_hasLRradio = 1;
 	tf_RadioType = "TFAR_anprc155_coyote";
 	tf_isolatedAmount = 1;
@@ -26,5 +26,15 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\vvs_ca)
+		};
+		class ace_cargo
+		{
+            class cargo
+			{
+                class Spag_SupplyCrate {
+                    type = "Spag_SupplyCrate";
+                    amount = 1;
+                };
+            };
+        };
 	};
-};

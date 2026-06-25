@@ -17,7 +17,7 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 	tf_encryptionCode = "_independent";
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
-	crew = "S_Soldier_Pilot";
+	crew = "I_spag_NG_Pilot_Jet";
 	VEHICLEINVENTORY
 	hiddenselectionstextures[] = {
 		QPATHTOF(data\Yak\cas02_ext01_SAF27),
@@ -29,7 +29,7 @@ class YAK130_Spagpat: O_Plane_CAS_02_dynamicLoadout_F
 			author = "A. Dan";
 			textures[] = {
 				QPATHTOF(data\Yak\cas02_ext01_clown),
-				QPATHTOF(data\Yak\cas02_ext02_clown), 
+				QPATHTOF(data\Yak\cas02_ext02_clown),
 			};
 			factions[] = {QUOTE(SPAGFACTION)};
 		};

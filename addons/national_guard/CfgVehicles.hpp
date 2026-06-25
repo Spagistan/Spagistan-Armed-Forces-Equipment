@@ -10,6 +10,7 @@ class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
 
     class S_Soldier_Rifleman;
+    class S_Soldier_Pilot;
     class NG_Soldier_Base : S_Soldier_Rifleman {scope = 0; } ;
     class NG_Soldier_Base_OCimport_01 : NG_Soldier_Base { scope = 0; class EventHandlers; };
     class NG_Soldier_Base_OCimport_02 : NG_Soldier_Base_OCimport_01 { class EventHandlers; };
@@ -77,9 +78,9 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
+        genericNames = "SpagistanMen";
 
-
-        identityTypes[] = {"Head_Asian","LanguageGRE_F","G_GUERIL_default"};
+        identityTypes[] = {"Head_Asian","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
@@ -120,8 +121,8 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-
-        identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
@@ -162,8 +163,8 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-
-        identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
@@ -204,8 +205,8 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-
-        identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
@@ -242,12 +243,12 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Squad Lead";
+        displayName = "Squad Leader";
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-
-        identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
@@ -320,13 +321,13 @@ class CfgVehicles {
         side = 2;
         faction = "i_spagistan_ng";
         editorCategory = "Spagistan_NG_Category";
-
-        identityTypes[] = {"Head_TK","LanguageGRE_F","G_GUERIL_default"};
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
 
         uniformClass = "U_S_Uniform_SPAGPAT";
 
-        linkedItems[] = {"S_Vest_SPAGPAT","rhs_tsh4_bala","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"S_Vest_SPAGPAT","rhs_tsh4_bala","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+        linkedItems[] = {"rhssaf_vest_md12_digital","rhs_tsh4_bala","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"rhssaf_vest_md12_digital","rhs_tsh4_bala","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
 
         weapons[] = {"rhs_weap_aks74u","rhs_weap_makarov_pm"};
         respawnWeapons[] = {"rhs_weap_aks74u","rhs_weap_makarov_pm"};
@@ -336,7 +337,7 @@ class CfgVehicles {
 
         backpack = "S_KitBag_Spag_Rifleman";
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_aks74u","rhs_acc_dtk","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{"rhs_weap_makarov_pm","","","",{"rhs_mag_9x18_8_57N181S",8},{},""},{"U_S_Uniform_SPAGPAT",{{"ACE_microDAGR",1},{"ACE_CableTie",2},{"ACE_EarPlugs",2},{"rhs_30Rnd_545x39_7N6M_AK",3,30}}},{"S_Vest_SPAGPAT",{}},{"S_KitBag_Spag_Rifleman",{{"ACE_elasticBandage",30},{"ACE_morphine",4},{"ACE_epinephrine",4},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_EntrenchingTool",1},{"rhssaf_mag_br_m75",5,1},{"rhssaf_mag_brd_m83_white",5,1},{"acex_intelitems_notepad",1,1}}},"rhs_tsh4_bala","G_Shades_Black",{},{"ItemMap","","TFAR_anprc148jem","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_aks74u","rhs_acc_dtk","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{"rhs_weap_makarov_pm","","","",{"rhs_mag_9x18_8_57N181S",8},{},""},{"U_S_Uniform_SPAGPAT",{{"ACE_microDAGR",1},{"ACE_CableTie",2},{"ACE_EarPlugs",2},{"rhs_30Rnd_545x39_7N6M_AK",3,30}}},{"rhssaf_vest_md12_digital",{}},{"S_KitBag_Spag_Rifleman",{{"ACE_elasticBandage",30},{"ACE_morphine",4},{"ACE_epinephrine",4},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_EntrenchingTool",1},{"rhssaf_mag_br_m75",5,1},{"rhssaf_mag_brd_m83_white",5,1},{"acex_intelitems_notepad",1,1}}},"rhs_tsh4_bala","G_Shades_Black",{},{"ItemMap","","TFAR_anprc148jem","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -353,6 +354,33 @@ class CfgVehicles {
         ALiVE_orbatCreator_insignia = "Spagistan_Insignia";
 
     };
+
+class I_spag_NG_Pilot_Jet : S_Soldier_Pilot {
+        displayName = "Jet Pilot";
+        author = "Dan";
+        faction = "i_spagistan_ng";
+        editorCategory = "Spagistan_NG_Category";
+        genericNames = "SpagistanMen";
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default"};
+        uniformClass = "ua_df15_khk";
+        backpack = "";
+        linkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+
+        weapons[] = {"rhs_weap_makarov_pm"};
+        respawnWeapons[] = {"rhs_weap_makarov_pm"};
+
+        magazines[] = {"rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S"};
+        respawnMagazines[] = {"rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S"};
+        Items[] = {"cigs_morley_cigpack","cigs_matches","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+		RespawnItems[] = {"cigs_morley_cigpack","cigs_matches","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+    };
+
+class I_spag_NG_Pilot_Heli : I_spag_NG_Pilot_Jet {
+        displayName = "Heli Pilot";
+        linkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_mike_green_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_mike_green_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
+};
 
     class I_Spagistan_NG_BTR_70_01 : rhsgref_cdf_btr70_OCimport_02 {
         author = "Canadian";

@@ -7,6 +7,12 @@ class CfgPatches
 		units[] = {
 			"BMP_Spagpat",
 			"BTR_Spagpat",
+			"Spag_Empty_Crate",
+			"Spag_Rifle_Crate",
+			"Spag_Weap_Crate",
+			"Spag_Metis_Crate",
+			"Spag_Med_Crate",
+			"Spag_SupplyCrate",
 			"hummv_d_SPAGPAT",
 			"hummv_d_SPAGPAT_ar",
 			"hummv_d_SPAGPAT_gl",
@@ -40,18 +46,38 @@ class CfgPatches
 			"spag_BTR40_AGS",
 			"spag_BTR40_NSV",
 			"spag_BRDM2",
-			"spag_BRDM2_ATGM"
+			"spag_BRDM2_ATGM",
+			"spag_BRDM2_HQ"
 			};
 
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
-		requiredAddons[] = {"rhs_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
+		requiredAddons[] = {"rhs_main","cba_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
 		author = "Spagistan Development Team";
-		authors[] = {"Kalthramis"};
 		url = "SPAGLINK";
 		VERSION_CONFIG;
 	};
 };
 
 #include "CfgVehicles.hpp"
+
+class Extended_Init_EventHandlers
+{
+    class Spag_SupplyCrate
+    {
+        init = "_this call spag_fnc_addUnpackAction";
+    };
+};
+
+class CfgFunctions
+{
+    class Spag
+    {
+        class Supply
+        {
+            file = "\z\spag\addons\vehicles\functions";
+
+            class addUnpackAction {};
+        };
+    };
+};
