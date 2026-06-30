@@ -12,6 +12,7 @@ class CfgPatches
 			"Spag_Weap_Crate",
 			"Spag_Metis_Crate",
 			"Spag_Med_Crate",
+			"Spag_Drone_Crate",
 			"Spag_SupplyCrate",
 			"hummv_d_SPAGPAT",
 			"hummv_d_SPAGPAT_ar",
