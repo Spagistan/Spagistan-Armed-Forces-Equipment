@@ -1,7 +1,8 @@
 class rhs_7ya37_1_single;
 class ACE_medicalSupplyCrate_advanced;
 class I_supplyCrate_F;
-class AmmoCrates_NoInteractive_Large;
+//class AmmoCrates_NoInteractive_Large;
+class VirtualReammoBox_camonet_F;
 
 class Spag_Empty_Crate : rhs_7ya37_1_single {
     displayName = "SAF Empty Crate";
@@ -122,10 +123,12 @@ class Spag_SupplyCrate: I_supplyCrate_F {
     ace_cargo_noRename = 1;
 };
 
-class Spag_arsenal : AmmoCrates_NoInteractive_Large {
+class Spag_arsenal : VirtualReammoBox_camonet_F {
     displayName = "SAF Arsenal";
-    maximumLoad = 1e+09;
+    model = "\ca\weapons\AmmoBoxes\USSpecialWeapons.p3d";
     ace_cargo_hasCargo = 1;
-    ace_cargo_space = 10;
+    ace_cargo_space = 20;
     ace_cargo_canLoad = 0;
+    ace_rearm_defaultSupply = 1200;
+    VEHICLEINVENTORY
 };
