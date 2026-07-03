@@ -1,6 +1,6 @@
 class SpagistanAF {
     name = "Spagistan Armed Forces";
-    
+
     class Infantry {
         name = "Infantry";
 
@@ -9,7 +9,7 @@ class SpagistanAF {
             faction = QUOTE(SPAGFACTION);
             name = "Fireteam";
             side = 2;
-            
+
             class unit0 {
                 position[] = {0,0,0};
                 rank = "CORPORAL";
@@ -97,6 +97,35 @@ class SpagistanAF {
                 vehicle = "S_Soldier_Rifleman";
             };
 
+            class Motorized_MTP {
+                name = "Motorized Infantry (MTP)";
+
+            };
+
+            class Support {
+                name = "Support Infantry";
+
+            };
+
+            class Mechanized {
+                name = "Mechanized Infantry";
+
+            };
+
+            class Armored {
+                name = "Armor";
+
+            };
+
+            class Naval {
+                name = "Naval";
+
+            };
+
+            class Air {
+                name = "Air";
+
+            };
 
         };
     };

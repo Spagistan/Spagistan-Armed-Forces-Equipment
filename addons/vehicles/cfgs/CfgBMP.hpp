@@ -87,7 +87,7 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
-	crew = "S_Soldier_Armor";
+	crew = "I_Spagistan_NG_Crewman_01";
 	HiddenSelectionsTextures[] = {
 		"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa",
 		"rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa",
@@ -104,7 +104,7 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 		editorSubcategory = "EdSubcat_APCs";
         side = 2;
         faction = QUOTE(SPAGFACTION);
-        crew = "S_Soldier_Armor";
+        crew = "I_Spagistan_NG_Crewman_01";
 		VEHICLEINVENTORY
 		tf_hasLRradio = 1;
 		tf_RadioType = "TFAR_anprc155_coyote";

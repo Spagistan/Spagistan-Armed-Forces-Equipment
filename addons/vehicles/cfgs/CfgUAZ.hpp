@@ -1,5 +1,4 @@
 
-class RHS_UAZ_Base;
 class RHS_UAZ_DShKM_Base;
 class RHS_UAZ_AGS30_Base;
 

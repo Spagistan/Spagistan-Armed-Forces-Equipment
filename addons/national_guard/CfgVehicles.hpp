@@ -335,26 +335,9 @@ class CfgVehicles {
         magazines[] = {"rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S"};
         respawnMagazines[] = {"rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S"};
 
-        backpack = "S_KitBag_Spag_Rifleman";
-
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_aks74u","rhs_acc_dtk","","",{"rhs_30Rnd_545x39_7N6M_AK",30},{},""},{},{"rhs_weap_makarov_pm","","","",{"rhs_mag_9x18_8_57N181S",8},{},""},{"U_S_Uniform_SPAGPAT",{{"ACE_microDAGR",1},{"ACE_CableTie",2},{"ACE_EarPlugs",2},{"rhs_30Rnd_545x39_7N6M_AK",3,30}}},{"rhssaf_vest_md12_digital",{}},{"S_KitBag_Spag_Rifleman",{{"ACE_elasticBandage",30},{"ACE_morphine",4},{"ACE_epinephrine",4},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_EntrenchingTool",1},{"rhssaf_mag_br_m75",5,1},{"rhssaf_mag_brd_m83_white",5,1},{"acex_intelitems_notepad",1,1}}},"rhs_tsh4_bala","G_Shades_Black",{},{"ItemMap","","TFAR_anprc148jem","ItemCompass","ItemWatch",""}};
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'Spagistan_Insignia'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_insignia = "Spagistan_Insignia";
+        backpack = "rhssaf_kitbag_digital";
 
     };
-
 class I_spag_NG_Pilot_Jet : S_Soldier_Pilot {
         displayName = "Jet Pilot";
         author = "Dan";
@@ -376,11 +359,11 @@ class I_spag_NG_Pilot_Jet : S_Soldier_Pilot {
 		RespawnItems[] = {"cigs_morley_cigpack","cigs_matches","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
     };
 
-class I_spag_NG_Pilot_Heli : I_spag_NG_Pilot_Jet {
+    class I_spag_NG_Pilot_Heli : I_spag_NG_Pilot_Jet {
         displayName = "Heli Pilot";
         linkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_mike_green_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"S_Vest_SPAGPAT_AIR","rhs_zsh7a_mike_green_alt","ItemMap","TFAR_anprc148jem","ItemCompass","ItemWatch"};
-};
+    };
 
     class I_Spagistan_NG_BTR_70_01 : rhsgref_cdf_btr70_OCimport_02 {
         author = "Canadian";

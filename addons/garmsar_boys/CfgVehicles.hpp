@@ -44,22 +44,14 @@ class CfgVehicles {
     class S_Soldier_SL;
     class S_Soldier_SL_OCimport_01 : S_Soldier_SL { scope = 0; class EventHandlers; };
     class S_Soldier_SL_OCimport_02 : S_Soldier_SL_OCimport_01 { class EventHandlers; };
-
-    class ua_chvk_afr_2b14;
-    class ua_chvk_afr_2b14_OCimport_01 : ua_chvk_afr_2b14 { scope = 0; class EventHandlers; class Turrets; };
-    class ua_chvk_afr_2b14_OCimport_02 : ua_chvk_afr_2b14_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
+    class rhsgref_ins_g_2b14;
 
 
     class I_Spagistan_Garmsar_Garmsar_Cadet_01 : S_Soldier_Rifleman_OCimport_02 {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Cadet";
+        displayName = "Cadet";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         editorCategory = "Spagistan_GC_Category";
@@ -99,7 +91,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Driving Boy";
+        displayName = "Cadet Driver";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         editorCategory = "Spagistan_GC_Category";
@@ -141,7 +133,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Gunner Boy";
+        displayName = "Cadet Gunner";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         editorCategory = "Spagistan_GC_Category";
@@ -183,7 +175,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Fuel Truck";
+        displayName = "Cadet Fuel Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
@@ -209,7 +201,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Ammo Truck";
+        displayName = "Cadet Ammo Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
@@ -235,7 +227,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Boys Truck";
+        displayName = "Cadet Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
@@ -269,7 +261,7 @@ class CfgVehicles {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Repair Truck";
+        displayName = "Cadet Repair Truck";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01";
@@ -331,34 +323,14 @@ class CfgVehicles {
 
     };
 
-    class I_Spagistan_Garmsar_Garmsar_Boys_Mortar_01 : ua_chvk_afr_2b14_OCimport_02 {
+    class I_Spag_Cadet_Mortar : rhsgref_ins_g_2b14 {
         author = "Canadian";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Garmsar Boys Mortar";
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01";
         editorCategory = "Spagistan_GC_Category";
 
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01"; primaryGunner = 1;};
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
     };
-
 };

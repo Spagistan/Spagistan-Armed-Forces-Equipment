@@ -1,7 +1,6 @@
 #include "loadout_macros.hpp"
 
 class I_G_Soldier_base_F;
-class I_G_Soldier_F;
 
 class S_Soldier_Base: I_G_Soldier_base_F
 {

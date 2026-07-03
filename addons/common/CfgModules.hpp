@@ -3,7 +3,6 @@ class CfgVehicles
 	class Logic;
 	class Module_F: Logic
 	{
-		class AttributesBase;
 		class ModuleDescription;
 	};
 	class Spag_ModuleEnding_F: Module_F

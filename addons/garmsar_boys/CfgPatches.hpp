@@ -9,7 +9,7 @@ class CfgPatches {
             "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02",
             "I_Spagistan_Garmsar_Garmsar_Repair_Truck_01",
             "I_Spagistan_Garmsar_Garmsar_Sergeant_01",
-            "I_Spagistan_Garmsar_Garmsar_Boys_Mortar_01"
+            "I_Spag_Cadet_Mortar"
         };
         weapons[] = {};
         requiredVersion = 1.62;

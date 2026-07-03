@@ -6,6 +6,9 @@ class CfgPatches
 		name = "vehicles";
 		units[] = {
 			"BMP_Spagpat",
+			"S_BMP2_Spagpat",
+			"S_BMP2D_Spagpat",
+			"I_SPAGF_SPAG_Objyekt_681_01",
 			"BTR_Spagpat",
 			"Spag_Empty_Crate",
 			"Spag_Rifle_Crate",
@@ -24,6 +27,7 @@ class CfgPatches
 			"hummv_d_SPAGPAT_open",
 			"m113_spagpat",
 			"mi8t_spagpat",
+			"spag_Mi8AMTSh",
 			"SU25_Spagpat",
 			"YAK130_Spagpat",
 			"spag_ural_closed",
