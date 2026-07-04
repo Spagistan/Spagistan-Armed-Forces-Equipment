@@ -17,6 +17,7 @@ class CfgPatches
 			"Spag_Med_Crate",
 			"Spag_Drone_Crate",
 			"Spag_SupplyCrate",
+			"Spag_arsenal",
 			"hummv_d_SPAGPAT",
 			"hummv_d_SPAGPAT_ar",
 			"hummv_d_SPAGPAT_gl",
@@ -72,7 +73,14 @@ class Extended_Init_EventHandlers
     {
         init = "_this call spag_fnc_addUnpackAction";
     };
+
+	class Spag_arsenal
+	{
+		init = "_this, call spag_fnc_addSpagArsenal";
+	};
+
 };
+
 
 class CfgFunctions
 {
@@ -83,6 +91,13 @@ class CfgFunctions
             file = "\z\spag\addons\vehicles\functions";
 
             class addUnpackAction {};
+        };
+
+		class spagArsenal
+        {
+            file = "\z\spag\addons\vehicles\functions";
+
+            class addSpagArsenal {};
         };
     };
 };

@@ -88,11 +88,12 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
 	crew = "I_Spagistan_NG_Crewman_01";
-	HiddenSelectionsTextures[] = {
+	HiddenSelectionsTextures[] =
+	{
 		"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa",
 		"rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa",
 		"rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa"
-		  };
+	};
 };
 
  class I_SPAGF_SPAG_Objyekt_681_01 : rhs_Ob_681_2 {
@@ -113,9 +114,10 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 		tf_encryptionCode = "_independent";
 		tf_hasLRradio_api = 1;
 		tf_isolatedAmount_api = 0.3;
-		HiddenSelectionsTextures[] = {
+		HiddenSelectionsTextures[] =
+		{
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_1_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_2_desert_co.paa",
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_3_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_4_desert_co.paa",
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_5_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_6_desert_co.paa"
-		  };
+		};
     };

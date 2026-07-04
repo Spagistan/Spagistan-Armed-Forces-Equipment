@@ -1,7 +1,6 @@
 class rhs_7ya37_1_single;
 class ACE_medicalSupplyCrate_advanced;
 class I_supplyCrate_F;
-//class AmmoCrates_NoInteractive_Large;
 class VirtualReammoBox_camonet_F;
 
 class Spag_Empty_Crate : rhs_7ya37_1_single {
@@ -124,6 +123,7 @@ class Spag_SupplyCrate: I_supplyCrate_F {
 };
 
 class Spag_arsenal : VirtualReammoBox_camonet_F {
+    scope = 2;
     displayName = "SAF Arsenal";
     model = "\ca\weapons\AmmoBoxes\USSpecialWeapons.p3d";
     ace_cargo_hasCargo = 1;
@@ -131,4 +131,32 @@ class Spag_arsenal : VirtualReammoBox_camonet_F {
     ace_cargo_canLoad = 0;
     ace_rearm_defaultSupply = 1200;
     VEHICLEINVENTORY
+    class ace_cargo {
+        class cargo {
+            class Spag_Empty_Crate {
+                type = "Spag_Empty_Crate";
+                amount = 1;
+            };
+            class Spag_Rifle_Crate {
+                type = "Spag_Rifle_Crate";
+                amount = 1;
+            };
+            class Spag_Weap_Crate {
+                type = "Spag_Weap_Crate";
+                amount = 1;
+            };
+            class Spag_Metis_Crate {
+                type = "Spag_Metis_Crate";
+                amount = 1;
+            };
+            class Spag_Med_Crate {
+                type = "Spag_Med_Crate";
+                amount = 1;
+            };
+            class Spag_Drone_Crate {
+                type = "Spag_Drone_Crate";
+                amount = 1;
+            };
+        };
+    };
 };
