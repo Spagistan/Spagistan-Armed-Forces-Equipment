@@ -1,14 +1,14 @@
 class CfgPatches {
     class I_Spagistan_Garmsar {
         units[] = {
-            "I_Spagistan_Garmsar_Garmsar_Cadet_01",
-            "I_Spagistan_Garmsar_Garmsar_Driving_Boy_01",
-            "I_Spagistan_Garmsar_Garmsar_Gunner_Boy_01",
-            "I_Spagistan_Garmsar_Garmsar_Fuel_Truck_02",
-            "I_Spagistan_Garmsar_Garmsar_Ammo_Truck_01",
-            "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02",
-            "I_Spagistan_Garmsar_Garmsar_Repair_Truck_01",
-            "I_Spagistan_Garmsar_Garmsar_Sergeant_01",
+            "I_Spag_Cadet",
+            "I_Spag_Cadet_Driver",
+            "I_Spag_Cadet_CSW_Crew",
+            "I_spag_gc_ural_fuel",
+            "I_spag_gc_ural_ammo",
+            "I_spag_gc_ural_open",
+            "I_spag_gc_ural_repair",
+            "I_Spag_Cadet_SGT",
             "I_Spag_Cadet_Mortar"
         };
         weapons[] = {};

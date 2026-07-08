@@ -24,55 +24,55 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -87,25 +87,25 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -120,13 +120,13 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -151,31 +151,31 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02";
+                        vehicle = "I_spag_gc_ural_open";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -190,61 +190,61 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02";
+                        vehicle = "I_spag_gc_ural_open";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -284,10 +284,16 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spag_Cadet_Mortar";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
-                        position[] = {5,-5,0};
+                        position[] = {5,5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Spag_Cadet_Mortar";
+                    };
+                    class Unit2 {
+                        position[] = {-5,5,0};
                         rank = "PRIVATE";
                         side = 2;
                         vehicle = "I_Spag_Cadet_Mortar";
