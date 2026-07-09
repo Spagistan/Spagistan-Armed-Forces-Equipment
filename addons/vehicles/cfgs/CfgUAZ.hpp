@@ -12,6 +12,7 @@ class spag_uaz : RHS_UAZ_MSV_01 {
     faction = QUOTE(SPAGFACTION);
     crew = "S_Soldier_Rifleman";
     VEHICLEINVENTORY
+    rhs_decalParameters[]={};
 };
 class rhs_uaz_open_MSV_01;
 
@@ -24,6 +25,7 @@ class spag_uaz_open : rhs_uaz_open_MSV_01 {
     faction = QUOTE(SPAGFACTION);
     crew = "S_Soldier_Rifleman";
     VEHICLEINVENTORY
+    rhs_decalParameters[]={};
 };
 
 
@@ -37,6 +39,7 @@ class spag_uaz_dshkm : RHS_UAZ_DShKM_Base {
     faction = QUOTE(SPAGFACTION);
     crew = "S_Soldier_Rifleman";
     VEHICLEINVENTORY
+    rhs_decalParameters[]={};
 };
 
 class spag_uaz_ags30 : RHS_UAZ_AGS30_Base {
@@ -49,5 +52,5 @@ class spag_uaz_ags30 : RHS_UAZ_AGS30_Base {
     faction = QUOTE(SPAGFACTION);
     crew = "S_Soldier_Rifleman";
     VEHICLEINVENTORY
-
+    rhs_decalParameters[]={};
 };

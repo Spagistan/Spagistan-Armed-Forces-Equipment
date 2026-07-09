@@ -1,4 +1,46 @@
-class CBA_Extended_EventHandlers_base;
+#include "\z\spag\addons\factions\Spagistan\loadout_macros.hpp"
+
+#define GCVEHICLEINVENTORY class TransportBackpacks\
+	{\
+	};\
+	class TransportWeapons\
+	{\
+		weap_xx(rhs_weap_ak74m,2);\
+		weap_xx(rhs_weap_rpg75,2);\
+		weap_xx(rhs_weap_igla,1);\
+		weap_xx(rhs_weap_rpg7,1);\
+	};\
+	class TransportMagazines\
+	{\
+		mag_xx(rhs_mag_9k38_rocket,4);\
+		mag_xx(rhs_rpg7_PG7VS_mag,6);\
+		mag_xx(rhs_rpg7_type69_airburst_mag,4);\
+		mag_xx(rhs_rpg7_TBG7V_mag,2);\
+		mag_xx(grcb_30Rnd_545x39_7N24_AK,20);\
+		mag_xx(grcb_60Rnd_545x39_7N24,10);\
+		mag_xx(rhs_VOG25,20);\
+		mag_xx(rhs_GRD40_white,10);\
+		mag_xx(rhssaf_mag_br_m75,10);\
+		mag_xx(rhssaf_mag_brd_m83_white,10);\
+		mag_xx(cigs_morley_cigpack,1);\
+		mag_xx(rhs_250Rnd_762x54mmR_7N26,2);\
+	};\
+	class TransportItems\
+	{\
+		item_xx(ACE_Clacker,1);\
+		item_xx(DemoCharge_Remote_Mag,1);\
+		item_xx(rhs_acc_pgo7v3,2);\
+		item_xx(ACE_wirecutter,1);\
+		item_xx(ACE_elasticBandage,20);\
+		item_xx(ACE_packingBandage,20);\
+		item_xx(ACE_morphine,5);\
+		item_xx(ACE_epinephrine,5);\
+		item_xx(ACE_tourniquet,5);\
+		item_xx(ACE_splint,5);\
+		item_xx(ACE_EarPlugs,3);\
+		item_xx(ACE_suture,20);\
+		item_xx(ACE_salineIV_500,5);\
+	};
 
 class CfgVehicles {
     class S_Soldier_Rifleman;
@@ -6,13 +48,16 @@ class CfgVehicles {
     class rhsgref_cdf_ural_open;
     class RHS_Ural_Ammo_MSV_01;
     class rhsgref_cdf_ural_repair;
-
-    class ua_chvk_afr_ural_repair;
-    class ua_chvk_afr_ural_repair_OCimport_01 : ua_chvk_afr_ural_repair { scope = 0; class EventHandlers; };
-    class ua_chvk_afr_ural_repair_OCimport_02 : ua_chvk_afr_ural_repair_OCimport_01 { scope = 0; class EventHandlers; };
-
-    class rhsgref_ins_g_2b14;
-
+    class rhs_2b14_82mm_Base{
+        class Turrets {
+            class MainTurret;
+        };
+    };
+    class rhsgref_ins_g_2b14: rhs_2b14_82mm_Base{
+        class Turrets : Turrets {
+            class MainTurret : MainTurret{};
+        };
+    };
 
     class I_Spag_Cadet : S_Soldier_Rifleman {
         author = "Canadian";
@@ -74,7 +119,7 @@ class CfgVehicles {
         "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
         "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
         "rhsafrf\addons\rhs_a2port_car\ural\data\ural_fuel_tka_co.paa"};
-        VEHICLEINVENTORY
+        GCVEHICLEINVENTORY
    };
     class I_spag_gc_ural_ammo : RHS_Ural_Ammo_MSV_01 {
         author = "Canadian";
@@ -84,7 +129,7 @@ class CfgVehicles {
         editorCategory = "Spagistan_GC_Category";
         hiddenSelectionsTextures[] = {"z\spag\addons\vehicles\data\Ural\ural_spaggc.paa","rhsafrf\addons\rhs_a2port_car\ural\data\ural_plachta_tka_co.paa","rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"};
         rhs_decalParameters[] = {"['Number', cDecals4CarsNumberPlaces, 'Default']"};
-        VEHICLEINVENTORY
+        GCVEHICLEINVENTORY
     };
     class I_spag_gc_ural_open : rhsgref_cdf_ural_open {
         author = "Canadian";
@@ -95,7 +140,7 @@ class CfgVehicles {
         crew = "I_Spag_Cadet_Driver";
         editorCategory = "Spagistan_GC_Category";
         hiddenSelectionsTextures[] = {"z\spag\addons\vehicles\data\Ural\ural_spaggc.paa","rhsafrf\addons\rhs_a2port_car\ural\data\ural_open_tka_co.paa","rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"};
-        VEHICLEINVENTORY
+        GCVEHICLEINVENTORY
     };
 
     class I_spag_gc_ural_repair : rhsgref_cdf_ural_repair {
@@ -107,17 +152,25 @@ class CfgVehicles {
         crew = "I_Spag_Cadet_Driver";
         editorCategory = "Spagistan_GC_Category";
         hiddenSelectionsTextures[] = {"z\spag\addons\vehicles\data\Ural\ural_spaggc.paa","rhsafrf\addons\rhs_a2port_car\ural\data\ural_repair_co.paa"};
-        VEHICLEINVENTORY
+        GCVEHICLEINVENTORY
     };
 
     class I_Spag_Cadet_Mortar : rhsgref_ins_g_2b14 {
-        author = "Canadian";
+        author = "A. Dan";
         scope = 2;
         scopeCurator = 2;
         side = 2;
         faction = "I_Spagistan_Garmsar";
         crew = "I_Spag_Cadet_CSW_Crew";
         editorCategory = "Spagistan_GC_Category";
-
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+            magazines[] = {"spag_mag_3vo18_10_garmsar","spag_mag_3vo18_10_garmsar","spag_mag_3vo18_10_garmsar","spag_mag_3vo18_10_garmsar"};
+            weapons[]=
+				{
+					"spag_weap_2b14"
+				};
+            };
+        };
     };
 };

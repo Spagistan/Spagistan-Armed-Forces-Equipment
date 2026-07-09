@@ -16,6 +16,7 @@ class spag_BRDM2: rhsgref_BRDM2 {
 		"\rhsgref\addons\rhsgref_a2port_armor\brdm2\data\zbik_04_co.paa"
 	};
     VEHICLEINVENTORY
+	rhs_decalParameters[]={};
 };
 
 class spag_BRDM2_ATGM: rhsgref_BRDM2_ATGM {
@@ -31,6 +32,7 @@ class spag_BRDM2_ATGM: rhsgref_BRDM2_ATGM {
 		"\rhsgref\addons\rhsgref_a2port_armor\brdm2\data\zbik_04_co.paa"
 	};
     VEHICLEINVENTORY
+	rhs_decalParameters[]={};
 };
 
 class spag_BRDM2_HQ: rhsgref_BRDM2_HQ {
@@ -46,4 +48,5 @@ class spag_BRDM2_HQ: rhsgref_BRDM2_HQ {
 		"\rhsgref\addons\rhsgref_a2port_armor\brdm2\data\zbik_04_co.paa"
 	};
 	VEHICLEINVENTORY
+	rhs_decalParameters[]={};
 };

@@ -25,7 +25,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
-		QPATHTOF(data\MI8\vvs_ca)
+		QPATHTOF(data\MI8\sang_ca)
 		};
 		class ace_cargo
 		{
@@ -37,6 +37,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
                 };
             };
         };
+		rhs_decalParameters[] = {"['Number',cRHSAIRMI8NumberPlaces,'AviaYellow']"};
 	};
 
 class spag_Mi8AMTSh: rhsgref_cdf_reg_Mi17Sh {
@@ -64,6 +65,7 @@ hiddenselectionstextures[] =
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
-		QPATHTOF(data\MI8\vvs_ca)
+		QPATHTOF(data\MI8\sang_ca)
 	};
+	rhs_decalParameters[] = {"['Number',cRHSAIRMI8NumberPlaces,'AviaYellow']"};
 };

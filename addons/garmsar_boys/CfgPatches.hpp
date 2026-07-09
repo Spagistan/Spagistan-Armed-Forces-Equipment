@@ -14,7 +14,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
-            "spag_Factions",
+            "spag_Factions", "rhs_c_heavyweapons", "tbd_mtlb_main"
         };
         author = "Canadian";
         authors[] = {"Canadian"};
