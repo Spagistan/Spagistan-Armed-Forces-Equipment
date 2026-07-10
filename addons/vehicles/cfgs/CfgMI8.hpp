@@ -1,5 +1,5 @@
 class RHS_mi8AMT_vdv;
-class rhsgref_cdf_reg_Mi17Sh;
+class RHS_Mi8AMTSh_vvsc;
 
 class mi8t_spagpat: RHS_mi8AMT_vdv {
 	scope = 2;
@@ -20,7 +20,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 	VEHICLEINVENTORY
 	hiddenselectionstextures[] = {
 		QPATHTOF(data\MI8\mi8_body_spag),
-		QPATHTOF(data\MI8\mi8_det_o_co),
+		"\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa",
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
@@ -40,7 +40,7 @@ class mi8t_spagpat: RHS_mi8AMT_vdv {
 		rhs_decalParameters[] = {"['Number',cRHSAIRMI8NumberPlaces,'AviaYellow']"};
 	};
 
-class spag_Mi8AMTSh: rhsgref_cdf_reg_Mi17Sh {
+class spag_Mi8AMTSh: RHS_Mi8AMTSh_vvsc {
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -59,8 +59,8 @@ class spag_Mi8AMTSh: rhsgref_cdf_reg_Mi17Sh {
 	VEHICLEINVENTORY
 hiddenselectionstextures[] =
 	{
-		QPATHTOF(data\MI8\mi8_body_spag),
-		QPATHTOF(data\MI8\mi8_det_o_co),
+		QPATHTOF(data\MI8\mi17_body_spag),
+		"\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa",
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),
 		QPATHTOF(data\MI8\empty),

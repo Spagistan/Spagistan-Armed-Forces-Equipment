@@ -58,7 +58,7 @@ class CfgPatches
 
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"rhs_main","cba_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common"};
+		requiredAddons[] = {"rhs_main","cba_main","safp_mi24vm","rhs_c_a2port_car","spag_main","spag_common", "rhs_c_bmp", "rhsgref_c_vehicles_ret","ArmaFPV_Data","Mavic_Core"};
 		author = "Spagistan Development Team";
 		url = "SPAGLINK";
 		VERSION_CONFIG;

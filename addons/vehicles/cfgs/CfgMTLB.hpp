@@ -19,4 +19,5 @@ class SPAG_MTLB_AMB : PRACS_SLA_MTLB_AMB {
 		"rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa",
 		"rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa"
 	};
+	rhs_decalParameters[]={};
 };

@@ -48,14 +48,13 @@ class CfgVehicles {
     class rhsgref_cdf_ural_open;
     class RHS_Ural_Ammo_MSV_01;
     class rhsgref_cdf_ural_repair;
-    class rhs_2b14_82mm_Base{
-        class Turrets {
-            class MainTurret;
-        };
+    class StaticMortar;
+    class rhs_2b14_82mm_Base: StaticMortar {
+        class Turrets;
     };
-    class rhsgref_ins_g_2b14: rhs_2b14_82mm_Base{
-        class Turrets : Turrets {
-            class MainTurret : MainTurret{};
+    class rhs_2b14_82mm_msv: rhs_2b14_82mm_Base {
+        class Turrets:Turrets {
+            class MainTurret;
         };
     };
 
@@ -155,7 +154,7 @@ class CfgVehicles {
         GCVEHICLEINVENTORY
     };
 
-    class I_Spag_Cadet_Mortar : rhsgref_ins_g_2b14 {
+    class I_Spag_Cadet_Mortar : rhs_2b14_82mm_msv {
         author = "A. Dan";
         scope = 2;
         scopeCurator = 2;

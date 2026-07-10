@@ -16,10 +16,10 @@ class cfgWeapons {
         };
 
         class Single1: Single1{
-            artilleryDispersion = 8;
+            artilleryDispersion = 8.2;
         };
         class Single2: Single2{
-            artilleryDispersion = 8;
+            artilleryDispersion = 8.2;
         };
         class Single3: Single3{
             artilleryDispersion = 8;

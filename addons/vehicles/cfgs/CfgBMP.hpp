@@ -1,27 +1,47 @@
-
+/*
+class rhs_bmp_base;
+class rhs_bmp1_vdv : rhs_bmp_base
+{
+    class Turrets;
+};
+class rhs_bmp2e_vdv : rhs_bmp1_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret;
+    };
+};
+class rhs_bmp2_vdv : rhs_bmp2e_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret : MainTurret
+        {
+            class Turrets;
+        };
+    };
+};
+class rhs_bmp2d_vdv : rhs_bmp2_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret : MainTurret
+        {
+            class Turrets : Turrets
+            {
+                class CommanderOptics;
+            };
+        };
+    };
+};
+*/
+class rhs_bmp2d_vdv;
 class rhsgref_cdf_bmp1;
 class rhsgref_cdf_bmp2;
-class rhsgref_cdf_bmp2d;
 class rhs_Ob_681_2;
 
-
-
-//white un:
-/* hiddenSelectionsTextures[] = {
-	"\po_factions_fic\un\Data\bmp_1_un_co.paa","\po_factions_fic\un\Data\bmp_2_un_co.paa",
-	"\po_factions_fic\un\Data\bmp_3_un_co.paa","\po_factions_fic\un\Data\bmp_4_un_co.paa",
-	"\po_factions_fic\un\Data\bmp_5_un_co.paa","\po_factions_fic\un\Data\bmp_6_un_co.paa"
-	};
-
-//deseert:
-hiddenSelectionsTextures[] = {
-	"po_factions_me\IRAN\data\bmp_1_iran_co.paa","\po_factions_me\IRAN\data\bmp_2_iran_co.paa",
-	"\po_factions_me\IRAN\data\bmp_3_iran_co.paa","\po_factions_me\IRAN\data\bmp_4_iran_co.paa",
-	"\po_factions_me\IRAN\data\bmp_5_iran_co.paa","\po_factions_me\IRAN\data\bmp_6_iran_co.paa"
-	}; */
 class BMP_Spagpat: rhsgref_cdf_bmp1
 {
-	displayName = "BMP-1";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -46,7 +66,6 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 
 class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 {
-	displayName = "BMP-2";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -69,9 +88,8 @@ class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 		  };
 };
 
-class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
+class S_BMP2D_Spagpat: rhs_bmp2d_vdv
 {
-	displayName = "BMP-2D";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -97,6 +115,22 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 	};
 	rhs_decalParameters[]={};
 	rhs_habarType=0;
+	/*
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			class Turrets: Turrets
+			{
+				class CommanderOptics : CommanderOptics
+				{
+					hasCommander= 0;
+					commanding = -1;
+				};
+			};
+		};
+	};
+	*/
 };
 
  class I_SPAGF_SPAG_Objyekt_681_01 : rhs_Ob_681_2 {
