@@ -1,3 +1,17 @@
+class ACE_FortifyToken;
+class CBA_MiscItem_ItemInfo;
+
+class spag_FortifyToken : ACE_FortifyToken {
+    author = "ACE Team/Spagistan Mod Team" ;
+    displayName = "Building Materials";
+    descriptionShort = "Materials to build with the fortify tool.";
+    scopeArsenal = 2;
+    picture = QPATHTOF(data\items\buildMat);
+    class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 20;
+        };
+};
+/*
 class InventoryItem_Base_F;
 class wallet_Uzbek: ItemCore
 {
@@ -15,3 +29,4 @@ class wallet_Uzbek: ItemCore
     mass = 4;
     };
 };
+*/

@@ -1,27 +1,47 @@
-
+/*
+class rhs_bmp_base;
+class rhs_bmp1_vdv : rhs_bmp_base
+{
+    class Turrets;
+};
+class rhs_bmp2e_vdv : rhs_bmp1_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret;
+    };
+};
+class rhs_bmp2_vdv : rhs_bmp2e_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret : MainTurret
+        {
+            class Turrets;
+        };
+    };
+};
+class rhs_bmp2d_vdv : rhs_bmp2_vdv
+{
+    class Turrets : Turrets
+    {
+        class MainTurret : MainTurret
+        {
+            class Turrets : Turrets
+            {
+                class CommanderOptics;
+            };
+        };
+    };
+};
+*/
+class rhs_bmp2d_vdv;
 class rhsgref_cdf_bmp1;
 class rhsgref_cdf_bmp2;
-class rhsgref_cdf_bmp2d;
 class rhs_Ob_681_2;
 
-
-
-//white un:
-/* hiddenSelectionsTextures[] = {
-	"\po_factions_fic\un\Data\bmp_1_un_co.paa","\po_factions_fic\un\Data\bmp_2_un_co.paa",
-	"\po_factions_fic\un\Data\bmp_3_un_co.paa","\po_factions_fic\un\Data\bmp_4_un_co.paa",
-	"\po_factions_fic\un\Data\bmp_5_un_co.paa","\po_factions_fic\un\Data\bmp_6_un_co.paa"
-	};
-
-//deseert:
-hiddenSelectionsTextures[] = {
-	"po_factions_me\IRAN\data\bmp_1_iran_co.paa","\po_factions_me\IRAN\data\bmp_2_iran_co.paa",
-	"\po_factions_me\IRAN\data\bmp_3_iran_co.paa","\po_factions_me\IRAN\data\bmp_4_iran_co.paa",
-	"\po_factions_me\IRAN\data\bmp_5_iran_co.paa","\po_factions_me\IRAN\data\bmp_6_iran_co.paa"
-	}; */
 class BMP_Spagpat: rhsgref_cdf_bmp1
 {
-	displayName = "BMP-1";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -37,7 +57,7 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
-	crew = "S_Soldier_Armor";
+	crew = "I_Spagistan_NG_Crewman_01";
 	HiddenSelectionsTextures[] = {QPATHTOF(data\bmp\bmp_1_spagpat.paa), QPATHTOF(data\bmp\bmp_2_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_3_spagpat.paa), QPATHTOF(data\bmp\bmp_4_spagpat.paa),
 		 QPATHTOF(data\bmp\bmp_5_spagpat.paa), QPATHTOF(data\bmp\bmp_6_spagpat.paa),
@@ -46,7 +66,6 @@ class BMP_Spagpat: rhsgref_cdf_bmp1
 
 class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 {
-	displayName = "BMP-2";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -69,9 +88,8 @@ class S_BMP2_Spagpat: rhsgref_cdf_bmp2
 		  };
 };
 
-class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
+class S_BMP2D_Spagpat: rhs_bmp2d_vdv
 {
-	displayName = "BMP-2D";
 	scope = 2;
 	scopeCurator = 2;
 	side = 2;
@@ -87,12 +105,32 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 	tf_hasLRradio_api = 1;
 	tf_isolatedAmount_api = 0.3;
 	VEHICLEINVENTORY
-	crew = "S_Soldier_Armor";
-	HiddenSelectionsTextures[] = {
+	crew = "I_Spagistan_NG_Crewman_01";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","n1","n2","n3","i1","i2","i3","i4","i5"};
+	HiddenSelectionsTextures[] =
+	{
 		"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa",
 		"rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa",
 		"rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa", "rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa"
-		  };
+	};
+	rhs_decalParameters[]={};
+	rhs_habarType=0;
+	/*
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			class Turrets: Turrets
+			{
+				class CommanderOptics : CommanderOptics
+				{
+					hasCommander= 0;
+					commanding = -1;
+				};
+			};
+		};
+	};
+	*/
 };
 
  class I_SPAGF_SPAG_Objyekt_681_01 : rhs_Ob_681_2 {
@@ -104,7 +142,7 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 		editorSubcategory = "EdSubcat_APCs";
         side = 2;
         faction = QUOTE(SPAGFACTION);
-        crew = "S_Soldier_Armor";
+        crew = "I_Spagistan_NG_Crewman_01";
 		VEHICLEINVENTORY
 		tf_hasLRradio = 1;
 		tf_RadioType = "TFAR_anprc155_coyote";
@@ -113,9 +151,12 @@ class S_BMP2D_Spagpat: rhsgref_cdf_bmp2d
 		tf_encryptionCode = "_independent";
 		tf_hasLRradio_api = 1;
 		tf_isolatedAmount_api = 0.3;
-		HiddenSelectionsTextures[] = {
+		HiddenSelectionsTextures[] =
+		{
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_1_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_2_desert_co.paa",
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_3_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_4_desert_co.paa",
 			"rhsafrf\addons\rhs_bmp_camo\data\bmp_5_desert_co.paa", "rhsafrf\addons\rhs_bmp_camo\data\bmp_6_desert_co.paa"
-		  };
+		};
+		rhs_decalParameters[] = {"['Number', cBMP3NumberPlaces, 'CDF',681]"};
+		rhs_habarType=0;
     };

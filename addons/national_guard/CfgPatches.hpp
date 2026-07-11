@@ -5,6 +5,8 @@ class CfgPatches {
             "NG_Soldier_Grenadier",
             "NG_Soldier_AR",
             "NG_Soldier_TeamLeader",
+            "I_spag_NG_Pilot_Jet",
+            "I_spag_NG_Pilot_Heli",
             "I_Spagistan_NG_Squad_Lead_01",
             "I_Spagistan_NG_M113_01",
             "I_Spagistan_NG_Crewman_01",

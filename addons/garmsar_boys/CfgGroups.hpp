@@ -14,7 +14,7 @@ class CfgGroups {
                 name = "Infantry";
 
                 class i_spagistan_garmsar_infantry_garmsar_cadet_squad {
-                    name = "Garmsar Cadet Squad";
+                    name = "Cadet Squad";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
@@ -24,60 +24,60 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
                 class i_spagistan_garmsar_infantry_garmsar_cadet_team {
-                    name = "Garmsar Cadet Team";
+                    name = "Cadet Team";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
@@ -87,30 +87,30 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
                 class i_spagistan_garmsar_infantry_garmsar_cadet_patrol {
-                    name = "Garmsar Cadet Patrol";
+                    name = "Cadet Patrol";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
@@ -120,13 +120,13 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -141,7 +141,7 @@ class CfgGroups {
                 name = "Motorized Infantry";
 
                 class i_spagistan_garmsar_motorized_garmsar_boys_truck_team {
-                    name = "Garmsar Boys Truck Team";
+                    name = "Motorized Team";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
@@ -151,36 +151,36 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02";
+                        vehicle = "I_spag_gc_ural_open";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
                 class i_spagistan_garmsar_motorized_garmsar_boys_truck_squad {
-                    name = "Garmsar Boys Truck Squad";
+                    name = "Motorized Squad";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
@@ -190,61 +190,61 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Truck_02";
+                        vehicle = "I_spag_gc_ural_open";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Sergeant_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Cadet_01";
+                        vehicle = "I_Spag_Cadet";
                     };
                 };
 
@@ -273,8 +273,8 @@ class CfgGroups {
             class Artillery {
                 name = "Artillery";
 
-                class i_spagistan_garmsar_artillery_boys_mortar_section {
-                    name = "Boys Mortar Section";
+                class i_spag_cadet_mortar_section {
+                    name = "Cadet Mortar Section";
                     side = 2;
                     faction = "I_Spagistan_Garmsar";
                     icon = "\A3\ui_f\data\map\markers\nato\n_art.paa";
@@ -284,13 +284,19 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Mortar_01";
+                        vehicle = "I_Spag_Cadet_SGT";
                     };
                     class Unit1 {
-                        position[] = {5,-5,0};
+                        position[] = {5,5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "I_Spagistan_Garmsar_Garmsar_Boys_Mortar_01";
+                        vehicle = "I_Spag_Cadet_Mortar";
+                    };
+                    class Unit2 {
+                        position[] = {-5,5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Spag_Cadet_Mortar";
                     };
                 };
 

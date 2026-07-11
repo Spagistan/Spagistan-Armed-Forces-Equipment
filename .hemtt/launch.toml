@@ -16,11 +16,6 @@ workshop = [
     "2447965207", # Crows Zeus Addition Workshop ID
     "2826534435", # Enhanced MI-24
     "3435291098", # Gym Bench
-    "3058335345", # TBD Mortars
-    "3356373534", # TBD D20
-    "3183189354", # TBD 2B9
-    "3251627825", # TBD MT12
-    "3382728502", # TBD Type 63
     "3375788189", # Immersive Cigs Rewrite
     "2890312862", # Unconventional Actors
     "1885205711", # RHS Mixed Mags
@@ -28,9 +23,11 @@ workshop = [
     "2170387941", # TOH Characters
     "2955691343", # Project RACS SLA 2023
     "3401580668", # Mavic 3
+    "3029520419", # Simplex Support Dev Build
     #    "620260972", ALiVE
+    "3615518979", # MTLB
 ]
 
 # [arty]
 # extends = "default"
-mission = "testCiv.VR"
+mission = "test.VR"
